@@ -1393,6 +1393,176 @@ def parse_rotated180_pdf(county, path, start_page=0):
     return rows_out, verify
 
 
+# ---------------------------------------------------------------------------
+# Imperial — printed "Page: N of M" SOVC PDF (single-row precinct pages).
+# Each contest prints its precinct list over pairs of pages: page A carries
+# the Times-Cast/Registered stats block plus the first candidates, page B the
+# remaining candidates, a "Total Votes" column (= sum of that precinct's
+# candidate votes in this contest, used for verification) and write-in /
+# unresolved write-in columns. Candidate headers are 90-degree-rotated words
+# (each word's characters run back-to-front in the text stream); the name
+# words sit on one vertical line and the party code on a second line ~10.6pt
+# to its right. Vote values are right-aligned numbers ~90pt apart; a value is
+# assigned to the nearest candidate label within half that pitch.
+# ---------------------------------------------------------------------------
+
+_PF_STATS_RE = re.compile(
+    r"^(?:times? cast|registered|voters?|turnout)$", re.I)
+_PF_DROP_RE = re.compile(r"unresolved|write-in$|\bvoters?$", re.I)
+_PF_ID_RE = re.compile(r"^\d{4,7}(?:MB)?$|^\d{3,7}\s?-\s?[A-Z0-9]+$")
+
+
+def parse_pageformat_pdf(county, path):
+    votes = {}    # (precinct, od, nn) -> votes
+    names = {}
+    totals = {}
+    failures = []
+    prev_od = None
+    with pdfplumber.open(str(path)) as pdf:
+        for page in pdf.pages:
+            words = page.extract_words(extra_attrs=["upright"])
+            up = [w for w in words if w.get("upright", True)]
+            rot = [w for w in words if not w.get("upright", True)]
+            lines = defaultdict(list)
+            for w in up:
+                lines[round(w["top"])].append(w)
+            # the contest title prints only on each contest's first page;
+            # continuation pages carry the previous contest. Header/rollup
+            # lines (Electionwide / Cumulative / bare precinct labels) are
+            # ignored -- not treated as titles.
+            od = None
+            titled = False
+            for y in sorted(lines)[:10]:
+                txt = " ".join(x["text"] for x in
+                               sorted(lines[y], key=lambda w: w["x0"])).strip()
+                low = txt.lower()
+                if re.search(r"page:\s*\d+\s+of", txt, re.I) or \
+                        "precinct results" in low or "official results" in low \
+                        or "statement of votes" in low or \
+                        re.fullmatch(r"precinct( precinct)?", low) or \
+                        "electionwide" in low or "cumulative" in low or \
+                        _PF_STATS_RE.match(low):
+                    continue
+                if not re.search(r"[A-Za-z]{3}", txt):
+                    continue
+                titled = True
+                od = parse_office2024(txt, county)
+                break
+            if titled:
+                page_od = od  # None for local/measure pages: skip + reset
+            else:
+                page_od = prev_od  # continuation page
+            prev_od = page_od
+            if page_od is None:
+                continue
+            od = page_od
+            # rotated header columns, clustered by x0. A candidate's name
+            # wraps onto a second vertical line ~10.6pt right of the first
+            # (either the rest of the name or the "(PARTY)" code)
+            cols = defaultdict(list)
+            for w in rot:
+                cols[w["x0"]].append(w)
+            labels = []
+            total_x = None
+            consumed = set()
+            xs = sorted(cols)
+            for x0 in sorted(cols):
+                if x0 in consumed:
+                    continue
+                # a candidate's rotated label spans up to three ~10.6pt
+                # vertical lines: name, wrapped name, "(PARTY)"
+                block = [x for x in xs if x0 <= x < x0 + 24]
+                consumed.update(block)
+                pieces = []
+                party = ""
+                for x in block:
+                    ptext = " ".join(
+                        w["text"][::-1] for w in
+                        sorted(cols[x], key=lambda w: -w["top"])).strip()
+                    m = re.match(r"^\(([A-Z/\-&]+)\)$", ptext)
+                    if m and pieces:
+                        party = m.group(1)
+                    else:
+                        pieces.append(ptext)
+                text = " ".join(pieces).strip()
+                low = text.lower()
+                if _PF_STATS_RE.match(low):
+                    continue
+                if _PF_DROP_RE.search(low):
+                    continue
+                if low.startswith("total votes"):
+                    total_x = x0
+                    continue
+                labels.append((x0, text, party))
+            if not labels:
+                continue
+
+            def assign(w):
+                vc = (w["x0"] + w["x1"]) / 2
+                best, bd = None, 50.0
+                for x0, text, party in labels:
+                    lc = x0 + 4
+                    d = vc - lc
+                    if -30 <= d <= 50 and abs(d) < bd:
+                        best, bd = (text, party), d
+                return best
+
+            for y in sorted(lines):
+                line = sorted(lines[y], key=lambda w: w["x0"])
+                row_id = line[0]["text"].strip()
+                if not _PF_ID_RE.match(row_id):
+                    continue
+                for w in line[1:]:
+                    tok = w["text"]
+                    if tok.endswith("%") or "." in tok:
+                        continue
+                    if not re.match(r"^[\d,]+$", tok):
+                        continue
+                    lab = assign(w)
+                    if lab is None:
+                        continue
+                    name, party = lab
+                    if re.fullmatch(r"unresolved write.?in", name, re.I):
+                        continue
+                    # "PETER SONSKI Qualified Write In": a named write-in
+                    # pair carries the qualifier as a second line
+                    name = re.sub(r"\s*qualified write in\s*$", "", name,
+                                  flags=re.I)
+                    m_wi = re.match(r"^(.*?)\s+\(W\)\s*$", name, re.I)
+                    if m_wi:
+                        name = m_wi.group(1).strip()
+                    nm = norm_name(name)
+                    key = (row_id, od, nm)
+                    votes[key] = votes.get(key, 0) + _num(tok)
+                    names[od + (nm,)] = (name, party)
+                # verification: "Total Votes" cell equals the candidate sum
+                if total_x is not None:
+                    for w in line[1:]:
+                        vc = (w["x0"] + w["x1"]) / 2
+                        if vc and abs(vc - (total_x + 4)) <= 20 and \
+                                re.match(r"^[\d,]+$", w["text"]):
+                            key = od + ("__total__", row_id)
+                            totals[key] = _num(w["text"])
+    # verify per (contest, precinct): sum(candidates) vs Total Votes cell
+    sums = defaultdict(int)
+    for (pct, od, nm), v in votes.items():
+        sums[od + ("__total__", pct)] += v
+    for (office, district, _t, pct), s in sums.items():
+        key = (office, district, _t, pct)
+        if key in totals and totals[key] and s != totals[key]:
+            failures.append(f"{office} {pct}: candidates {s} vs "
+                            f"Total Votes {totals[key]}")
+    rows_out = []
+    for (precinct, (office, district), nn), v in votes.items():
+        name, party = names[(office, district, nn)]
+        rows_out.append({
+            "county": county, "precinct": precinct, "office": office,
+            "district": district, "candidate": title_case(name),
+            "party": party_of(party), "votes": v,
+        })
+    return rows_out, failures
+
+
 SOURCE_FILES = {
     "colusa": ("Colusa", "pageformat",
                "2024 Colusa County, CA precinct-level results/Colusa-2024-General-SOVC.xlsx"),
@@ -1457,6 +1627,8 @@ SOURCE_FILES = {
                "2024 Sierra County, CA precinct-level results.pdf"),
     "mendocino": ("Mendocino", "dominion_canvass",
                   "Mendocino County - Statement of the Vote - General 2024.pdf"),
+    "imperial": ("Imperial", "pageformat_pdf",
+                 "2024 Imperial County, CA precinct-level results.pdf"),
     "shasta": ("Shasta", "dominion_canvass",
                "2024 Shasta County, CA precinct-level results.pdf"),
 }

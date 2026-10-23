@@ -1412,7 +1412,7 @@ _PF_STATS_RE = re.compile(
     r"^(?:times? cast|registered|voters?|turnout|undervotes|overvotes|"
     r"ballots cast)$", re.I)
 _PF_DROP_RE = re.compile(r"unresolved|write-in$|\bvoters?$", re.I)
-_PF_ID_RE = re.compile(r"^\d{4,7}(?:MB)?$|^\d{3,7}\s?-\s?[A-Z0-9]+$")
+_PF_ID_RE = re.compile(r"^\d{1,7}(?:MB)?(-\d+)?\s*$|^\d{1,7}\s?-\s?\S.*$")
 
 
 DEBUG_PF = False
@@ -1466,14 +1466,16 @@ def parse_pageformat_pdf(county, path):
                 txt = " ".join(x["text"] for x in
                                sorted(lines[y], key=lambda w: w["x0"])).strip()
                 low = txt.lower()
-                if re.search(r"page:\s*\d+\s+of", txt, re.I) or \
+                if re.search(r"page:\s*\d+\s+(?:of\s+)?\d*", txt, re.I) or \
+                        re.match(r"^\d{1,2}/\d{1,2}/\d{2,4}\b", txt) or \
                         "precinct results" in low or "official results" in low \
-                        or "statement of votes" in low or \
+                        or "statement of vote" in low or \
                         re.fullmatch(r"precinct( precinct)?", low) or \
                         "electionwide" in low or "cumulative" in low or \
                         "insufficient turnout" in low or \
                         _channel_prefix(low) or \
-                        _PF_STATS_RE.match(low):
+                        _PF_STATS_RE.match(low) or \
+                        low.startswith("state of california"):
                     continue
                 # a title line begins with alpha text and carries several
                 # alpha words (precinct rows start with ids; ballot-style
@@ -1941,6 +1943,16 @@ SOURCE_FILES = {
                  "2024 Tuolumne County, CA precinct-level results"),
     "modoc": ("Modoc", "modoc24",
               "2024 Modoc County, CA precinct-level results/UNOFFICIAL election-night precinct summary 2024-11-05.pdf"),
+    "plumas": ("Plumas", "pageformat_pdf",
+               "2024 Plumas County, CA precinct-level results.pdf"),
+    # NOTE on the rotated-pageformat PDF family beyond Plumas: Lake's doc
+    # prints each contest on two page-pairs and leaks "Registration"/
+    # "Turnout (%)" stat labels as candidates; totals come out ~half. Needs
+    # its own pass (as do San Joaquin / Merced, same rotated-header style).
+    "san_joaquin": ("San Joaquin", "pageformat_pdf",
+                    "2024 San Joaquin County, CA precinct-level results.pdf"),
+    "merced": ("Merced", "pageformat_pdf",
+               "2024 Merced County, CA precinct-level results.pdf"),
     "shasta": ("Shasta", "dominion_canvass",
                "2024 Shasta County, CA precinct-level results.pdf"),
 }

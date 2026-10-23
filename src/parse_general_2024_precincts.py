@@ -1407,17 +1407,45 @@ def parse_rotated180_pdf(county, path, start_page=0):
 # ---------------------------------------------------------------------------
 
 _PF_STATS_RE = re.compile(
-    r"^(?:times? cast|registered|voters?|turnout)$", re.I)
+    r"^(?:times? cast|registered|voters?|turnout|undervotes|overvotes|"
+    r"ballots cast)$", re.I)
 _PF_DROP_RE = re.compile(r"unresolved|write-in$|\bvoters?$", re.I)
 _PF_ID_RE = re.compile(r"^\d{4,7}(?:MB)?$|^\d{3,7}\s?-\s?[A-Z0-9]+$")
 
 
+DEBUG_PF = False
+_PF_CHANNELS = {"mail ballot", "designated mail ballot", "polling place",
+                "provisional", "total", "vote centers", "vote center",
+                "vote by mail", "election day", "mail", "polling"}
+def _channel_prefix(low):
+    """True when a line's leading words name a channel row (everything before
+    the first number, e.g. "designated mail ballot 0 0 0")."""
+    pre = []
+    words = low.split()
+    for w in words:
+        if not re.fullmatch(r"[a-z]+", w):
+            break  # numbers and **** redactions end the label words
+        pre.append(w)
+    return " ".join(pre) in _PF_CHANNELS if pre else False
+
+
+_PF_IDLINE_RE = re.compile(r"^\s*-\s*([0-9]{2,7})\s*(?:-.*)?$")
+# San Bernardino ballot-style codes ("C23S19A34E1B1AVUAP10001"): a short
+# uppercase head that includes a digit early, then a long tail. (A plain
+# minimum-length pattern would also match long titles like REPRESENTATIVE.)
+_PF_CODE_RE = re.compile(r"^[A-Z]{1,4}[0-9][0-9A-Z\-]{9,}$")
+
+
 def parse_pageformat_pdf(county, path):
-    votes = {}    # (precinct, od, nn) -> votes
+    votes = {}    # (precinct, od, nn) -> votes (Total row or inline cell)
+    channels = {}  # -> [election-day-ish, mail-ish] channel votes
     names = {}
     totals = {}
     failures = []
     prev_od = None
+    current = None   # precinct id of the sub-row block being read
+    pending = defaultdict(lambda: [0, 0, 0, 0])
+    pending_code = None
     with pdfplumber.open(str(path)) as pdf:
         for page in pdf.pages:
             words = page.extract_words(extra_attrs=["upright"])
@@ -1441,18 +1469,29 @@ def parse_pageformat_pdf(county, path):
                         or "statement of votes" in low or \
                         re.fullmatch(r"precinct( precinct)?", low) or \
                         "electionwide" in low or "cumulative" in low or \
+                        "insufficient turnout" in low or \
+                        _channel_prefix(low) or \
                         _PF_STATS_RE.match(low):
                     continue
-                if not re.search(r"[A-Za-z]{3}", txt):
+                # a title line begins with alpha text and carries several
+                # alpha words (precinct rows start with ids; ballot-style
+                # code rows -- often printed twice per line -- are not titles)
+                if len([w for w in txt.split() if re.search(r"[A-Za-z]{2}", w)]) < 2 \
+                        or not re.match(r"^[A-Za-z]", txt) \
+                        or any(_PF_CODE_RE.match(w) for w in txt.split()):
                     continue
                 titled = True
+                title_txt = txt
                 od = parse_office2024(txt, county)
                 break
+            if titled and DEBUG_PF and page.page_number > 3:
+                print(f"TITLED{page.page_number}:[{title_txt[:44]}]->{od}", flush=True)
             if titled:
                 page_od = od  # None for local/measure pages: skip + reset
             else:
                 page_od = prev_od  # continuation page
             prev_od = page_od
+            pending = defaultdict(lambda: [0, 0, 0, 0])
             if page_od is None:
                 continue
             od = page_od
@@ -1469,9 +1508,17 @@ def parse_pageformat_pdf(county, path):
             for x0 in sorted(cols):
                 if x0 in consumed:
                     continue
-                # a candidate's rotated label spans up to three ~10.6pt
-                # vertical lines: name, wrapped name, "(PARTY)"
-                block = [x for x in xs if x0 <= x < x0 + 24]
+                # a candidate's rotated label spans several ~10.6pt
+                # vertical lines: name line(s), wrapped name, "(PARTY)"
+                block = []
+                prevx = None
+                for x in xs:
+                    if x < x0 or x in consumed:
+                        continue
+                    if x != x0 and (prevx is None or x - prevx > 12):
+                        break
+                    block.append(x)
+                    prevx = x
                 consumed.update(block)
                 pieces = []
                 party = ""
@@ -1495,7 +1542,11 @@ def parse_pageformat_pdf(county, path):
                     continue
                 labels.append((x0, text, party))
             if not labels:
+                if DEBUG_PF:
+                    print("SKIP", flush=True)
                 continue
+            if DEBUG_PF:
+                print(f"PAGE{page.page_number}L{len(labels)}T{bool(total_x)} ", flush=True)
 
             def assign(w):
                 vc = (w["x0"] + w["x1"]) / 2
@@ -1507,9 +1558,80 @@ def parse_pageformat_pdf(county, path):
                         best, bd = (text, party), d
                 return best
 
+            def take(lab, tok, wname):
+                """Store one assigned numeric cell for the given precinct."""
+                name, party = lab
+                if re.fullmatch(r"unresolved write.?in", name, re.I):
+                    return
+                # "PETER SONSKI Qualified Write In": a named write-in
+                # pair carries the qualifier as a second line
+                name = re.sub(r"\s*qualified write in\s*$", "", name,
+                              flags=re.I)
+                m_wi = re.match(r"^(.*?)\s+\(W\)\s*$", name, re.I)
+                if m_wi:
+                    name = m_wi.group(1).strip()
+                nm = norm_name(name)
+                key = (wname, od, nm)
+                names[od + (nm,)] = (name, party)
+                return key
+
+            # channel label = the words before the row's first number
+            def row_channel(line):
+                lab = []
+                for x in line:
+                    if re.match(r"^[\d,]+$", x["text"]):
+                        break
+                    lab.append(x["text"].lower())
+                name = " ".join(lab)
+                return name if name in _PF_CHANNELS else ""
+
             for y in sorted(lines):
                 line = sorted(lines[y], key=lambda w: w["x0"])
                 row_id = line[0]["text"].strip()
+                line_l = " ".join(x["text"] for x in line).lower()
+                # id line of a San-Bernardino-style code block ("- 0037")
+                m_id = _PF_IDLINE_RE.match(line_l)
+                if m_id and len(line) <= 6 and \
+                        not any(re.match(r"^[\d,]+$", x["text"])
+                                and x["x0"] > 130 for x in line[1:]):
+                    current = m_id.group(1)
+                    pending = defaultdict(lambda: [0, 0, 0, 0])
+                    continue
+                ch_l = row_channel(line)
+                if ch_l:
+                    if current is None:
+                        continue
+                    is_total = ch_l == "total"
+                    for w in line[1:]:
+                        tok = w["text"]
+                        if tok.endswith("%") or not re.match(r"^[\d,]+$", tok):
+                            continue
+                        lab = assign(w)
+                        if lab is None:
+                            continue
+                        key = take(lab, tok, current)
+                        if not key:
+                            continue
+                        v = _num(tok)
+                        if is_total:
+                            p = pending.pop(key, None) or [0, 0, 0, 0]
+                            votes[key] = p[0] + v
+                            channels[key] = [p[1], p[2], p[3]]
+                        else:
+                            pen = pending[key]
+                            pen[0] += v
+                            if ch_l in _ED_CHANNELS or ch_l == "polling place":
+                                pen[1] += v
+                            elif ch_l == "provisional":
+                                pen[2] += v
+                            else:
+                                pen[3] += v
+                    if is_total:
+                        pending = defaultdict(lambda: [0, 0, 0, 0])
+                    continue
+                if _PF_CODE_RE.match(row_id):
+                    pending_code = row_id
+                    continue
                 if not _PF_ID_RE.match(row_id):
                     continue
                 for w in line[1:]:
@@ -1521,28 +1643,18 @@ def parse_pageformat_pdf(county, path):
                     lab = assign(w)
                     if lab is None:
                         continue
-                    name, party = lab
-                    if re.fullmatch(r"unresolved write.?in", name, re.I):
+                    key = take(lab, tok, row_id)
+                    if not key:
                         continue
-                    # "PETER SONSKI Qualified Write In": a named write-in
-                    # pair carries the qualifier as a second line
-                    name = re.sub(r"\s*qualified write in\s*$", "", name,
-                                  flags=re.I)
-                    m_wi = re.match(r"^(.*?)\s+\(W\)\s*$", name, re.I)
-                    if m_wi:
-                        name = m_wi.group(1).strip()
-                    nm = norm_name(name)
-                    key = (row_id, od, nm)
                     votes[key] = votes.get(key, 0) + _num(tok)
-                    names[od + (nm,)] = (name, party)
                 # verification: "Total Votes" cell equals the candidate sum
                 if total_x is not None:
                     for w in line[1:]:
                         vc = (w["x0"] + w["x1"]) / 2
                         if vc and abs(vc - (total_x + 4)) <= 20 and \
                                 re.match(r"^[\d,]+$", w["text"]):
-                            key = od + ("__total__", row_id)
-                            totals[key] = _num(w["text"])
+                            totals[od + ("__total__", row_id)] = \
+                                _num(w["text"])
     # verify per (contest, precinct): sum(candidates) vs Total Votes cell
     sums = defaultdict(int)
     for (pct, od, nm), v in votes.items():
@@ -1555,10 +1667,101 @@ def parse_pageformat_pdf(county, path):
     rows_out = []
     for (precinct, (office, district), nn), v in votes.items():
         name, party = names[(office, district, nn)]
-        rows_out.append({
+        row = {
             "county": county, "precinct": precinct, "office": office,
             "district": district, "candidate": title_case(name),
             "party": party_of(party), "votes": v,
+        }
+        ed, prov, mailv = channels.get((precinct, (office, district), nn),
+                                       [None, None, None])
+        if ed is not None:
+            row["election_day"] = ed
+            row["provisional"] = prov
+            row["mail"] = mailv
+        rows_out.append(row)
+    return rows_out, failures
+
+
+# ---------------------------------------------------------------------------
+# Tuolumne — clean per-contest CSVs (one file per contest, candidates as
+# column headers "Name / Running Mate\nParty"); Totals row = county totals
+# (verification). Statewide contests are picked from the file name.
+# ---------------------------------------------------------------------------
+
+def parse_tuolumne(county, src_dir):
+    files = sorted(src_dir.glob("Tuolumne-2024-Nov5-General-*-by-precinct.csv"))
+    agg = {}      # (precinct, od, nn) -> votes
+    names = {}
+    failures = []
+    totals = {}
+    for f in files:
+        parts = f.name.split("Tuolumne-2024-Nov5-General-")[1]
+        parts = parts.split("-by-precinct.csv")[0]
+        title = re.sub(r"\s+", " ", parts.replace("-", " ")).strip()
+        od = parse_office2024(title, county)
+        if od is None:
+            continue  # local offices / measures
+        office, district = od
+        c_totals = {}
+        with open(f, encoding="utf-8-sig", newline="") as fh:
+            rd = csv.reader(fh)
+            try:
+                header = next(rd)
+            except StopIteration:
+                continue
+            cand_cols = []
+            for c, cell in enumerate(header):
+                label = " ".join(cell.split())
+                if c == 0 or not label:
+                    continue
+                if is_summary_name(label) or re.search(
+                        r"total votes cast|undervotes|overvotes|"
+                        r"total ballots|registered voter", label, re.I):
+                    continue
+                # candidate cols: "Donald J. Trump/ JD Vance/Republican"
+                # (party as the trailing segment)
+                nm = label
+                party = ""
+                m = re.match(r"^(.*?)\s*(?:/\s*)?(Republican|Democratic|"
+                             r"Green|Libertarian|Peace and Freedom|"
+                             r"American Independent|No Party Preference|"
+                             r"Non-Partisan)\s*$", label)
+                if m:
+                    nm = re.sub(r"\s*/\s*$", "", m.group(1)).strip()
+                    party = party_of(m.group(2))
+                cand_cols.append((c, nm))
+                names[od + (norm_name(nm),)] = (nm, party or "")
+            if not cand_cols:
+                continue
+            for r in rd:
+                if not r or not r[0].strip():
+                    continue
+                prec = r[0].strip()
+                for c, nm in cand_cols:
+                    v = _num(r[c]) if c < len(r) else 0
+                    nn = norm_name(nm)
+                    if prec.lower() == "totals":
+                        c_totals[nn] = v
+                        continue
+                    agg[(prec, od, nn)] = v
+        for nn, v in c_totals.items():
+            if nn in (0, None):
+                continue
+            totals[od + (nn,)] = v
+            s = sum(x for (p, o, n), x in agg.items()
+                    if o == od and n == nn)
+            if s != v:
+                failures.append(f"{office} {names[od + (nn,)][:28]}: "
+                                f"precincts {s} vs Totals row {v}")
+
+    rows_out = []
+    for (precinct, (office, district), nn), v in agg.items():
+        name, party = names[(office, district, nn)]
+        rows_out.append({
+            "county": county, "precinct": precinct, "office": office,
+            "district": district,
+            "candidate": title_case(name).replace(" / ", "/"),
+            "party": party, "votes": v,
         })
     return rows_out, failures
 
@@ -1629,6 +1832,10 @@ SOURCE_FILES = {
                   "Mendocino County - Statement of the Vote - General 2024.pdf"),
     "imperial": ("Imperial", "pageformat_pdf",
                  "2024 Imperial County, CA precinct-level results.pdf"),
+    "kern": ("Kern", "pageformat",
+             "2024 Kern County, CA precinct-level results.xlsx"),
+    "tuolumne": ("Tuolumne", "tuolumne",
+                 "2024 Tuolumne County, CA precinct-level results"),
     "shasta": ("Shasta", "dominion_canvass",
                "2024 Shasta County, CA precinct-level results.pdf"),
 }

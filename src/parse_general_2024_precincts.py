@@ -1600,9 +1600,12 @@ def parse_pageformat_pdf(county, path):
                 # (e.g. "- 0001 - 0001" at x 25 and x 405); only numeric
                 # words in the LEFT half (stat/value columns, 130-480)
                 # disqualify it as an id line
+                # id lines print a right-block copy at x~399-411 ("- 0001
+                # - 0001"); only numeric words in the left value columns
+                # (x 130-390) disqualify the line
                 if m_id and len(line) <= 6 and \
                         not any(re.match(r"^[\d,]+$", x["text"])
-                                and 130 < x["x0"] < 480 for x in line[1:]):
+                                and 130 < x["x0"] < 390 for x in line[1:]):
                     current = m_id.group(1)
                     pending = defaultdict(lambda: [0, 0, 0, 0])
                     continue

@@ -1550,7 +1550,8 @@ def parse_pageformat_pdf(county, path):
                     print("SKIP", flush=True)
                 continue
             if DEBUG_PF:
-                print(f"PAGE{page.page_number}L{len(labels)}T{bool(total_x)} ", flush=True)
+                print(f"PAGE{page.page_number}L{len(labels)}T{bool(total_x)}:"
+                      f"{[l[1][:22] for l in labels]}", flush=True)
 
             def assign(w):
                 vc = (w["x0"] + w["x1"]) / 2

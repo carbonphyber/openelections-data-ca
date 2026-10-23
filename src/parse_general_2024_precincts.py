@@ -1596,9 +1596,13 @@ def parse_pageformat_pdf(county, path):
                 line_l = " ".join(x["text"] for x in line).lower()
                 # id line of a San-Bernardino-style code block ("- 0037")
                 m_id = _PF_IDLINE_RE.match(line_l)
+                # the doc prints each id line with a right-block copy
+                # (e.g. "- 0001 - 0001" at x 25 and x 405); only numeric
+                # words in the LEFT half (stat/value columns, 130-480)
+                # disqualify it as an id line
                 if m_id and len(line) <= 6 and \
                         not any(re.match(r"^[\d,]+$", x["text"])
-                                and x["x0"] > 130 for x in line[1:]):
+                                and 130 < x["x0"] < 480 for x in line[1:]):
                     current = m_id.group(1)
                     pending = defaultdict(lambda: [0, 0, 0, 0])
                     continue
@@ -1620,7 +1624,10 @@ def parse_pageformat_pdf(county, path):
                         v = _num(tok)
                         if is_total:
                             p = pending.pop(key, None) or [0, 0, 0, 0]
-                            votes[key] = p[0] + v
+                            # the doc's Total row carries the full block
+                            # total (already including all channel rows), so
+                            # never add the channel accumulation to it
+                            votes[key] = v
                             channels[key] = [p[1], p[2], p[3]]
                         else:
                             pen = pending[key]

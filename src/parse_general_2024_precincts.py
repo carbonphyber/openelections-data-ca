@@ -105,6 +105,8 @@ def title_case(name):
 COUNTY_DISTRICT_FALLBACK = {
     "Siskiyou": {"U.S. House": "1", "State Senate": "1", "State Assembly": "1",
                  "Board of Equalization": "2"},
+    "Modoc": {"U.S. House": "1", "State Senate": "1", "State Assembly": "1",
+              "Board of Equalization": "2"},
 }
 _WORD_ORDINALS = {"ONE": "1", "TWO": "2", "THREE": "3", "FOUR": "4", "FIVE": "5",
                   "SIX": "6", "SEVEN": "7", "EIGHT": "8", "NINE": "9",
@@ -1766,6 +1768,107 @@ def parse_tuolumne(county, src_dir):
     return rows_out, failures
 
 
+# ---------------------------------------------------------------------------
+# Modoc — 2024's "Summary Results Report" precinct-major PDF (the 2026 family,
+# ref-free variant): "<county> County" page header, then a bare precinct-name
+# line; contest titles sit directly above "Vote For N"; candidate rows are
+# "<name ...> <total>" with only a TOTAL column (no vote-type breakdown,
+# no party token). "STATISTICS"/"Write-In Totals" sections are skipped.
+# ---------------------------------------------------------------------------
+
+def parse_modoc24(county, path):
+    import pdfplumber
+    header_re = re.compile(rf"\b{re.escape(county)}\s+County\b", re.I)
+    votefor_re = re.compile(r"^Vote\s+For\s+\d+$", re.I)
+    num_re = re.compile(r"^[\d,]+$")
+    pdf = pdfplumber.open(str(path))
+    agg = {}
+    names = {}
+    cur_precinct = None
+    cur_od = None
+    prev_t = ""
+    expect_precinct = False
+    for p in pdf.pages:
+        words = p.extract_words()
+        lines = defaultdict(list)
+        for w in words:
+            lines[round(w["top"])].append(w)
+        for y in sorted(lines):
+            toks = [w["text"] for w in sorted(lines[y], key=lambda w: w["x0"])]
+            tt = " ".join(toks).strip()
+            if not tt:
+                continue
+            if expect_precinct:
+                cur_precinct = tt
+                cur_od = None
+                expect_precinct = False
+                prev_t = ""
+                continue
+            if header_re.search(tt):
+                expect_precinct = True
+                continue
+            if votefor_re.match(tt):
+                cur_od = parse_office2024(prev_t, county)
+                prev_t = ""
+                continue
+            if cur_precinct is not None and cur_od is not None \
+                    and len(toks) >= 2 and num_re.match(toks[-1]):
+                name = " ".join(toks[:-1]).strip()
+                if name and "write-in" not in name.lower() \
+                        and not is_summary_name(name):
+                    nn = norm_name(name)
+                    agg[(cur_precinct, cur_od, nn)] = _num(toks[-1])
+                    names[cur_od + (nn,)] = name
+            prev_t = tt
+    pdf.close()
+
+    # verify: per contest, per precinct, candidate sums may not exceed the
+    # STATISTICS "Ballots Cast - Total" for that precinct (this is an
+    # unofficial summary with no county contest-total rows)
+    cast = {}
+    cur = None
+    expect = False
+    with pdfplumber.open(str(path)) as pdf:
+        for p in pdf.pages:
+            for line in (p.extract_text() or "").splitlines():
+                tt = line.strip()
+                if header_re.search(tt):
+                    expect = True
+                    continue
+                if expect:
+                    cur = tt
+                    expect = False
+                    continue
+                m = re.match(r"Ballots Cast - Total (\d[\d,]*)", tt)
+                if m and cur:
+                    cast[cur] = _num(m.group(1))
+    failures = []
+    cast_by_precinct = {}
+    prec_sums = {}
+    cand_cast = {}
+    with pdfplumber.open(str(path)) as pdf:
+        for (prec, od, nn), v in agg.items() if False else []:
+            pass
+    cand_sums = defaultdict(int)
+    for (prec, od, nn), v in agg.items():
+        cand_sums[(prec, od[0])] += v
+    for (prec, oname), s in cand_sums.items():
+        bc = cast.get(prec)
+        if bc is not None and s > bc:
+            failures.append(f"{oname} {prec}: candidates {s} > "
+                            f"Ballots Cast {bc}")
+
+    rows_out = []
+    for (precinct, (office, district), nn), v in agg.items():
+        rows_out.append({
+            "county": county, "precinct": precinct, "office": office,
+            "district": district,
+            "candidate": title_case(names[(office, district, nn)]),
+            "party": "", "votes": v,
+        })
+    return rows_out, failures
+
+
 SOURCE_FILES = {
     "colusa": ("Colusa", "pageformat",
                "2024 Colusa County, CA precinct-level results/Colusa-2024-General-SOVC.xlsx"),
@@ -1836,6 +1939,8 @@ SOURCE_FILES = {
              "2024 Kern County, CA precinct-level results.xlsx"),
     "tuolumne": ("Tuolumne", "tuolumne",
                  "2024 Tuolumne County, CA precinct-level results"),
+    "modoc": ("Modoc", "modoc24",
+              "2024 Modoc County, CA precinct-level results/UNOFFICIAL election-night precinct summary 2024-11-05.pdf"),
     "shasta": ("Shasta", "dominion_canvass",
                "2024 Shasta County, CA precinct-level results.pdf"),
 }

@@ -1,0 +1,885 @@
+county,precinct,office,district,candidate,party,votes,election_day,mail
+Shasta,0120390,President,,Donald J. Trump,Republican,1015,144,871
+Shasta,0120390,President,,Claudia De La Cruz,Peace and Freedom,5,2,3
+Shasta,0120390,President,,Kamala D. Harris,Democratic,545,34,511
+Shasta,0120390,President,,Robert F. Kennedy Jr.,American Independent,28,4,24
+Shasta,0120390,President,,Chase Oliver,Libertarian,11,2,9
+Shasta,0120390,President,,Jill Stein,Green,7,0,7
+Shasta,0120390,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0120390,U.S. Senate,,Steve Garvey,Republican,1029,141,888
+Shasta,0120390,U.S. Senate,,Adam B. Schiff,Democratic,504,30,474
+Shasta,0120390,U.S. House,1,Doug Lamalfa,Republican,1067,144,923
+Shasta,0120390,U.S. House,1,Rose Penelope Yee,Democratic,515,36,479
+Shasta,0120390,State Assembly,1,Tenessa Audette,Republican,684,85,599
+Shasta,0120390,State Assembly,1,Heather Hadwick,Republican,688,78,610
+Shasta,0120400,President,,Donald J. Trump,Republican,1025,160,865
+Shasta,0120400,President,,Claudia De La Cruz,Peace and Freedom,10,2,8
+Shasta,0120400,President,,Kamala D. Harris,Democratic,526,39,487
+Shasta,0120400,President,,Robert F. Kennedy Jr.,American Independent,33,7,26
+Shasta,0120400,President,,Chase Oliver,Libertarian,9,1,8
+Shasta,0120400,President,,Jill Stein,Green,8,0,8
+Shasta,0120400,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0120400,U.S. Senate,,Steve Garvey,Republican,1002,153,849
+Shasta,0120400,U.S. Senate,,Adam B. Schiff,Democratic,529,41,488
+Shasta,0120400,U.S. House,1,Doug Lamalfa,Republican,1040,152,888
+Shasta,0120400,U.S. House,1,Rose Penelope Yee,Democratic,527,43,484
+Shasta,0120400,State Assembly,1,Tenessa Audette,Republican,696,97,599
+Shasta,0120400,State Assembly,1,Heather Hadwick,Republican,695,85,610
+Shasta,0120463,President,,Donald J. Trump,Republican,17,1,16
+Shasta,0120463,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Shasta,0120463,President,,Kamala D. Harris,Democratic,18,0,18
+Shasta,0120463,President,,Robert F. Kennedy Jr.,American Independent,1,0,1
+Shasta,0120463,President,,Chase Oliver,Libertarian,1,0,1
+Shasta,0120463,President,,Jill Stein,Green,0,0,0
+Shasta,0120463,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0120463,U.S. Senate,,Steve Garvey,Republican,17,1,16
+Shasta,0120463,U.S. Senate,,Adam B. Schiff,Democratic,19,0,19
+Shasta,0120463,U.S. House,1,Doug Lamalfa,Republican,18,1,17
+Shasta,0120463,U.S. House,1,Rose Penelope Yee,Democratic,19,0,19
+Shasta,0120463,State Assembly,1,Tenessa Audette,Republican,11,0,11
+Shasta,0120463,State Assembly,1,Heather Hadwick,Republican,19,1,18
+Shasta,0120523,President,,Donald J. Trump,Republican,933,159,774
+Shasta,0120523,President,,Claudia De La Cruz,Peace and Freedom,7,1,6
+Shasta,0120523,President,,Kamala D. Harris,Democratic,597,46,551
+Shasta,0120523,President,,Robert F. Kennedy Jr.,American Independent,18,0,18
+Shasta,0120523,President,,Chase Oliver,Libertarian,4,0,4
+Shasta,0120523,President,,Jill Stein,Green,10,1,9
+Shasta,0120523,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0120523,U.S. Senate,,Steve Garvey,Republican,952,151,801
+Shasta,0120523,U.S. Senate,,Adam B. Schiff,Democratic,555,43,512
+Shasta,0120523,U.S. House,1,Doug Lamalfa,Republican,986,150,836
+Shasta,0120523,U.S. House,1,Rose Penelope Yee,Democratic,554,49,505
+Shasta,0120523,State Assembly,1,Tenessa Audette,Republican,723,112,611
+Shasta,0120523,State Assembly,1,Heather Hadwick,Republican,628,70,558
+Shasta,0120570,President,,Donald J. Trump,Republican,812,153,659
+Shasta,0120570,President,,Claudia De La Cruz,Peace and Freedom,5,1,4
+Shasta,0120570,President,,Kamala D. Harris,Democratic,532,52,480
+Shasta,0120570,President,,Robert F. Kennedy Jr.,American Independent,21,2,19
+Shasta,0120570,President,,Chase Oliver,Libertarian,6,1,5
+Shasta,0120570,President,,Jill Stein,Green,12,2,10
+Shasta,0120570,President,,"Peter Sonski, VP Lauren Onak",,2,0,2
+Shasta,0120570,U.S. Senate,,Steve Garvey,Republican,849,155,694
+Shasta,0120570,U.S. Senate,,Adam B. Schiff,Democratic,492,45,447
+Shasta,0120570,U.S. House,1,Doug Lamalfa,Republican,853,155,698
+Shasta,0120570,U.S. House,1,Rose Penelope Yee,Democratic,512,52,460
+Shasta,0120570,State Assembly,1,Tenessa Audette,Republican,626,116,510
+Shasta,0120570,State Assembly,1,Heather Hadwick,Republican,576,73,503
+Shasta,0120660,President,,Donald J. Trump,Republican,945,126,819
+Shasta,0120660,President,,Claudia De La Cruz,Peace and Freedom,5,0,5
+Shasta,0120660,President,,Kamala D. Harris,Democratic,721,50,671
+Shasta,0120660,President,,Robert F. Kennedy Jr.,American Independent,39,8,31
+Shasta,0120660,President,,Chase Oliver,Libertarian,8,1,7
+Shasta,0120660,President,,Jill Stein,Green,10,2,8
+Shasta,0120660,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0120660,U.S. Senate,,Steve Garvey,Republican,965,122,843
+Shasta,0120660,U.S. Senate,,Adam B. Schiff,Democratic,693,46,647
+Shasta,0120660,U.S. House,1,Doug Lamalfa,Republican,980,118,862
+Shasta,0120660,U.S. House,1,Rose Penelope Yee,Democratic,708,57,651
+Shasta,0120660,State Assembly,1,Tenessa Audette,Republican,733,95,638
+Shasta,0120660,State Assembly,1,Heather Hadwick,Republican,731,67,664
+Shasta,0120894,President,,Donald J. Trump,Republican,1307,205,1102
+Shasta,0120894,President,,Claudia De La Cruz,Peace and Freedom,6,0,6
+Shasta,0120894,President,,Kamala D. Harris,Democratic,669,43,626
+Shasta,0120894,President,,Robert F. Kennedy Jr.,American Independent,40,5,35
+Shasta,0120894,President,,Chase Oliver,Libertarian,14,1,13
+Shasta,0120894,President,,Jill Stein,Green,12,0,12
+Shasta,0120894,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0120894,U.S. Senate,,Steve Garvey,Republican,1312,189,1123
+Shasta,0120894,U.S. Senate,,Adam B. Schiff,Democratic,652,42,610
+Shasta,0120894,U.S. House,1,Doug Lamalfa,Republican,1340,187,1153
+Shasta,0120894,U.S. House,1,Rose Penelope Yee,Democratic,664,50,614
+Shasta,0120894,State Assembly,1,Tenessa Audette,Republican,871,98,773
+Shasta,0120894,State Assembly,1,Heather Hadwick,Republican,910,113,797
+Shasta,0120897,President,,Donald J. Trump,Republican,1200,200,1000
+Shasta,0120897,President,,Claudia De La Cruz,Peace and Freedom,5,0,5
+Shasta,0120897,President,,Kamala D. Harris,Democratic,691,51,640
+Shasta,0120897,President,,Robert F. Kennedy Jr.,American Independent,24,2,22
+Shasta,0120897,President,,Chase Oliver,Libertarian,3,0,3
+Shasta,0120897,President,,Jill Stein,Green,9,0,9
+Shasta,0120897,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0120897,U.S. Senate,,Steve Garvey,Republican,1167,183,984
+Shasta,0120897,U.S. Senate,,Adam B. Schiff,Democratic,679,49,630
+Shasta,0120897,U.S. House,1,Doug Lamalfa,Republican,1233,188,1045
+Shasta,0120897,U.S. House,1,Rose Penelope Yee,Democratic,651,49,602
+Shasta,0120897,State Assembly,1,Tenessa Audette,Republican,841,132,709
+Shasta,0120897,State Assembly,1,Heather Hadwick,Republican,828,89,739
+Shasta,0121120,President,,Donald J. Trump,Republican,631,81,550
+Shasta,0121120,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Shasta,0121120,President,,Kamala D. Harris,Democratic,455,49,406
+Shasta,0121120,President,,Robert F. Kennedy Jr.,American Independent,21,3,18
+Shasta,0121120,President,,Chase Oliver,Libertarian,6,1,5
+Shasta,0121120,President,,Jill Stein,Green,12,1,11
+Shasta,0121120,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0121120,U.S. Senate,,Steve Garvey,Republican,634,85,549
+Shasta,0121120,U.S. Senate,,Adam B. Schiff,Democratic,430,42,388
+Shasta,0121120,U.S. House,1,Doug Lamalfa,Republican,654,82,572
+Shasta,0121120,U.S. House,1,Rose Penelope Yee,Democratic,436,42,394
+Shasta,0121120,State Assembly,1,Tenessa Audette,Republican,482,62,420
+Shasta,0121120,State Assembly,1,Heather Hadwick,Republican,455,52,403
+Shasta,0121750,President,,Donald J. Trump,Republican,897,127,770
+Shasta,0121750,President,,Claudia De La Cruz,Peace and Freedom,5,0,5
+Shasta,0121750,President,,Kamala D. Harris,Democratic,774,35,739
+Shasta,0121750,President,,Robert F. Kennedy Jr.,American Independent,45,5,40
+Shasta,0121750,President,,Chase Oliver,Libertarian,10,1,9
+Shasta,0121750,President,,Jill Stein,Green,12,2,10
+Shasta,0121750,President,,"Peter Sonski, VP Lauren Onak",,1,1,0
+Shasta,0121750,U.S. Senate,,Steve Garvey,Republican,931,124,807
+Shasta,0121750,U.S. Senate,,Adam B. Schiff,Democratic,751,34,717
+Shasta,0121750,U.S. House,1,Doug Lamalfa,Republican,967,126,841
+Shasta,0121750,U.S. House,1,Rose Penelope Yee,Democratic,745,33,712
+Shasta,0121750,State Assembly,1,Tenessa Audette,Republican,768,81,687
+Shasta,0121750,State Assembly,1,Heather Hadwick,Republican,723,68,655
+Shasta,0190201,President,,Donald J. Trump,Republican,931,172,759
+Shasta,0190201,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Shasta,0190201,President,,Kamala D. Harris,Democratic,318,33,285
+Shasta,0190201,President,,Robert F. Kennedy Jr.,American Independent,17,1,16
+Shasta,0190201,President,,Chase Oliver,Libertarian,5,1,4
+Shasta,0190201,President,,Jill Stein,Green,1,0,1
+Shasta,0190201,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0190201,U.S. Senate,,Steve Garvey,Republican,914,163,751
+Shasta,0190201,U.S. Senate,,Adam B. Schiff,Democratic,298,31,267
+Shasta,0190201,U.S. House,1,Doug Lamalfa,Republican,943,168,775
+Shasta,0190201,U.S. House,1,Rose Penelope Yee,Democratic,303,32,271
+Shasta,0190201,State Assembly,1,Tenessa Audette,Republican,548,94,454
+Shasta,0190201,State Assembly,1,Heather Hadwick,Republican,569,82,487
+Shasta,0220160,President,,Donald J. Trump,Republican,696,126,570
+Shasta,0220160,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Shasta,0220160,President,,Kamala D. Harris,Democratic,391,27,364
+Shasta,0220160,President,,Robert F. Kennedy Jr.,American Independent,20,0,20
+Shasta,0220160,President,,Chase Oliver,Libertarian,5,0,5
+Shasta,0220160,President,,Jill Stein,Green,7,1,6
+Shasta,0220160,President,,"Peter Sonski, VP Lauren Onak",,2,0,2
+Shasta,0220160,U.S. Senate,,Steve Garvey,Republican,704,123,581
+Shasta,0220160,U.S. Senate,,Adam B. Schiff,Democratic,378,23,355
+Shasta,0220160,U.S. House,1,Doug Lamalfa,Republican,716,119,597
+Shasta,0220160,U.S. House,1,Rose Penelope Yee,Democratic,378,28,350
+Shasta,0220160,State Assembly,1,Tenessa Audette,Republican,460,72,388
+Shasta,0220160,State Assembly,1,Heather Hadwick,Republican,477,55,422
+Shasta,0220170,President,,Donald J. Trump,Republican,1282,192,1090
+Shasta,0220170,President,,Claudia De La Cruz,Peace and Freedom,4,0,4
+Shasta,0220170,President,,Kamala D. Harris,Democratic,594,42,552
+Shasta,0220170,President,,Robert F. Kennedy Jr.,American Independent,18,0,18
+Shasta,0220170,President,,Chase Oliver,Libertarian,13,2,11
+Shasta,0220170,President,,Jill Stein,Green,5,1,4
+Shasta,0220170,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0220170,U.S. Senate,,Steve Garvey,Republican,1296,185,1111
+Shasta,0220170,U.S. Senate,,Adam B. Schiff,Democratic,562,37,525
+Shasta,0220170,U.S. House,1,Doug Lamalfa,Republican,1323,186,1137
+Shasta,0220170,U.S. House,1,Rose Penelope Yee,Democratic,559,39,520
+Shasta,0220170,State Assembly,1,Tenessa Audette,Republican,799,113,686
+Shasta,0220170,State Assembly,1,Heather Hadwick,Republican,870,88,782
+Shasta,0220460,President,,Donald J. Trump,Republican,1364,291,1073
+Shasta,0220460,President,,Claudia De La Cruz,Peace and Freedom,5,0,5
+Shasta,0220460,President,,Kamala D. Harris,Democratic,791,120,671
+Shasta,0220460,President,,Robert F. Kennedy Jr.,American Independent,26,5,21
+Shasta,0220460,President,,Chase Oliver,Libertarian,9,0,9
+Shasta,0220460,President,,Jill Stein,Green,12,2,10
+Shasta,0220460,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0220460,U.S. Senate,,Steve Garvey,Republican,1361,273,1088
+Shasta,0220460,U.S. Senate,,Adam B. Schiff,Democratic,740,118,622
+Shasta,0220460,U.S. House,1,Doug Lamalfa,Republican,1405,295,1110
+Shasta,0220460,U.S. House,1,Rose Penelope Yee,Democratic,749,114,635
+Shasta,0220460,State Assembly,1,Tenessa Audette,Republican,963,203,760
+Shasta,0220460,State Assembly,1,Heather Hadwick,Republican,945,178,767
+Shasta,0220575,President,,Donald J. Trump,Republican,1107,143,964
+Shasta,0220575,President,,Claudia De La Cruz,Peace and Freedom,5,0,5
+Shasta,0220575,President,,Kamala D. Harris,Democratic,768,67,701
+Shasta,0220575,President,,Robert F. Kennedy Jr.,American Independent,29,1,28
+Shasta,0220575,President,,Chase Oliver,Libertarian,12,1,11
+Shasta,0220575,President,,Jill Stein,Green,9,1,8
+Shasta,0220575,President,,"Peter Sonski, VP Lauren Onak",,3,1,2
+Shasta,0220575,U.S. Senate,,Steve Garvey,Republican,1151,131,1020
+Shasta,0220575,U.S. Senate,,Adam B. Schiff,Democratic,717,63,654
+Shasta,0220575,U.S. House,1,Doug Lamalfa,Republican,1188,142,1046
+Shasta,0220575,U.S. House,1,Rose Penelope Yee,Democratic,715,59,656
+Shasta,0220575,State Assembly,1,Tenessa Audette,Republican,849,98,751
+Shasta,0220575,State Assembly,1,Heather Hadwick,Republican,838,76,762
+Shasta,0220760,President,,Donald J. Trump,Republican,1161,60,1101
+Shasta,0220760,President,,Claudia De La Cruz,Peace and Freedom,21,1,20
+Shasta,0220760,President,,Kamala D. Harris,Democratic,786,26,760
+Shasta,0220760,President,,Robert F. Kennedy Jr.,American Independent,34,2,32
+Shasta,0220760,President,,Chase Oliver,Libertarian,10,1,9
+Shasta,0220760,President,,Jill Stein,Green,7,1,6
+Shasta,0220760,President,,"Peter Sonski, VP Lauren Onak",,1,0,1
+Shasta,0220760,U.S. Senate,,Steve Garvey,Republican,1199,66,1133
+Shasta,0220760,U.S. Senate,,Adam B. Schiff,Democratic,762,20,742
+Shasta,0220760,U.S. House,1,Doug Lamalfa,Republican,1227,65,1162
+Shasta,0220760,U.S. House,1,Rose Penelope Yee,Democratic,756,21,735
+Shasta,0220760,State Assembly,1,Tenessa Audette,Republican,856,41,815
+Shasta,0220760,State Assembly,1,Heather Hadwick,Republican,871,42,829
+Shasta,0220770,President,,Donald J. Trump,Republican,1132,115,1017
+Shasta,0220770,President,,Claudia De La Cruz,Peace and Freedom,5,0,5
+Shasta,0220770,President,,Kamala D. Harris,Democratic,642,34,608
+Shasta,0220770,President,,Robert F. Kennedy Jr.,American Independent,26,0,26
+Shasta,0220770,President,,Chase Oliver,Libertarian,11,0,11
+Shasta,0220770,President,,Jill Stein,Green,10,3,7
+Shasta,0220770,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0220770,U.S. Senate,,Steve Garvey,Republican,1163,108,1055
+Shasta,0220770,U.S. Senate,,Adam B. Schiff,Democratic,601,29,572
+Shasta,0220770,U.S. House,1,Doug Lamalfa,Republican,1167,106,1061
+Shasta,0220770,U.S. House,1,Rose Penelope Yee,Democratic,621,37,584
+Shasta,0220770,State Assembly,1,Tenessa Audette,Republican,776,66,710
+Shasta,0220770,State Assembly,1,Heather Hadwick,Republican,795,65,730
+Shasta,0221979,President,,Donald J. Trump,Republican,683,54,629
+Shasta,0221979,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Shasta,0221979,President,,Kamala D. Harris,Democratic,315,12,303
+Shasta,0221979,President,,Robert F. Kennedy Jr.,American Independent,13,0,13
+Shasta,0221979,President,,Chase Oliver,Libertarian,8,0,8
+Shasta,0221979,President,,Jill Stein,Green,0,0,0
+Shasta,0221979,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0221979,U.S. Senate,,Steve Garvey,Republican,697,53,644
+Shasta,0221979,U.S. Senate,,Adam B. Schiff,Democratic,295,8,287
+Shasta,0221979,U.S. House,1,Doug Lamalfa,Republican,721,52,669
+Shasta,0221979,U.S. House,1,Rose Penelope Yee,Democratic,282,11,271
+Shasta,0221979,State Assembly,1,Tenessa Audette,Republican,470,31,439
+Shasta,0221979,State Assembly,1,Heather Hadwick,Republican,421,28,393
+Shasta,0221982,President,,Donald J. Trump,Republican,913,108,805
+Shasta,0221982,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Shasta,0221982,President,,Kamala D. Harris,Democratic,454,36,418
+Shasta,0221982,President,,Robert F. Kennedy Jr.,American Independent,24,2,22
+Shasta,0221982,President,,Chase Oliver,Libertarian,9,0,9
+Shasta,0221982,President,,Jill Stein,Green,6,0,6
+Shasta,0221982,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0221982,U.S. Senate,,Steve Garvey,Republican,933,112,821
+Shasta,0221982,U.S. Senate,,Adam B. Schiff,Democratic,439,30,409
+Shasta,0221982,U.S. House,1,Doug Lamalfa,Republican,952,114,838
+Shasta,0221982,U.S. House,1,Rose Penelope Yee,Democratic,428,29,399
+Shasta,0221982,State Assembly,1,Tenessa Audette,Republican,606,66,540
+Shasta,0221982,State Assembly,1,Heather Hadwick,Republican,641,68,573
+Shasta,0290260,President,,Donald J. Trump,Republican,1103,141,962
+Shasta,0290260,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Shasta,0290260,President,,Kamala D. Harris,Democratic,583,40,543
+Shasta,0290260,President,,Robert F. Kennedy Jr.,American Independent,26,0,26
+Shasta,0290260,President,,Chase Oliver,Libertarian,7,2,5
+Shasta,0290260,President,,Jill Stein,Green,8,1,7
+Shasta,0290260,President,,"Peter Sonski, VP Lauren Onak",,1,0,1
+Shasta,0290260,U.S. Senate,,Steve Garvey,Republican,1158,144,1014
+Shasta,0290260,U.S. Senate,,Adam B. Schiff,Democratic,541,34,507
+Shasta,0290260,U.S. House,1,Doug Lamalfa,Republican,1180,150,1030
+Shasta,0290260,U.S. House,1,Rose Penelope Yee,Democratic,548,34,514
+Shasta,0290260,State Assembly,1,Tenessa Audette,Republican,745,86,659
+Shasta,0290260,State Assembly,1,Heather Hadwick,Republican,745,79,666
+Shasta,0290462,President,,Donald J. Trump,Republican,53,0,53
+Shasta,0290462,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Shasta,0290462,President,,Kamala D. Harris,Democratic,11,0,11
+Shasta,0290462,President,,Robert F. Kennedy Jr.,American Independent,2,0,2
+Shasta,0290462,President,,Chase Oliver,Libertarian,0,0,0
+Shasta,0290462,President,,Jill Stein,Green,0,0,0
+Shasta,0290462,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0290462,U.S. Senate,,Steve Garvey,Republican,54,0,54
+Shasta,0290462,U.S. Senate,,Adam B. Schiff,Democratic,10,0,10
+Shasta,0290462,U.S. House,1,Doug Lamalfa,Republican,57,0,57
+Shasta,0290462,U.S. House,1,Rose Penelope Yee,Democratic,8,0,8
+Shasta,0290462,State Assembly,1,Tenessa Audette,Republican,23,0,23
+Shasta,0290462,State Assembly,1,Heather Hadwick,Republican,39,0,39
+Shasta,0290530,President,,Donald J. Trump,Republican,255,29,226
+Shasta,0290530,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Shasta,0290530,President,,Kamala D. Harris,Democratic,115,8,107
+Shasta,0290530,President,,Robert F. Kennedy Jr.,American Independent,6,0,6
+Shasta,0290530,President,,Chase Oliver,Libertarian,1,0,1
+Shasta,0290530,President,,Jill Stein,Green,1,0,1
+Shasta,0290530,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0290530,U.S. Senate,,Steve Garvey,Republican,248,30,218
+Shasta,0290530,U.S. Senate,,Adam B. Schiff,Democratic,114,8,106
+Shasta,0290530,U.S. House,1,Doug Lamalfa,Republican,259,31,228
+Shasta,0290530,U.S. House,1,Rose Penelope Yee,Democratic,114,7,107
+Shasta,0290530,State Assembly,1,Tenessa Audette,Republican,125,10,115
+Shasta,0290530,State Assembly,1,Heather Hadwick,Republican,197,26,171
+Shasta,0291130,President,,Donald J. Trump,Republican,54,1,53
+Shasta,0291130,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Shasta,0291130,President,,Kamala D. Harris,Democratic,5,0,5
+Shasta,0291130,President,,Robert F. Kennedy Jr.,American Independent,0,0,0
+Shasta,0291130,President,,Chase Oliver,Libertarian,0,0,0
+Shasta,0291130,President,,Jill Stein,Green,0,0,0
+Shasta,0291130,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0291130,U.S. Senate,,Steve Garvey,Republican,51,1,50
+Shasta,0291130,U.S. Senate,,Adam B. Schiff,Democratic,7,0,7
+Shasta,0291130,U.S. House,1,Doug Lamalfa,Republican,55,1,54
+Shasta,0291130,U.S. House,1,Rose Penelope Yee,Democratic,4,0,4
+Shasta,0291130,State Assembly,1,Tenessa Audette,Republican,24,1,23
+Shasta,0291130,State Assembly,1,Heather Hadwick,Republican,34,0,34
+Shasta,0291640,President,,Donald J. Trump,Republican,1305,289,1016
+Shasta,0291640,President,,Claudia De La Cruz,Peace and Freedom,5,0,5
+Shasta,0291640,President,,Kamala D. Harris,Democratic,401,54,347
+Shasta,0291640,President,,Robert F. Kennedy Jr.,American Independent,18,4,14
+Shasta,0291640,President,,Chase Oliver,Libertarian,5,1,4
+Shasta,0291640,President,,Jill Stein,Green,4,0,4
+Shasta,0291640,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0291640,U.S. Senate,,Steve Garvey,Republican,1305,283,1022
+Shasta,0291640,U.S. Senate,,Adam B. Schiff,Democratic,391,51,340
+Shasta,0291640,U.S. House,1,Doug Lamalfa,Republican,1327,287,1040
+Shasta,0291640,U.S. House,1,Rose Penelope Yee,Democratic,391,55,336
+Shasta,0291640,State Assembly,1,Tenessa Audette,Republican,730,152,578
+Shasta,0291640,State Assembly,1,Heather Hadwick,Republican,821,167,654
+Shasta,0291930,President,,Donald J. Trump,Republican,701,96,605
+Shasta,0291930,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Shasta,0291930,President,,Kamala D. Harris,Democratic,409,22,387
+Shasta,0291930,President,,Robert F. Kennedy Jr.,American Independent,14,2,12
+Shasta,0291930,President,,Chase Oliver,Libertarian,5,0,5
+Shasta,0291930,President,,Jill Stein,Green,9,0,9
+Shasta,0291930,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0291930,U.S. Senate,,Steve Garvey,Republican,722,87,635
+Shasta,0291930,U.S. Senate,,Adam B. Schiff,Democratic,381,22,359
+Shasta,0291930,U.S. House,1,Doug Lamalfa,Republican,734,94,640
+Shasta,0291930,U.S. House,1,Rose Penelope Yee,Democratic,392,23,369
+Shasta,0291930,State Assembly,1,Tenessa Audette,Republican,423,51,372
+Shasta,0291930,State Assembly,1,Heather Hadwick,Republican,557,55,502
+Shasta,0320010,President,,Donald J. Trump,Republican,18,0,18
+Shasta,0320010,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Shasta,0320010,President,,Kamala D. Harris,Democratic,3,0,3
+Shasta,0320010,President,,Robert F. Kennedy Jr.,American Independent,0,0,0
+Shasta,0320010,President,,Chase Oliver,Libertarian,0,0,0
+Shasta,0320010,President,,Jill Stein,Green,0,0,0
+Shasta,0320010,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0320010,U.S. Senate,,Steve Garvey,Republican,20,0,20
+Shasta,0320010,U.S. Senate,,Adam B. Schiff,Democratic,2,0,2
+Shasta,0320010,U.S. House,1,Doug Lamalfa,Republican,20,0,20
+Shasta,0320010,U.S. House,1,Rose Penelope Yee,Democratic,2,0,2
+Shasta,0320010,State Assembly,1,Tenessa Audette,Republican,11,0,11
+Shasta,0320010,State Assembly,1,Heather Hadwick,Republican,9,0,9
+Shasta,0320068,President,,Donald J. Trump,Republican,1531,247,1284
+Shasta,0320068,President,,Claudia De La Cruz,Peace and Freedom,5,0,5
+Shasta,0320068,President,,Kamala D. Harris,Democratic,693,51,642
+Shasta,0320068,President,,Robert F. Kennedy Jr.,American Independent,33,3,30
+Shasta,0320068,President,,Chase Oliver,Libertarian,13,1,12
+Shasta,0320068,President,,Jill Stein,Green,12,0,12
+Shasta,0320068,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0320068,U.S. Senate,,Steve Garvey,Republican,1569,229,1340
+Shasta,0320068,U.S. Senate,,Adam B. Schiff,Democratic,648,43,605
+Shasta,0320068,U.S. House,1,Doug Lamalfa,Republican,1596,240,1356
+Shasta,0320068,U.S. House,1,Rose Penelope Yee,Democratic,653,42,611
+Shasta,0320068,State Assembly,1,Tenessa Audette,Republican,1028,145,883
+Shasta,0320068,State Assembly,1,Heather Hadwick,Republican,1009,116,893
+Shasta,0320376,President,,Donald J. Trump,Republican,1076,196,880
+Shasta,0320376,President,,Claudia De La Cruz,Peace and Freedom,5,1,4
+Shasta,0320376,President,,Kamala D. Harris,Democratic,429,36,393
+Shasta,0320376,President,,Robert F. Kennedy Jr.,American Independent,23,1,22
+Shasta,0320376,President,,Chase Oliver,Libertarian,8,1,7
+Shasta,0320376,President,,Jill Stein,Green,5,1,4
+Shasta,0320376,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0320376,U.S. Senate,,Steve Garvey,Republican,1072,182,890
+Shasta,0320376,U.S. Senate,,Adam B. Schiff,Democratic,409,37,372
+Shasta,0320376,U.S. House,1,Doug Lamalfa,Republican,1109,189,920
+Shasta,0320376,U.S. House,1,Rose Penelope Yee,Democratic,406,36,370
+Shasta,0320376,State Assembly,1,Tenessa Audette,Republican,685,108,577
+Shasta,0320376,State Assembly,1,Heather Hadwick,Republican,648,94,554
+Shasta,0320420,President,,Donald J. Trump,Republican,1521,242,1279
+Shasta,0320420,President,,Claudia De La Cruz,Peace and Freedom,10,4,6
+Shasta,0320420,President,,Kamala D. Harris,Democratic,752,79,673
+Shasta,0320420,President,,Robert F. Kennedy Jr.,American Independent,28,3,25
+Shasta,0320420,President,,Chase Oliver,Libertarian,9,1,8
+Shasta,0320420,President,,Jill Stein,Green,13,1,12
+Shasta,0320420,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0320420,U.S. Senate,,Steve Garvey,Republican,1540,237,1303
+Shasta,0320420,U.S. Senate,,Adam B. Schiff,Democratic,706,73,633
+Shasta,0320420,U.S. House,1,Doug Lamalfa,Republican,1581,241,1340
+Shasta,0320420,U.S. House,1,Rose Penelope Yee,Democratic,714,77,637
+Shasta,0320420,State Assembly,1,Tenessa Audette,Republican,975,145,830
+Shasta,0320420,State Assembly,1,Heather Hadwick,Republican,1081,148,933
+Shasta,0320978,President,,Donald J. Trump,Republican,1199,160,1039
+Shasta,0320978,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Shasta,0320978,President,,Kamala D. Harris,Democratic,537,35,502
+Shasta,0320978,President,,Robert F. Kennedy Jr.,American Independent,21,0,21
+Shasta,0320978,President,,Chase Oliver,Libertarian,10,1,9
+Shasta,0320978,President,,Jill Stein,Green,3,0,3
+Shasta,0320978,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0320978,U.S. Senate,,Steve Garvey,Republican,1255,161,1094
+Shasta,0320978,U.S. Senate,,Adam B. Schiff,Democratic,492,32,460
+Shasta,0320978,U.S. House,1,Doug Lamalfa,Republican,1302,166,1136
+Shasta,0320978,U.S. House,1,Rose Penelope Yee,Democratic,471,31,440
+Shasta,0320978,State Assembly,1,Tenessa Audette,Republican,829,95,734
+Shasta,0320978,State Assembly,1,Heather Hadwick,Republican,799,89,710
+Shasta,0390070,President,,Donald J. Trump,Republican,328,58,270
+Shasta,0390070,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Shasta,0390070,President,,Kamala D. Harris,Democratic,120,17,103
+Shasta,0390070,President,,Robert F. Kennedy Jr.,American Independent,8,1,7
+Shasta,0390070,President,,Chase Oliver,Libertarian,2,1,1
+Shasta,0390070,President,,Jill Stein,Green,4,1,3
+Shasta,0390070,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0390070,U.S. Senate,,Steve Garvey,Republican,333,55,278
+Shasta,0390070,U.S. Senate,,Adam B. Schiff,Democratic,112,15,97
+Shasta,0390070,U.S. House,1,Doug Lamalfa,Republican,351,60,291
+Shasta,0390070,U.S. House,1,Rose Penelope Yee,Democratic,107,12,95
+Shasta,0390070,State Assembly,1,Tenessa Audette,Republican,156,23,133
+Shasta,0390070,State Assembly,1,Heather Hadwick,Republican,249,42,207
+Shasta,0390102,President,,Donald J. Trump,Republican,270,75,195
+Shasta,0390102,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Shasta,0390102,President,,Kamala D. Harris,Democratic,67,11,56
+Shasta,0390102,President,,Robert F. Kennedy Jr.,American Independent,5,0,5
+Shasta,0390102,President,,Chase Oliver,Libertarian,3,2,1
+Shasta,0390102,President,,Jill Stein,Green,0,0,0
+Shasta,0390102,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0390102,U.S. Senate,,Steve Garvey,Republican,274,71,203
+Shasta,0390102,U.S. Senate,,Adam B. Schiff,Democratic,55,9,46
+Shasta,0390102,U.S. House,1,Doug Lamalfa,Republican,278,72,206
+Shasta,0390102,U.S. House,1,Rose Penelope Yee,Democratic,59,12,47
+Shasta,0390102,State Assembly,1,Tenessa Audette,Republican,149,37,112
+Shasta,0390102,State Assembly,1,Heather Hadwick,Republican,154,36,118
+Shasta,0390321,President,,Donald J. Trump,Republican,392,90,302
+Shasta,0390321,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Shasta,0390321,President,,Kamala D. Harris,Democratic,119,10,109
+Shasta,0390321,President,,Robert F. Kennedy Jr.,American Independent,10,1,9
+Shasta,0390321,President,,Chase Oliver,Libertarian,5,2,3
+Shasta,0390321,President,,Jill Stein,Green,2,0,2
+Shasta,0390321,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0390321,U.S. Senate,,Steve Garvey,Republican,386,83,303
+Shasta,0390321,U.S. Senate,,Adam B. Schiff,Democratic,111,9,102
+Shasta,0390321,U.S. House,1,Doug Lamalfa,Republican,409,86,323
+Shasta,0390321,U.S. House,1,Rose Penelope Yee,Democratic,105,10,95
+Shasta,0390321,State Assembly,1,Tenessa Audette,Republican,226,45,181
+Shasta,0390321,State Assembly,1,Heather Hadwick,Republican,234,41,193
+Shasta,0390470,President,,Donald J. Trump,Republican,764,152,612
+Shasta,0390470,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Shasta,0390470,President,,Kamala D. Harris,Democratic,282,31,251
+Shasta,0390470,President,,Robert F. Kennedy Jr.,American Independent,16,4,12
+Shasta,0390470,President,,Chase Oliver,Libertarian,4,1,3
+Shasta,0390470,President,,Jill Stein,Green,3,0,3
+Shasta,0390470,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0390470,U.S. Senate,,Steve Garvey,Republican,793,152,641
+Shasta,0390470,U.S. Senate,,Adam B. Schiff,Democratic,261,29,232
+Shasta,0390470,U.S. House,1,Doug Lamalfa,Republican,824,158,666
+Shasta,0390470,U.S. House,1,Rose Penelope Yee,Democratic,247,28,219
+Shasta,0390470,State Assembly,1,Tenessa Audette,Republican,314,60,254
+Shasta,0390470,State Assembly,1,Heather Hadwick,Republican,634,112,522
+Shasta,0390560,President,,Donald J. Trump,Republican,1839,310,1529
+Shasta,0390560,President,,Claudia De La Cruz,Peace and Freedom,3,0,3
+Shasta,0390560,President,,Kamala D. Harris,Democratic,568,44,524
+Shasta,0390560,President,,Robert F. Kennedy Jr.,American Independent,31,2,29
+Shasta,0390560,President,,Chase Oliver,Libertarian,13,1,12
+Shasta,0390560,President,,Jill Stein,Green,5,4,1
+Shasta,0390560,President,,"Peter Sonski, VP Lauren Onak",,3,1,2
+Shasta,0390560,U.S. Senate,,Steve Garvey,Republican,1864,295,1569
+Shasta,0390560,U.S. Senate,,Adam B. Schiff,Democratic,524,39,485
+Shasta,0390560,U.S. House,1,Doug Lamalfa,Republican,1914,304,1610
+Shasta,0390560,U.S. House,1,Rose Penelope Yee,Democratic,512,43,469
+Shasta,0390560,State Assembly,1,Tenessa Audette,Republican,999,161,838
+Shasta,0390560,State Assembly,1,Heather Hadwick,Republican,1225,166,1059
+Shasta,0390590,President,,Donald J. Trump,Republican,798,154,644
+Shasta,0390590,President,,Claudia De La Cruz,Peace and Freedom,3,0,3
+Shasta,0390590,President,,Kamala D. Harris,Democratic,209,17,192
+Shasta,0390590,President,,Robert F. Kennedy Jr.,American Independent,19,5,14
+Shasta,0390590,President,,Chase Oliver,Libertarian,2,1,1
+Shasta,0390590,President,,Jill Stein,Green,2,2,0
+Shasta,0390590,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0390590,U.S. Senate,,Steve Garvey,Republican,818,154,664
+Shasta,0390590,U.S. Senate,,Adam B. Schiff,Democratic,189,17,172
+Shasta,0390590,U.S. House,1,Doug Lamalfa,Republican,837,160,677
+Shasta,0390590,U.S. House,1,Rose Penelope Yee,Democratic,195,17,178
+Shasta,0390590,State Assembly,1,Tenessa Audette,Republican,414,68,346
+Shasta,0390590,State Assembly,1,Heather Hadwick,Republican,508,89,419
+Shasta,0390600,President,,Donald J. Trump,Republican,374,68,306
+Shasta,0390600,President,,Claudia De La Cruz,Peace and Freedom,1,1,0
+Shasta,0390600,President,,Kamala D. Harris,Democratic,252,35,217
+Shasta,0390600,President,,Robert F. Kennedy Jr.,American Independent,13,5,8
+Shasta,0390600,President,,Chase Oliver,Libertarian,1,0,1
+Shasta,0390600,President,,Jill Stein,Green,9,1,8
+Shasta,0390600,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0390600,U.S. Senate,,Steve Garvey,Republican,392,67,325
+Shasta,0390600,U.S. Senate,,Adam B. Schiff,Democratic,231,30,201
+Shasta,0390600,U.S. House,1,Doug Lamalfa,Republican,404,71,333
+Shasta,0390600,U.S. House,1,Rose Penelope Yee,Democratic,237,36,201
+Shasta,0390600,State Assembly,1,Tenessa Audette,Republican,205,41,164
+Shasta,0390600,State Assembly,1,Heather Hadwick,Republican,323,47,276
+Shasta,0390610,President,,Donald J. Trump,Republican,179,28,151
+Shasta,0390610,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Shasta,0390610,President,,Kamala D. Harris,Democratic,111,7,104
+Shasta,0390610,President,,Robert F. Kennedy Jr.,American Independent,6,0,6
+Shasta,0390610,President,,Chase Oliver,Libertarian,0,0,0
+Shasta,0390610,President,,Jill Stein,Green,0,0,0
+Shasta,0390610,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0390610,U.S. Senate,,Steve Garvey,Republican,176,25,151
+Shasta,0390610,U.S. Senate,,Adam B. Schiff,Democratic,104,6,98
+Shasta,0390610,U.S. House,1,Doug Lamalfa,Republican,181,29,152
+Shasta,0390610,U.S. House,1,Rose Penelope Yee,Democratic,105,5,100
+Shasta,0390610,State Assembly,1,Tenessa Audette,Republican,96,8,88
+Shasta,0390610,State Assembly,1,Heather Hadwick,Republican,142,22,120
+Shasta,0390611,President,,Donald J. Trump,Republican,769,149,620
+Shasta,0390611,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Shasta,0390611,President,,Kamala D. Harris,Democratic,278,19,259
+Shasta,0390611,President,,Robert F. Kennedy Jr.,American Independent,6,2,4
+Shasta,0390611,President,,Chase Oliver,Libertarian,3,0,3
+Shasta,0390611,President,,Jill Stein,Green,2,0,2
+Shasta,0390611,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0390611,U.S. Senate,,Steve Garvey,Republican,798,153,645
+Shasta,0390611,U.S. Senate,,Adam B. Schiff,Democratic,246,17,229
+Shasta,0390611,U.S. House,1,Doug Lamalfa,Republican,820,154,666
+Shasta,0390611,U.S. House,1,Rose Penelope Yee,Democratic,240,16,224
+Shasta,0390611,State Assembly,1,Tenessa Audette,Republican,401,69,332
+Shasta,0390611,State Assembly,1,Heather Hadwick,Republican,546,93,453
+Shasta,0391210,President,,Donald J. Trump,Republican,1523,389,1134
+Shasta,0391210,President,,Claudia De La Cruz,Peace and Freedom,5,0,5
+Shasta,0391210,President,,Kamala D. Harris,Democratic,562,57,505
+Shasta,0391210,President,,Robert F. Kennedy Jr.,American Independent,21,4,17
+Shasta,0391210,President,,Chase Oliver,Libertarian,10,0,10
+Shasta,0391210,President,,Jill Stein,Green,7,0,7
+Shasta,0391210,President,,"Peter Sonski, VP Lauren Onak",,1,0,1
+Shasta,0391210,U.S. Senate,,Steve Garvey,Republican,1518,375,1143
+Shasta,0391210,U.S. Senate,,Adam B. Schiff,Democratic,541,60,481
+Shasta,0391210,U.S. House,1,Doug Lamalfa,Republican,1597,381,1216
+Shasta,0391210,U.S. House,1,Rose Penelope Yee,Democratic,507,57,450
+Shasta,0391210,State Assembly,1,Tenessa Audette,Republican,764,154,610
+Shasta,0391210,State Assembly,1,Heather Hadwick,Republican,1105,266,839
+Shasta,0392113,President,,Donald J. Trump,Republican,502,89,413
+Shasta,0392113,President,,Claudia De La Cruz,Peace and Freedom,3,2,1
+Shasta,0392113,President,,Kamala D. Harris,Democratic,142,25,117
+Shasta,0392113,President,,Robert F. Kennedy Jr.,American Independent,5,1,4
+Shasta,0392113,President,,Chase Oliver,Libertarian,2,0,2
+Shasta,0392113,President,,Jill Stein,Green,1,0,1
+Shasta,0392113,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0392113,U.S. Senate,,Steve Garvey,Republican,506,88,418
+Shasta,0392113,U.S. Senate,,Adam B. Schiff,Democratic,126,24,102
+Shasta,0392113,U.S. House,1,Doug Lamalfa,Republican,519,89,430
+Shasta,0392113,U.S. House,1,Rose Penelope Yee,Democratic,124,22,102
+Shasta,0392113,State Assembly,1,Tenessa Audette,Republican,268,50,218
+Shasta,0392113,State Assembly,1,Heather Hadwick,Republican,314,54,260
+Shasta,0420370,President,,Donald J. Trump,Republican,1121,191,930
+Shasta,0420370,President,,Claudia De La Cruz,Peace and Freedom,4,1,3
+Shasta,0420370,President,,Kamala D. Harris,Democratic,571,54,517
+Shasta,0420370,President,,Robert F. Kennedy Jr.,American Independent,19,4,15
+Shasta,0420370,President,,Chase Oliver,Libertarian,8,2,6
+Shasta,0420370,President,,Jill Stein,Green,3,1,2
+Shasta,0420370,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0420370,U.S. Senate,,Steve Garvey,Republican,1131,187,944
+Shasta,0420370,U.S. Senate,,Adam B. Schiff,Democratic,535,55,480
+Shasta,0420370,U.S. House,1,Doug Lamalfa,Republican,1138,186,952
+Shasta,0420370,U.S. House,1,Rose Penelope Yee,Democratic,543,60,483
+Shasta,0420370,State Assembly,1,Tenessa Audette,Republican,808,139,669
+Shasta,0420370,State Assembly,1,Heather Hadwick,Republican,667,77,590
+Shasta,0420375,President,,Donald J. Trump,Republican,1147,149,998
+Shasta,0420375,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Shasta,0420375,President,,Kamala D. Harris,Democratic,591,39,552
+Shasta,0420375,President,,Robert F. Kennedy Jr.,American Independent,36,2,34
+Shasta,0420375,President,,Chase Oliver,Libertarian,10,2,8
+Shasta,0420375,President,,Jill Stein,Green,5,1,4
+Shasta,0420375,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0420375,U.S. Senate,,Steve Garvey,Republican,1179,143,1036
+Shasta,0420375,U.S. Senate,,Adam B. Schiff,Democratic,558,35,523
+Shasta,0420375,U.S. House,1,Doug Lamalfa,Republican,1221,150,1071
+Shasta,0420375,U.S. House,1,Rose Penelope Yee,Democratic,538,33,505
+Shasta,0420375,State Assembly,1,Tenessa Audette,Republican,863,97,766
+Shasta,0420375,State Assembly,1,Heather Hadwick,Republican,702,67,635
+Shasta,0420861,President,,Donald J. Trump,Republican,1346,275,1071
+Shasta,0420861,President,,Claudia De La Cruz,Peace and Freedom,7,0,7
+Shasta,0420861,President,,Kamala D. Harris,Democratic,653,59,594
+Shasta,0420861,President,,Robert F. Kennedy Jr.,American Independent,26,5,21
+Shasta,0420861,President,,Chase Oliver,Libertarian,9,2,7
+Shasta,0420861,President,,Jill Stein,Green,8,1,7
+Shasta,0420861,President,,"Peter Sonski, VP Lauren Onak",,1,0,1
+Shasta,0420861,U.S. Senate,,Steve Garvey,Republican,1350,260,1090
+Shasta,0420861,U.S. Senate,,Adam B. Schiff,Democratic,609,56,553
+Shasta,0420861,U.S. House,1,Doug Lamalfa,Republican,1384,270,1114
+Shasta,0420861,U.S. House,1,Rose Penelope Yee,Democratic,610,56,554
+Shasta,0420861,State Assembly,1,Tenessa Audette,Republican,995,187,808
+Shasta,0420861,State Assembly,1,Heather Hadwick,Republican,770,101,669
+Shasta,0420912,President,,Donald J. Trump,Republican,1915,336,1579
+Shasta,0420912,President,,Claudia De La Cruz,Peace and Freedom,3,0,3
+Shasta,0420912,President,,Kamala D. Harris,Democratic,763,58,705
+Shasta,0420912,President,,Robert F. Kennedy Jr.,American Independent,27,2,25
+Shasta,0420912,President,,Chase Oliver,Libertarian,10,1,9
+Shasta,0420912,President,,Jill Stein,Green,10,0,10
+Shasta,0420912,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0420912,U.S. Senate,,Steve Garvey,Republican,1958,330,1628
+Shasta,0420912,U.S. Senate,,Adam B. Schiff,Democratic,699,56,643
+Shasta,0420912,U.S. House,1,Doug Lamalfa,Republican,1989,332,1657
+Shasta,0420912,U.S. House,1,Rose Penelope Yee,Democratic,692,53,639
+Shasta,0420912,State Assembly,1,Tenessa Audette,Republican,1310,220,1090
+Shasta,0420912,State Assembly,1,Heather Hadwick,Republican,1136,145,991
+Shasta,0431003,President,,Donald J. Trump,Republican,954,186,768
+Shasta,0431003,President,,Claudia De La Cruz,Peace and Freedom,4,1,3
+Shasta,0431003,President,,Kamala D. Harris,Democratic,492,47,445
+Shasta,0431003,President,,Robert F. Kennedy Jr.,American Independent,24,5,19
+Shasta,0431003,President,,Chase Oliver,Libertarian,6,0,6
+Shasta,0431003,President,,Jill Stein,Green,3,0,3
+Shasta,0431003,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0431003,U.S. Senate,,Steve Garvey,Republican,935,172,763
+Shasta,0431003,U.S. Senate,,Adam B. Schiff,Democratic,472,45,427
+Shasta,0431003,U.S. House,1,Doug Lamalfa,Republican,985,180,805
+Shasta,0431003,U.S. House,1,Rose Penelope Yee,Democratic,455,49,406
+Shasta,0431003,State Assembly,1,Tenessa Audette,Republican,589,97,492
+Shasta,0431003,State Assembly,1,Heather Hadwick,Republican,712,117,595
+Shasta,0431004,President,,Donald J. Trump,Republican,819,166,653
+Shasta,0431004,President,,Claudia De La Cruz,Peace and Freedom,3,2,1
+Shasta,0431004,President,,Kamala D. Harris,Democratic,373,37,336
+Shasta,0431004,President,,Robert F. Kennedy Jr.,American Independent,14,3,11
+Shasta,0431004,President,,Chase Oliver,Libertarian,4,1,3
+Shasta,0431004,President,,Jill Stein,Green,2,0,2
+Shasta,0431004,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0431004,U.S. Senate,,Steve Garvey,Republican,788,159,629
+Shasta,0431004,U.S. Senate,,Adam B. Schiff,Democratic,360,37,323
+Shasta,0431004,U.S. House,1,Doug Lamalfa,Republican,824,163,661
+Shasta,0431004,U.S. House,1,Rose Penelope Yee,Democratic,358,41,317
+Shasta,0431004,State Assembly,1,Tenessa Audette,Republican,416,86,330
+Shasta,0431004,State Assembly,1,Heather Hadwick,Republican,603,92,511
+Shasta,0431005,President,,Donald J. Trump,Republican,1385,317,1068
+Shasta,0431005,President,,Claudia De La Cruz,Peace and Freedom,5,1,4
+Shasta,0431005,President,,Kamala D. Harris,Democratic,647,65,582
+Shasta,0431005,President,,Robert F. Kennedy Jr.,American Independent,34,4,30
+Shasta,0431005,President,,Chase Oliver,Libertarian,7,0,7
+Shasta,0431005,President,,Jill Stein,Green,8,0,8
+Shasta,0431005,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0431005,U.S. Senate,,Steve Garvey,Republican,1376,290,1086
+Shasta,0431005,U.S. Senate,,Adam B. Schiff,Democratic,618,62,556
+Shasta,0431005,U.S. House,1,Doug Lamalfa,Republican,1416,307,1109
+Shasta,0431005,U.S. House,1,Rose Penelope Yee,Democratic,629,60,569
+Shasta,0431005,State Assembly,1,Tenessa Audette,Republican,846,165,681
+Shasta,0431005,State Assembly,1,Heather Hadwick,Republican,937,178,759
+Shasta,0490091,President,,Donald J. Trump,Republican,647,146,501
+Shasta,0490091,President,,Claudia De La Cruz,Peace and Freedom,8,1,7
+Shasta,0490091,President,,Kamala D. Harris,Democratic,270,33,237
+Shasta,0490091,President,,Robert F. Kennedy Jr.,American Independent,20,3,17
+Shasta,0490091,President,,Chase Oliver,Libertarian,5,2,3
+Shasta,0490091,President,,Jill Stein,Green,1,0,1
+Shasta,0490091,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0490091,U.S. Senate,,Steve Garvey,Republican,647,150,497
+Shasta,0490091,U.S. Senate,,Adam B. Schiff,Democratic,274,31,243
+Shasta,0490091,U.S. House,1,Doug Lamalfa,Republican,676,153,523
+Shasta,0490091,U.S. House,1,Rose Penelope Yee,Democratic,266,33,233
+Shasta,0490091,State Assembly,1,Tenessa Audette,Republican,388,87,301
+Shasta,0490091,State Assembly,1,Heather Hadwick,Republican,442,81,361
+Shasta,0490101,President,,Donald J. Trump,Republican,996,202,794
+Shasta,0490101,President,,Claudia De La Cruz,Peace and Freedom,2,1,1
+Shasta,0490101,President,,Kamala D. Harris,Democratic,323,40,283
+Shasta,0490101,President,,Robert F. Kennedy Jr.,American Independent,14,0,14
+Shasta,0490101,President,,Chase Oliver,Libertarian,2,0,2
+Shasta,0490101,President,,Jill Stein,Green,3,2,1
+Shasta,0490101,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0490101,U.S. Senate,,Steve Garvey,Republican,999,188,811
+Shasta,0490101,U.S. Senate,,Adam B. Schiff,Democratic,301,39,262
+Shasta,0490101,U.S. House,1,Doug Lamalfa,Republican,1044,197,847
+Shasta,0490101,U.S. House,1,Rose Penelope Yee,Democratic,296,42,254
+Shasta,0490101,State Assembly,1,Tenessa Audette,Republican,555,97,458
+Shasta,0490101,State Assembly,1,Heather Hadwick,Republican,629,116,513
+Shasta,0490270,President,,Donald J. Trump,Republican,4,0,4
+Shasta,0490270,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Shasta,0490270,President,,Kamala D. Harris,Democratic,0,0,0
+Shasta,0490270,President,,Robert F. Kennedy Jr.,American Independent,0,0,0
+Shasta,0490270,President,,Chase Oliver,Libertarian,0,0,0
+Shasta,0490270,President,,Jill Stein,Green,0,0,0
+Shasta,0490270,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0490270,U.S. Senate,,Steve Garvey,Republican,4,0,4
+Shasta,0490270,U.S. Senate,,Adam B. Schiff,Democratic,0,0,0
+Shasta,0490270,U.S. House,1,Doug Lamalfa,Republican,4,0,4
+Shasta,0490270,U.S. House,1,Rose Penelope Yee,Democratic,0,0,0
+Shasta,0490270,State Assembly,1,Tenessa Audette,Republican,0,0,0
+Shasta,0490270,State Assembly,1,Heather Hadwick,Republican,3,0,3
+Shasta,0490320,President,,Donald J. Trump,Republican,672,113,559
+Shasta,0490320,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Shasta,0490320,President,,Kamala D. Harris,Democratic,183,17,166
+Shasta,0490320,President,,Robert F. Kennedy Jr.,American Independent,7,2,5
+Shasta,0490320,President,,Chase Oliver,Libertarian,1,1,0
+Shasta,0490320,President,,Jill Stein,Green,6,1,5
+Shasta,0490320,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0490320,U.S. Senate,,Steve Garvey,Republican,671,102,569
+Shasta,0490320,U.S. Senate,,Adam B. Schiff,Democratic,174,17,157
+Shasta,0490320,U.S. House,1,Doug Lamalfa,Republican,677,108,569
+Shasta,0490320,U.S. House,1,Rose Penelope Yee,Democratic,171,17,154
+Shasta,0490320,State Assembly,1,Tenessa Audette,Republican,371,51,320
+Shasta,0490320,State Assembly,1,Heather Hadwick,Republican,418,67,351
+Shasta,0490360,President,,Donald J. Trump,Republican,480,160,320
+Shasta,0490360,President,,Claudia De La Cruz,Peace and Freedom,3,2,1
+Shasta,0490360,President,,Kamala D. Harris,Democratic,251,47,204
+Shasta,0490360,President,,Robert F. Kennedy Jr.,American Independent,10,1,9
+Shasta,0490360,President,,Chase Oliver,Libertarian,5,2,3
+Shasta,0490360,President,,Jill Stein,Green,8,4,4
+Shasta,0490360,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0490360,U.S. Senate,,Steve Garvey,Republican,474,153,321
+Shasta,0490360,U.S. Senate,,Adam B. Schiff,Democratic,241,42,199
+Shasta,0490360,U.S. House,1,Doug Lamalfa,Republican,496,156,340
+Shasta,0490360,U.S. House,1,Rose Penelope Yee,Democratic,237,46,191
+Shasta,0490360,State Assembly,1,Tenessa Audette,Republican,255,69,186
+Shasta,0490360,State Assembly,1,Heather Hadwick,Republican,383,117,266
+Shasta,0490557,President,,Donald J. Trump,Republican,313,49,264
+Shasta,0490557,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Shasta,0490557,President,,Kamala D. Harris,Democratic,128,10,118
+Shasta,0490557,President,,Robert F. Kennedy Jr.,American Independent,5,0,5
+Shasta,0490557,President,,Chase Oliver,Libertarian,0,0,0
+Shasta,0490557,President,,Jill Stein,Green,3,0,3
+Shasta,0490557,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0490557,U.S. Senate,,Steve Garvey,Republican,311,47,264
+Shasta,0490557,U.S. Senate,,Adam B. Schiff,Democratic,127,10,117
+Shasta,0490557,U.S. House,1,Doug Lamalfa,Republican,318,48,270
+Shasta,0490557,U.S. House,1,Rose Penelope Yee,Democratic,126,9,117
+Shasta,0490557,State Assembly,1,Tenessa Audette,Republican,166,27,139
+Shasta,0490557,State Assembly,1,Heather Hadwick,Republican,227,25,202
+Shasta,0490650,President,,Donald J. Trump,Republican,1023,95,928
+Shasta,0490650,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Shasta,0490650,President,,Kamala D. Harris,Democratic,322,14,308
+Shasta,0490650,President,,Robert F. Kennedy Jr.,American Independent,15,2,13
+Shasta,0490650,President,,Chase Oliver,Libertarian,3,0,3
+Shasta,0490650,President,,Jill Stein,Green,6,0,6
+Shasta,0490650,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0490650,U.S. Senate,,Steve Garvey,Republican,1023,92,931
+Shasta,0490650,U.S. Senate,,Adam B. Schiff,Democratic,301,12,289
+Shasta,0490650,U.S. House,1,Doug Lamalfa,Republican,1055,99,956
+Shasta,0490650,U.S. House,1,Rose Penelope Yee,Democratic,285,11,274
+Shasta,0490650,State Assembly,1,Tenessa Audette,Republican,562,47,515
+Shasta,0490650,State Assembly,1,Heather Hadwick,Republican,633,51,582
+Shasta,0510015,President,,Donald J. Trump,Republican,1300,282,1018
+Shasta,0510015,President,,Claudia De La Cruz,Peace and Freedom,6,0,6
+Shasta,0510015,President,,Kamala D. Harris,Democratic,504,55,449
+Shasta,0510015,President,,Robert F. Kennedy Jr.,American Independent,40,2,38
+Shasta,0510015,President,,Chase Oliver,Libertarian,8,3,5
+Shasta,0510015,President,,Jill Stein,Green,7,1,6
+Shasta,0510015,President,,"Peter Sonski, VP Lauren Onak",,2,0,2
+Shasta,0510015,U.S. Senate,,Steve Garvey,Republican,1291,255,1036
+Shasta,0510015,U.S. Senate,,Adam B. Schiff,Democratic,490,57,433
+Shasta,0510015,U.S. House,1,Doug Lamalfa,Republican,1338,265,1073
+Shasta,0510015,U.S. House,1,Rose Penelope Yee,Democratic,481,61,420
+Shasta,0510015,State Assembly,1,Tenessa Audette,Republican,748,141,607
+Shasta,0510015,State Assembly,1,Heather Hadwick,Republican,865,145,720
+Shasta,0510030,President,,Donald J. Trump,Republican,927,151,776
+Shasta,0510030,President,,Claudia De La Cruz,Peace and Freedom,2,1,1
+Shasta,0510030,President,,Kamala D. Harris,Democratic,372,41,331
+Shasta,0510030,President,,Robert F. Kennedy Jr.,American Independent,16,0,16
+Shasta,0510030,President,,Chase Oliver,Libertarian,1,0,1
+Shasta,0510030,President,,Jill Stein,Green,2,1,1
+Shasta,0510030,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0510030,U.S. Senate,,Steve Garvey,Republican,891,132,759
+Shasta,0510030,U.S. Senate,,Adam B. Schiff,Democratic,354,41,313
+Shasta,0510030,U.S. House,1,Doug Lamalfa,Republican,933,142,791
+Shasta,0510030,U.S. House,1,Rose Penelope Yee,Democratic,343,36,307
+Shasta,0510030,State Assembly,1,Tenessa Audette,Republican,509,76,433
+Shasta,0510030,State Assembly,1,Heather Hadwick,Republican,626,84,542
+Shasta,0511055,President,,Donald J. Trump,Republican,791,140,651
+Shasta,0511055,President,,Claudia De La Cruz,Peace and Freedom,5,1,4
+Shasta,0511055,President,,Kamala D. Harris,Democratic,374,39,335
+Shasta,0511055,President,,Robert F. Kennedy Jr.,American Independent,20,2,18
+Shasta,0511055,President,,Chase Oliver,Libertarian,6,1,5
+Shasta,0511055,President,,Jill Stein,Green,6,3,3
+Shasta,0511055,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0511055,U.S. Senate,,Steve Garvey,Republican,784,138,646
+Shasta,0511055,U.S. Senate,,Adam B. Schiff,Democratic,361,37,324
+Shasta,0511055,U.S. House,1,Doug Lamalfa,Republican,831,141,690
+Shasta,0511055,U.S. House,1,Rose Penelope Yee,Democratic,346,40,306
+Shasta,0511055,State Assembly,1,Tenessa Audette,Republican,456,78,378
+Shasta,0511055,State Assembly,1,Heather Hadwick,Republican,588,86,502
+Shasta,0520114,President,,Donald J. Trump,Republican,2,0,2
+Shasta,0520114,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Shasta,0520114,President,,Kamala D. Harris,Democratic,0,0,0
+Shasta,0520114,President,,Robert F. Kennedy Jr.,American Independent,0,0,0
+Shasta,0520114,President,,Chase Oliver,Libertarian,0,0,0
+Shasta,0520114,President,,Jill Stein,Green,0,0,0
+Shasta,0520114,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0520114,U.S. Senate,,Steve Garvey,Republican,2,0,2
+Shasta,0520114,U.S. Senate,,Adam B. Schiff,Democratic,0,0,0
+Shasta,0520114,U.S. House,1,Doug Lamalfa,Republican,2,0,2
+Shasta,0520114,U.S. House,1,Rose Penelope Yee,Democratic,0,0,0
+Shasta,0520114,State Assembly,1,Tenessa Audette,Republican,0,0,0
+Shasta,0520114,State Assembly,1,Heather Hadwick,Republican,2,0,2
+Shasta,0590080,President,,Donald J. Trump,Republican,1081,176,905
+Shasta,0590080,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Shasta,0590080,President,,Kamala D. Harris,Democratic,325,20,305
+Shasta,0590080,President,,Robert F. Kennedy Jr.,American Independent,20,5,15
+Shasta,0590080,President,,Chase Oliver,Libertarian,5,0,5
+Shasta,0590080,President,,Jill Stein,Green,2,1,1
+Shasta,0590080,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0590080,U.S. Senate,,Steve Garvey,Republican,1087,167,920
+Shasta,0590080,U.S. Senate,,Adam B. Schiff,Democratic,297,16,281
+Shasta,0590080,U.S. House,1,Doug Lamalfa,Republican,1117,171,946
+Shasta,0590080,U.S. House,1,Rose Penelope Yee,Democratic,286,18,268
+Shasta,0590080,State Assembly,1,Tenessa Audette,Republican,532,82,450
+Shasta,0590080,State Assembly,1,Heather Hadwick,Republican,759,101,658
+Shasta,0590330,President,,Donald J. Trump,Republican,1589,263,1326
+Shasta,0590330,President,,Claudia De La Cruz,Peace and Freedom,3,0,3
+Shasta,0590330,President,,Kamala D. Harris,Democratic,435,48,387
+Shasta,0590330,President,,Robert F. Kennedy Jr.,American Independent,25,3,22
+Shasta,0590330,President,,Chase Oliver,Libertarian,11,1,10
+Shasta,0590330,President,,Jill Stein,Green,6,2,4
+Shasta,0590330,President,,"Peter Sonski, VP Lauren Onak",,1,0,1
+Shasta,0590330,U.S. Senate,,Steve Garvey,Republican,1560,254,1306
+Shasta,0590330,U.S. Senate,,Adam B. Schiff,Democratic,444,45,399
+Shasta,0590330,U.S. House,1,Doug Lamalfa,Republican,1642,264,1378
+Shasta,0590330,U.S. House,1,Rose Penelope Yee,Democratic,405,45,360
+Shasta,0590330,State Assembly,1,Tenessa Audette,Republican,796,121,675
+Shasta,0590330,State Assembly,1,Heather Hadwick,Republican,1036,158,878
+Shasta,0590331,President,,Donald J. Trump,Republican,951,164,787
+Shasta,0590331,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Shasta,0590331,President,,Kamala D. Harris,Democratic,210,15,195
+Shasta,0590331,President,,Robert F. Kennedy Jr.,American Independent,8,0,8
+Shasta,0590331,President,,Chase Oliver,Libertarian,2,1,1
+Shasta,0590331,President,,Jill Stein,Green,1,1,0
+Shasta,0590331,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0590331,U.S. Senate,,Steve Garvey,Republican,939,160,779
+Shasta,0590331,U.S. Senate,,Adam B. Schiff,Democratic,198,14,184
+Shasta,0590331,U.S. House,1,Doug Lamalfa,Republican,950,158,792
+Shasta,0590331,U.S. House,1,Rose Penelope Yee,Democratic,206,17,189
+Shasta,0590331,State Assembly,1,Tenessa Audette,Republican,433,83,350
+Shasta,0590331,State Assembly,1,Heather Hadwick,Republican,613,83,530
+Shasta,0590531,President,,Donald J. Trump,Republican,260,37,223
+Shasta,0590531,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Shasta,0590531,President,,Kamala D. Harris,Democratic,96,4,92
+Shasta,0590531,President,,Robert F. Kennedy Jr.,American Independent,4,0,4
+Shasta,0590531,President,,Chase Oliver,Libertarian,1,0,1
+Shasta,0590531,President,,Jill Stein,Green,2,0,2
+Shasta,0590531,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0590531,U.S. Senate,,Steve Garvey,Republican,258,34,224
+Shasta,0590531,U.S. Senate,,Adam B. Schiff,Democratic,95,4,91
+Shasta,0590531,U.S. House,1,Doug Lamalfa,Republican,269,35,234
+Shasta,0590531,U.S. House,1,Rose Penelope Yee,Democratic,88,4,84
+Shasta,0590531,State Assembly,1,Tenessa Audette,Republican,122,15,107
+Shasta,0590531,State Assembly,1,Heather Hadwick,Republican,192,18,174
+Shasta,0590940,President,,Donald J. Trump,Republican,1319,161,1158
+Shasta,0590940,President,,Claudia De La Cruz,Peace and Freedom,3,0,3
+Shasta,0590940,President,,Kamala D. Harris,Democratic,613,40,573
+Shasta,0590940,President,,Robert F. Kennedy Jr.,American Independent,24,3,21
+Shasta,0590940,President,,Chase Oliver,Libertarian,13,0,13
+Shasta,0590940,President,,Jill Stein,Green,5,1,4
+Shasta,0590940,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0590940,U.S. Senate,,Steve Garvey,Republican,1338,157,1181
+Shasta,0590940,U.S. Senate,,Adam B. Schiff,Democratic,572,38,534
+Shasta,0590940,U.S. House,1,Doug Lamalfa,Republican,1391,166,1225
+Shasta,0590940,U.S. House,1,Rose Penelope Yee,Democratic,565,36,529
+Shasta,0590940,State Assembly,1,Tenessa Audette,Republican,708,72,636
+Shasta,0590940,State Assembly,1,Heather Hadwick,Republican,975,107,868
+Shasta,0590942,President,,Donald J. Trump,Republican,704,89,615
+Shasta,0590942,President,,Claudia De La Cruz,Peace and Freedom,4,2,2
+Shasta,0590942,President,,Kamala D. Harris,Democratic,284,25,259
+Shasta,0590942,President,,Robert F. Kennedy Jr.,American Independent,10,2,8
+Shasta,0590942,President,,Chase Oliver,Libertarian,5,0,5
+Shasta,0590942,President,,Jill Stein,Green,3,0,3
+Shasta,0590942,President,,"Peter Sonski, VP Lauren Onak",,1,0,1
+Shasta,0590942,U.S. Senate,,Steve Garvey,Republican,707,89,618
+Shasta,0590942,U.S. Senate,,Adam B. Schiff,Democratic,281,21,260
+Shasta,0590942,U.S. House,1,Doug Lamalfa,Republican,735,94,641
+Shasta,0590942,U.S. House,1,Rose Penelope Yee,Democratic,268,24,244
+Shasta,0590942,State Assembly,1,Tenessa Audette,Republican,363,57,306
+Shasta,0590942,State Assembly,1,Heather Hadwick,Republican,478,54,424
+Shasta,0591310,President,,Donald J. Trump,Republican,1412,240,1172
+Shasta,0591310,President,,Claudia De La Cruz,Peace and Freedom,6,0,6
+Shasta,0591310,President,,Kamala D. Harris,Democratic,499,37,462
+Shasta,0591310,President,,Robert F. Kennedy Jr.,American Independent,25,6,19
+Shasta,0591310,President,,Chase Oliver,Libertarian,13,1,12
+Shasta,0591310,President,,Jill Stein,Green,2,1,1
+Shasta,0591310,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0591310,U.S. Senate,,Steve Garvey,Republican,1422,229,1193
+Shasta,0591310,U.S. Senate,,Adam B. Schiff,Democratic,471,36,435
+Shasta,0591310,U.S. House,1,Doug Lamalfa,Republican,1473,244,1229
+Shasta,0591310,U.S. House,1,Rose Penelope Yee,Democratic,456,32,424
+Shasta,0591310,State Assembly,1,Tenessa Audette,Republican,740,127,613
+Shasta,0591310,State Assembly,1,Heather Hadwick,Republican,973,120,853
+Shasta,0591620,President,,Donald J. Trump,Republican,1036,165,871
+Shasta,0591620,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Shasta,0591620,President,,Kamala D. Harris,Democratic,268,26,242
+Shasta,0591620,President,,Robert F. Kennedy Jr.,American Independent,17,0,17
+Shasta,0591620,President,,Chase Oliver,Libertarian,7,3,4
+Shasta,0591620,President,,Jill Stein,Green,4,0,4
+Shasta,0591620,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0591620,U.S. Senate,,Steve Garvey,Republican,1032,159,873
+Shasta,0591620,U.S. Senate,,Adam B. Schiff,Democratic,256,26,230
+Shasta,0591620,U.S. House,1,Doug Lamalfa,Republican,1052,165,887
+Shasta,0591620,U.S. House,1,Rose Penelope Yee,Democratic,265,25,240
+Shasta,0591620,State Assembly,1,Tenessa Audette,Republican,478,81,397
+Shasta,0591620,State Assembly,1,Heather Hadwick,Republican,720,97,623
+Shasta,0592970,President,,Donald J. Trump,Republican,740,99,641
+Shasta,0592970,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Shasta,0592970,President,,Kamala D. Harris,Democratic,348,28,320
+Shasta,0592970,President,,Robert F. Kennedy Jr.,American Independent,8,1,7
+Shasta,0592970,President,,Chase Oliver,Libertarian,8,0,8
+Shasta,0592970,President,,Jill Stein,Green,3,1,2
+Shasta,0592970,President,,"Peter Sonski, VP Lauren Onak",,0,0,0
+Shasta,0592970,U.S. Senate,,Steve Garvey,Republican,743,97,646
+Shasta,0592970,U.S. Senate,,Adam B. Schiff,Democratic,326,27,299
+Shasta,0592970,U.S. House,1,Doug Lamalfa,Republican,782,100,682
+Shasta,0592970,U.S. House,1,Rose Penelope Yee,Democratic,311,30,281
+Shasta,0592970,State Senate,1,Tenessa Audette,Republican,408,46,362
+Shasta,0592970,State Senate,1,Heather Hadwick,Republican,536,70,466

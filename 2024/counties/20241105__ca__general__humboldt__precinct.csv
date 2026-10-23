@@ -1,0 +1,1351 @@
+county,precinct,office,district,candidate,party,votes,election_day,mail
+Humboldt,1CS-1,President,,Claudia De la Cruz / Karina Garcia,,11,1,10
+Humboldt,1CS-1,President,,Kamala D. Harris / Tim Walz,,1589,139,1450
+Humboldt,1CS-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,41,4,37
+Humboldt,1CS-1,President,,Chase Oliver / Mike ter Maat,,19,1,18
+Humboldt,1CS-1,President,,Jill Stein / Rudolph Ware,,25,5,20
+Humboldt,1CS-1,President,,Donald J. Trump / JD Vance,,1155,204,951
+Humboldt,1CS-1,President,,Peter Sonski,,0,0,0
+Humboldt,1CS-1,U.S. Senate,,Adam B. Schiff,,1562,130,1432
+Humboldt,1CS-1,U.S. Senate,,Steve Garvey,,1244,210,1034
+Humboldt,1CS-1,U.S. Senate,Partial Term,Adam B. Schiff,,1530,125,1405
+Humboldt,1CS-1,U.S. Senate,Partial Term,Steve Garvey,,1239,201,1038
+Humboldt,1CS-1,U.S. House,2,Jared Huffman,,1600,129,1471
+Humboldt,1CS-1,U.S. House,2,Chris Coulombe,,1184,207,977
+Humboldt,1CS-1,State Assembly,2,Chris Rogers,,1496,119,1377
+Humboldt,1CS-1,State Assembly,2,Michael Greer,,1258,212,1046
+Humboldt,1E-26,President,,Claudia De la Cruz / Karina Garcia,,1,0,1
+Humboldt,1E-26,President,,Kamala D. Harris / Tim Walz,,201,15,186
+Humboldt,1E-26,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,3,0,3
+Humboldt,1E-26,President,,Chase Oliver / Mike ter Maat,,3,1,2
+Humboldt,1E-26,President,,Jill Stein / Rudolph Ware,,8,1,7
+Humboldt,1E-26,President,,Donald J. Trump / JD Vance,,128,28,100
+Humboldt,1E-26,President,,Peter Sonski,,0,0,0
+Humboldt,1E-26,U.S. Senate,,Adam B. Schiff,,209,17,192
+Humboldt,1E-26,U.S. Senate,,Steve Garvey,,131,27,104
+Humboldt,1E-26,U.S. Senate,Partial Term,Adam B. Schiff,,208,17,191
+Humboldt,1E-26,U.S. Senate,Partial Term,Steve Garvey,,130,27,103
+Humboldt,1E-26,U.S. House,2,Jared Huffman,,212,20,192
+Humboldt,1E-26,U.S. House,2,Chris Coulombe,,128,25,103
+Humboldt,1E-26,State Assembly,2,Chris Rogers,,211,17,194
+Humboldt,1E-26,State Assembly,2,Michael Greer,,131,27,104
+Humboldt,1E-30,President,,Claudia De la Cruz / Karina Garcia,,8,0,8
+Humboldt,1E-30,President,,Kamala D. Harris / Tim Walz,,856,99,757
+Humboldt,1E-30,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,10,3,7
+Humboldt,1E-30,President,,Chase Oliver / Mike ter Maat,,7,0,7
+Humboldt,1E-30,President,,Jill Stein / Rudolph Ware,,15,0,15
+Humboldt,1E-30,President,,Donald J. Trump / JD Vance,,417,64,353
+Humboldt,1E-30,President,,Peter Sonski,,0,0,0
+Humboldt,1E-30,U.S. Senate,,Adam B. Schiff,,850,98,752
+Humboldt,1E-30,U.S. Senate,,Steve Garvey,,442,62,380
+Humboldt,1E-30,U.S. Senate,Partial Term,Adam B. Schiff,,833,99,734
+Humboldt,1E-30,U.S. Senate,Partial Term,Steve Garvey,,443,60,383
+Humboldt,1E-30,U.S. House,2,Jared Huffman,,877,98,779
+Humboldt,1E-30,U.S. House,2,Chris Coulombe,,402,57,345
+Humboldt,1E-30,State Assembly,2,Chris Rogers,,822,101,721
+Humboldt,1E-30,State Assembly,2,Michael Greer,,454,57,397
+Humboldt,1E-35,President,,Claudia De la Cruz / Karina Garcia,,2,0,2
+Humboldt,1E-35,President,,Kamala D. Harris / Tim Walz,,222,23,199
+Humboldt,1E-35,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,5,2,3
+Humboldt,1E-35,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,1E-35,President,,Jill Stein / Rudolph Ware,,6,2,4
+Humboldt,1E-35,President,,Donald J. Trump / JD Vance,,102,23,79
+Humboldt,1E-35,President,,Peter Sonski,,0,0,0
+Humboldt,1E-35,U.S. Senate,,Adam B. Schiff,,228,26,202
+Humboldt,1E-35,U.S. Senate,,Steve Garvey,,103,21,82
+Humboldt,1E-35,U.S. Senate,Partial Term,Adam B. Schiff,,225,24,201
+Humboldt,1E-35,U.S. Senate,Partial Term,Steve Garvey,,102,21,81
+Humboldt,1E-35,U.S. House,2,Jared Huffman,,227,25,202
+Humboldt,1E-35,U.S. House,2,Chris Coulombe,,99,20,79
+Humboldt,1E-35,State Assembly,2,Chris Rogers,,222,24,198
+Humboldt,1E-35,State Assembly,2,Michael Greer,,103,22,81
+Humboldt,1E-47,President,,Claudia De la Cruz / Karina Garcia,,6,1,5
+Humboldt,1E-47,President,,Kamala D. Harris / Tim Walz,,533,63,470
+Humboldt,1E-47,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,12,1,11
+Humboldt,1E-47,President,,Chase Oliver / Mike ter Maat,,5,0,5
+Humboldt,1E-47,President,,Jill Stein / Rudolph Ware,,15,0,15
+Humboldt,1E-47,President,,Donald J. Trump / JD Vance,,245,56,189
+Humboldt,1E-47,President,,Peter Sonski,,0,0,0
+Humboldt,1E-47,U.S. Senate,,Adam B. Schiff,,551,69,482
+Humboldt,1E-47,U.S. Senate,,Steve Garvey,,264,51,213
+Humboldt,1E-47,U.S. Senate,Partial Term,Adam B. Schiff,,537,67,470
+Humboldt,1E-47,U.S. Senate,Partial Term,Steve Garvey,,263,53,210
+Humboldt,1E-47,U.S. House,2,Jared Huffman,,557,65,492
+Humboldt,1E-47,U.S. House,2,Chris Coulombe,,248,53,195
+Humboldt,1E-47,State Assembly,2,Chris Rogers,,537,68,469
+Humboldt,1E-47,State Assembly,2,Michael Greer,,269,52,217
+Humboldt,1ES-1,President,,Claudia De la Cruz / Karina Garcia,,5,0,5
+Humboldt,1ES-1,President,,Kamala D. Harris / Tim Walz,,616,78,538
+Humboldt,1ES-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,11,1,10
+Humboldt,1ES-1,President,,Chase Oliver / Mike ter Maat,,5,2,3
+Humboldt,1ES-1,President,,Jill Stein / Rudolph Ware,,12,1,11
+Humboldt,1ES-1,President,,Donald J. Trump / JD Vance,,363,89,274
+Humboldt,1ES-1,President,,Peter Sonski,,0,0,0
+Humboldt,1ES-1,U.S. Senate,,Adam B. Schiff,,629,80,549
+Humboldt,1ES-1,U.S. Senate,,Steve Garvey,,368,87,281
+Humboldt,1ES-1,U.S. Senate,Partial Term,Adam B. Schiff,,615,78,537
+Humboldt,1ES-1,U.S. Senate,Partial Term,Steve Garvey,,369,84,285
+Humboldt,1ES-1,U.S. House,2,Jared Huffman,,629,75,554
+Humboldt,1ES-1,U.S. House,2,Chris Coulombe,,354,88,266
+Humboldt,1ES-1,State Assembly,2,Chris Rogers,,601,74,527
+Humboldt,1ES-1,State Assembly,2,Michael Greer,,378,84,294
+Humboldt,1F--1,President,,Claudia De la Cruz / Karina Garcia,,4,1,3
+Humboldt,1F--1,President,,Kamala D. Harris / Tim Walz,,475,77,398
+Humboldt,1F--1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,13,2,11
+Humboldt,1F--1,President,,Chase Oliver / Mike ter Maat,,4,0,4
+Humboldt,1F--1,President,,Jill Stein / Rudolph Ware,,6,1,5
+Humboldt,1F--1,President,,Donald J. Trump / JD Vance,,403,124,279
+Humboldt,1F--1,President,,Peter Sonski,,0,0,0
+Humboldt,1F--1,U.S. Senate,,Adam B. Schiff,,454,68,386
+Humboldt,1F--1,U.S. Senate,,Steve Garvey,,431,128,303
+Humboldt,1F--1,U.S. Senate,Partial Term,Adam B. Schiff,,455,68,387
+Humboldt,1F--1,U.S. Senate,Partial Term,Steve Garvey,,421,128,293
+Humboldt,1F--1,U.S. House,2,Jared Huffman,,475,75,400
+Humboldt,1F--1,U.S. House,2,Chris Coulombe,,401,120,281
+Humboldt,1F--1,State Assembly,2,Chris Rogers,,431,70,361
+Humboldt,1F--1,State Assembly,2,Michael Greer,,437,127,310
+Humboldt,1F--7,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,1F--7,President,,Kamala D. Harris / Tim Walz,,12,0,12
+Humboldt,1F--7,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,1F--7,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,1F--7,President,,Jill Stein / Rudolph Ware,,1,0,1
+Humboldt,1F--7,President,,Donald J. Trump / JD Vance,,21,4,17
+Humboldt,1F--7,President,,Peter Sonski,,0,0,0
+Humboldt,1F--7,U.S. Senate,,Adam B. Schiff,,13,0,13
+Humboldt,1F--7,U.S. Senate,,Steve Garvey,,20,4,16
+Humboldt,1F--7,U.S. Senate,Partial Term,Adam B. Schiff,,12,0,12
+Humboldt,1F--7,U.S. Senate,Partial Term,Steve Garvey,,20,3,17
+Humboldt,1F--7,U.S. House,2,Jared Huffman,,14,0,14
+Humboldt,1F--7,U.S. House,2,Chris Coulombe,,19,4,15
+Humboldt,1F--7,State Assembly,2,Chris Rogers,,10,0,10
+Humboldt,1F--7,State Assembly,2,Michael Greer,,21,3,18
+Humboldt,1FB-1,President,,Claudia De la Cruz / Karina Garcia,,5,1,4
+Humboldt,1FB-1,President,,Kamala D. Harris / Tim Walz,,131,6,125
+Humboldt,1FB-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,2,0,2
+Humboldt,1FB-1,President,,Chase Oliver / Mike ter Maat,,3,1,2
+Humboldt,1FB-1,President,,Jill Stein / Rudolph Ware,,2,0,2
+Humboldt,1FB-1,President,,Donald J. Trump / JD Vance,,101,16,85
+Humboldt,1FB-1,President,,Peter Sonski,,0,0,0
+Humboldt,1FB-1,U.S. Senate,,Adam B. Schiff,,133,11,122
+Humboldt,1FB-1,U.S. Senate,,Steve Garvey,,104,13,91
+Humboldt,1FB-1,U.S. Senate,Partial Term,Adam B. Schiff,,131,10,121
+Humboldt,1FB-1,U.S. Senate,Partial Term,Steve Garvey,,102,14,88
+Humboldt,1FB-1,U.S. House,2,Jared Huffman,,133,7,126
+Humboldt,1FB-1,U.S. House,2,Chris Coulombe,,101,16,85
+Humboldt,1FB-1,State Assembly,2,Chris Rogers,,125,8,117
+Humboldt,1FB-1,State Assembly,2,Michael Greer,,107,16,91
+Humboldt,1FS,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,1FS,President,,Kamala D. Harris / Tim Walz,,236,49,187
+Humboldt,1FS,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,14,2,12
+Humboldt,1FS,President,,Chase Oliver / Mike ter Maat,,4,1,3
+Humboldt,1FS,President,,Jill Stein / Rudolph Ware,,4,0,4
+Humboldt,1FS,President,,Donald J. Trump / JD Vance,,521,169,352
+Humboldt,1FS,President,,Peter Sonski,,0,0,0
+Humboldt,1FS,U.S. Senate,,Adam B. Schiff,,228,50,178
+Humboldt,1FS,U.S. Senate,,Steve Garvey,,546,166,380
+Humboldt,1FS,U.S. Senate,Partial Term,Adam B. Schiff,,225,50,175
+Humboldt,1FS,U.S. Senate,Partial Term,Steve Garvey,,536,162,374
+Humboldt,1FS,U.S. House,2,Jared Huffman,,252,55,197
+Humboldt,1FS,U.S. House,2,Chris Coulombe,,507,155,352
+Humboldt,1FS,State Assembly,2,Chris Rogers,,216,46,170
+Humboldt,1FS,State Assembly,2,Michael Greer,,540,164,376
+Humboldt,1FS-1,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,1FS-1,President,,Kamala D. Harris / Tim Walz,,0,0,0
+Humboldt,1FS-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,1FS-1,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,1FS-1,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,1FS-1,President,,Donald J. Trump / JD Vance,,0,0,0
+Humboldt,1FS-1,President,,Peter Sonski,,0,0,0
+Humboldt,1FS-1,U.S. Senate,,Adam B. Schiff,,0,0,0
+Humboldt,1FS-1,U.S. Senate,,Steve Garvey,,0,0,0
+Humboldt,1FS-1,U.S. Senate,Partial Term,Adam B. Schiff,,0,0,0
+Humboldt,1FS-1,U.S. Senate,Partial Term,Steve Garvey,,0,0,0
+Humboldt,1FS-1,U.S. House,2,Jared Huffman,,0,0,0
+Humboldt,1FS-1,U.S. House,2,Chris Coulombe,,0,0,0
+Humboldt,1FS-1,State Assembly,2,Chris Rogers,,0,0,0
+Humboldt,1FS-1,State Assembly,2,Michael Greer,,0,0,0
+Humboldt,1LU,President,,Claudia De la Cruz / Karina Garcia,,3,1,2
+Humboldt,1LU,President,,Kamala D. Harris / Tim Walz,,313,46,267
+Humboldt,1LU,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,11,0,11
+Humboldt,1LU,President,,Chase Oliver / Mike ter Maat,,4,1,3
+Humboldt,1LU,President,,Jill Stein / Rudolph Ware,,5,0,5
+Humboldt,1LU,President,,Donald J. Trump / JD Vance,,285,67,218
+Humboldt,1LU,President,,Peter Sonski,,0,0,0
+Humboldt,1LU,U.S. Senate,,Adam B. Schiff,,312,40,272
+Humboldt,1LU,U.S. Senate,,Steve Garvey,,302,68,234
+Humboldt,1LU,U.S. Senate,Partial Term,Adam B. Schiff,,308,40,268
+Humboldt,1LU,U.S. Senate,Partial Term,Steve Garvey,,297,67,230
+Humboldt,1LU,U.S. House,2,Jared Huffman,,317,45,272
+Humboldt,1LU,U.S. House,2,Chris Coulombe,,298,65,233
+Humboldt,1LU,State Assembly,2,Chris Rogers,,307,41,266
+Humboldt,1LU,State Assembly,2,Michael Greer,,308,67,241
+Humboldt,1MU,President,,Claudia De la Cruz / Karina Garcia,,7,0,7
+Humboldt,1MU,President,,Kamala D. Harris / Tim Walz,,174,6,168
+Humboldt,1MU,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,3,1,2
+Humboldt,1MU,President,,Chase Oliver / Mike ter Maat,,1,0,1
+Humboldt,1MU,President,,Jill Stein / Rudolph Ware,,19,3,16
+Humboldt,1MU,President,,Donald J. Trump / JD Vance,,70,6,64
+Humboldt,1MU,President,,Peter Sonski,,0,0,0
+Humboldt,1MU,U.S. Senate,,Adam B. Schiff,,194,9,185
+Humboldt,1MU,U.S. Senate,,Steve Garvey,,73,6,67
+Humboldt,1MU,U.S. Senate,Partial Term,Adam B. Schiff,,187,9,178
+Humboldt,1MU,U.S. Senate,Partial Term,Steve Garvey,,70,6,64
+Humboldt,1MU,U.S. House,2,Jared Huffman,,194,9,185
+Humboldt,1MU,U.S. House,2,Chris Coulombe,,69,6,63
+Humboldt,1MU,State Assembly,2,Chris Rogers,,193,11,182
+Humboldt,1MU,State Assembly,2,Michael Greer,,71,4,67
+Humboldt,1RD,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,1RD,President,,Kamala D. Harris / Tim Walz,,0,0,0
+Humboldt,1RD,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,1RD,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,1RD,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,1RD,President,,Donald J. Trump / JD Vance,,0,0,0
+Humboldt,1RD,President,,Peter Sonski,,0,0,0
+Humboldt,1RD,U.S. Senate,,Adam B. Schiff,,0,0,0
+Humboldt,1RD,U.S. Senate,,Steve Garvey,,0,0,0
+Humboldt,1RD,U.S. Senate,Partial Term,Adam B. Schiff,,0,0,0
+Humboldt,1RD,U.S. Senate,Partial Term,Steve Garvey,,0,0,0
+Humboldt,1RD,U.S. House,2,Jared Huffman,,0,0,0
+Humboldt,1RD,U.S. House,2,Chris Coulombe,,0,0,0
+Humboldt,1RD,State Assembly,2,Chris Rogers,,0,0,0
+Humboldt,1RD,State Assembly,2,Michael Greer,,0,0,0
+Humboldt,1SB-1,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,1SB-1,President,,Kamala D. Harris / Tim Walz,,8,0,8
+Humboldt,1SB-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,1SB-1,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,1SB-1,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,1SB-1,President,,Donald J. Trump / JD Vance,,3,1,2
+Humboldt,1SB-1,President,,Peter Sonski,,0,0,0
+Humboldt,1SB-1,U.S. Senate,,Adam B. Schiff,,7,0,7
+Humboldt,1SB-1,U.S. Senate,,Steve Garvey,,4,1,3
+Humboldt,1SB-1,U.S. Senate,Partial Term,Adam B. Schiff,,8,1,7
+Humboldt,1SB-1,U.S. Senate,Partial Term,Steve Garvey,,3,0,3
+Humboldt,1SB-1,U.S. House,2,Jared Huffman,,8,0,8
+Humboldt,1SB-1,U.S. House,2,Chris Coulombe,,3,1,2
+Humboldt,1SB-1,State Assembly,2,Chris Rogers,,9,1,8
+Humboldt,1SB-1,State Assembly,2,Michael Greer,,2,0,2
+Humboldt,1SB-10,President,,Claudia De la Cruz / Karina Garcia,,11,3,8
+Humboldt,1SB-10,President,,Kamala D. Harris / Tim Walz,,984,133,851
+Humboldt,1SB-10,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,26,5,21
+Humboldt,1SB-10,President,,Chase Oliver / Mike ter Maat,,6,1,5
+Humboldt,1SB-10,President,,Jill Stein / Rudolph Ware,,15,3,12
+Humboldt,1SB-10,President,,Donald J. Trump / JD Vance,,711,184,527
+Humboldt,1SB-10,President,,Peter Sonski,,0,0,0
+Humboldt,1SB-10,U.S. Senate,,Adam B. Schiff,,985,144,841
+Humboldt,1SB-10,U.S. Senate,,Steve Garvey,,749,179,570
+Humboldt,1SB-10,U.S. Senate,Partial Term,Adam B. Schiff,,960,140,820
+Humboldt,1SB-10,U.S. Senate,Partial Term,Steve Garvey,,743,177,566
+Humboldt,1SB-10,U.S. House,2,Jared Huffman,,1023,137,886
+Humboldt,1SB-10,U.S. House,2,Chris Coulombe,,702,181,521
+Humboldt,1SB-10,State Assembly,2,Chris Rogers,,957,133,824
+Humboldt,1SB-10,State Assembly,2,Michael Greer,,750,183,567
+Humboldt,1SB-11,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,1SB-11,President,,Kamala D. Harris / Tim Walz,,8,1,7
+Humboldt,1SB-11,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,1SB-11,President,,Chase Oliver / Mike ter Maat,,1,0,1
+Humboldt,1SB-11,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,1SB-11,President,,Donald J. Trump / JD Vance,,19,1,18
+Humboldt,1SB-11,President,,Peter Sonski,,0,0,0
+Humboldt,1SB-11,U.S. Senate,,Adam B. Schiff,,7,1,6
+Humboldt,1SB-11,U.S. Senate,,Steve Garvey,,20,1,19
+Humboldt,1SB-11,U.S. Senate,Partial Term,Adam B. Schiff,,6,1,5
+Humboldt,1SB-11,U.S. Senate,Partial Term,Steve Garvey,,21,1,20
+Humboldt,1SB-11,U.S. House,2,Jared Huffman,,6,1,5
+Humboldt,1SB-11,U.S. House,2,Chris Coulombe,,21,1,20
+Humboldt,1SB-11,State Assembly,2,Chris Rogers,,6,1,5
+Humboldt,1SB-11,State Assembly,2,Michael Greer,,20,1,19
+Humboldt,1SB-13,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,1SB-13,President,,Kamala D. Harris / Tim Walz,,39,9,30
+Humboldt,1SB-13,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,1SB-13,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,1SB-13,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,1SB-13,President,,Donald J. Trump / JD Vance,,43,9,34
+Humboldt,1SB-13,President,,Peter Sonski,,0,0,0
+Humboldt,1SB-13,U.S. Senate,,Adam B. Schiff,,37,9,28
+Humboldt,1SB-13,U.S. Senate,,Steve Garvey,,43,7,36
+Humboldt,1SB-13,U.S. Senate,Partial Term,Adam B. Schiff,,35,8,27
+Humboldt,1SB-13,U.S. Senate,Partial Term,Steve Garvey,,43,7,36
+Humboldt,1SB-13,U.S. House,2,Jared Huffman,,36,8,28
+Humboldt,1SB-13,U.S. House,2,Chris Coulombe,,43,7,36
+Humboldt,1SB-13,State Assembly,2,Chris Rogers,,33,7,26
+Humboldt,1SB-13,State Assembly,2,Michael Greer,,46,8,38
+Humboldt,1SB-2,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,1SB-2,President,,Kamala D. Harris / Tim Walz,,0,0,0
+Humboldt,1SB-2,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,1SB-2,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,1SB-2,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,1SB-2,President,,Donald J. Trump / JD Vance,,0,0,0
+Humboldt,1SB-2,President,,Peter Sonski,,0,0,0
+Humboldt,1SB-2,U.S. Senate,,Adam B. Schiff,,0,0,0
+Humboldt,1SB-2,U.S. Senate,,Steve Garvey,,0,0,0
+Humboldt,1SB-2,U.S. Senate,Partial Term,Adam B. Schiff,,0,0,0
+Humboldt,1SB-2,U.S. Senate,Partial Term,Steve Garvey,,0,0,0
+Humboldt,1SB-2,U.S. House,2,Jared Huffman,,0,0,0
+Humboldt,1SB-2,U.S. House,2,Chris Coulombe,,0,0,0
+Humboldt,1SB-2,State Assembly,2,Chris Rogers,,0,0,0
+Humboldt,1SB-2,State Assembly,2,Michael Greer,,0,0,0
+Humboldt,1SB-7,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,1SB-7,President,,Kamala D. Harris / Tim Walz,,0,0,0
+Humboldt,1SB-7,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,1SB-7,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,1SB-7,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,1SB-7,President,,Donald J. Trump / JD Vance,,0,0,0
+Humboldt,1SB-7,President,,Peter Sonski,,0,0,0
+Humboldt,1SB-7,U.S. Senate,,Adam B. Schiff,,0,0,0
+Humboldt,1SB-7,U.S. Senate,,Steve Garvey,,0,0,0
+Humboldt,1SB-7,U.S. Senate,Partial Term,Adam B. Schiff,,0,0,0
+Humboldt,1SB-7,U.S. Senate,Partial Term,Steve Garvey,,0,0,0
+Humboldt,1SB-7,U.S. House,2,Jared Huffman,,0,0,0
+Humboldt,1SB-7,U.S. House,2,Chris Coulombe,,0,0,0
+Humboldt,1SB-7,State Assembly,2,Chris Rogers,,0,0,0
+Humboldt,1SB-7,State Assembly,2,Michael Greer,,0,0,0
+Humboldt,1SCD,President,,Claudia De la Cruz / Karina Garcia,,5,1,4
+Humboldt,1SCD,President,,Kamala D. Harris / Tim Walz,,175,33,142
+Humboldt,1SCD,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,8,1,7
+Humboldt,1SCD,President,,Chase Oliver / Mike ter Maat,,2,0,2
+Humboldt,1SCD,President,,Jill Stein / Rudolph Ware,,3,2,1
+Humboldt,1SCD,President,,Donald J. Trump / JD Vance,,222,67,155
+Humboldt,1SCD,President,,Peter Sonski,,0,0,0
+Humboldt,1SCD,U.S. Senate,,Adam B. Schiff,,182,35,147
+Humboldt,1SCD,U.S. Senate,,Steve Garvey,,228,65,163
+Humboldt,1SCD,U.S. Senate,Partial Term,Adam B. Schiff,,180,35,145
+Humboldt,1SCD,U.S. Senate,Partial Term,Steve Garvey,,224,65,159
+Humboldt,1SCD,U.S. House,2,Jared Huffman,,182,30,152
+Humboldt,1SCD,U.S. House,2,Chris Coulombe,,224,68,156
+Humboldt,1SCD,State Assembly,2,Chris Rogers,,171,29,142
+Humboldt,1SCD,State Assembly,2,Michael Greer,,231,66,165
+Humboldt,2BV-1,President,,Claudia De la Cruz / Karina Garcia,,1,0,1
+Humboldt,2BV-1,President,,Kamala D. Harris / Tim Walz,,109,12,97
+Humboldt,2BV-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,6,1,5
+Humboldt,2BV-1,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,2BV-1,President,,Jill Stein / Rudolph Ware,,3,2,1
+Humboldt,2BV-1,President,,Donald J. Trump / JD Vance,,129,39,90
+Humboldt,2BV-1,President,,Peter Sonski,,0,0,0
+Humboldt,2BV-1,U.S. Senate,,Adam B. Schiff,,111,16,95
+Humboldt,2BV-1,U.S. Senate,,Steve Garvey,,131,35,96
+Humboldt,2BV-1,U.S. Senate,Partial Term,Adam B. Schiff,,109,16,93
+Humboldt,2BV-1,U.S. Senate,Partial Term,Steve Garvey,,126,34,92
+Humboldt,2BV-1,U.S. House,2,Jared Huffman,,113,13,100
+Humboldt,2BV-1,U.S. House,2,Chris Coulombe,,126,37,89
+Humboldt,2BV-1,State Assembly,2,Chris Rogers,,110,15,95
+Humboldt,2BV-1,State Assembly,2,Michael Greer,,129,35,94
+Humboldt,2CU,President,,Claudia De la Cruz / Karina Garcia,,2,0,2
+Humboldt,2CU,President,,Kamala D. Harris / Tim Walz,,144,9,135
+Humboldt,2CU,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,6,3,3
+Humboldt,2CU,President,,Chase Oliver / Mike ter Maat,,1,0,1
+Humboldt,2CU,President,,Jill Stein / Rudolph Ware,,4,1,3
+Humboldt,2CU,President,,Donald J. Trump / JD Vance,,279,73,206
+Humboldt,2CU,President,,Peter Sonski,,0,0,0
+Humboldt,2CU,U.S. Senate,,Adam B. Schiff,,146,12,134
+Humboldt,2CU,U.S. Senate,,Steve Garvey,,280,72,208
+Humboldt,2CU,U.S. Senate,Partial Term,Adam B. Schiff,,140,12,128
+Humboldt,2CU,U.S. Senate,Partial Term,Steve Garvey,,277,68,209
+Humboldt,2CU,U.S. House,2,Jared Huffman,,148,11,137
+Humboldt,2CU,U.S. House,2,Chris Coulombe,,272,69,203
+Humboldt,2CU,State Assembly,2,Chris Rogers,,142,10,132
+Humboldt,2CU,State Assembly,2,Michael Greer,,276,69,207
+Humboldt,2F--2,President,,Claudia De la Cruz / Karina Garcia,,11,0,11
+Humboldt,2F--2,President,,Kamala D. Harris / Tim Walz,,1270,191,1079
+Humboldt,2F--2,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,48,8,40
+Humboldt,2F--2,President,,Chase Oliver / Mike ter Maat,,27,2,25
+Humboldt,2F--2,President,,Jill Stein / Rudolph Ware,,18,5,13
+Humboldt,2F--2,President,,Donald J. Trump / JD Vance,,1265,346,919
+Humboldt,2F--2,President,,Peter Sonski,,0,0,0
+Humboldt,2F--2,U.S. Senate,,Adam B. Schiff,,1265,185,1080
+Humboldt,2F--2,U.S. Senate,,Steve Garvey,,1315,348,967
+Humboldt,2F--2,U.S. Senate,Partial Term,Adam B. Schiff,,1228,182,1046
+Humboldt,2F--2,U.S. Senate,Partial Term,Steve Garvey,,1301,342,959
+Humboldt,2F--2,U.S. House,2,Jared Huffman,,1288,191,1097
+Humboldt,2F--2,U.S. House,2,Chris Coulombe,,1284,336,948
+Humboldt,2F--2,State Assembly,2,Chris Rogers,,1201,184,1017
+Humboldt,2F--2,State Assembly,2,Michael Greer,,1349,344,1005
+Humboldt,2F-R1,President,,Claudia De la Cruz / Karina Garcia,,5,0,5
+Humboldt,2F-R1,President,,Kamala D. Harris / Tim Walz,,1120,119,1001
+Humboldt,2F-R1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,38,6,32
+Humboldt,2F-R1,President,,Chase Oliver / Mike ter Maat,,13,2,11
+Humboldt,2F-R1,President,,Jill Stein / Rudolph Ware,,24,1,23
+Humboldt,2F-R1,President,,Donald J. Trump / JD Vance,,1512,368,1144
+Humboldt,2F-R1,President,,Peter Sonski,,1,0,1
+Humboldt,2F-R1,U.S. Senate,,Adam B. Schiff,,1095,114,981
+Humboldt,2F-R1,U.S. Senate,,Steve Garvey,,1584,366,1218
+Humboldt,2F-R1,U.S. Senate,Partial Term,Adam B. Schiff,,1074,110,964
+Humboldt,2F-R1,U.S. Senate,Partial Term,Steve Garvey,,1552,351,1201
+Humboldt,2F-R1,U.S. House,2,Jared Huffman,,1171,125,1046
+Humboldt,2F-R1,U.S. House,2,Chris Coulombe,,1477,343,1134
+Humboldt,2F-R1,State Assembly,2,Chris Rogers,,1057,118,939
+Humboldt,2F-R1,State Assembly,2,Michael Greer,,1568,354,1214
+Humboldt,2HV-1,President,,Claudia De la Cruz / Karina Garcia,,3,1,2
+Humboldt,2HV-1,President,,Kamala D. Harris / Tim Walz,,357,30,327
+Humboldt,2HV-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,16,2,14
+Humboldt,2HV-1,President,,Chase Oliver / Mike ter Maat,,4,0,4
+Humboldt,2HV-1,President,,Jill Stein / Rudolph Ware,,9,1,8
+Humboldt,2HV-1,President,,Donald J. Trump / JD Vance,,572,111,461
+Humboldt,2HV-1,President,,Peter Sonski,,0,0,0
+Humboldt,2HV-1,U.S. Senate,,Adam B. Schiff,,354,28,326
+Humboldt,2HV-1,U.S. Senate,,Steve Garvey,,595,114,481
+Humboldt,2HV-1,U.S. Senate,Partial Term,Adam B. Schiff,,347,29,318
+Humboldt,2HV-1,U.S. Senate,Partial Term,Steve Garvey,,588,108,480
+Humboldt,2HV-1,U.S. House,2,Jared Huffman,,366,34,332
+Humboldt,2HV-1,U.S. House,2,Chris Coulombe,,575,102,473
+Humboldt,2HV-1,State Assembly,2,Chris Rogers,,318,26,292
+Humboldt,2HV-1,State Assembly,2,Michael Greer,,619,111,508
+Humboldt,2MR,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,2MR,President,,Kamala D. Harris / Tim Walz,,23,2,21
+Humboldt,2MR,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,2MR,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,2MR,President,,Jill Stein / Rudolph Ware,,2,1,1
+Humboldt,2MR,President,,Donald J. Trump / JD Vance,,11,4,7
+Humboldt,2MR,President,,Peter Sonski,,0,0,0
+Humboldt,2MR,U.S. Senate,,Adam B. Schiff,,21,1,20
+Humboldt,2MR,U.S. Senate,,Steve Garvey,,15,6,9
+Humboldt,2MR,U.S. Senate,Partial Term,Adam B. Schiff,,22,2,20
+Humboldt,2MR,U.S. Senate,Partial Term,Steve Garvey,,13,5,8
+Humboldt,2MR,U.S. House,2,Jared Huffman,,24,2,22
+Humboldt,2MR,U.S. House,2,Chris Coulombe,,12,5,7
+Humboldt,2MR,State Assembly,2,Chris Rogers,,23,2,21
+Humboldt,2MR,State Assembly,2,Michael Greer,,13,5,8
+Humboldt,2R--1,President,,Claudia De la Cruz / Karina Garcia,,4,1,3
+Humboldt,2R--1,President,,Kamala D. Harris / Tim Walz,,487,97,390
+Humboldt,2R--1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,31,4,27
+Humboldt,2R--1,President,,Chase Oliver / Mike ter Maat,,2,0,2
+Humboldt,2R--1,President,,Jill Stein / Rudolph Ware,,6,3,3
+Humboldt,2R--1,President,,Donald J. Trump / JD Vance,,807,292,515
+Humboldt,2R--1,President,,Peter Sonski,,0,0,0
+Humboldt,2R--1,U.S. Senate,,Adam B. Schiff,,493,105,388
+Humboldt,2R--1,U.S. Senate,,Steve Garvey,,813,272,541
+Humboldt,2R--1,U.S. Senate,Partial Term,Adam B. Schiff,,479,102,377
+Humboldt,2R--1,U.S. Senate,Partial Term,Steve Garvey,,804,267,537
+Humboldt,2R--1,U.S. House,2,Jared Huffman,,515,100,415
+Humboldt,2R--1,U.S. House,2,Chris Coulombe,,785,275,510
+Humboldt,2R--1,State Assembly,2,Chris Rogers,,479,102,377
+Humboldt,2R--1,State Assembly,2,Michael Greer,,799,270,529
+Humboldt,2SH-1,President,,Claudia De la Cruz / Karina Garcia,,4,0,4
+Humboldt,2SH-1,President,,Kamala D. Harris / Tim Walz,,476,22,454
+Humboldt,2SH-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,24,7,17
+Humboldt,2SH-1,President,,Chase Oliver / Mike ter Maat,,1,0,1
+Humboldt,2SH-1,President,,Jill Stein / Rudolph Ware,,10,0,10
+Humboldt,2SH-1,President,,Donald J. Trump / JD Vance,,215,28,187
+Humboldt,2SH-1,President,,Peter Sonski,,0,0,0
+Humboldt,2SH-1,U.S. Senate,,Adam B. Schiff,,492,24,468
+Humboldt,2SH-1,U.S. Senate,,Steve Garvey,,227,26,201
+Humboldt,2SH-1,U.S. Senate,Partial Term,Adam B. Schiff,,488,23,465
+Humboldt,2SH-1,U.S. Senate,Partial Term,Steve Garvey,,221,27,194
+Humboldt,2SH-1,U.S. House,2,Jared Huffman,,476,24,452
+Humboldt,2SH-1,U.S. House,2,Chris Coulombe,,228,27,201
+Humboldt,2SH-1,State Assembly,2,Chris Rogers,,471,21,450
+Humboldt,2SH-1,State Assembly,2,Michael Greer,,232,30,202
+Humboldt,2SH-2,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,2SH-2,President,,Kamala D. Harris / Tim Walz,,74,5,69
+Humboldt,2SH-2,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,4,0,4
+Humboldt,2SH-2,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,2SH-2,President,,Jill Stein / Rudolph Ware,,7,0,7
+Humboldt,2SH-2,President,,Donald J. Trump / JD Vance,,118,11,107
+Humboldt,2SH-2,President,,Peter Sonski,,0,0,0
+Humboldt,2SH-2,U.S. Senate,,Adam B. Schiff,,80,5,75
+Humboldt,2SH-2,U.S. Senate,,Steve Garvey,,117,10,107
+Humboldt,2SH-2,U.S. Senate,Partial Term,Adam B. Schiff,,72,5,67
+Humboldt,2SH-2,U.S. Senate,Partial Term,Steve Garvey,,119,10,109
+Humboldt,2SH-2,U.S. House,2,Jared Huffman,,79,5,74
+Humboldt,2SH-2,U.S. House,2,Chris Coulombe,,117,11,106
+Humboldt,2SH-2,State Assembly,2,Chris Rogers,,75,5,70
+Humboldt,2SH-2,State Assembly,2,Michael Greer,,117,10,107
+Humboldt,2SH-4,President,,Claudia De la Cruz / Karina Garcia,,3,0,3
+Humboldt,2SH-4,President,,Kamala D. Harris / Tim Walz,,169,17,152
+Humboldt,2SH-4,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,4,2,2
+Humboldt,2SH-4,President,,Chase Oliver / Mike ter Maat,,1,0,1
+Humboldt,2SH-4,President,,Jill Stein / Rudolph Ware,,8,2,6
+Humboldt,2SH-4,President,,Donald J. Trump / JD Vance,,69,24,45
+Humboldt,2SH-4,President,,Peter Sonski,,0,0,0
+Humboldt,2SH-4,U.S. Senate,,Adam B. Schiff,,179,21,158
+Humboldt,2SH-4,U.S. Senate,,Steve Garvey,,73,24,49
+Humboldt,2SH-4,U.S. Senate,Partial Term,Adam B. Schiff,,175,19,156
+Humboldt,2SH-4,U.S. Senate,Partial Term,Steve Garvey,,72,26,46
+Humboldt,2SH-4,U.S. House,2,Jared Huffman,,175,19,156
+Humboldt,2SH-4,U.S. House,2,Chris Coulombe,,72,25,47
+Humboldt,2SH-4,State Assembly,2,Chris Rogers,,173,19,154
+Humboldt,2SH-4,State Assembly,2,Michael Greer,,75,25,50
+Humboldt,2SH-5,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,2SH-5,President,,Kamala D. Harris / Tim Walz,,315,36,279
+Humboldt,2SH-5,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,16,0,16
+Humboldt,2SH-5,President,,Chase Oliver / Mike ter Maat,,4,0,4
+Humboldt,2SH-5,President,,Jill Stein / Rudolph Ware,,13,1,12
+Humboldt,2SH-5,President,,Donald J. Trump / JD Vance,,170,50,120
+Humboldt,2SH-5,President,,Peter Sonski,,0,0,0
+Humboldt,2SH-5,U.S. Senate,,Adam B. Schiff,,320,33,287
+Humboldt,2SH-5,U.S. Senate,,Steve Garvey,,180,47,133
+Humboldt,2SH-5,U.S. Senate,Partial Term,Adam B. Schiff,,312,33,279
+Humboldt,2SH-5,U.S. Senate,Partial Term,Steve Garvey,,177,43,134
+Humboldt,2SH-5,U.S. House,2,Jared Huffman,,328,33,295
+Humboldt,2SH-5,U.S. House,2,Chris Coulombe,,169,44,125
+Humboldt,2SH-5,State Assembly,2,Chris Rogers,,312,37,275
+Humboldt,2SH-5,State Assembly,2,Michael Greer,,186,43,143
+Humboldt,2SH-6N,President,,Claudia De la Cruz / Karina Garcia,,2,0,2
+Humboldt,2SH-6N,President,,Kamala D. Harris / Tim Walz,,170,20,150
+Humboldt,2SH-6N,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,5,0,5
+Humboldt,2SH-6N,President,,Chase Oliver / Mike ter Maat,,1,0,1
+Humboldt,2SH-6N,President,,Jill Stein / Rudolph Ware,,3,0,3
+Humboldt,2SH-6N,President,,Donald J. Trump / JD Vance,,138,24,114
+Humboldt,2SH-6N,President,,Peter Sonski,,0,0,0
+Humboldt,2SH-6N,U.S. Senate,,Adam B. Schiff,,174,21,153
+Humboldt,2SH-6N,U.S. Senate,,Steve Garvey,,138,21,117
+Humboldt,2SH-6N,U.S. Senate,Partial Term,Adam B. Schiff,,168,20,148
+Humboldt,2SH-6N,U.S. Senate,Partial Term,Steve Garvey,,139,21,118
+Humboldt,2SH-6N,U.S. House,2,Jared Huffman,,176,20,156
+Humboldt,2SH-6N,U.S. House,2,Chris Coulombe,,127,21,106
+Humboldt,2SH-6N,State Assembly,2,Chris Rogers,,162,18,144
+Humboldt,2SH-6N,State Assembly,2,Michael Greer,,141,23,118
+Humboldt,2SHF7,President,,Claudia De la Cruz / Karina Garcia,,5,0,5
+Humboldt,2SHF7,President,,Kamala D. Harris / Tim Walz,,266,50,216
+Humboldt,2SHF7,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,8,3,5
+Humboldt,2SHF7,President,,Chase Oliver / Mike ter Maat,,2,1,1
+Humboldt,2SHF7,President,,Jill Stein / Rudolph Ware,,3,3,0
+Humboldt,2SHF7,President,,Donald J. Trump / JD Vance,,153,41,112
+Humboldt,2SHF7,President,,Peter Sonski,,0,0,0
+Humboldt,2SHF7,U.S. Senate,,Adam B. Schiff,,264,48,216
+Humboldt,2SHF7,U.S. Senate,,Steve Garvey,,158,47,111
+Humboldt,2SHF7,U.S. Senate,Partial Term,Adam B. Schiff,,254,48,206
+Humboldt,2SHF7,U.S. Senate,Partial Term,Steve Garvey,,158,45,113
+Humboldt,2SHF7,U.S. House,2,Jared Huffman,,268,49,219
+Humboldt,2SHF7,U.S. House,2,Chris Coulombe,,157,46,111
+Humboldt,2SHF7,State Assembly,2,Chris Rogers,,261,51,210
+Humboldt,2SHF7,State Assembly,2,Michael Greer,,157,44,113
+Humboldt,2SHF9,President,,Claudia De la Cruz / Karina Garcia,,3,2,1
+Humboldt,2SHF9,President,,Kamala D. Harris / Tim Walz,,398,53,345
+Humboldt,2SHF9,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,16,1,15
+Humboldt,2SHF9,President,,Chase Oliver / Mike ter Maat,,1,0,1
+Humboldt,2SHF9,President,,Jill Stein / Rudolph Ware,,29,3,26
+Humboldt,2SHF9,President,,Donald J. Trump / JD Vance,,219,55,164
+Humboldt,2SHF9,President,,Peter Sonski,,0,0,0
+Humboldt,2SHF9,U.S. Senate,,Adam B. Schiff,,421,57,364
+Humboldt,2SHF9,U.S. Senate,,Steve Garvey,,227,50,177
+Humboldt,2SHF9,U.S. Senate,Partial Term,Adam B. Schiff,,411,56,355
+Humboldt,2SHF9,U.S. Senate,Partial Term,Steve Garvey,,222,48,174
+Humboldt,2SHF9,U.S. House,2,Jared Huffman,,427,55,372
+Humboldt,2SHF9,U.S. House,2,Chris Coulombe,,214,50,164
+Humboldt,2SHF9,State Assembly,2,Chris Rogers,,407,52,355
+Humboldt,2SHF9,State Assembly,2,Michael Greer,,230,51,179
+Humboldt,2SHS4C,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,2SHS4C,President,,Kamala D. Harris / Tim Walz,,0,0,0
+Humboldt,2SHS4C,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,2SHS4C,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,2SHS4C,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,2SHS4C,President,,Donald J. Trump / JD Vance,,0,0,0
+Humboldt,2SHS4C,President,,Peter Sonski,,0,0,0
+Humboldt,2SHS4C,U.S. Senate,,Adam B. Schiff,,0,0,0
+Humboldt,2SHS4C,U.S. Senate,,Steve Garvey,,0,0,0
+Humboldt,2SHS4C,U.S. Senate,Partial Term,Adam B. Schiff,,0,0,0
+Humboldt,2SHS4C,U.S. Senate,Partial Term,Steve Garvey,,0,0,0
+Humboldt,2SHS4C,U.S. House,2,Jared Huffman,,0,0,0
+Humboldt,2SHS4C,U.S. House,2,Chris Coulombe,,0,0,0
+Humboldt,2SHS4C,State Assembly,2,Chris Rogers,,0,0,0
+Humboldt,2SHS4C,State Assembly,2,Michael Greer,,0,0,0
+Humboldt,3A--1,President,,Claudia De la Cruz / Karina Garcia,,40,11,29
+Humboldt,3A--1,President,,Kamala D. Harris / Tim Walz,,1768,336,1432
+Humboldt,3A--1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,33,9,24
+Humboldt,3A--1,President,,Chase Oliver / Mike ter Maat,,6,2,4
+Humboldt,3A--1,President,,Jill Stein / Rudolph Ware,,68,16,52
+Humboldt,3A--1,President,,Donald J. Trump / JD Vance,,233,74,159
+Humboldt,3A--1,President,,Peter Sonski,,1,1,0
+Humboldt,3A--1,U.S. Senate,,Adam B. Schiff,,1834,351,1483
+Humboldt,3A--1,U.S. Senate,,Steve Garvey,,268,78,190
+Humboldt,3A--1,U.S. Senate,Partial Term,Adam B. Schiff,,1808,349,1459
+Humboldt,3A--1,U.S. Senate,Partial Term,Steve Garvey,,268,75,193
+Humboldt,3A--1,U.S. House,2,Jared Huffman,,1834,349,1485
+Humboldt,3A--1,U.S. House,2,Chris Coulombe,,251,76,175
+Humboldt,3A--1,State Assembly,2,Chris Rogers,,1781,338,1443
+Humboldt,3A--1,State Assembly,2,Michael Greer,,273,82,191
+Humboldt,3A-10,President,,Claudia De la Cruz / Karina Garcia,,34,11,23
+Humboldt,3A-10,President,,Kamala D. Harris / Tim Walz,,1591,321,1270
+Humboldt,3A-10,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,23,3,20
+Humboldt,3A-10,President,,Chase Oliver / Mike ter Maat,,8,2,6
+Humboldt,3A-10,President,,Jill Stein / Rudolph Ware,,76,22,54
+Humboldt,3A-10,President,,Donald J. Trump / JD Vance,,200,44,156
+Humboldt,3A-10,President,,Peter Sonski,,0,0,0
+Humboldt,3A-10,U.S. Senate,,Adam B. Schiff,,1658,342,1316
+Humboldt,3A-10,U.S. Senate,,Steve Garvey,,235,45,190
+Humboldt,3A-10,U.S. Senate,Partial Term,Adam B. Schiff,,1638,336,1302
+Humboldt,3A-10,U.S. Senate,Partial Term,Steve Garvey,,226,42,184
+Humboldt,3A-10,U.S. House,2,Jared Huffman,,1649,329,1320
+Humboldt,3A-10,U.S. House,2,Chris Coulombe,,226,51,175
+Humboldt,3A-10,State Assembly,2,Chris Rogers,,1600,323,1277
+Humboldt,3A-10,State Assembly,2,Michael Greer,,246,58,188
+Humboldt,3A-13,President,,Claudia De la Cruz / Karina Garcia,,39,17,22
+Humboldt,3A-13,President,,Kamala D. Harris / Tim Walz,,1782,522,1260
+Humboldt,3A-13,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,31,14,17
+Humboldt,3A-13,President,,Chase Oliver / Mike ter Maat,,9,4,5
+Humboldt,3A-13,President,,Jill Stein / Rudolph Ware,,80,29,51
+Humboldt,3A-13,President,,Donald J. Trump / JD Vance,,252,100,152
+Humboldt,3A-13,President,,Peter Sonski,,0,0,0
+Humboldt,3A-13,U.S. Senate,,Adam B. Schiff,,1867,551,1316
+Humboldt,3A-13,U.S. Senate,,Steve Garvey,,273,97,176
+Humboldt,3A-13,U.S. Senate,Partial Term,Adam B. Schiff,,1826,532,1294
+Humboldt,3A-13,U.S. Senate,Partial Term,Steve Garvey,,276,103,173
+Humboldt,3A-13,U.S. House,2,Jared Huffman,,1814,525,1289
+Humboldt,3A-13,U.S. House,2,Chris Coulombe,,299,111,188
+Humboldt,3A-13,State Assembly,2,Chris Rogers,,1796,530,1266
+Humboldt,3A-13,State Assembly,2,Michael Greer,,296,105,191
+Humboldt,3A-J1,President,,Claudia De la Cruz / Karina Garcia,,5,1,4
+Humboldt,3A-J1,President,,Kamala D. Harris / Tim Walz,,531,52,479
+Humboldt,3A-J1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,4,0,4
+Humboldt,3A-J1,President,,Chase Oliver / Mike ter Maat,,1,0,1
+Humboldt,3A-J1,President,,Jill Stein / Rudolph Ware,,23,2,21
+Humboldt,3A-J1,President,,Donald J. Trump / JD Vance,,60,5,55
+Humboldt,3A-J1,President,,Peter Sonski,,0,0,0
+Humboldt,3A-J1,U.S. Senate,,Adam B. Schiff,,554,52,502
+Humboldt,3A-J1,U.S. Senate,,Steve Garvey,,64,4,60
+Humboldt,3A-J1,U.S. Senate,Partial Term,Adam B. Schiff,,544,51,493
+Humboldt,3A-J1,U.S. Senate,Partial Term,Steve Garvey,,62,4,58
+Humboldt,3A-J1,U.S. House,2,Jared Huffman,,555,54,501
+Humboldt,3A-J1,U.S. House,2,Chris Coulombe,,57,3,54
+Humboldt,3A-J1,State Assembly,2,Chris Rogers,,530,50,480
+Humboldt,3A-J1,State Assembly,2,Michael Greer,,74,6,68
+Humboldt,3A-P2,President,,Claudia De la Cruz / Karina Garcia,,22,5,17
+Humboldt,3A-P2,President,,Kamala D. Harris / Tim Walz,,1125,204,921
+Humboldt,3A-P2,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,19,4,15
+Humboldt,3A-P2,President,,Chase Oliver / Mike ter Maat,,8,0,8
+Humboldt,3A-P2,President,,Jill Stein / Rudolph Ware,,42,16,26
+Humboldt,3A-P2,President,,Donald J. Trump / JD Vance,,299,85,214
+Humboldt,3A-P2,President,,Peter Sonski,,0,0,0
+Humboldt,3A-P2,U.S. Senate,,Adam B. Schiff,,1154,217,937
+Humboldt,3A-P2,U.S. Senate,,Steve Garvey,,320,77,243
+Humboldt,3A-P2,U.S. Senate,Partial Term,Adam B. Schiff,,1128,208,920
+Humboldt,3A-P2,U.S. Senate,Partial Term,Steve Garvey,,327,78,249
+Humboldt,3A-P2,U.S. House,2,Jared Huffman,,1138,207,931
+Humboldt,3A-P2,U.S. House,2,Chris Coulombe,,328,84,244
+Humboldt,3A-P2,State Assembly,2,Chris Rogers,,1088,200,888
+Humboldt,3A-P2,State Assembly,2,Michael Greer,,352,88,264
+Humboldt,3A-P5,President,,Claudia De la Cruz / Karina Garcia,,2,1,1
+Humboldt,3A-P5,President,,Kamala D. Harris / Tim Walz,,164,16,148
+Humboldt,3A-P5,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,2,1,1
+Humboldt,3A-P5,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,3A-P5,President,,Jill Stein / Rudolph Ware,,7,0,7
+Humboldt,3A-P5,President,,Donald J. Trump / JD Vance,,78,17,61
+Humboldt,3A-P5,President,,Peter Sonski,,0,0,0
+Humboldt,3A-P5,U.S. Senate,,Adam B. Schiff,,166,16,150
+Humboldt,3A-P5,U.S. Senate,,Steve Garvey,,83,19,64
+Humboldt,3A-P5,U.S. Senate,Partial Term,Adam B. Schiff,,160,16,144
+Humboldt,3A-P5,U.S. Senate,Partial Term,Steve Garvey,,86,20,66
+Humboldt,3A-P5,U.S. House,2,Jared Huffman,,163,16,147
+Humboldt,3A-P5,U.S. House,2,Chris Coulombe,,83,20,63
+Humboldt,3A-P5,State Assembly,2,Chris Rogers,,161,15,146
+Humboldt,3A-P5,State Assembly,2,Michael Greer,,84,20,64
+Humboldt,3AS-1,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,3AS-1,President,,Kamala D. Harris / Tim Walz,,0,0,0
+Humboldt,3AS-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,3AS-1,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,3AS-1,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,3AS-1,President,,Donald J. Trump / JD Vance,,0,0,0
+Humboldt,3AS-1,President,,Peter Sonski,,0,0,0
+Humboldt,3AS-1,U.S. Senate,,Adam B. Schiff,,0,0,0
+Humboldt,3AS-1,U.S. Senate,,Steve Garvey,,0,0,0
+Humboldt,3AS-1,U.S. Senate,Partial Term,Adam B. Schiff,,0,0,0
+Humboldt,3AS-1,U.S. Senate,Partial Term,Steve Garvey,,0,0,0
+Humboldt,3AS-1,U.S. House,2,Jared Huffman,,0,0,0
+Humboldt,3AS-1,U.S. House,2,Chris Coulombe,,0,0,0
+Humboldt,3AS-1,State Assembly,2,Chris Rogers,,0,0,0
+Humboldt,3AS-1,State Assembly,2,Michael Greer,,0,0,0
+Humboldt,3AS-9,President,,Claudia De la Cruz / Karina Garcia,,1,0,1
+Humboldt,3AS-9,President,,Kamala D. Harris / Tim Walz,,52,2,50
+Humboldt,3AS-9,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,5,0,5
+Humboldt,3AS-9,President,,Chase Oliver / Mike ter Maat,,1,0,1
+Humboldt,3AS-9,President,,Jill Stein / Rudolph Ware,,5,1,4
+Humboldt,3AS-9,President,,Donald J. Trump / JD Vance,,22,2,20
+Humboldt,3AS-9,President,,Peter Sonski,,0,0,0
+Humboldt,3AS-9,U.S. Senate,,Adam B. Schiff,,57,2,55
+Humboldt,3AS-9,U.S. Senate,,Steve Garvey,,27,2,25
+Humboldt,3AS-9,U.S. Senate,Partial Term,Adam B. Schiff,,55,2,53
+Humboldt,3AS-9,U.S. Senate,Partial Term,Steve Garvey,,28,2,26
+Humboldt,3AS-9,U.S. House,2,Jared Huffman,,57,2,55
+Humboldt,3AS-9,U.S. House,2,Chris Coulombe,,25,2,23
+Humboldt,3AS-9,State Assembly,2,Chris Rogers,,55,2,53
+Humboldt,3AS-9,State Assembly,2,Michael Greer,,27,2,25
+Humboldt,3AS12,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,3AS12,President,,Kamala D. Harris / Tim Walz,,19,0,19
+Humboldt,3AS12,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,2,0,2
+Humboldt,3AS12,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,3AS12,President,,Jill Stein / Rudolph Ware,,1,0,1
+Humboldt,3AS12,President,,Donald J. Trump / JD Vance,,4,1,3
+Humboldt,3AS12,President,,Peter Sonski,,0,0,0
+Humboldt,3AS12,U.S. Senate,,Adam B. Schiff,,20,0,20
+Humboldt,3AS12,U.S. Senate,,Steve Garvey,,4,1,3
+Humboldt,3AS12,U.S. Senate,Partial Term,Adam B. Schiff,,20,0,20
+Humboldt,3AS12,U.S. Senate,Partial Term,Steve Garvey,,4,1,3
+Humboldt,3AS12,U.S. House,2,Jared Huffman,,20,0,20
+Humboldt,3AS12,U.S. House,2,Chris Coulombe,,4,1,3
+Humboldt,3AS12,State Assembly,2,Chris Rogers,,20,0,20
+Humboldt,3AS12,State Assembly,2,Michael Greer,,5,1,4
+Humboldt,3B--1,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,3B--1,President,,Kamala D. Harris / Tim Walz,,0,0,0
+Humboldt,3B--1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,3B--1,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,3B--1,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,3B--1,President,,Donald J. Trump / JD Vance,,0,0,0
+Humboldt,3B--1,President,,Peter Sonski,,0,0,0
+Humboldt,3B--1,U.S. Senate,,Adam B. Schiff,,0,0,0
+Humboldt,3B--1,U.S. Senate,,Steve Garvey,,0,0,0
+Humboldt,3B--1,U.S. Senate,Partial Term,Adam B. Schiff,,0,0,0
+Humboldt,3B--1,U.S. Senate,Partial Term,Steve Garvey,,0,0,0
+Humboldt,3B--1,U.S. House,2,Jared Huffman,,0,0,0
+Humboldt,3B--1,U.S. House,2,Chris Coulombe,,0,0,0
+Humboldt,3B--1,State Assembly,2,Chris Rogers,,0,0,0
+Humboldt,3B--1,State Assembly,2,Michael Greer,,0,0,0
+Humboldt,3ES-6,President,,Claudia De la Cruz / Karina Garcia,,1,0,1
+Humboldt,3ES-6,President,,Kamala D. Harris / Tim Walz,,15,1,14
+Humboldt,3ES-6,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,2,0,2
+Humboldt,3ES-6,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,3ES-6,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,3ES-6,President,,Donald J. Trump / JD Vance,,11,0,11
+Humboldt,3ES-6,President,,Peter Sonski,,0,0,0
+Humboldt,3ES-6,U.S. Senate,,Adam B. Schiff,,15,1,14
+Humboldt,3ES-6,U.S. Senate,,Steve Garvey,,14,0,14
+Humboldt,3ES-6,U.S. Senate,Partial Term,Adam B. Schiff,,14,1,13
+Humboldt,3ES-6,U.S. Senate,Partial Term,Steve Garvey,,14,0,14
+Humboldt,3ES-6,U.S. House,2,Jared Huffman,,15,1,14
+Humboldt,3ES-6,U.S. House,2,Chris Coulombe,,14,0,14
+Humboldt,3ES-6,State Assembly,2,Chris Rogers,,15,1,14
+Humboldt,3ES-6,State Assembly,2,Michael Greer,,11,0,11
+Humboldt,3ES-7,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,3ES-7,President,,Kamala D. Harris / Tim Walz,,6,0,6
+Humboldt,3ES-7,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,3ES-7,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,3ES-7,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,3ES-7,President,,Donald J. Trump / JD Vance,,0,0,0
+Humboldt,3ES-7,President,,Peter Sonski,,0,0,0
+Humboldt,3ES-7,U.S. Senate,,Adam B. Schiff,,6,0,6
+Humboldt,3ES-7,U.S. Senate,,Steve Garvey,,0,0,0
+Humboldt,3ES-7,U.S. Senate,Partial Term,Adam B. Schiff,,6,0,6
+Humboldt,3ES-7,U.S. Senate,Partial Term,Steve Garvey,,0,0,0
+Humboldt,3ES-7,U.S. House,2,Jared Huffman,,6,0,6
+Humboldt,3ES-7,U.S. House,2,Chris Coulombe,,0,0,0
+Humboldt,3ES-7,State Assembly,2,Chris Rogers,,6,0,6
+Humboldt,3ES-7,State Assembly,2,Michael Greer,,0,0,0
+Humboldt,3ESS6,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,3ESS6,President,,Kamala D. Harris / Tim Walz,,169,19,150
+Humboldt,3ESS6,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,3,0,3
+Humboldt,3ESS6,President,,Chase Oliver / Mike ter Maat,,2,0,2
+Humboldt,3ESS6,President,,Jill Stein / Rudolph Ware,,2,1,1
+Humboldt,3ESS6,President,,Donald J. Trump / JD Vance,,110,19,91
+Humboldt,3ESS6,President,,Peter Sonski,,0,0,0
+Humboldt,3ESS6,U.S. Senate,,Adam B. Schiff,,171,20,151
+Humboldt,3ESS6,U.S. Senate,,Steve Garvey,,116,18,98
+Humboldt,3ESS6,U.S. Senate,Partial Term,Adam B. Schiff,,167,20,147
+Humboldt,3ESS6,U.S. Senate,Partial Term,Steve Garvey,,113,16,97
+Humboldt,3ESS6,U.S. House,2,Jared Huffman,,170,20,150
+Humboldt,3ESS6,U.S. House,2,Chris Coulombe,,116,19,97
+Humboldt,3ESS6,State Assembly,2,Chris Rogers,,167,21,146
+Humboldt,3ESS6,State Assembly,2,Michael Greer,,116,17,99
+Humboldt,3FW,President,,Claudia De la Cruz / Karina Garcia,,1,0,1
+Humboldt,3FW,President,,Kamala D. Harris / Tim Walz,,261,20,241
+Humboldt,3FW,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,5,0,5
+Humboldt,3FW,President,,Chase Oliver / Mike ter Maat,,4,1,3
+Humboldt,3FW,President,,Jill Stein / Rudolph Ware,,6,2,4
+Humboldt,3FW,President,,Donald J. Trump / JD Vance,,147,20,127
+Humboldt,3FW,President,,Peter Sonski,,0,0,0
+Humboldt,3FW,U.S. Senate,,Adam B. Schiff,,266,19,247
+Humboldt,3FW,U.S. Senate,,Steve Garvey,,154,21,133
+Humboldt,3FW,U.S. Senate,Partial Term,Adam B. Schiff,,260,18,242
+Humboldt,3FW,U.S. Senate,Partial Term,Steve Garvey,,152,21,131
+Humboldt,3FW,U.S. House,2,Jared Huffman,,263,17,246
+Humboldt,3FW,U.S. House,2,Chris Coulombe,,151,21,130
+Humboldt,3FW,State Assembly,2,Chris Rogers,,249,17,232
+Humboldt,3FW,State Assembly,2,Michael Greer,,156,22,134
+Humboldt,3FWF,President,,Claudia De la Cruz / Karina Garcia,,5,1,4
+Humboldt,3FWF,President,,Kamala D. Harris / Tim Walz,,406,54,352
+Humboldt,3FWF,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,8,2,6
+Humboldt,3FWF,President,,Chase Oliver / Mike ter Maat,,2,0,2
+Humboldt,3FWF,President,,Jill Stein / Rudolph Ware,,8,1,7
+Humboldt,3FWF,President,,Donald J. Trump / JD Vance,,155,33,122
+Humboldt,3FWF,President,,Peter Sonski,,0,0,0
+Humboldt,3FWF,U.S. Senate,,Adam B. Schiff,,397,54,343
+Humboldt,3FWF,U.S. Senate,,Steve Garvey,,172,32,140
+Humboldt,3FWF,U.S. Senate,Partial Term,Adam B. Schiff,,392,53,339
+Humboldt,3FWF,U.S. Senate,Partial Term,Steve Garvey,,170,31,139
+Humboldt,3FWF,U.S. House,2,Jared Huffman,,404,56,348
+Humboldt,3FWF,U.S. House,2,Chris Coulombe,,167,30,137
+Humboldt,3FWF,State Assembly,2,Chris Rogers,,389,52,337
+Humboldt,3FWF,State Assembly,2,Michael Greer,,176,34,142
+Humboldt,3FWS,President,,Claudia De la Cruz / Karina Garcia,,5,1,4
+Humboldt,3FWS,President,,Kamala D. Harris / Tim Walz,,499,42,457
+Humboldt,3FWS,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,9,1,8
+Humboldt,3FWS,President,,Chase Oliver / Mike ter Maat,,12,2,10
+Humboldt,3FWS,President,,Jill Stein / Rudolph Ware,,11,3,8
+Humboldt,3FWS,President,,Donald J. Trump / JD Vance,,255,56,199
+Humboldt,3FWS,President,,Peter Sonski,,0,0,0
+Humboldt,3FWS,U.S. Senate,,Adam B. Schiff,,496,43,453
+Humboldt,3FWS,U.S. Senate,,Steve Garvey,,291,60,231
+Humboldt,3FWS,U.S. Senate,Partial Term,Adam B. Schiff,,492,41,451
+Humboldt,3FWS,U.S. Senate,Partial Term,Steve Garvey,,286,61,225
+Humboldt,3FWS,U.S. House,2,Jared Huffman,,501,44,457
+Humboldt,3FWS,U.S. House,2,Chris Coulombe,,282,57,225
+Humboldt,3FWS,State Assembly,2,Chris Rogers,,471,43,428
+Humboldt,3FWS,State Assembly,2,Michael Greer,,300,57,243
+Humboldt,3GF,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,3GF,President,,Kamala D. Harris / Tim Walz,,36,2,34
+Humboldt,3GF,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,2,1,1
+Humboldt,3GF,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,3GF,President,,Jill Stein / Rudolph Ware,,1,0,1
+Humboldt,3GF,President,,Donald J. Trump / JD Vance,,35,7,28
+Humboldt,3GF,President,,Peter Sonski,,0,0,0
+Humboldt,3GF,U.S. Senate,,Adam B. Schiff,,34,2,32
+Humboldt,3GF,U.S. Senate,,Steve Garvey,,39,6,33
+Humboldt,3GF,U.S. Senate,Partial Term,Adam B. Schiff,,34,3,31
+Humboldt,3GF,U.S. Senate,Partial Term,Steve Garvey,,38,6,32
+Humboldt,3GF,U.S. House,2,Jared Huffman,,40,3,37
+Humboldt,3GF,U.S. House,2,Chris Coulombe,,33,5,28
+Humboldt,3GF,State Assembly,2,Chris Rogers,,32,1,31
+Humboldt,3GF,State Assembly,2,Michael Greer,,41,8,33
+Humboldt,3JC,President,,Claudia De la Cruz / Karina Garcia,,5,0,5
+Humboldt,3JC,President,,Kamala D. Harris / Tim Walz,,81,12,69
+Humboldt,3JC,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,2,0,2
+Humboldt,3JC,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,3JC,President,,Jill Stein / Rudolph Ware,,3,0,3
+Humboldt,3JC,President,,Donald J. Trump / JD Vance,,24,6,18
+Humboldt,3JC,President,,Peter Sonski,,0,0,0
+Humboldt,3JC,U.S. Senate,,Adam B. Schiff,,87,12,75
+Humboldt,3JC,U.S. Senate,,Steve Garvey,,24,6,18
+Humboldt,3JC,U.S. Senate,Partial Term,Adam B. Schiff,,83,12,71
+Humboldt,3JC,U.S. Senate,Partial Term,Steve Garvey,,23,5,18
+Humboldt,3JC,U.S. House,2,Jared Huffman,,86,12,74
+Humboldt,3JC,U.S. House,2,Chris Coulombe,,25,6,19
+Humboldt,3JC,State Assembly,2,Chris Rogers,,82,11,71
+Humboldt,3JC,State Assembly,2,Michael Greer,,24,6,18
+Humboldt,3JCF,President,,Claudia De la Cruz / Karina Garcia,,5,0,5
+Humboldt,3JCF,President,,Kamala D. Harris / Tim Walz,,738,84,654
+Humboldt,3JCF,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,12,1,11
+Humboldt,3JCF,President,,Chase Oliver / Mike ter Maat,,5,0,5
+Humboldt,3JCF,President,,Jill Stein / Rudolph Ware,,24,3,21
+Humboldt,3JCF,President,,Donald J. Trump / JD Vance,,226,46,180
+Humboldt,3JCF,President,,Peter Sonski,,0,0,0
+Humboldt,3JCF,U.S. Senate,,Adam B. Schiff,,735,79,656
+Humboldt,3JCF,U.S. Senate,,Steve Garvey,,257,47,210
+Humboldt,3JCF,U.S. Senate,Partial Term,Adam B. Schiff,,722,76,646
+Humboldt,3JCF,U.S. Senate,Partial Term,Steve Garvey,,253,46,207
+Humboldt,3JCF,U.S. House,2,Jared Huffman,,745,81,664
+Humboldt,3JCF,U.S. House,2,Chris Coulombe,,244,46,198
+Humboldt,3JCF,State Assembly,2,Chris Rogers,,716,80,636
+Humboldt,3JCF,State Assembly,2,Michael Greer,,271,48,223
+Humboldt,3MA-1,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,3MA-1,President,,Kamala D. Harris / Tim Walz,,4,2,2
+Humboldt,3MA-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,3MA-1,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,3MA-1,President,,Jill Stein / Rudolph Ware,,2,0,2
+Humboldt,3MA-1,President,,Donald J. Trump / JD Vance,,4,3,1
+Humboldt,3MA-1,President,,Peter Sonski,,0,0,0
+Humboldt,3MA-1,U.S. Senate,,Adam B. Schiff,,5,2,3
+Humboldt,3MA-1,U.S. Senate,,Steve Garvey,,6,3,3
+Humboldt,3MA-1,U.S. Senate,Partial Term,Adam B. Schiff,,5,2,3
+Humboldt,3MA-1,U.S. Senate,Partial Term,Steve Garvey,,6,3,3
+Humboldt,3MA-1,U.S. House,2,Jared Huffman,,6,3,3
+Humboldt,3MA-1,U.S. House,2,Chris Coulombe,,4,2,2
+Humboldt,3MA-1,State Assembly,2,Chris Rogers,,5,2,3
+Humboldt,3MA-1,State Assembly,2,Michael Greer,,6,3,3
+Humboldt,3MA-2,President,,Claudia De la Cruz / Karina Garcia,,5,1,4
+Humboldt,3MA-2,President,,Kamala D. Harris / Tim Walz,,241,28,213
+Humboldt,3MA-2,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,10,2,8
+Humboldt,3MA-2,President,,Chase Oliver / Mike ter Maat,,1,0,1
+Humboldt,3MA-2,President,,Jill Stein / Rudolph Ware,,10,4,6
+Humboldt,3MA-2,President,,Donald J. Trump / JD Vance,,76,32,44
+Humboldt,3MA-2,President,,Peter Sonski,,0,0,0
+Humboldt,3MA-2,U.S. Senate,,Adam B. Schiff,,259,36,223
+Humboldt,3MA-2,U.S. Senate,,Steve Garvey,,76,27,49
+Humboldt,3MA-2,U.S. Senate,Partial Term,Adam B. Schiff,,253,32,221
+Humboldt,3MA-2,U.S. Senate,Partial Term,Steve Garvey,,75,28,47
+Humboldt,3MA-2,U.S. House,2,Jared Huffman,,261,34,227
+Humboldt,3MA-2,U.S. House,2,Chris Coulombe,,72,27,45
+Humboldt,3MA-2,State Assembly,2,Chris Rogers,,255,32,223
+Humboldt,3MA-2,State Assembly,2,Michael Greer,,80,31,49
+Humboldt,3PA-1,President,,Claudia De la Cruz / Karina Garcia,,3,1,2
+Humboldt,3PA-1,President,,Kamala D. Harris / Tim Walz,,260,25,235
+Humboldt,3PA-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,6,1,5
+Humboldt,3PA-1,President,,Chase Oliver / Mike ter Maat,,2,0,2
+Humboldt,3PA-1,President,,Jill Stein / Rudolph Ware,,9,1,8
+Humboldt,3PA-1,President,,Donald J. Trump / JD Vance,,127,16,111
+Humboldt,3PA-1,President,,Peter Sonski,,0,0,0
+Humboldt,3PA-1,U.S. Senate,,Adam B. Schiff,,267,30,237
+Humboldt,3PA-1,U.S. Senate,,Steve Garvey,,131,15,116
+Humboldt,3PA-1,U.S. Senate,Partial Term,Adam B. Schiff,,262,31,231
+Humboldt,3PA-1,U.S. Senate,Partial Term,Steve Garvey,,130,14,116
+Humboldt,3PA-1,U.S. House,2,Jared Huffman,,265,28,237
+Humboldt,3PA-1,U.S. House,2,Chris Coulombe,,126,17,109
+Humboldt,3PA-1,State Assembly,2,Chris Rogers,,254,28,226
+Humboldt,3PA-1,State Assembly,2,Michael Greer,,137,16,121
+Humboldt,3PA-4,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,3PA-4,President,,Kamala D. Harris / Tim Walz,,0,0,0
+Humboldt,3PA-4,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,3PA-4,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,3PA-4,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,3PA-4,President,,Donald J. Trump / JD Vance,,0,0,0
+Humboldt,3PA-4,President,,Peter Sonski,,0,0,0
+Humboldt,3PA-4,U.S. Senate,,Adam B. Schiff,,0,0,0
+Humboldt,3PA-4,U.S. Senate,,Steve Garvey,,0,0,0
+Humboldt,3PA-4,U.S. Senate,Partial Term,Adam B. Schiff,,0,0,0
+Humboldt,3PA-4,U.S. Senate,Partial Term,Steve Garvey,,0,0,0
+Humboldt,3PA-4,U.S. House,2,Jared Huffman,,0,0,0
+Humboldt,3PA-4,U.S. House,2,Chris Coulombe,,0,0,0
+Humboldt,3PA-4,State Assembly,2,Chris Rogers,,0,0,0
+Humboldt,3PA-4,State Assembly,2,Michael Greer,,0,0,0
+Humboldt,4E-11,President,,Claudia De la Cruz / Karina Garcia,,21,5,16
+Humboldt,4E-11,President,,Kamala D. Harris / Tim Walz,,1155,265,890
+Humboldt,4E-11,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,31,9,22
+Humboldt,4E-11,President,,Chase Oliver / Mike ter Maat,,6,2,4
+Humboldt,4E-11,President,,Jill Stein / Rudolph Ware,,44,15,29
+Humboldt,4E-11,President,,Donald J. Trump / JD Vance,,426,165,261
+Humboldt,4E-11,President,,Peter Sonski,,0,0,0
+Humboldt,4E-11,U.S. Senate,,Adam B. Schiff,,1202,272,930
+Humboldt,4E-11,U.S. Senate,,Steve Garvey,,431,162,269
+Humboldt,4E-11,U.S. Senate,Partial Term,Adam B. Schiff,,1162,264,898
+Humboldt,4E-11,U.S. Senate,Partial Term,Steve Garvey,,431,156,275
+Humboldt,4E-11,U.S. House,2,Jared Huffman,,1210,270,940
+Humboldt,4E-11,U.S. House,2,Chris Coulombe,,405,153,252
+Humboldt,4E-11,State Assembly,2,Chris Rogers,,1166,260,906
+Humboldt,4E-11,State Assembly,2,Michael Greer,,443,160,283
+Humboldt,4E-20,President,,Claudia De la Cruz / Karina Garcia,,12,1,11
+Humboldt,4E-20,President,,Kamala D. Harris / Tim Walz,,1102,182,920
+Humboldt,4E-20,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,32,9,23
+Humboldt,4E-20,President,,Chase Oliver / Mike ter Maat,,11,2,9
+Humboldt,4E-20,President,,Jill Stein / Rudolph Ware,,12,1,11
+Humboldt,4E-20,President,,Donald J. Trump / JD Vance,,542,138,404
+Humboldt,4E-20,President,,Peter Sonski,,0,0,0
+Humboldt,4E-20,U.S. Senate,,Adam B. Schiff,,1098,178,920
+Humboldt,4E-20,U.S. Senate,,Steve Garvey,,571,142,429
+Humboldt,4E-20,U.S. Senate,Partial Term,Adam B. Schiff,,1060,167,893
+Humboldt,4E-20,U.S. Senate,Partial Term,Steve Garvey,,581,143,438
+Humboldt,4E-20,U.S. House,2,Jared Huffman,,1103,175,928
+Humboldt,4E-20,U.S. House,2,Chris Coulombe,,543,142,401
+Humboldt,4E-20,State Assembly,2,Chris Rogers,,1052,166,886
+Humboldt,4E-20,State Assembly,2,Michael Greer,,579,142,437
+Humboldt,4E-31,President,,Claudia De la Cruz / Karina Garcia,,7,1,6
+Humboldt,4E-31,President,,Kamala D. Harris / Tim Walz,,592,60,532
+Humboldt,4E-31,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,13,2,11
+Humboldt,4E-31,President,,Chase Oliver / Mike ter Maat,,4,1,3
+Humboldt,4E-31,President,,Jill Stein / Rudolph Ware,,13,1,12
+Humboldt,4E-31,President,,Donald J. Trump / JD Vance,,217,41,176
+Humboldt,4E-31,President,,Peter Sonski,,0,0,0
+Humboldt,4E-31,U.S. Senate,,Adam B. Schiff,,601,57,544
+Humboldt,4E-31,U.S. Senate,,Steve Garvey,,236,47,189
+Humboldt,4E-31,U.S. Senate,Partial Term,Adam B. Schiff,,584,57,527
+Humboldt,4E-31,U.S. Senate,Partial Term,Steve Garvey,,240,45,195
+Humboldt,4E-31,U.S. House,2,Jared Huffman,,604,57,547
+Humboldt,4E-31,U.S. House,2,Chris Coulombe,,224,44,180
+Humboldt,4E-31,State Assembly,2,Chris Rogers,,590,62,528
+Humboldt,4E-31,State Assembly,2,Michael Greer,,241,41,200
+Humboldt,4E-33,President,,Claudia De la Cruz / Karina Garcia,,2,0,2
+Humboldt,4E-33,President,,Kamala D. Harris / Tim Walz,,247,26,221
+Humboldt,4E-33,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,4,1,3
+Humboldt,4E-33,President,,Chase Oliver / Mike ter Maat,,1,0,1
+Humboldt,4E-33,President,,Jill Stein / Rudolph Ware,,3,1,2
+Humboldt,4E-33,President,,Donald J. Trump / JD Vance,,92,15,77
+Humboldt,4E-33,President,,Peter Sonski,,0,0,0
+Humboldt,4E-33,U.S. Senate,,Adam B. Schiff,,237,26,211
+Humboldt,4E-33,U.S. Senate,,Steve Garvey,,108,17,91
+Humboldt,4E-33,U.S. Senate,Partial Term,Adam B. Schiff,,234,26,208
+Humboldt,4E-33,U.S. Senate,Partial Term,Steve Garvey,,109,16,93
+Humboldt,4E-33,U.S. House,2,Jared Huffman,,245,28,217
+Humboldt,4E-33,U.S. House,2,Chris Coulombe,,95,15,80
+Humboldt,4E-33,State Assembly,2,Chris Rogers,,236,29,207
+Humboldt,4E-33,State Assembly,2,Michael Greer,,105,15,90
+Humboldt,4E-40,President,,Claudia De la Cruz / Karina Garcia,,6,1,5
+Humboldt,4E-40,President,,Kamala D. Harris / Tim Walz,,770,115,655
+Humboldt,4E-40,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,18,3,15
+Humboldt,4E-40,President,,Chase Oliver / Mike ter Maat,,8,1,7
+Humboldt,4E-40,President,,Jill Stein / Rudolph Ware,,23,3,20
+Humboldt,4E-40,President,,Donald J. Trump / JD Vance,,323,81,242
+Humboldt,4E-40,President,,Peter Sonski,,0,0,0
+Humboldt,4E-40,U.S. Senate,,Adam B. Schiff,,765,113,652
+Humboldt,4E-40,U.S. Senate,,Steve Garvey,,348,82,266
+Humboldt,4E-40,U.S. Senate,Partial Term,Adam B. Schiff,,747,109,638
+Humboldt,4E-40,U.S. Senate,Partial Term,Steve Garvey,,333,76,257
+Humboldt,4E-40,U.S. House,2,Jared Huffman,,789,114,675
+Humboldt,4E-40,U.S. House,2,Chris Coulombe,,321,74,247
+Humboldt,4E-40,State Assembly,2,Chris Rogers,,737,106,631
+Humboldt,4E-40,State Assembly,2,Michael Greer,,358,79,279
+Humboldt,4E-44,President,,Claudia De la Cruz / Karina Garcia,,7,1,6
+Humboldt,4E-44,President,,Kamala D. Harris / Tim Walz,,584,77,507
+Humboldt,4E-44,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,16,2,14
+Humboldt,4E-44,President,,Chase Oliver / Mike ter Maat,,4,1,3
+Humboldt,4E-44,President,,Jill Stein / Rudolph Ware,,11,4,7
+Humboldt,4E-44,President,,Donald J. Trump / JD Vance,,250,50,200
+Humboldt,4E-44,President,,Peter Sonski,,1,0,1
+Humboldt,4E-44,U.S. Senate,,Adam B. Schiff,,579,83,496
+Humboldt,4E-44,U.S. Senate,,Steve Garvey,,275,49,226
+Humboldt,4E-44,U.S. Senate,Partial Term,Adam B. Schiff,,558,76,482
+Humboldt,4E-44,U.S. Senate,Partial Term,Steve Garvey,,275,48,227
+Humboldt,4E-44,U.S. House,2,Jared Huffman,,591,79,512
+Humboldt,4E-44,U.S. House,2,Chris Coulombe,,255,49,206
+Humboldt,4E-44,State Assembly,2,Chris Rogers,,574,81,493
+Humboldt,4E-44,State Assembly,2,Michael Greer,,271,49,222
+Humboldt,4E-49,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,4E-49,President,,Kamala D. Harris / Tim Walz,,1,0,1
+Humboldt,4E-49,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,4E-49,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,4E-49,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,4E-49,President,,Donald J. Trump / JD Vance,,4,0,4
+Humboldt,4E-49,President,,Peter Sonski,,0,0,0
+Humboldt,4E-49,U.S. Senate,,Adam B. Schiff,,1,0,1
+Humboldt,4E-49,U.S. Senate,,Steve Garvey,,4,0,4
+Humboldt,4E-49,U.S. Senate,Partial Term,Adam B. Schiff,,1,0,1
+Humboldt,4E-49,U.S. Senate,Partial Term,Steve Garvey,,4,0,4
+Humboldt,4E-49,U.S. House,2,Jared Huffman,,1,0,1
+Humboldt,4E-49,U.S. House,2,Chris Coulombe,,4,0,4
+Humboldt,4E-49,State Assembly,2,Chris Rogers,,1,0,1
+Humboldt,4E-49,State Assembly,2,Michael Greer,,4,0,4
+Humboldt,4E-51,President,,Claudia De la Cruz / Karina Garcia,,25,5,20
+Humboldt,4E-51,President,,Kamala D. Harris / Tim Walz,,1239,234,1005
+Humboldt,4E-51,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,19,8,11
+Humboldt,4E-51,President,,Chase Oliver / Mike ter Maat,,8,4,4
+Humboldt,4E-51,President,,Jill Stein / Rudolph Ware,,37,5,32
+Humboldt,4E-51,President,,Donald J. Trump / JD Vance,,413,130,283
+Humboldt,4E-51,President,,Peter Sonski,,1,0,1
+Humboldt,4E-51,U.S. Senate,,Adam B. Schiff,,1268,231,1037
+Humboldt,4E-51,U.S. Senate,,Steve Garvey,,430,138,292
+Humboldt,4E-51,U.S. Senate,Partial Term,Adam B. Schiff,,1243,229,1014
+Humboldt,4E-51,U.S. Senate,Partial Term,Steve Garvey,,425,132,293
+Humboldt,4E-51,U.S. House,2,Jared Huffman,,1263,234,1029
+Humboldt,4E-51,U.S. House,2,Chris Coulombe,,424,132,292
+Humboldt,4E-51,State Assembly,2,Chris Rogers,,1252,233,1019
+Humboldt,4E-51,State Assembly,2,Michael Greer,,421,131,290
+Humboldt,4E-52,President,,Claudia De la Cruz / Karina Garcia,,3,1,2
+Humboldt,4E-52,President,,Kamala D. Harris / Tim Walz,,240,64,176
+Humboldt,4E-52,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,2,1,1
+Humboldt,4E-52,President,,Chase Oliver / Mike ter Maat,,3,0,3
+Humboldt,4E-52,President,,Jill Stein / Rudolph Ware,,7,3,4
+Humboldt,4E-52,President,,Donald J. Trump / JD Vance,,85,33,52
+Humboldt,4E-52,President,,Peter Sonski,,0,0,0
+Humboldt,4E-52,U.S. Senate,,Adam B. Schiff,,250,62,188
+Humboldt,4E-52,U.S. Senate,,Steve Garvey,,83,32,51
+Humboldt,4E-52,U.S. Senate,Partial Term,Adam B. Schiff,,244,62,182
+Humboldt,4E-52,U.S. Senate,Partial Term,Steve Garvey,,84,31,53
+Humboldt,4E-52,U.S. House,2,Jared Huffman,,246,62,184
+Humboldt,4E-52,U.S. House,2,Chris Coulombe,,86,32,54
+Humboldt,4E-52,State Assembly,2,Chris Rogers,,243,62,181
+Humboldt,4E-52,State Assembly,2,Michael Greer,,92,33,59
+Humboldt,4E-57,President,,Claudia De la Cruz / Karina Garcia,,1,1,0
+Humboldt,4E-57,President,,Kamala D. Harris / Tim Walz,,42,5,37
+Humboldt,4E-57,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,4E-57,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,4E-57,President,,Jill Stein / Rudolph Ware,,2,0,2
+Humboldt,4E-57,President,,Donald J. Trump / JD Vance,,13,3,10
+Humboldt,4E-57,President,,Peter Sonski,,0,0,0
+Humboldt,4E-57,U.S. Senate,,Adam B. Schiff,,46,6,40
+Humboldt,4E-57,U.S. Senate,,Steve Garvey,,12,3,9
+Humboldt,4E-57,U.S. Senate,Partial Term,Adam B. Schiff,,46,6,40
+Humboldt,4E-57,U.S. Senate,Partial Term,Steve Garvey,,12,3,9
+Humboldt,4E-57,U.S. House,2,Jared Huffman,,45,5,40
+Humboldt,4E-57,U.S. House,2,Chris Coulombe,,13,4,9
+Humboldt,4E-57,State Assembly,2,Chris Rogers,,47,5,42
+Humboldt,4E-57,State Assembly,2,Michael Greer,,12,4,8
+Humboldt,4ES-4,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,4ES-4,President,,Kamala D. Harris / Tim Walz,,0,0,0
+Humboldt,4ES-4,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,4ES-4,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,4ES-4,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,4ES-4,President,,Donald J. Trump / JD Vance,,0,0,0
+Humboldt,4ES-4,President,,Peter Sonski,,0,0,0
+Humboldt,4ES-4,U.S. Senate,,Adam B. Schiff,,0,0,0
+Humboldt,4ES-4,U.S. Senate,,Steve Garvey,,0,0,0
+Humboldt,4ES-4,U.S. Senate,Partial Term,Adam B. Schiff,,0,0,0
+Humboldt,4ES-4,U.S. Senate,Partial Term,Steve Garvey,,0,0,0
+Humboldt,4ES-4,U.S. House,2,Jared Huffman,,0,0,0
+Humboldt,4ES-4,U.S. House,2,Chris Coulombe,,0,0,0
+Humboldt,4ES-4,State Assembly,2,Chris Rogers,,0,0,0
+Humboldt,4ES-4,State Assembly,2,Michael Greer,,0,0,0
+Humboldt,4PE,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,4PE,President,,Kamala D. Harris / Tim Walz,,2,0,2
+Humboldt,4PE,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,4PE,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,4PE,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,4PE,President,,Donald J. Trump / JD Vance,,0,0,0
+Humboldt,4PE,President,,Peter Sonski,,0,0,0
+Humboldt,4PE,U.S. Senate,,Adam B. Schiff,,2,0,2
+Humboldt,4PE,U.S. Senate,,Steve Garvey,,0,0,0
+Humboldt,4PE,U.S. Senate,Partial Term,Adam B. Schiff,,2,0,2
+Humboldt,4PE,U.S. Senate,Partial Term,Steve Garvey,,0,0,0
+Humboldt,4PE,U.S. House,2,Jared Huffman,,2,0,2
+Humboldt,4PE,U.S. House,2,Chris Coulombe,,0,0,0
+Humboldt,4PE,State Assembly,2,Chris Rogers,,2,0,2
+Humboldt,4PE,State Assembly,2,Michael Greer,,0,0,0
+Humboldt,5AS-5,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,5AS-5,President,,Kamala D. Harris / Tim Walz,,71,2,69
+Humboldt,5AS-5,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,5AS-5,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,5AS-5,President,,Jill Stein / Rudolph Ware,,2,1,1
+Humboldt,5AS-5,President,,Donald J. Trump / JD Vance,,29,1,28
+Humboldt,5AS-5,President,,Peter Sonski,,0,0,0
+Humboldt,5AS-5,U.S. Senate,,Adam B. Schiff,,70,1,69
+Humboldt,5AS-5,U.S. Senate,,Steve Garvey,,32,1,31
+Humboldt,5AS-5,U.S. Senate,Partial Term,Adam B. Schiff,,69,1,68
+Humboldt,5AS-5,U.S. Senate,Partial Term,Steve Garvey,,33,1,32
+Humboldt,5AS-5,U.S. House,2,Jared Huffman,,69,2,67
+Humboldt,5AS-5,U.S. House,2,Chris Coulombe,,31,1,30
+Humboldt,5AS-5,State Assembly,2,Chris Rogers,,64,1,63
+Humboldt,5AS-5,State Assembly,2,Michael Greer,,34,1,33
+Humboldt,5AS-5A,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,5AS-5A,President,,Kamala D. Harris / Tim Walz,,11,1,10
+Humboldt,5AS-5A,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,1,0,1
+Humboldt,5AS-5A,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,5AS-5A,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,5AS-5A,President,,Donald J. Trump / JD Vance,,9,4,5
+Humboldt,5AS-5A,President,,Peter Sonski,,0,0,0
+Humboldt,5AS-5A,U.S. Senate,,Adam B. Schiff,,11,1,10
+Humboldt,5AS-5A,U.S. Senate,,Steve Garvey,,9,4,5
+Humboldt,5AS-5A,U.S. Senate,Partial Term,Adam B. Schiff,,11,1,10
+Humboldt,5AS-5A,U.S. Senate,Partial Term,Steve Garvey,,10,4,6
+Humboldt,5AS-5A,U.S. House,2,Jared Huffman,,11,1,10
+Humboldt,5AS-5A,U.S. House,2,Chris Coulombe,,9,4,5
+Humboldt,5AS-5A,State Assembly,2,Chris Rogers,,12,1,11
+Humboldt,5AS-5A,State Assembly,2,Michael Greer,,9,4,5
+Humboldt,5BL,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,5BL,President,,Kamala D. Harris / Tim Walz,,24,1,23
+Humboldt,5BL,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,1,0,1
+Humboldt,5BL,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,5BL,President,,Jill Stein / Rudolph Ware,,2,0,2
+Humboldt,5BL,President,,Donald J. Trump / JD Vance,,7,0,7
+Humboldt,5BL,President,,Peter Sonski,,0,0,0
+Humboldt,5BL,U.S. Senate,,Adam B. Schiff,,23,1,22
+Humboldt,5BL,U.S. Senate,,Steve Garvey,,9,0,9
+Humboldt,5BL,U.S. Senate,Partial Term,Adam B. Schiff,,22,1,21
+Humboldt,5BL,U.S. Senate,Partial Term,Steve Garvey,,9,0,9
+Humboldt,5BL,U.S. House,2,Jared Huffman,,24,1,23
+Humboldt,5BL,U.S. House,2,Chris Coulombe,,9,0,9
+Humboldt,5BL,State Assembly,2,Chris Rogers,,23,1,22
+Humboldt,5BL,State Assembly,2,Michael Greer,,9,0,9
+Humboldt,5BLF,President,,Claudia De la Cruz / Karina Garcia,,2,0,2
+Humboldt,5BLF,President,,Kamala D. Harris / Tim Walz,,260,20,240
+Humboldt,5BLF,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,9,1,8
+Humboldt,5BLF,President,,Chase Oliver / Mike ter Maat,,4,0,4
+Humboldt,5BLF,President,,Jill Stein / Rudolph Ware,,7,0,7
+Humboldt,5BLF,President,,Donald J. Trump / JD Vance,,181,16,165
+Humboldt,5BLF,President,,Peter Sonski,,0,0,0
+Humboldt,5BLF,U.S. Senate,,Adam B. Schiff,,262,21,241
+Humboldt,5BLF,U.S. Senate,,Steve Garvey,,195,18,177
+Humboldt,5BLF,U.S. Senate,Partial Term,Adam B. Schiff,,257,18,239
+Humboldt,5BLF,U.S. Senate,Partial Term,Steve Garvey,,193,18,175
+Humboldt,5BLF,U.S. House,2,Jared Huffman,,281,22,259
+Humboldt,5BLF,U.S. House,2,Chris Coulombe,,174,17,157
+Humboldt,5BLF,State Assembly,2,Chris Rogers,,249,21,228
+Humboldt,5BLF,State Assembly,2,Michael Greer,,191,16,175
+Humboldt,5BLS,President,,Claudia De la Cruz / Karina Garcia,,3,0,3
+Humboldt,5BLS,President,,Kamala D. Harris / Tim Walz,,81,5,76
+Humboldt,5BLS,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,2,0,2
+Humboldt,5BLS,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,5BLS,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,5BLS,President,,Donald J. Trump / JD Vance,,30,4,26
+Humboldt,5BLS,President,,Peter Sonski,,0,0,0
+Humboldt,5BLS,U.S. Senate,,Adam B. Schiff,,85,6,79
+Humboldt,5BLS,U.S. Senate,,Steve Garvey,,32,4,28
+Humboldt,5BLS,U.S. Senate,Partial Term,Adam B. Schiff,,84,6,78
+Humboldt,5BLS,U.S. Senate,Partial Term,Steve Garvey,,31,4,27
+Humboldt,5BLS,U.S. House,2,Jared Huffman,,89,7,82
+Humboldt,5BLS,U.S. House,2,Chris Coulombe,,26,3,23
+Humboldt,5BLS,State Assembly,2,Chris Rogers,,86,6,80
+Humboldt,5BLS,State Assembly,2,Michael Greer,,32,4,28
+Humboldt,5BM,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,5BM,President,,Kamala D. Harris / Tim Walz,,7,1,6
+Humboldt,5BM,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,5BM,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,5BM,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,5BM,President,,Donald J. Trump / JD Vance,,11,2,9
+Humboldt,5BM,President,,Peter Sonski,,0,0,0
+Humboldt,5BM,U.S. Senate,,Adam B. Schiff,,8,1,7
+Humboldt,5BM,U.S. Senate,,Steve Garvey,,10,2,8
+Humboldt,5BM,U.S. Senate,Partial Term,Adam B. Schiff,,6,1,5
+Humboldt,5BM,U.S. Senate,Partial Term,Steve Garvey,,10,2,8
+Humboldt,5BM,U.S. House,2,Jared Huffman,,9,1,8
+Humboldt,5BM,U.S. House,2,Chris Coulombe,,9,2,7
+Humboldt,5BM,State Assembly,2,Chris Rogers,,6,1,5
+Humboldt,5BM,State Assembly,2,Michael Greer,,11,2,9
+Humboldt,5BU,President,,Claudia De la Cruz / Karina Garcia,,1,0,1
+Humboldt,5BU,President,,Kamala D. Harris / Tim Walz,,263,23,240
+Humboldt,5BU,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,3,1,2
+Humboldt,5BU,President,,Chase Oliver / Mike ter Maat,,5,0,5
+Humboldt,5BU,President,,Jill Stein / Rudolph Ware,,6,1,5
+Humboldt,5BU,President,,Donald J. Trump / JD Vance,,137,19,118
+Humboldt,5BU,President,,Peter Sonski,,0,0,0
+Humboldt,5BU,U.S. Senate,,Adam B. Schiff,,261,23,238
+Humboldt,5BU,U.S. Senate,,Steve Garvey,,142,20,122
+Humboldt,5BU,U.S. Senate,Partial Term,Adam B. Schiff,,255,23,232
+Humboldt,5BU,U.S. Senate,Partial Term,Steve Garvey,,146,18,128
+Humboldt,5BU,U.S. House,2,Jared Huffman,,261,23,238
+Humboldt,5BU,U.S. House,2,Chris Coulombe,,142,19,123
+Humboldt,5BU,State Assembly,2,Chris Rogers,,258,20,238
+Humboldt,5BU,State Assembly,2,Michael Greer,,146,22,124
+Humboldt,5FB,President,,Claudia De la Cruz / Karina Garcia,,2,0,2
+Humboldt,5FB,President,,Kamala D. Harris / Tim Walz,,349,41,308
+Humboldt,5FB,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,5,0,5
+Humboldt,5FB,President,,Chase Oliver / Mike ter Maat,,2,1,1
+Humboldt,5FB,President,,Jill Stein / Rudolph Ware,,7,3,4
+Humboldt,5FB,President,,Donald J. Trump / JD Vance,,171,31,140
+Humboldt,5FB,President,,Peter Sonski,,0,0,0
+Humboldt,5FB,U.S. Senate,,Adam B. Schiff,,351,42,309
+Humboldt,5FB,U.S. Senate,,Steve Garvey,,178,32,146
+Humboldt,5FB,U.S. Senate,Partial Term,Adam B. Schiff,,349,42,307
+Humboldt,5FB,U.S. Senate,Partial Term,Steve Garvey,,174,30,144
+Humboldt,5FB,U.S. House,2,Jared Huffman,,363,42,321
+Humboldt,5FB,U.S. House,2,Chris Coulombe,,164,29,135
+Humboldt,5FB,State Assembly,2,Chris Rogers,,341,39,302
+Humboldt,5FB,State Assembly,2,Michael Greer,,177,32,145
+Humboldt,5KT-1,President,,Claudia De la Cruz / Karina Garcia,,5,2,3
+Humboldt,5KT-1,President,,Kamala D. Harris / Tim Walz,,451,127,324
+Humboldt,5KT-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,7,3,4
+Humboldt,5KT-1,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,5KT-1,President,,Jill Stein / Rudolph Ware,,7,0,7
+Humboldt,5KT-1,President,,Donald J. Trump / JD Vance,,214,72,142
+Humboldt,5KT-1,President,,Peter Sonski,,0,0,0
+Humboldt,5KT-1,U.S. Senate,,Adam B. Schiff,,457,134,323
+Humboldt,5KT-1,U.S. Senate,,Steve Garvey,,217,68,149
+Humboldt,5KT-1,U.S. Senate,Partial Term,Adam B. Schiff,,441,124,317
+Humboldt,5KT-1,U.S. Senate,Partial Term,Steve Garvey,,218,72,146
+Humboldt,5KT-1,U.S. House,2,Jared Huffman,,473,142,331
+Humboldt,5KT-1,U.S. House,2,Chris Coulombe,,196,61,135
+Humboldt,5KT-1,State Assembly,2,Chris Rogers,,464,142,322
+Humboldt,5KT-1,State Assembly,2,Michael Greer,,207,61,146
+Humboldt,5KT-4,President,,Claudia De la Cruz / Karina Garcia,,1,0,1
+Humboldt,5KT-4,President,,Kamala D. Harris / Tim Walz,,131,70,61
+Humboldt,5KT-4,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,3,1,2
+Humboldt,5KT-4,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,5KT-4,President,,Jill Stein / Rudolph Ware,,2,0,2
+Humboldt,5KT-4,President,,Donald J. Trump / JD Vance,,48,27,21
+Humboldt,5KT-4,President,,Peter Sonski,,0,0,0
+Humboldt,5KT-4,U.S. Senate,,Adam B. Schiff,,132,69,63
+Humboldt,5KT-4,U.S. Senate,,Steve Garvey,,49,26,23
+Humboldt,5KT-4,U.S. Senate,Partial Term,Adam B. Schiff,,128,68,60
+Humboldt,5KT-4,U.S. Senate,Partial Term,Steve Garvey,,50,25,25
+Humboldt,5KT-4,U.S. House,2,Jared Huffman,,138,73,65
+Humboldt,5KT-4,U.S. House,2,Chris Coulombe,,41,20,21
+Humboldt,5KT-4,State Assembly,2,Chris Rogers,,129,67,62
+Humboldt,5KT-4,State Assembly,2,Michael Greer,,52,28,24
+Humboldt,5KT-7,President,,Claudia De la Cruz / Karina Garcia,,1,0,1
+Humboldt,5KT-7,President,,Kamala D. Harris / Tim Walz,,114,32,82
+Humboldt,5KT-7,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,10,4,6
+Humboldt,5KT-7,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,5KT-7,President,,Jill Stein / Rudolph Ware,,2,1,1
+Humboldt,5KT-7,President,,Donald J. Trump / JD Vance,,32,9,23
+Humboldt,5KT-7,President,,Peter Sonski,,0,0,0
+Humboldt,5KT-7,U.S. Senate,,Adam B. Schiff,,121,35,86
+Humboldt,5KT-7,U.S. Senate,,Steve Garvey,,37,9,28
+Humboldt,5KT-7,U.S. Senate,Partial Term,Adam B. Schiff,,117,36,81
+Humboldt,5KT-7,U.S. Senate,Partial Term,Steve Garvey,,34,7,27
+Humboldt,5KT-7,U.S. House,2,Jared Huffman,,118,35,83
+Humboldt,5KT-7,U.S. House,2,Chris Coulombe,,37,9,28
+Humboldt,5KT-7,State Assembly,2,Chris Rogers,,118,33,85
+Humboldt,5KT-7,State Assembly,2,Michael Greer,,38,10,28
+Humboldt,5KTF1,President,,Claudia De la Cruz / Karina Garcia,,7,2,5
+Humboldt,5KTF1,President,,Kamala D. Harris / Tim Walz,,430,35,395
+Humboldt,5KTF1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,18,2,16
+Humboldt,5KTF1,President,,Chase Oliver / Mike ter Maat,,2,0,2
+Humboldt,5KTF1,President,,Jill Stein / Rudolph Ware,,9,2,7
+Humboldt,5KTF1,President,,Donald J. Trump / JD Vance,,281,41,240
+Humboldt,5KTF1,President,,Peter Sonski,,0,0,0
+Humboldt,5KTF1,U.S. Senate,,Adam B. Schiff,,418,32,386
+Humboldt,5KTF1,U.S. Senate,,Steve Garvey,,306,42,264
+Humboldt,5KTF1,U.S. Senate,Partial Term,Adam B. Schiff,,410,31,379
+Humboldt,5KTF1,U.S. Senate,Partial Term,Steve Garvey,,308,43,265
+Humboldt,5KTF1,U.S. House,2,Jared Huffman,,438,37,401
+Humboldt,5KTF1,U.S. House,2,Chris Coulombe,,287,40,247
+Humboldt,5KTF1,State Assembly,2,Chris Rogers,,407,37,370
+Humboldt,5KTF1,State Assembly,2,Michael Greer,,305,41,264
+Humboldt,5MC,President,,Claudia De la Cruz / Karina Garcia,,1,0,1
+Humboldt,5MC,President,,Kamala D. Harris / Tim Walz,,15,1,14
+Humboldt,5MC,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,5MC,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,5MC,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,5MC,President,,Donald J. Trump / JD Vance,,5,1,4
+Humboldt,5MC,President,,Peter Sonski,,0,0,0
+Humboldt,5MC,U.S. Senate,,Adam B. Schiff,,15,0,15
+Humboldt,5MC,U.S. Senate,,Steve Garvey,,5,1,4
+Humboldt,5MC,U.S. Senate,Partial Term,Adam B. Schiff,,16,1,15
+Humboldt,5MC,U.S. Senate,Partial Term,Steve Garvey,,5,1,4
+Humboldt,5MC,U.S. House,2,Jared Huffman,,16,1,15
+Humboldt,5MC,U.S. House,2,Chris Coulombe,,5,1,4
+Humboldt,5MC,State Assembly,2,Chris Rogers,,16,1,15
+Humboldt,5MC,State Assembly,2,Michael Greer,,5,1,4
+Humboldt,5MK-1,President,,Claudia De la Cruz / Karina Garcia,,17,4,13
+Humboldt,5MK-1,President,,Kamala D. Harris / Tim Walz,,2584,368,2216
+Humboldt,5MK-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,48,12,36
+Humboldt,5MK-1,President,,Chase Oliver / Mike ter Maat,,21,3,18
+Humboldt,5MK-1,President,,Jill Stein / Rudolph Ware,,69,12,57
+Humboldt,5MK-1,President,,Donald J. Trump / JD Vance,,1353,364,989
+Humboldt,5MK-1,President,,Peter Sonski,,0,0,0
+Humboldt,5MK-1,U.S. Senate,,Adam B. Schiff,,2577,371,2206
+Humboldt,5MK-1,U.S. Senate,,Steve Garvey,,1434,365,1069
+Humboldt,5MK-1,U.S. Senate,Partial Term,Adam B. Schiff,,2519,357,2162
+Humboldt,5MK-1,U.S. Senate,Partial Term,Steve Garvey,,1420,353,1067
+Humboldt,5MK-1,U.S. House,2,Jared Huffman,,2652,373,2279
+Humboldt,5MK-1,U.S. House,2,Chris Coulombe,,1362,358,1004
+Humboldt,5MK-1,State Assembly,2,Chris Rogers,,2492,341,2151
+Humboldt,5MK-1,State Assembly,2,Michael Greer,,1489,382,1107
+Humboldt,5MK-5,President,,Claudia De la Cruz / Karina Garcia,,20,3,17
+Humboldt,5MK-5,President,,Kamala D. Harris / Tim Walz,,2346,337,2009
+Humboldt,5MK-5,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,60,11,49
+Humboldt,5MK-5,President,,Chase Oliver / Mike ter Maat,,20,3,17
+Humboldt,5MK-5,President,,Jill Stein / Rudolph Ware,,51,6,45
+Humboldt,5MK-5,President,,Donald J. Trump / JD Vance,,1195,359,836
+Humboldt,5MK-5,President,,Peter Sonski,,0,0,0
+Humboldt,5MK-5,U.S. Senate,,Adam B. Schiff,,2359,326,2033
+Humboldt,5MK-5,U.S. Senate,,Steve Garvey,,1260,362,898
+Humboldt,5MK-5,U.S. Senate,Partial Term,Adam B. Schiff,,2307,317,1990
+Humboldt,5MK-5,U.S. Senate,Partial Term,Steve Garvey,,1244,358,886
+Humboldt,5MK-5,U.S. House,2,Jared Huffman,,2411,329,2082
+Humboldt,5MK-5,U.S. House,2,Chris Coulombe,,1184,348,836
+Humboldt,5MK-5,State Assembly,2,Chris Rogers,,2286,316,1970
+Humboldt,5MK-5,State Assembly,2,Michael Greer,,1276,355,921
+Humboldt,5MK-8,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,5MK-8,President,,Kamala D. Harris / Tim Walz,,0,0,0
+Humboldt,5MK-8,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,0,0,0
+Humboldt,5MK-8,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,5MK-8,President,,Jill Stein / Rudolph Ware,,0,0,0
+Humboldt,5MK-8,President,,Donald J. Trump / JD Vance,,2,0,2
+Humboldt,5MK-8,President,,Peter Sonski,,0,0,0
+Humboldt,5MK-8,U.S. Senate,,Adam B. Schiff,,0,0,0
+Humboldt,5MK-8,U.S. Senate,,Steve Garvey,,2,0,2
+Humboldt,5MK-8,U.S. Senate,Partial Term,Adam B. Schiff,,0,0,0
+Humboldt,5MK-8,U.S. Senate,Partial Term,Steve Garvey,,2,0,2
+Humboldt,5MK-8,U.S. House,2,Jared Huffman,,0,0,0
+Humboldt,5MK-8,U.S. House,2,Chris Coulombe,,2,0,2
+Humboldt,5MK-8,State Assembly,2,Chris Rogers,,0,0,0
+Humboldt,5MK-8,State Assembly,2,Michael Greer,,2,0,2
+Humboldt,5PA-3,President,,Claudia De la Cruz / Karina Garcia,,0,0,0
+Humboldt,5PA-3,President,,Kamala D. Harris / Tim Walz,,63,2,61
+Humboldt,5PA-3,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,4,0,4
+Humboldt,5PA-3,President,,Chase Oliver / Mike ter Maat,,1,0,1
+Humboldt,5PA-3,President,,Jill Stein / Rudolph Ware,,1,0,1
+Humboldt,5PA-3,President,,Donald J. Trump / JD Vance,,25,5,20
+Humboldt,5PA-3,President,,Peter Sonski,,0,0,0
+Humboldt,5PA-3,U.S. Senate,,Adam B. Schiff,,65,2,63
+Humboldt,5PA-3,U.S. Senate,,Steve Garvey,,28,4,24
+Humboldt,5PA-3,U.S. Senate,Partial Term,Adam B. Schiff,,65,2,63
+Humboldt,5PA-3,U.S. Senate,Partial Term,Steve Garvey,,27,4,23
+Humboldt,5PA-3,U.S. House,2,Jared Huffman,,64,2,62
+Humboldt,5PA-3,U.S. House,2,Chris Coulombe,,28,4,24
+Humboldt,5PA-3,State Assembly,2,Chris Rogers,,61,2,59
+Humboldt,5PA-3,State Assembly,2,Michael Greer,,31,4,27
+Humboldt,5T--1,President,,Claudia De la Cruz / Karina Garcia,,3,0,3
+Humboldt,5T--1,President,,Kamala D. Harris / Tim Walz,,169,16,153
+Humboldt,5T--1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,3,0,3
+Humboldt,5T--1,President,,Chase Oliver / Mike ter Maat,,0,0,0
+Humboldt,5T--1,President,,Jill Stein / Rudolph Ware,,5,0,5
+Humboldt,5T--1,President,,Donald J. Trump / JD Vance,,49,5,44
+Humboldt,5T--1,President,,Peter Sonski,,0,0,0
+Humboldt,5T--1,U.S. Senate,,Adam B. Schiff,,166,15,151
+Humboldt,5T--1,U.S. Senate,,Steve Garvey,,57,6,51
+Humboldt,5T--1,U.S. Senate,Partial Term,Adam B. Schiff,,161,14,147
+Humboldt,5T--1,U.S. Senate,Partial Term,Steve Garvey,,58,6,52
+Humboldt,5T--1,U.S. House,2,Jared Huffman,,164,15,149
+Humboldt,5T--1,U.S. House,2,Chris Coulombe,,54,5,49
+Humboldt,5T--1,State Assembly,2,Chris Rogers,,165,16,149
+Humboldt,5T--1,State Assembly,2,Michael Greer,,52,5,47
+Humboldt,5TU-1,President,,Claudia De la Cruz / Karina Garcia,,5,2,3
+Humboldt,5TU-1,President,,Kamala D. Harris / Tim Walz,,758,66,692
+Humboldt,5TU-1,President,,Robert F. Kennedy Jr. / Nicole Shanahan,,14,1,13
+Humboldt,5TU-1,President,,Chase Oliver / Mike ter Maat,,8,2,6
+Humboldt,5TU-1,President,,Jill Stein / Rudolph Ware,,23,6,17
+Humboldt,5TU-1,President,,Donald J. Trump / JD Vance,,186,38,148
+Humboldt,5TU-1,President,,Peter Sonski,,0,0,0
+Humboldt,5TU-1,U.S. Senate,,Adam B. Schiff,,775,70,705
+Humboldt,5TU-1,U.S. Senate,,Steve Garvey,,212,41,171
+Humboldt,5TU-1,U.S. Senate,Partial Term,Adam B. Schiff,,761,70,691
+Humboldt,5TU-1,U.S. Senate,Partial Term,Steve Garvey,,208,40,168
+Humboldt,5TU-1,U.S. House,2,Jared Huffman,,777,72,705
+Humboldt,5TU-1,U.S. House,2,Chris Coulombe,,205,38,167
+Humboldt,5TU-1,State Assembly,2,Chris Rogers,,766,71,695
+Humboldt,5TU-1,State Assembly,2,Michael Greer,,211,38,173

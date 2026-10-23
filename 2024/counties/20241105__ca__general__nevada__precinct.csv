@@ -1,0 +1,1596 @@
+county,precinct,office,district,candidate,party,votes,election_day,mail
+Nevada,CP01,President,,Donald J. Trump / JD Vance,Republican,889,68,713
+Nevada,CP01,President,,Claudia De La Cruz / Karina Garcia,PFP,4,0,3
+Nevada,CP01,President,,Kamala D. Harris / Tim Walz,Democratic,734,21,686
+Nevada,CP01,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,22,2,18
+Nevada,CP01,President,,Chase Oliver / Mike ter Maat,Libertarian,11,2,9
+Nevada,CP01,President,,Jill Stein / Rudolph Ware,Green,3,1,2
+Nevada,CP01,President,,Peter Sonski,,0,0,0
+Nevada,CP01,U.S. Senate,,Steve Garvey,Republican,969,70,789
+Nevada,CP01,U.S. Senate,,Adam B. Schiff,Democratic,679,17,637
+Nevada,CP01,U.S. Senate,Partial Term,Steve Garvey,Republican,953,69,778
+Nevada,CP01,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,682,18,637
+Nevada,CP01,U.S. House,3,Jessica Morse,Democratic,671,20,623
+Nevada,CP01,U.S. House,3,Kevin Kiley,Republican,975,71,799
+Nevada,CP01,State Senate,1,David Fennell,Republican,426,31,338
+Nevada,CP01,State Senate,1,Megan Dahle,Republican,940,52,822
+Nevada,CP01,State Assembly,1,Heather Hadwick,Republican,678,44,572
+Nevada,CP01,State Assembly,1,Tenessa Audette,Republican,617,36,520
+Nevada,CP02,President,,Donald J. Trump / JD Vance,Republican,1044,82,874
+Nevada,CP02,President,,Claudia De La Cruz / Karina Garcia,PFP,1,1,0
+Nevada,CP02,President,,Kamala D. Harris / Tim Walz,Democratic,770,26,734
+Nevada,CP02,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,24,2,22
+Nevada,CP02,President,,Chase Oliver / Mike ter Maat,Libertarian,10,0,9
+Nevada,CP02,President,,Jill Stein / Rudolph Ware,Green,11,1,10
+Nevada,CP02,President,,Peter Sonski,,0,0,0
+Nevada,CP02,U.S. Senate,,Steve Garvey,Republican,1117,87,942
+Nevada,CP02,U.S. Senate,,Adam B. Schiff,Democratic,735,27,699
+Nevada,CP02,U.S. Senate,Partial Term,Steve Garvey,Republican,1111,87,938
+Nevada,CP02,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,718,26,682
+Nevada,CP02,U.S. House,3,Jessica Morse,Democratic,698,27,659
+Nevada,CP02,U.S. House,3,Kevin Kiley,Republican,1137,88,963
+Nevada,CP02,State Senate,1,David Fennell,Republican,495,39,422
+Nevada,CP02,State Senate,1,Megan Dahle,Republican,1018,61,898
+Nevada,CP02,State Assembly,1,Heather Hadwick,Republican,719,48,625
+Nevada,CP02,State Assembly,1,Tenessa Audette,Republican,698,50,602
+Nevada,CP03,President,,Donald J. Trump / JD Vance,Republican,147,16,104
+Nevada,CP03,President,,Claudia De La Cruz / Karina Garcia,PFP,5,1,4
+Nevada,CP03,President,,Kamala D. Harris / Tim Walz,Democratic,553,38,456
+Nevada,CP03,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,10,2,6
+Nevada,CP03,President,,Chase Oliver / Mike ter Maat,Libertarian,4,0,3
+Nevada,CP03,President,,Jill Stein / Rudolph Ware,Green,11,3,7
+Nevada,CP03,President,,Peter Sonski,,0,0,0
+Nevada,CP03,U.S. Senate,,Steve Garvey,Republican,168,20,118
+Nevada,CP03,U.S. Senate,,Adam B. Schiff,Democratic,546,37,454
+Nevada,CP03,U.S. Senate,Partial Term,Steve Garvey,Republican,171,21,120
+Nevada,CP03,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,537,35,446
+Nevada,CP03,U.S. House,3,Jessica Morse,Democratic,555,41,460
+Nevada,CP03,U.S. House,3,Kevin Kiley,Republican,162,15,115
+Nevada,CP03,State Assembly,1,Heather Hadwick,Republican,275,35,209
+Nevada,CP03,State Assembly,1,Tenessa Audette,Republican,159,11,127
+Nevada,CP04,President,,Donald J. Trump / JD Vance,Republican,143,12,120
+Nevada,CP04,President,,Claudia De La Cruz / Karina Garcia,PFP,1,1,0
+Nevada,CP04,President,,Kamala D. Harris / Tim Walz,Democratic,106,3,99
+Nevada,CP04,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,6,0,6
+Nevada,CP04,President,,Chase Oliver / Mike ter Maat,Libertarian,8,0,8
+Nevada,CP04,President,,Jill Stein / Rudolph Ware,Green,1,0,1
+Nevada,CP04,President,,Peter Sonski,,0,0,0
+Nevada,CP04,U.S. Senate,,Steve Garvey,Republican,162,13,139
+Nevada,CP04,U.S. Senate,,Adam B. Schiff,Democratic,104,3,97
+Nevada,CP04,U.S. Senate,Partial Term,Steve Garvey,Republican,162,13,139
+Nevada,CP04,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,102,3,95
+Nevada,CP04,U.S. House,3,Jessica Morse,Democratic,104,3,97
+Nevada,CP04,U.S. House,3,Kevin Kiley,Republican,162,13,139
+Nevada,CP04,State Senate,1,David Fennell,Republican,72,5,60
+Nevada,CP04,State Senate,1,Megan Dahle,Republican,146,10,131
+Nevada,CP04,State Assembly,1,Heather Hadwick,Republican,123,9,108
+Nevada,CP04,State Assembly,1,Tenessa Audette,Republican,85,3,78
+Nevada,CP05,President,,Donald J. Trump / JD Vance,Republican,241,14,185
+Nevada,CP05,President,,Claudia De La Cruz / Karina Garcia,PFP,2,0,2
+Nevada,CP05,President,,Kamala D. Harris / Tim Walz,Democratic,157,2,152
+Nevada,CP05,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,6,0,6
+Nevada,CP05,President,,Chase Oliver / Mike ter Maat,Libertarian,3,0,3
+Nevada,CP05,President,,Jill Stein / Rudolph Ware,Green,3,1,2
+Nevada,CP05,President,,Peter Sonski,,0,0,0
+Nevada,CP05,U.S. Senate,,Steve Garvey,Republican,249,16,194
+Nevada,CP05,U.S. Senate,,Adam B. Schiff,Democratic,156,1,152
+Nevada,CP05,U.S. Senate,Partial Term,Steve Garvey,Republican,250,16,195
+Nevada,CP05,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,154,1,150
+Nevada,CP05,U.S. House,3,Jessica Morse,Democratic,153,2,148
+Nevada,CP05,U.S. House,3,Kevin Kiley,Republican,255,15,201
+Nevada,CP05,State Senate,1,David Fennell,Republican,128,5,99
+Nevada,CP05,State Senate,1,Megan Dahle,Republican,216,12,187
+Nevada,CP05,State Assembly,1,Heather Hadwick,Republican,186,10,156
+Nevada,CP05,State Assembly,1,Tenessa Audette,Republican,142,7,114
+Nevada,CP06,President,,Donald J. Trump / JD Vance,Republican,970,75,758
+Nevada,CP06,President,,Claudia De La Cruz / Karina Garcia,PFP,3,0,3
+Nevada,CP06,President,,Kamala D. Harris / Tim Walz,Democratic,533,20,492
+Nevada,CP06,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,31,1,30
+Nevada,CP06,President,,Chase Oliver / Mike ter Maat,Libertarian,12,1,11
+Nevada,CP06,President,,Jill Stein / Rudolph Ware,Green,8,1,7
+Nevada,CP06,President,,Peter Sonski,,1,0,1
+Nevada,CP06,U.S. Senate,,Steve Garvey,Republican,1007,72,804
+Nevada,CP06,U.S. Senate,,Adam B. Schiff,Democratic,536,24,489
+Nevada,CP06,U.S. Senate,Partial Term,Steve Garvey,Republican,994,70,796
+Nevada,CP06,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,526,23,478
+Nevada,CP06,U.S. House,3,Jessica Morse,Democratic,548,26,501
+Nevada,CP06,U.S. House,3,Kevin Kiley,Republican,991,70,789
+Nevada,CP06,State Senate,1,David Fennell,Republican,384,25,296
+Nevada,CP06,State Senate,1,Megan Dahle,Republican,924,66,776
+Nevada,CP06,State Assembly,1,Heather Hadwick,Republican,745,49,624
+Nevada,CP06,State Assembly,1,Tenessa Audette,Republican,483,40,373
+Nevada,CP07,President,,Donald J. Trump / JD Vance,Republican,1049,101,820
+Nevada,CP07,President,,Claudia De La Cruz / Karina Garcia,PFP,2,0,2
+Nevada,CP07,President,,Kamala D. Harris / Tim Walz,Democratic,600,30,551
+Nevada,CP07,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,26,3,21
+Nevada,CP07,President,,Chase Oliver / Mike ter Maat,Libertarian,12,0,11
+Nevada,CP07,President,,Jill Stein / Rudolph Ware,Green,6,1,4
+Nevada,CP07,President,,Peter Sonski,,1,0,1
+Nevada,CP07,U.S. Senate,,Steve Garvey,Republican,1108,101,883
+Nevada,CP07,U.S. Senate,,Adam B. Schiff,Democratic,581,29,530
+Nevada,CP07,U.S. Senate,Partial Term,Steve Garvey,Republican,1092,101,870
+Nevada,CP07,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,580,29,529
+Nevada,CP07,U.S. House,3,Jessica Morse,Democratic,585,32,530
+Nevada,CP07,U.S. House,3,Kevin Kiley,Republican,1095,100,873
+Nevada,CP07,State Senate,1,David Fennell,Republican,436,44,342
+Nevada,CP07,State Senate,1,Megan Dahle,Republican,1001,74,841
+Nevada,CP07,State Assembly,1,Heather Hadwick,Republican,708,66,572
+Nevada,CP07,State Assembly,1,Tenessa Audette,Republican,628,48,519
+Nevada,CP08,President,,Donald J. Trump / JD Vance,Republican,376,21,311
+Nevada,CP08,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,0
+Nevada,CP08,President,,Kamala D. Harris / Tim Walz,Democratic,334,4,317
+Nevada,CP08,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,17,0,17
+Nevada,CP08,President,,Chase Oliver / Mike ter Maat,Libertarian,3,1,2
+Nevada,CP08,President,,Jill Stein / Rudolph Ware,Green,2,0,2
+Nevada,CP08,President,,Peter Sonski,,0,0,0
+Nevada,CP08,U.S. Senate,,Steve Garvey,Republican,396,21,331
+Nevada,CP08,U.S. Senate,,Adam B. Schiff,Democratic,322,1,308
+Nevada,CP08,U.S. Senate,Partial Term,Steve Garvey,Republican,385,21,320
+Nevada,CP08,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,325,1,311
+Nevada,CP08,U.S. House,3,Jessica Morse,Democratic,314,3,297
+Nevada,CP08,U.S. House,3,Kevin Kiley,Republican,405,20,342
+Nevada,CP08,State Senate,1,David Fennell,Republican,167,5,140
+Nevada,CP08,State Senate,1,Megan Dahle,Republican,396,15,352
+Nevada,CP08,State Assembly,1,Heather Hadwick,Republican,300,16,262
+Nevada,CP08,State Assembly,1,Tenessa Audette,Republican,225,7,190
+Nevada,CP09,President,,Donald J. Trump / JD Vance,Republican,630,44,529
+Nevada,CP09,President,,Claudia De La Cruz / Karina Garcia,PFP,2,0,2
+Nevada,CP09,President,,Kamala D. Harris / Tim Walz,Democratic,601,15,564
+Nevada,CP09,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,10,0,10
+Nevada,CP09,President,,Chase Oliver / Mike ter Maat,Libertarian,6,0,6
+Nevada,CP09,President,,Jill Stein / Rudolph Ware,Green,9,1,8
+Nevada,CP09,President,,Peter Sonski,,0,0,0
+Nevada,CP09,U.S. Senate,,Steve Garvey,Republican,671,42,572
+Nevada,CP09,U.S. Senate,,Adam B. Schiff,Democratic,574,16,537
+Nevada,CP09,U.S. Senate,Partial Term,Steve Garvey,Republican,661,42,562
+Nevada,CP09,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,577,16,540
+Nevada,CP09,U.S. House,3,Jessica Morse,Democratic,556,16,519
+Nevada,CP09,U.S. House,3,Kevin Kiley,Republican,682,41,584
+Nevada,CP09,State Senate,1,David Fennell,Republican,331,18,281
+Nevada,CP09,State Senate,1,Megan Dahle,Republican,693,35,618
+Nevada,CP09,State Assembly,1,Heather Hadwick,Republican,508,34,445
+Nevada,CP09,State Assembly,1,Tenessa Audette,Republican,417,20,361
+Nevada,CP10,President,,Donald J. Trump / JD Vance,Republican,844,43,711
+Nevada,CP10,President,,Claudia De La Cruz / Karina Garcia,PFP,4,0,3
+Nevada,CP10,President,,Kamala D. Harris / Tim Walz,Democratic,708,18,669
+Nevada,CP10,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,28,2,26
+Nevada,CP10,President,,Chase Oliver / Mike ter Maat,Libertarian,4,1,3
+Nevada,CP10,President,,Jill Stein / Rudolph Ware,Green,8,1,6
+Nevada,CP10,President,,Peter Sonski,,0,0,0
+Nevada,CP10,U.S. Senate,,Steve Garvey,Republican,892,42,761
+Nevada,CP10,U.S. Senate,,Adam B. Schiff,Democratic,679,18,640
+Nevada,CP10,U.S. Senate,Partial Term,Steve Garvey,Republican,878,41,751
+Nevada,CP10,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,676,17,637
+Nevada,CP10,U.S. House,3,Jessica Morse,Democratic,665,18,625
+Nevada,CP10,U.S. House,3,Kevin Kiley,Republican,909,45,775
+Nevada,CP10,State Senate,1,David Fennell,Republican,398,18,344
+Nevada,CP10,State Senate,1,Megan Dahle,Republican,883,33,782
+Nevada,CP10,State Assembly,1,Heather Hadwick,Republican,652,32,569
+Nevada,CP10,State Assembly,1,Tenessa Audette,Republican,515,20,448
+Nevada,CP11,President,,Donald J. Trump / JD Vance,Republican,266,14,225
+Nevada,CP11,President,,Claudia De La Cruz / Karina Garcia,PFP,3,0,3
+Nevada,CP11,President,,Kamala D. Harris / Tim Walz,Democratic,423,4,409
+Nevada,CP11,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,10,2,8
+Nevada,CP11,President,,Chase Oliver / Mike ter Maat,Libertarian,5,0,5
+Nevada,CP11,President,,Jill Stein / Rudolph Ware,Green,4,0,4
+Nevada,CP11,President,,Peter Sonski,,0,0,0
+Nevada,CP11,U.S. Senate,,Steve Garvey,Republican,290,14,249
+Nevada,CP11,U.S. Senate,,Adam B. Schiff,Democratic,418,5,403
+Nevada,CP11,U.S. Senate,Partial Term,Steve Garvey,Republican,292,15,250
+Nevada,CP11,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,411,4,397
+Nevada,CP11,U.S. House,3,Jessica Morse,Democratic,426,7,408
+Nevada,CP11,U.S. House,3,Kevin Kiley,Republican,283,13,244
+Nevada,CP11,State Senate,1,David Fennell,Republican,167,5,148
+Nevada,CP11,State Senate,1,Megan Dahle,Republican,347,13,317
+Nevada,CP11,State Assembly,1,Heather Hadwick,Republican,288,14,261
+Nevada,CP11,State Assembly,1,Tenessa Audette,Republican,184,3,164
+Nevada,CP12,President,,Donald J. Trump / JD Vance,Republican,351,29,252
+Nevada,CP12,President,,Claudia De La Cruz / Karina Garcia,PFP,2,1,1
+Nevada,CP12,President,,Kamala D. Harris / Tim Walz,Democratic,1051,52,904
+Nevada,CP12,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,25,3,20
+Nevada,CP12,President,,Chase Oliver / Mike ter Maat,Libertarian,6,0,6
+Nevada,CP12,President,,Jill Stein / Rudolph Ware,Green,11,1,9
+Nevada,CP12,President,,Peter Sonski,,0,0,0
+Nevada,CP12,U.S. Senate,,Steve Garvey,Republican,417,33,317
+Nevada,CP12,U.S. Senate,,Adam B. Schiff,Democratic,1021,49,877
+Nevada,CP12,U.S. Senate,Partial Term,Steve Garvey,Republican,410,31,312
+Nevada,CP12,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,1021,51,879
+Nevada,CP12,U.S. House,3,Jessica Morse,Democratic,1026,58,876
+Nevada,CP12,U.S. House,3,Kevin Kiley,Republican,413,27,316
+Nevada,CP12,State Assembly,1,Heather Hadwick,Republican,524,40,412
+Nevada,CP12,State Assembly,1,Tenessa Audette,Republican,360,22,291
+Nevada,CP13,President,,Donald J. Trump / JD Vance,Republican,309,24,260
+Nevada,CP13,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP13,President,,Kamala D. Harris / Tim Walz,Democratic,326,10,305
+Nevada,CP13,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,13,1,11
+Nevada,CP13,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,2
+Nevada,CP13,President,,Jill Stein / Rudolph Ware,Green,5,0,4
+Nevada,CP13,President,,Peter Sonski,,0,0,0
+Nevada,CP13,U.S. Senate,,Steve Garvey,Republican,337,25,287
+Nevada,CP13,U.S. Senate,,Adam B. Schiff,Democratic,315,9,296
+Nevada,CP13,U.S. Senate,Partial Term,Steve Garvey,Republican,330,24,281
+Nevada,CP13,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,317,10,298
+Nevada,CP13,U.S. House,3,Jessica Morse,Democratic,306,13,284
+Nevada,CP13,U.S. House,3,Kevin Kiley,Republican,342,20,297
+Nevada,CP13,State Senate,1,David Fennell,Republican,154,15,128
+Nevada,CP13,State Senate,1,Megan Dahle,Republican,362,16,327
+Nevada,CP13,State Assembly,1,Heather Hadwick,Republican,286,15,253
+Nevada,CP13,State Assembly,1,Tenessa Audette,Republican,182,15,155
+Nevada,CP14,President,,Donald J. Trump / JD Vance,Republican,784,37,682
+Nevada,CP14,President,,Claudia De La Cruz / Karina Garcia,PFP,5,0,5
+Nevada,CP14,President,,Kamala D. Harris / Tim Walz,Democratic,732,13,691
+Nevada,CP14,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,29,0,29
+Nevada,CP14,President,,Chase Oliver / Mike ter Maat,Libertarian,8,2,6
+Nevada,CP14,President,,Jill Stein / Rudolph Ware,Green,15,1,14
+Nevada,CP14,President,,Peter Sonski,,0,0,0
+Nevada,CP14,U.S. Senate,,Steve Garvey,Republican,817,36,716
+Nevada,CP14,U.S. Senate,,Adam B. Schiff,Democratic,723,16,679
+Nevada,CP14,U.S. Senate,Partial Term,Steve Garvey,Republican,797,35,698
+Nevada,CP14,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,721,15,678
+Nevada,CP14,U.S. House,3,Jessica Morse,Democratic,713,18,668
+Nevada,CP14,U.S. House,3,Kevin Kiley,Republican,816,34,716
+Nevada,CP14,State Senate,1,David Fennell,Republican,358,10,313
+Nevada,CP14,State Senate,1,Megan Dahle,Republican,868,38,775
+Nevada,CP14,State Assembly,1,Heather Hadwick,Republican,629,28,557
+Nevada,CP14,State Assembly,1,Tenessa Audette,Republican,491,17,446
+Nevada,CP15,President,,Donald J. Trump / JD Vance,Republican,140,13,96
+Nevada,CP15,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP15,President,,Kamala D. Harris / Tim Walz,Democratic,110,3,103
+Nevada,CP15,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,3,0,3
+Nevada,CP15,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP15,President,,Jill Stein / Rudolph Ware,Green,2,0,2
+Nevada,CP15,President,,Peter Sonski,,0,0,0
+Nevada,CP15,U.S. Senate,,Steve Garvey,Republican,138,13,93
+Nevada,CP15,U.S. Senate,,Adam B. Schiff,Democratic,108,2,103
+Nevada,CP15,U.S. Senate,Partial Term,Steve Garvey,Republican,135,13,91
+Nevada,CP15,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,105,2,99
+Nevada,CP15,U.S. House,3,Jessica Morse,Democratic,106,2,101
+Nevada,CP15,U.S. House,3,Kevin Kiley,Republican,140,14,95
+Nevada,CP15,State Senate,1,David Fennell,Republican,64,2,47
+Nevada,CP15,State Senate,1,Megan Dahle,Republican,138,13,105
+Nevada,CP15,State Assembly,1,Heather Hadwick,Republican,121,9,90
+Nevada,CP15,State Assembly,1,Tenessa Audette,Republican,78,5,61
+Nevada,CP16,President,,Donald J. Trump / JD Vance,Republican,25,2,22
+Nevada,CP16,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP16,President,,Kamala D. Harris / Tim Walz,Democratic,24,0,23
+Nevada,CP16,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,0,0,0
+Nevada,CP16,President,,Chase Oliver / Mike ter Maat,Libertarian,1,0,1
+Nevada,CP16,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP16,President,,Peter Sonski,,0,0,0
+Nevada,CP16,U.S. Senate,,Steve Garvey,Republican,24,2,22
+Nevada,CP16,U.S. Senate,,Adam B. Schiff,Democratic,22,0,21
+Nevada,CP16,U.S. Senate,Partial Term,Steve Garvey,Republican,25,2,22
+Nevada,CP16,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,22,0,21
+Nevada,CP16,U.S. House,3,Jessica Morse,Democratic,23,0,22
+Nevada,CP16,U.S. House,3,Kevin Kiley,Republican,23,1,22
+Nevada,CP16,State Senate,1,David Fennell,Republican,12,0,12
+Nevada,CP16,State Senate,1,Megan Dahle,Republican,18,1,16
+Nevada,CP16,State Assembly,1,Heather Hadwick,Republican,19,1,18
+Nevada,CP16,State Assembly,1,Tenessa Audette,Republican,11,0,11
+Nevada,CP17,President,,Donald J. Trump / JD Vance,Republican,14,4,9
+Nevada,CP17,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP17,President,,Kamala D. Harris / Tim Walz,Democratic,12,0,12
+Nevada,CP17,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,1,0,1
+Nevada,CP17,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP17,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP17,President,,Peter Sonski,,0,0,0
+Nevada,CP17,U.S. Senate,,Steve Garvey,Republican,14,4,9
+Nevada,CP17,U.S. Senate,,Adam B. Schiff,Democratic,13,0,13
+Nevada,CP17,U.S. Senate,Partial Term,Steve Garvey,Republican,14,4,9
+Nevada,CP17,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,12,0,12
+Nevada,CP17,U.S. House,3,Jessica Morse,Democratic,12,0,12
+Nevada,CP17,U.S. House,3,Kevin Kiley,Republican,14,4,9
+Nevada,CP17,State Senate,1,David Fennell,Republican,6,2,3
+Nevada,CP17,State Senate,1,Megan Dahle,Republican,14,2,12
+Nevada,CP17,State Assembly,1,Heather Hadwick,Republican,7,0,6
+Nevada,CP17,State Assembly,1,Tenessa Audette,Republican,10,3,7
+Nevada,CP18,President,,Donald J. Trump / JD Vance,Republican,34,5,26
+Nevada,CP18,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP18,President,,Kamala D. Harris / Tim Walz,Democratic,54,2,51
+Nevada,CP18,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,2,1,1
+Nevada,CP18,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP18,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP18,President,,Peter Sonski,,0,0,0
+Nevada,CP18,U.S. Senate,,Steve Garvey,Republican,34,6,26
+Nevada,CP18,U.S. Senate,,Adam B. Schiff,Democratic,52,2,49
+Nevada,CP18,U.S. Senate,Partial Term,Steve Garvey,Republican,35,7,26
+Nevada,CP18,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,51,1,49
+Nevada,CP18,U.S. House,3,Jessica Morse,Democratic,48,2,45
+Nevada,CP18,U.S. House,3,Kevin Kiley,Republican,39,6,31
+Nevada,CP18,State Senate,1,David Fennell,Republican,25,4,20
+Nevada,CP18,State Senate,1,Megan Dahle,Republican,34,4,29
+Nevada,CP18,State Assembly,1,Heather Hadwick,Republican,34,5,28
+Nevada,CP18,State Assembly,1,Tenessa Audette,Republican,23,3,19
+Nevada,CP19,President,,Donald J. Trump / JD Vance,Republican,406,36,284
+Nevada,CP19,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP19,President,,Kamala D. Harris / Tim Walz,Democratic,1133,58,991
+Nevada,CP19,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,19,1,18
+Nevada,CP19,President,,Chase Oliver / Mike ter Maat,Libertarian,7,0,7
+Nevada,CP19,President,,Jill Stein / Rudolph Ware,Green,13,1,10
+Nevada,CP19,President,,Peter Sonski,,0,0,0
+Nevada,CP19,U.S. Senate,,Steve Garvey,Republican,444,36,323
+Nevada,CP19,U.S. Senate,,Adam B. Schiff,Democratic,1101,57,964
+Nevada,CP19,U.S. Senate,Partial Term,Steve Garvey,Republican,446,43,318
+Nevada,CP19,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,1083,48,958
+Nevada,CP19,U.S. House,3,Jessica Morse,Democratic,1116,54,979
+Nevada,CP19,U.S. House,3,Kevin Kiley,Republican,439,41,317
+Nevada,CP19,State Assembly,1,Heather Hadwick,Republican,618,44,501
+Nevada,CP19,State Assembly,1,Tenessa Audette,Republican,388,32,303
+Nevada,CP20,President,,Donald J. Trump / JD Vance,Republican,251,13,217
+Nevada,CP20,President,,Claudia De La Cruz / Karina Garcia,PFP,2,1,1
+Nevada,CP20,President,,Kamala D. Harris / Tim Walz,Democratic,190,8,179
+Nevada,CP20,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,8,2,6
+Nevada,CP20,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,1
+Nevada,CP20,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP20,President,,Peter Sonski,,0,0,0
+Nevada,CP20,U.S. Senate,,Steve Garvey,Republican,266,12,233
+Nevada,CP20,U.S. Senate,,Adam B. Schiff,Democratic,183,10,170
+Nevada,CP20,U.S. Senate,Partial Term,Steve Garvey,Republican,253,11,221
+Nevada,CP20,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,187,10,174
+Nevada,CP20,U.S. House,3,Jessica Morse,Democratic,176,9,164
+Nevada,CP20,U.S. House,3,Kevin Kiley,Republican,269,14,234
+Nevada,CP20,State Senate,1,David Fennell,Republican,109,7,93
+Nevada,CP20,State Senate,1,Megan Dahle,Republican,261,12,235
+Nevada,CP20,State Assembly,1,Heather Hadwick,Republican,216,13,188
+Nevada,CP20,State Assembly,1,Tenessa Audette,Republican,133,4,121
+Nevada,CP21,President,,Donald J. Trump / JD Vance,Republican,11,1,9
+Nevada,CP21,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP21,President,,Kamala D. Harris / Tim Walz,Democratic,4,0,4
+Nevada,CP21,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,0,0,0
+Nevada,CP21,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP21,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP21,President,,Peter Sonski,,0,0,0
+Nevada,CP21,U.S. Senate,,Steve Garvey,Republican,10,1,8
+Nevada,CP21,U.S. Senate,,Adam B. Schiff,Democratic,4,0,4
+Nevada,CP21,U.S. Senate,Partial Term,Steve Garvey,Republican,10,1,8
+Nevada,CP21,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,4,0,4
+Nevada,CP21,U.S. House,3,Jessica Morse,Democratic,4,0,4
+Nevada,CP21,U.S. House,3,Kevin Kiley,Republican,10,1,8
+Nevada,CP21,State Senate,1,David Fennell,Republican,3,0,3
+Nevada,CP21,State Senate,1,Megan Dahle,Republican,7,1,6
+Nevada,CP21,State Assembly,1,Heather Hadwick,Republican,5,0,5
+Nevada,CP21,State Assembly,1,Tenessa Audette,Republican,4,1,2
+Nevada,CP22,President,,Donald J. Trump / JD Vance,Republican,69,5,58
+Nevada,CP22,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP22,President,,Kamala D. Harris / Tim Walz,Democratic,35,1,32
+Nevada,CP22,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,1,0,1
+Nevada,CP22,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP22,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP22,President,,Peter Sonski,,0,0,0
+Nevada,CP22,U.S. Senate,,Steve Garvey,Republican,69,5,58
+Nevada,CP22,U.S. Senate,,Adam B. Schiff,Democratic,33,1,30
+Nevada,CP22,U.S. Senate,Partial Term,Steve Garvey,Republican,68,5,57
+Nevada,CP22,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,33,1,30
+Nevada,CP22,U.S. House,3,Jessica Morse,Democratic,34,1,31
+Nevada,CP22,U.S. House,3,Kevin Kiley,Republican,69,5,58
+Nevada,CP22,State Senate,1,David Fennell,Republican,20,1,17
+Nevada,CP22,State Senate,1,Megan Dahle,Republican,71,3,63
+Nevada,CP22,State Assembly,1,Heather Hadwick,Republican,47,3,39
+Nevada,CP22,State Assembly,1,Tenessa Audette,Republican,41,2,37
+Nevada,CP23,President,,Donald J. Trump / JD Vance,Republican,160,14,125
+Nevada,CP23,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP23,President,,Kamala D. Harris / Tim Walz,Democratic,110,7,102
+Nevada,CP23,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,1,0,1
+Nevada,CP23,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP23,President,,Jill Stein / Rudolph Ware,Green,3,0,3
+Nevada,CP23,President,,Peter Sonski,,0,0,0
+Nevada,CP23,U.S. Senate,,Steve Garvey,Republican,163,13,129
+Nevada,CP23,U.S. Senate,,Adam B. Schiff,Democratic,111,8,102
+Nevada,CP23,U.S. Senate,Partial Term,Steve Garvey,Republican,160,12,128
+Nevada,CP23,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,111,9,101
+Nevada,CP23,U.S. House,3,Jessica Morse,Democratic,109,7,100
+Nevada,CP23,U.S. House,3,Kevin Kiley,Republican,167,14,133
+Nevada,CP23,State Senate,1,David Fennell,Republican,70,5,58
+Nevada,CP23,State Senate,1,Megan Dahle,Republican,155,13,128
+Nevada,CP23,State Assembly,1,Heather Hadwick,Republican,116,14,92
+Nevada,CP23,State Assembly,1,Tenessa Audette,Republican,96,4,82
+Nevada,CP24,President,,Donald J. Trump / JD Vance,Republican,36,6,30
+Nevada,CP24,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP24,President,,Kamala D. Harris / Tim Walz,Democratic,28,2,26
+Nevada,CP24,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,9,1,8
+Nevada,CP24,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP24,President,,Jill Stein / Rudolph Ware,Green,1,0,1
+Nevada,CP24,President,,Peter Sonski,,0,0,0
+Nevada,CP24,U.S. Senate,,Steve Garvey,Republican,45,8,37
+Nevada,CP24,U.S. Senate,,Adam B. Schiff,Democratic,29,1,28
+Nevada,CP24,U.S. Senate,Partial Term,Steve Garvey,Republican,45,8,37
+Nevada,CP24,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,28,1,27
+Nevada,CP24,U.S. House,3,Jessica Morse,Democratic,26,1,25
+Nevada,CP24,U.S. House,3,Kevin Kiley,Republican,47,8,39
+Nevada,CP24,State Senate,1,David Fennell,Republican,15,2,13
+Nevada,CP24,State Senate,1,Megan Dahle,Republican,48,7,41
+Nevada,CP24,State Assembly,1,Heather Hadwick,Republican,34,7,27
+Nevada,CP24,State Assembly,1,Tenessa Audette,Republican,27,2,25
+Nevada,CP25,President,,Donald J. Trump / JD Vance,Republican,165,9,139
+Nevada,CP25,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP25,President,,Kamala D. Harris / Tim Walz,Democratic,172,6,153
+Nevada,CP25,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,5,0,4
+Nevada,CP25,President,,Chase Oliver / Mike ter Maat,Libertarian,7,0,7
+Nevada,CP25,President,,Jill Stein / Rudolph Ware,Green,4,0,4
+Nevada,CP25,President,,Peter Sonski,,0,0,0
+Nevada,CP25,U.S. Senate,,Steve Garvey,Republican,184,10,157
+Nevada,CP25,U.S. Senate,,Adam B. Schiff,Democratic,165,5,147
+Nevada,CP25,U.S. Senate,Partial Term,Steve Garvey,Republican,185,10,157
+Nevada,CP25,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,159,5,142
+Nevada,CP25,U.S. House,3,Jessica Morse,Democratic,167,5,150
+Nevada,CP25,U.S. House,3,Kevin Kiley,Republican,183,10,156
+Nevada,CP25,State Senate,1,David Fennell,Republican,81,7,68
+Nevada,CP25,State Senate,1,Megan Dahle,Republican,194,5,172
+Nevada,CP25,State Assembly,1,Heather Hadwick,Republican,167,8,144
+Nevada,CP25,State Assembly,1,Tenessa Audette,Republican,104,5,91
+Nevada,CP26,President,,Donald J. Trump / JD Vance,Republican,290,20,224
+Nevada,CP26,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP26,President,,Kamala D. Harris / Tim Walz,Democratic,271,14,245
+Nevada,CP26,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,16,3,11
+Nevada,CP26,President,,Chase Oliver / Mike ter Maat,Libertarian,1,0,1
+Nevada,CP26,President,,Jill Stein / Rudolph Ware,Green,6,1,5
+Nevada,CP26,President,,Peter Sonski,,0,0,0
+Nevada,CP26,U.S. Senate,,Steve Garvey,Republican,293,21,226
+Nevada,CP26,U.S. Senate,,Adam B. Schiff,Democratic,283,14,255
+Nevada,CP26,U.S. Senate,Partial Term,Steve Garvey,Republican,288,20,222
+Nevada,CP26,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,282,16,252
+Nevada,CP26,U.S. House,3,Jessica Morse,Democratic,278,19,247
+Nevada,CP26,U.S. House,3,Kevin Kiley,Republican,300,18,234
+Nevada,CP26,State Senate,1,David Fennell,Republican,144,10,102
+Nevada,CP26,State Senate,1,Megan Dahle,Republican,320,23,276
+Nevada,CP26,State Assembly,1,Heather Hadwick,Republican,266,18,224
+Nevada,CP26,State Assembly,1,Tenessa Audette,Republican,180,13,139
+Nevada,CP27,President,,Donald J. Trump / JD Vance,Republican,103,9,84
+Nevada,CP27,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP27,President,,Kamala D. Harris / Tim Walz,Democratic,79,3,73
+Nevada,CP27,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,3,0,3
+Nevada,CP27,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP27,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP27,President,,Peter Sonski,,0,0,0
+Nevada,CP27,U.S. Senate,,Steve Garvey,Republican,102,8,84
+Nevada,CP27,U.S. Senate,,Adam B. Schiff,Democratic,79,3,74
+Nevada,CP27,U.S. Senate,Partial Term,Steve Garvey,Republican,100,8,82
+Nevada,CP27,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,76,3,71
+Nevada,CP27,U.S. House,3,Jessica Morse,Democratic,75,3,70
+Nevada,CP27,U.S. House,3,Kevin Kiley,Republican,105,9,86
+Nevada,CP27,State Senate,1,David Fennell,Republican,47,3,38
+Nevada,CP27,State Senate,1,Megan Dahle,Republican,100,8,87
+Nevada,CP27,State Assembly,1,Heather Hadwick,Republican,77,8,65
+Nevada,CP27,State Assembly,1,Tenessa Audette,Republican,61,3,52
+Nevada,CP28,President,,Donald J. Trump / JD Vance,Republican,182,20,143
+Nevada,CP28,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP28,President,,Kamala D. Harris / Tim Walz,Democratic,205,9,189
+Nevada,CP28,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,1,0,1
+Nevada,CP28,President,,Chase Oliver / Mike ter Maat,Libertarian,3,0,3
+Nevada,CP28,President,,Jill Stein / Rudolph Ware,Green,2,0,2
+Nevada,CP28,President,,Peter Sonski,,0,0,0
+Nevada,CP28,U.S. Senate,,Steve Garvey,Republican,188,22,146
+Nevada,CP28,U.S. Senate,,Adam B. Schiff,Democratic,201,8,188
+Nevada,CP28,U.S. Senate,Partial Term,Steve Garvey,Republican,181,21,141
+Nevada,CP28,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,207,8,194
+Nevada,CP28,U.S. House,3,Jessica Morse,Democratic,203,11,185
+Nevada,CP28,U.S. House,3,Kevin Kiley,Republican,186,19,148
+Nevada,CP28,State Senate,1,David Fennell,Republican,94,10,76
+Nevada,CP28,State Senate,1,Megan Dahle,Republican,207,14,181
+Nevada,CP28,State Assembly,1,Heather Hadwick,Republican,167,12,150
+Nevada,CP28,State Assembly,1,Tenessa Audette,Republican,101,12,75
+Nevada,CP29,President,,Donald J. Trump / JD Vance,Republican,330,37,259
+Nevada,CP29,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP29,President,,Kamala D. Harris / Tim Walz,Democratic,311,15,279
+Nevada,CP29,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,15,2,13
+Nevada,CP29,President,,Chase Oliver / Mike ter Maat,Libertarian,2,1,1
+Nevada,CP29,President,,Jill Stein / Rudolph Ware,Green,3,0,3
+Nevada,CP29,President,,Peter Sonski,,0,0,0
+Nevada,CP29,U.S. Senate,,Steve Garvey,Republican,335,35,267
+Nevada,CP29,U.S. Senate,,Adam B. Schiff,Democratic,311,16,280
+Nevada,CP29,U.S. Senate,Partial Term,Steve Garvey,Republican,331,35,264
+Nevada,CP29,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,312,16,281
+Nevada,CP29,U.S. House,3,Jessica Morse,Democratic,306,15,276
+Nevada,CP29,U.S. House,3,Kevin Kiley,Republican,338,36,271
+Nevada,CP29,State Senate,1,David Fennell,Republican,149,16,116
+Nevada,CP29,State Senate,1,Megan Dahle,Republican,373,28,325
+Nevada,CP29,State Assembly,1,Heather Hadwick,Republican,282,24,238
+Nevada,CP29,State Assembly,1,Tenessa Audette,Republican,197,20,158
+Nevada,CP30,President,,Donald J. Trump / JD Vance,Republican,75,3,58
+Nevada,CP30,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP30,President,,Kamala D. Harris / Tim Walz,Democratic,40,0,36
+Nevada,CP30,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,2,0,2
+Nevada,CP30,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP30,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP30,President,,Peter Sonski,,0,0,0
+Nevada,CP30,U.S. Senate,,Steve Garvey,Republican,78,3,61
+Nevada,CP30,U.S. Senate,,Adam B. Schiff,Democratic,36,0,32
+Nevada,CP30,U.S. Senate,Partial Term,Steve Garvey,Republican,78,3,61
+Nevada,CP30,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,35,0,31
+Nevada,CP30,U.S. House,3,Jessica Morse,Democratic,36,0,32
+Nevada,CP30,U.S. House,3,Kevin Kiley,Republican,78,3,61
+Nevada,CP30,State Senate,1,David Fennell,Republican,34,1,25
+Nevada,CP30,State Senate,1,Megan Dahle,Republican,71,2,59
+Nevada,CP30,State Assembly,1,Heather Hadwick,Republican,52,2,37
+Nevada,CP30,State Assembly,1,Tenessa Audette,Republican,40,1,35
+Nevada,CP31,President,,Donald J. Trump / JD Vance,Republican,82,7,66
+Nevada,CP31,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP31,President,,Kamala D. Harris / Tim Walz,Democratic,58,2,53
+Nevada,CP31,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,0,0,0
+Nevada,CP31,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP31,President,,Jill Stein / Rudolph Ware,Green,3,0,3
+Nevada,CP31,President,,Peter Sonski,,0,0,0
+Nevada,CP31,U.S. Senate,,Steve Garvey,Republican,85,7,71
+Nevada,CP31,U.S. Senate,,Adam B. Schiff,Democratic,60,2,54
+Nevada,CP31,U.S. Senate,Partial Term,Steve Garvey,Republican,84,7,70
+Nevada,CP31,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,60,2,54
+Nevada,CP31,U.S. House,3,Jessica Morse,Democratic,61,2,54
+Nevada,CP31,U.S. House,3,Kevin Kiley,Republican,85,7,71
+Nevada,CP31,State Senate,1,David Fennell,Republican,27,1,24
+Nevada,CP31,State Senate,1,Megan Dahle,Republican,84,8,71
+Nevada,CP31,State Assembly,1,Heather Hadwick,Republican,67,7,54
+Nevada,CP31,State Assembly,1,Tenessa Audette,Republican,33,2,30
+Nevada,CP32,President,,Donald J. Trump / JD Vance,Republican,36,4,28
+Nevada,CP32,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP32,President,,Kamala D. Harris / Tim Walz,Democratic,68,1,65
+Nevada,CP32,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,0,0,0
+Nevada,CP32,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP32,President,,Jill Stein / Rudolph Ware,Green,2,1,1
+Nevada,CP32,President,,Peter Sonski,,0,0,0
+Nevada,CP32,U.S. Senate,,Steve Garvey,Republican,42,4,34
+Nevada,CP32,U.S. Senate,,Adam B. Schiff,Democratic,66,2,62
+Nevada,CP32,U.S. Senate,Partial Term,Steve Garvey,Republican,41,4,34
+Nevada,CP32,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,65,2,61
+Nevada,CP32,U.S. House,3,Jessica Morse,Democratic,71,2,67
+Nevada,CP32,U.S. House,3,Kevin Kiley,Republican,37,4,29
+Nevada,CP32,State Senate,1,David Fennell,Republican,23,1,20
+Nevada,CP32,State Senate,1,Megan Dahle,Republican,48,3,43
+Nevada,CP32,State Assembly,1,Heather Hadwick,Republican,35,2,32
+Nevada,CP32,State Assembly,1,Tenessa Audette,Republican,29,2,24
+Nevada,CP33,President,,Donald J. Trump / JD Vance,Republican,47,0,45
+Nevada,CP33,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP33,President,,Kamala D. Harris / Tim Walz,Democratic,71,2,64
+Nevada,CP33,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,4,0,4
+Nevada,CP33,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,1
+Nevada,CP33,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP33,President,,Peter Sonski,,0,0,0
+Nevada,CP33,U.S. Senate,,Steve Garvey,Republican,54,0,50
+Nevada,CP33,U.S. Senate,,Adam B. Schiff,Democratic,69,2,63
+Nevada,CP33,U.S. Senate,Partial Term,Steve Garvey,Republican,53,0,50
+Nevada,CP33,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,70,2,63
+Nevada,CP33,U.S. House,3,Jessica Morse,Democratic,68,2,60
+Nevada,CP33,U.S. House,3,Kevin Kiley,Republican,54,0,52
+Nevada,CP33,State Senate,1,David Fennell,Republican,20,1,19
+Nevada,CP33,State Senate,1,Megan Dahle,Republican,77,1,68
+Nevada,CP33,State Assembly,1,Heather Hadwick,Republican,45,0,37
+Nevada,CP33,State Assembly,1,Tenessa Audette,Republican,41,2,39
+Nevada,CP34,President,,Donald J. Trump / JD Vance,Republican,370,39,283
+Nevada,CP34,President,,Claudia De La Cruz / Karina Garcia,PFP,4,0,4
+Nevada,CP34,President,,Kamala D. Harris / Tim Walz,Democratic,1017,42,915
+Nevada,CP34,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,25,3,21
+Nevada,CP34,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,2
+Nevada,CP34,President,,Jill Stein / Rudolph Ware,Green,7,1,6
+Nevada,CP34,President,,Peter Sonski,,0,0,0
+Nevada,CP34,U.S. Senate,,Steve Garvey,Republican,449,41,362
+Nevada,CP34,U.S. Senate,,Adam B. Schiff,Democratic,963,45,861
+Nevada,CP34,U.S. Senate,Partial Term,Steve Garvey,Republican,446,38,364
+Nevada,CP34,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,941,42,845
+Nevada,CP34,U.S. House,3,Jessica Morse,Democratic,981,51,868
+Nevada,CP34,U.S. House,3,Kevin Kiley,Republican,437,34,357
+Nevada,CP34,State Assembly,1,Heather Hadwick,Republican,534,39,452
+Nevada,CP34,State Assembly,1,Tenessa Audette,Republican,375,26,313
+Nevada,CP35,President,,Donald J. Trump / JD Vance,Republican,43,2,39
+Nevada,CP35,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP35,President,,Kamala D. Harris / Tim Walz,Democratic,32,0,32
+Nevada,CP35,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,3,0,3
+Nevada,CP35,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP35,President,,Jill Stein / Rudolph Ware,Green,3,1,2
+Nevada,CP35,President,,Peter Sonski,,0,0,0
+Nevada,CP35,U.S. Senate,,Steve Garvey,Republican,47,2,43
+Nevada,CP35,U.S. Senate,,Adam B. Schiff,Democratic,32,1,31
+Nevada,CP35,U.S. Senate,Partial Term,Steve Garvey,Republican,46,2,42
+Nevada,CP35,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,32,0,32
+Nevada,CP35,U.S. House,3,Jessica Morse,Democratic,36,1,35
+Nevada,CP35,U.S. House,3,Kevin Kiley,Republican,46,1,43
+Nevada,CP35,State Senate,1,David Fennell,Republican,19,0,17
+Nevada,CP35,State Senate,1,Megan Dahle,Republican,46,2,44
+Nevada,CP35,State Assembly,1,Heather Hadwick,Republican,39,1,38
+Nevada,CP35,State Assembly,1,Tenessa Audette,Republican,24,1,21
+Nevada,CP36,President,,Donald J. Trump / JD Vance,Republican,126,10,105
+Nevada,CP36,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP36,President,,Kamala D. Harris / Tim Walz,Democratic,99,1,94
+Nevada,CP36,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,4,2,2
+Nevada,CP36,President,,Chase Oliver / Mike ter Maat,Libertarian,4,0,4
+Nevada,CP36,President,,Jill Stein / Rudolph Ware,Green,1,0,1
+Nevada,CP36,President,,Peter Sonski,,0,0,0
+Nevada,CP36,U.S. Senate,,Steve Garvey,Republican,135,11,113
+Nevada,CP36,U.S. Senate,,Adam B. Schiff,Democratic,96,1,91
+Nevada,CP36,U.S. Senate,Partial Term,Steve Garvey,Republican,134,11,112
+Nevada,CP36,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,93,1,88
+Nevada,CP36,U.S. House,3,Jessica Morse,Democratic,91,2,85
+Nevada,CP36,U.S. House,3,Kevin Kiley,Republican,140,11,118
+Nevada,CP36,State Senate,1,David Fennell,Republican,50,5,40
+Nevada,CP36,State Senate,1,Megan Dahle,Republican,134,7,121
+Nevada,CP36,State Assembly,1,Heather Hadwick,Republican,96,5,85
+Nevada,CP36,State Assembly,1,Tenessa Audette,Republican,76,6,65
+Nevada,CP37,President,,Donald J. Trump / JD Vance,Republican,269,16,231
+Nevada,CP37,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP37,President,,Kamala D. Harris / Tim Walz,Democratic,288,6,276
+Nevada,CP37,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,7,0,7
+Nevada,CP37,President,,Chase Oliver / Mike ter Maat,Libertarian,3,0,3
+Nevada,CP37,President,,Jill Stein / Rudolph Ware,Green,9,0,9
+Nevada,CP37,President,,Peter Sonski,,2,0,2
+Nevada,CP37,U.S. Senate,,Steve Garvey,Republican,292,16,254
+Nevada,CP37,U.S. Senate,,Adam B. Schiff,Democratic,297,6,286
+Nevada,CP37,U.S. Senate,Partial Term,Steve Garvey,Republican,291,16,253
+Nevada,CP37,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,298,6,287
+Nevada,CP37,U.S. House,3,Jessica Morse,Democratic,292,6,279
+Nevada,CP37,U.S. House,3,Kevin Kiley,Republican,292,16,255
+Nevada,CP37,State Senate,1,David Fennell,Republican,146,7,135
+Nevada,CP37,State Senate,1,Megan Dahle,Republican,317,13,283
+Nevada,CP37,State Assembly,1,Heather Hadwick,Republican,280,15,250
+Nevada,CP37,State Assembly,1,Tenessa Audette,Republican,157,5,144
+Nevada,CP38,President,,Donald J. Trump / JD Vance,Republican,238,24,172
+Nevada,CP38,President,,Claudia De La Cruz / Karina Garcia,PFP,5,0,5
+Nevada,CP38,President,,Kamala D. Harris / Tim Walz,Democratic,867,32,787
+Nevada,CP38,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,12,1,11
+Nevada,CP38,President,,Chase Oliver / Mike ter Maat,Libertarian,6,0,5
+Nevada,CP38,President,,Jill Stein / Rudolph Ware,Green,6,1,5
+Nevada,CP38,President,,Peter Sonski,,0,0,0
+Nevada,CP38,U.S. Senate,,Steve Garvey,Republican,273,26,207
+Nevada,CP38,U.S. Senate,,Adam B. Schiff,Democratic,850,33,768
+Nevada,CP38,U.S. Senate,Partial Term,Steve Garvey,Republican,276,24,210
+Nevada,CP38,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,845,35,764
+Nevada,CP38,U.S. House,3,Jessica Morse,Democratic,850,35,763
+Nevada,CP38,U.S. House,3,Kevin Kiley,Republican,270,24,208
+Nevada,CP38,State Assembly,1,Heather Hadwick,Republican,423,32,351
+Nevada,CP38,State Assembly,1,Tenessa Audette,Republican,215,9,185
+Nevada,CP39,President,,Donald J. Trump / JD Vance,Republican,387,27,306
+Nevada,CP39,President,,Claudia De La Cruz / Karina Garcia,PFP,10,1,8
+Nevada,CP39,President,,Kamala D. Harris / Tim Walz,Democratic,646,24,589
+Nevada,CP39,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,11,1,9
+Nevada,CP39,President,,Chase Oliver / Mike ter Maat,Libertarian,3,0,3
+Nevada,CP39,President,,Jill Stein / Rudolph Ware,Green,12,3,8
+Nevada,CP39,President,,Peter Sonski,,0,0,0
+Nevada,CP39,U.S. Senate,,Steve Garvey,Republican,404,27,325
+Nevada,CP39,U.S. Senate,,Adam B. Schiff,Democratic,648,27,587
+Nevada,CP39,U.S. Senate,Partial Term,Steve Garvey,Republican,398,27,319
+Nevada,CP39,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,648,25,590
+Nevada,CP39,U.S. House,3,Jessica Morse,Democratic,647,26,587
+Nevada,CP39,U.S. House,3,Kevin Kiley,Republican,405,29,323
+Nevada,CP39,State Senate,1,David Fennell,Republican,235,14,189
+Nevada,CP39,State Senate,1,Megan Dahle,Republican,548,29,478
+Nevada,CP39,State Assembly,1,Heather Hadwick,Republican,420,26,364
+Nevada,CP39,State Assembly,1,Tenessa Audette,Republican,285,13,240
+Nevada,CP40,President,,Donald J. Trump / JD Vance,Republican,169,20,108
+Nevada,CP40,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP40,President,,Kamala D. Harris / Tim Walz,Democratic,247,6,222
+Nevada,CP40,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,8,1,7
+Nevada,CP40,President,,Chase Oliver / Mike ter Maat,Libertarian,3,2,1
+Nevada,CP40,President,,Jill Stein / Rudolph Ware,Green,6,1,4
+Nevada,CP40,President,,Peter Sonski,,0,0,0
+Nevada,CP40,U.S. Senate,,Steve Garvey,Republican,180,23,118
+Nevada,CP40,U.S. Senate,,Adam B. Schiff,Democratic,248,7,221
+Nevada,CP40,U.S. Senate,Partial Term,Steve Garvey,Republican,182,22,118
+Nevada,CP40,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,238,7,214
+Nevada,CP40,U.S. House,3,Jessica Morse,Democratic,256,8,226
+Nevada,CP40,U.S. House,3,Kevin Kiley,Republican,169,21,110
+Nevada,CP40,State Senate,1,David Fennell,Republican,86,6,65
+Nevada,CP40,State Senate,1,Megan Dahle,Republican,223,21,165
+Nevada,CP40,State Assembly,1,Heather Hadwick,Republican,168,17,121
+Nevada,CP40,State Assembly,1,Tenessa Audette,Republican,112,8,83
+Nevada,CP41,President,,Donald J. Trump / JD Vance,Republican,27,4,22
+Nevada,CP41,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP41,President,,Kamala D. Harris / Tim Walz,Democratic,27,2,25
+Nevada,CP41,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,4,0,4
+Nevada,CP41,President,,Chase Oliver / Mike ter Maat,Libertarian,1,0,1
+Nevada,CP41,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP41,President,,Peter Sonski,,1,0,1
+Nevada,CP41,U.S. Senate,,Steve Garvey,Republican,33,4,28
+Nevada,CP41,U.S. Senate,,Adam B. Schiff,Democratic,24,2,22
+Nevada,CP41,U.S. Senate,Partial Term,Steve Garvey,Republican,35,4,30
+Nevada,CP41,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,22,2,20
+Nevada,CP41,U.S. House,3,Jessica Morse,Democratic,23,2,21
+Nevada,CP41,U.S. House,3,Kevin Kiley,Republican,35,4,30
+Nevada,CP41,State Senate,1,David Fennell,Republican,13,2,11
+Nevada,CP41,State Senate,1,Megan Dahle,Republican,38,4,33
+Nevada,CP41,State Assembly,1,Heather Hadwick,Republican,36,5,31
+Nevada,CP41,State Assembly,1,Tenessa Audette,Republican,13,1,11
+Nevada,CP42,President,,Donald J. Trump / JD Vance,Republican,42,4,32
+Nevada,CP42,President,,Claudia De La Cruz / Karina Garcia,PFP,3,0,3
+Nevada,CP42,President,,Kamala D. Harris / Tim Walz,Democratic,91,3,88
+Nevada,CP42,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,2,0,2
+Nevada,CP42,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP42,President,,Jill Stein / Rudolph Ware,Green,3,0,3
+Nevada,CP42,President,,Peter Sonski,,0,0,0
+Nevada,CP42,U.S. Senate,,Steve Garvey,Republican,47,3,38
+Nevada,CP42,U.S. Senate,,Adam B. Schiff,Democratic,93,4,89
+Nevada,CP42,U.S. Senate,Partial Term,Steve Garvey,Republican,48,3,39
+Nevada,CP42,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,91,4,87
+Nevada,CP42,U.S. House,3,Jessica Morse,Democratic,96,5,90
+Nevada,CP42,U.S. House,3,Kevin Kiley,Republican,40,1,34
+Nevada,CP42,State Senate,1,David Fennell,Republican,32,1,28
+Nevada,CP42,State Senate,1,Megan Dahle,Republican,55,3,49
+Nevada,CP42,State Assembly,1,Heather Hadwick,Republican,49,2,45
+Nevada,CP42,State Assembly,1,Tenessa Audette,Republican,34,2,28
+Nevada,CP43,President,,Donald J. Trump / JD Vance,Republican,392,34,320
+Nevada,CP43,President,,Claudia De La Cruz / Karina Garcia,PFP,6,0,5
+Nevada,CP43,President,,Kamala D. Harris / Tim Walz,Democratic,502,22,462
+Nevada,CP43,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,20,1,19
+Nevada,CP43,President,,Chase Oliver / Mike ter Maat,Libertarian,4,0,4
+Nevada,CP43,President,,Jill Stein / Rudolph Ware,Green,12,2,9
+Nevada,CP43,President,,Peter Sonski,,0,0,0
+Nevada,CP43,U.S. Senate,,Steve Garvey,Republican,428,35,356
+Nevada,CP43,U.S. Senate,,Adam B. Schiff,Democratic,494,22,454
+Nevada,CP43,U.S. Senate,Partial Term,Steve Garvey,Republican,419,32,351
+Nevada,CP43,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,486,22,446
+Nevada,CP43,U.S. House,3,Jessica Morse,Democratic,496,26,452
+Nevada,CP43,U.S. House,3,Kevin Kiley,Republican,424,30,357
+Nevada,CP43,State Senate,1,David Fennell,Republican,205,9,180
+Nevada,CP43,State Senate,1,Megan Dahle,Republican,513,39,439
+Nevada,CP43,State Assembly,1,Heather Hadwick,Republican,393,32,332
+Nevada,CP43,State Assembly,1,Tenessa Audette,Republican,251,10,221
+Nevada,CP44,President,,Donald J. Trump / JD Vance,Republican,522,41,426
+Nevada,CP44,President,,Claudia De La Cruz / Karina Garcia,PFP,5,0,5
+Nevada,CP44,President,,Kamala D. Harris / Tim Walz,Democratic,956,37,878
+Nevada,CP44,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,20,2,15
+Nevada,CP44,President,,Chase Oliver / Mike ter Maat,Libertarian,6,0,5
+Nevada,CP44,President,,Jill Stein / Rudolph Ware,Green,18,1,17
+Nevada,CP44,President,,Peter Sonski,,1,0,1
+Nevada,CP44,U.S. Senate,,Steve Garvey,Republican,540,45,442
+Nevada,CP44,U.S. Senate,,Adam B. Schiff,Democratic,958,37,880
+Nevada,CP44,U.S. Senate,Partial Term,Steve Garvey,Republican,533,42,438
+Nevada,CP44,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,950,38,871
+Nevada,CP44,U.S. House,3,Jessica Morse,Democratic,964,39,879
+Nevada,CP44,U.S. House,3,Kevin Kiley,Republican,537,41,446
+Nevada,CP44,State Senate,1,David Fennell,Republican,292,16,252
+Nevada,CP44,State Senate,1,Megan Dahle,Republican,807,50,696
+Nevada,CP44,State Assembly,1,Heather Hadwick,Republican,587,35,510
+Nevada,CP44,State Assembly,1,Tenessa Audette,Republican,377,24,315
+Nevada,CP45,President,,Donald J. Trump / JD Vance,Republican,447,35,365
+Nevada,CP45,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP45,President,,Kamala D. Harris / Tim Walz,Democratic,466,9,435
+Nevada,CP45,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,15,0,14
+Nevada,CP45,President,,Chase Oliver / Mike ter Maat,Libertarian,6,0,6
+Nevada,CP45,President,,Jill Stein / Rudolph Ware,Green,11,0,9
+Nevada,CP45,President,,Peter Sonski,,1,0,1
+Nevada,CP45,U.S. Senate,,Steve Garvey,Republican,467,35,385
+Nevada,CP45,U.S. Senate,,Adam B. Schiff,Democratic,473,8,442
+Nevada,CP45,U.S. Senate,Partial Term,Steve Garvey,Republican,456,34,375
+Nevada,CP45,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,468,7,441
+Nevada,CP45,U.S. House,3,Jessica Morse,Democratic,462,10,430
+Nevada,CP45,U.S. House,3,Kevin Kiley,Republican,472,33,392
+Nevada,CP45,State Senate,1,David Fennell,Republican,236,13,194
+Nevada,CP45,State Senate,1,Megan Dahle,Republican,496,26,434
+Nevada,CP45,State Assembly,1,Heather Hadwick,Republican,386,24,330
+Nevada,CP45,State Assembly,1,Tenessa Audette,Republican,282,16,235
+Nevada,CP46,President,,Donald J. Trump / JD Vance,Republican,153,16,119
+Nevada,CP46,President,,Claudia De La Cruz / Karina Garcia,PFP,1,1,0
+Nevada,CP46,President,,Kamala D. Harris / Tim Walz,Democratic,217,13,198
+Nevada,CP46,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,4,1,3
+Nevada,CP46,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP46,President,,Jill Stein / Rudolph Ware,Green,3,0,3
+Nevada,CP46,President,,Peter Sonski,,0,0,0
+Nevada,CP46,U.S. Senate,,Steve Garvey,Republican,159,18,125
+Nevada,CP46,U.S. Senate,,Adam B. Schiff,Democratic,212,11,195
+Nevada,CP46,U.S. Senate,Partial Term,Steve Garvey,Republican,158,18,124
+Nevada,CP46,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,206,11,190
+Nevada,CP46,U.S. House,3,Jessica Morse,Democratic,206,13,187
+Nevada,CP46,U.S. House,3,Kevin Kiley,Republican,164,17,131
+Nevada,CP46,State Senate,1,David Fennell,Republican,86,10,69
+Nevada,CP46,State Senate,1,Megan Dahle,Republican,199,18,168
+Nevada,CP46,State Assembly,1,Heather Hadwick,Republican,147,16,124
+Nevada,CP46,State Assembly,1,Tenessa Audette,Republican,109,9,89
+Nevada,CP47,President,,Donald J. Trump / JD Vance,Republican,399,44,291
+Nevada,CP47,President,,Claudia De La Cruz / Karina Garcia,PFP,4,0,4
+Nevada,CP47,President,,Kamala D. Harris / Tim Walz,Democratic,434,14,407
+Nevada,CP47,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,15,0,14
+Nevada,CP47,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,1
+Nevada,CP47,President,,Jill Stein / Rudolph Ware,Green,7,0,7
+Nevada,CP47,President,,Peter Sonski,,0,0,0
+Nevada,CP47,U.S. Senate,,Steve Garvey,Republican,391,38,295
+Nevada,CP47,U.S. Senate,,Adam B. Schiff,Democratic,441,18,410
+Nevada,CP47,U.S. Senate,Partial Term,Steve Garvey,Republican,382,37,288
+Nevada,CP47,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,434,17,404
+Nevada,CP47,U.S. House,3,Jessica Morse,Democratic,424,21,390
+Nevada,CP47,U.S. House,3,Kevin Kiley,Republican,412,35,314
+Nevada,CP47,State Senate,1,David Fennell,Republican,194,19,147
+Nevada,CP47,State Senate,1,Megan Dahle,Republican,456,33,382
+Nevada,CP47,State Assembly,1,Heather Hadwick,Republican,365,28,304
+Nevada,CP47,State Assembly,1,Tenessa Audette,Republican,242,21,190
+Nevada,CP48,President,,Donald J. Trump / JD Vance,Republican,14,4,10
+Nevada,CP48,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP48,President,,Kamala D. Harris / Tim Walz,Democratic,22,1,19
+Nevada,CP48,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,3,0,3
+Nevada,CP48,President,,Chase Oliver / Mike ter Maat,Libertarian,1,0,1
+Nevada,CP48,President,,Jill Stein / Rudolph Ware,Green,1,0,1
+Nevada,CP48,President,,Peter Sonski,,0,0,0
+Nevada,CP48,U.S. Senate,,Steve Garvey,Republican,14,3,11
+Nevada,CP48,U.S. Senate,,Adam B. Schiff,Democratic,26,1,23
+Nevada,CP48,U.S. Senate,Partial Term,Steve Garvey,Republican,14,3,11
+Nevada,CP48,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,26,1,23
+Nevada,CP48,U.S. House,3,Jessica Morse,Democratic,26,1,23
+Nevada,CP48,U.S. House,3,Kevin Kiley,Republican,14,3,11
+Nevada,CP48,State Senate,1,David Fennell,Republican,8,1,7
+Nevada,CP48,State Senate,1,Megan Dahle,Republican,21,3,18
+Nevada,CP48,State Assembly,1,Heather Hadwick,Republican,19,3,16
+Nevada,CP48,State Assembly,1,Tenessa Audette,Republican,10,0,10
+Nevada,CP49,President,,Donald J. Trump / JD Vance,Republican,49,3,32
+Nevada,CP49,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP49,President,,Kamala D. Harris / Tim Walz,Democratic,88,1,84
+Nevada,CP49,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,9,2,7
+Nevada,CP49,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP49,President,,Jill Stein / Rudolph Ware,Green,3,1,2
+Nevada,CP49,President,,Peter Sonski,,0,0,0
+Nevada,CP49,U.S. Senate,,Steve Garvey,Republican,57,5,38
+Nevada,CP49,U.S. Senate,,Adam B. Schiff,Democratic,94,2,89
+Nevada,CP49,U.S. Senate,Partial Term,Steve Garvey,Republican,53,5,35
+Nevada,CP49,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,93,2,88
+Nevada,CP49,U.S. House,3,Jessica Morse,Democratic,96,3,89
+Nevada,CP49,U.S. House,3,Kevin Kiley,Republican,53,3,37
+Nevada,CP49,State Senate,1,David Fennell,Republican,33,1,25
+Nevada,CP49,State Senate,1,Megan Dahle,Republican,78,5,63
+Nevada,CP49,State Assembly,1,Heather Hadwick,Republican,59,5,50
+Nevada,CP49,State Assembly,1,Tenessa Audette,Republican,46,0,33
+Nevada,CP50,President,,Donald J. Trump / JD Vance,Republican,58,1,55
+Nevada,CP50,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP50,President,,Kamala D. Harris / Tim Walz,Democratic,130,0,128
+Nevada,CP50,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,0,0,0
+Nevada,CP50,President,,Chase Oliver / Mike ter Maat,Libertarian,6,0,6
+Nevada,CP50,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP50,President,,Peter Sonski,,0,0,0
+Nevada,CP50,U.S. Senate,,Steve Garvey,Republican,75,1,72
+Nevada,CP50,U.S. Senate,,Adam B. Schiff,Democratic,120,0,118
+Nevada,CP50,U.S. Senate,Partial Term,Steve Garvey,Republican,74,1,71
+Nevada,CP50,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,120,0,118
+Nevada,CP50,U.S. House,3,Jessica Morse,Democratic,115,0,113
+Nevada,CP50,U.S. House,3,Kevin Kiley,Republican,78,1,75
+Nevada,CP50,State Senate,1,David Fennell,Republican,45,1,43
+Nevada,CP50,State Senate,1,Megan Dahle,Republican,94,0,91
+Nevada,CP50,State Assembly,1,Heather Hadwick,Republican,59,0,58
+Nevada,CP50,State Assembly,1,Tenessa Audette,Republican,58,1,55
+Nevada,CP51,President,,Donald J. Trump / JD Vance,Republican,153,11,115
+Nevada,CP51,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP51,President,,Kamala D. Harris / Tim Walz,Democratic,311,1,302
+Nevada,CP51,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,6,0,6
+Nevada,CP51,President,,Chase Oliver / Mike ter Maat,Libertarian,2,2,0
+Nevada,CP51,President,,Jill Stein / Rudolph Ware,Green,1,0,1
+Nevada,CP51,President,,Peter Sonski,,0,0,0
+Nevada,CP51,U.S. Senate,,Steve Garvey,Republican,161,11,126
+Nevada,CP51,U.S. Senate,,Adam B. Schiff,Democratic,301,2,289
+Nevada,CP51,U.S. Senate,Partial Term,Steve Garvey,Republican,158,11,124
+Nevada,CP51,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,299,2,288
+Nevada,CP51,U.S. House,3,Jessica Morse,Democratic,293,2,282
+Nevada,CP51,U.S. House,3,Kevin Kiley,Republican,167,12,130
+Nevada,CP51,State Senate,1,David Fennell,Republican,98,7,77
+Nevada,CP51,State Senate,1,Megan Dahle,Republican,213,6,192
+Nevada,CP51,State Assembly,1,Heather Hadwick,Republican,155,6,134
+Nevada,CP51,State Assembly,1,Tenessa Audette,Republican,121,5,101
+Nevada,CP52,President,,Donald J. Trump / JD Vance,Republican,18,2,11
+Nevada,CP52,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP52,President,,Kamala D. Harris / Tim Walz,Democratic,21,0,20
+Nevada,CP52,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,1,0,1
+Nevada,CP52,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP52,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP52,President,,Peter Sonski,,0,0,0
+Nevada,CP52,U.S. Senate,,Steve Garvey,Republican,17,2,11
+Nevada,CP52,U.S. Senate,,Adam B. Schiff,Democratic,21,0,20
+Nevada,CP52,U.S. Senate,Partial Term,Steve Garvey,Republican,16,2,11
+Nevada,CP52,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,20,0,19
+Nevada,CP52,U.S. House,3,Jessica Morse,Democratic,21,0,20
+Nevada,CP52,U.S. House,3,Kevin Kiley,Republican,18,2,12
+Nevada,CP52,State Assembly,1,Heather Hadwick,Republican,15,1,12
+Nevada,CP52,State Assembly,1,Tenessa Audette,Republican,11,0,10
+Nevada,CP53,President,,Donald J. Trump / JD Vance,Republican,227,18,185
+Nevada,CP53,President,,Claudia De La Cruz / Karina Garcia,PFP,2,0,2
+Nevada,CP53,President,,Kamala D. Harris / Tim Walz,Democratic,308,18,279
+Nevada,CP53,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,12,4,8
+Nevada,CP53,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,1
+Nevada,CP53,President,,Jill Stein / Rudolph Ware,Green,12,0,12
+Nevada,CP53,President,,Peter Sonski,,0,0,0
+Nevada,CP53,U.S. Senate,,Steve Garvey,Republican,241,18,202
+Nevada,CP53,U.S. Senate,,Adam B. Schiff,Democratic,312,21,279
+Nevada,CP53,U.S. Senate,Partial Term,Steve Garvey,Republican,240,17,202
+Nevada,CP53,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,307,20,276
+Nevada,CP53,U.S. House,3,Jessica Morse,Democratic,314,22,281
+Nevada,CP53,U.S. House,3,Kevin Kiley,Republican,240,16,202
+Nevada,CP53,State Senate,1,David Fennell,Republican,114,6,97
+Nevada,CP53,State Senate,1,Megan Dahle,Republican,309,25,267
+Nevada,CP53,State Assembly,1,Heather Hadwick,Republican,253,23,210
+Nevada,CP53,State Assembly,1,Tenessa Audette,Republican,133,7,118
+Nevada,CP54,President,,Donald J. Trump / JD Vance,Republican,231,24,174
+Nevada,CP54,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP54,President,,Kamala D. Harris / Tim Walz,Democratic,304,12,278
+Nevada,CP54,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,5,0,4
+Nevada,CP54,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,2
+Nevada,CP54,President,,Jill Stein / Rudolph Ware,Green,3,1,1
+Nevada,CP54,President,,Peter Sonski,,0,0,0
+Nevada,CP54,U.S. Senate,,Steve Garvey,Republican,241,21,187
+Nevada,CP54,U.S. Senate,,Adam B. Schiff,Democratic,292,13,265
+Nevada,CP54,U.S. Senate,Partial Term,Steve Garvey,Republican,236,21,184
+Nevada,CP54,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,286,11,262
+Nevada,CP54,U.S. House,3,Jessica Morse,Democratic,298,13,267
+Nevada,CP54,U.S. House,3,Kevin Kiley,Republican,237,21,188
+Nevada,CP54,State Senate,1,David Fennell,Republican,115,9,90
+Nevada,CP54,State Senate,1,Megan Dahle,Republican,274,20,231
+Nevada,CP54,State Assembly,1,Heather Hadwick,Republican,233,29,183
+Nevada,CP54,State Assembly,1,Tenessa Audette,Republican,128,0,113
+Nevada,CP55,President,,Donald J. Trump / JD Vance,Republican,182,16,148
+Nevada,CP55,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP55,President,,Kamala D. Harris / Tim Walz,Democratic,169,6,160
+Nevada,CP55,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,4,1,3
+Nevada,CP55,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,2
+Nevada,CP55,President,,Jill Stein / Rudolph Ware,Green,6,0,6
+Nevada,CP55,President,,Peter Sonski,,0,0,0
+Nevada,CP55,U.S. Senate,,Steve Garvey,Republican,195,16,161
+Nevada,CP55,U.S. Senate,,Adam B. Schiff,Democratic,169,7,159
+Nevada,CP55,U.S. Senate,Partial Term,Steve Garvey,Republican,191,15,160
+Nevada,CP55,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,168,7,157
+Nevada,CP55,U.S. House,3,Jessica Morse,Democratic,173,8,162
+Nevada,CP55,U.S. House,3,Kevin Kiley,Republican,186,13,155
+Nevada,CP55,State Senate,1,David Fennell,Republican,93,6,81
+Nevada,CP55,State Senate,1,Megan Dahle,Republican,186,10,162
+Nevada,CP55,State Assembly,1,Heather Hadwick,Republican,157,12,131
+Nevada,CP55,State Assembly,1,Tenessa Audette,Republican,104,3,95
+Nevada,CP56,President,,Donald J. Trump / JD Vance,Republican,53,6,40
+Nevada,CP56,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP56,President,,Kamala D. Harris / Tim Walz,Democratic,78,1,72
+Nevada,CP56,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,3,0,2
+Nevada,CP56,President,,Chase Oliver / Mike ter Maat,Libertarian,1,0,1
+Nevada,CP56,President,,Jill Stein / Rudolph Ware,Green,1,0,1
+Nevada,CP56,President,,Peter Sonski,,0,0,0
+Nevada,CP56,U.S. Senate,,Steve Garvey,Republican,57,6,43
+Nevada,CP56,U.S. Senate,,Adam B. Schiff,Democratic,78,1,72
+Nevada,CP56,U.S. Senate,Partial Term,Steve Garvey,Republican,56,6,42
+Nevada,CP56,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,76,1,70
+Nevada,CP56,U.S. House,3,Jessica Morse,Democratic,78,2,71
+Nevada,CP56,U.S. House,3,Kevin Kiley,Republican,58,5,45
+Nevada,CP56,State Senate,1,David Fennell,Republican,43,5,33
+Nevada,CP56,State Senate,1,Megan Dahle,Republican,54,1,49
+Nevada,CP56,State Assembly,1,Heather Hadwick,Republican,54,1,51
+Nevada,CP56,State Assembly,1,Tenessa Audette,Republican,39,5,29
+Nevada,CP57,President,,Donald J. Trump / JD Vance,Republican,48,7,38
+Nevada,CP57,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP57,President,,Kamala D. Harris / Tim Walz,Democratic,60,2,57
+Nevada,CP57,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,3,0,3
+Nevada,CP57,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP57,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP57,President,,Peter Sonski,,0,0,0
+Nevada,CP57,U.S. Senate,,Steve Garvey,Republican,51,7,41
+Nevada,CP57,U.S. Senate,,Adam B. Schiff,Democratic,58,2,55
+Nevada,CP57,U.S. Senate,Partial Term,Steve Garvey,Republican,49,6,40
+Nevada,CP57,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,59,3,55
+Nevada,CP57,U.S. House,3,Jessica Morse,Democratic,57,2,54
+Nevada,CP57,U.S. House,3,Kevin Kiley,Republican,55,7,45
+Nevada,CP57,State Senate,1,David Fennell,Republican,28,3,24
+Nevada,CP57,State Senate,1,Megan Dahle,Republican,58,3,53
+Nevada,CP57,State Assembly,1,Heather Hadwick,Republican,53,3,48
+Nevada,CP57,State Assembly,1,Tenessa Audette,Republican,29,2,26
+Nevada,CP58,President,,Donald J. Trump / JD Vance,Republican,111,2,97
+Nevada,CP58,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP58,President,,Kamala D. Harris / Tim Walz,Democratic,145,5,136
+Nevada,CP58,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,9,1,8
+Nevada,CP58,President,,Chase Oliver / Mike ter Maat,Libertarian,3,0,3
+Nevada,CP58,President,,Jill Stein / Rudolph Ware,Green,12,0,12
+Nevada,CP58,President,,Peter Sonski,,0,0,0
+Nevada,CP58,U.S. Senate,,Steve Garvey,Republican,123,3,110
+Nevada,CP58,U.S. Senate,,Adam B. Schiff,Democratic,152,4,143
+Nevada,CP58,U.S. Senate,Partial Term,Steve Garvey,Republican,123,3,109
+Nevada,CP58,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,152,4,144
+Nevada,CP58,U.S. House,3,Jessica Morse,Democratic,148,4,139
+Nevada,CP58,U.S. House,3,Kevin Kiley,Republican,128,3,116
+Nevada,CP58,State Senate,1,David Fennell,Republican,53,1,50
+Nevada,CP58,State Senate,1,Megan Dahle,Republican,153,3,141
+Nevada,CP58,State Assembly,1,Heather Hadwick,Republican,101,3,90
+Nevada,CP58,State Assembly,1,Tenessa Audette,Republican,91,1,86
+Nevada,CP59,President,,Donald J. Trump / JD Vance,Republican,210,17,174
+Nevada,CP59,President,,Claudia De La Cruz / Karina Garcia,PFP,7,1,6
+Nevada,CP59,President,,Kamala D. Harris / Tim Walz,Democratic,246,4,237
+Nevada,CP59,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,14,1,12
+Nevada,CP59,President,,Chase Oliver / Mike ter Maat,Libertarian,1,0,1
+Nevada,CP59,President,,Jill Stein / Rudolph Ware,Green,6,0,6
+Nevada,CP59,President,,Peter Sonski,,0,0,0
+Nevada,CP59,U.S. Senate,,Steve Garvey,Republican,221,18,183
+Nevada,CP59,U.S. Senate,,Adam B. Schiff,Democratic,257,5,247
+Nevada,CP59,U.S. Senate,Partial Term,Steve Garvey,Republican,218,16,182
+Nevada,CP59,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,253,5,243
+Nevada,CP59,U.S. House,3,Jessica Morse,Democratic,255,5,245
+Nevada,CP59,U.S. House,3,Kevin Kiley,Republican,226,18,188
+Nevada,CP59,State Senate,1,David Fennell,Republican,107,8,88
+Nevada,CP59,State Senate,1,Megan Dahle,Republican,265,13,242
+Nevada,CP59,State Assembly,1,Heather Hadwick,Republican,230,13,204
+Nevada,CP59,State Assembly,1,Tenessa Audette,Republican,118,6,104
+Nevada,CP60,President,,Donald J. Trump / JD Vance,Republican,969,94,730
+Nevada,CP60,President,,Claudia De La Cruz / Karina Garcia,PFP,3,0,3
+Nevada,CP60,President,,Kamala D. Harris / Tim Walz,Democratic,618,25,571
+Nevada,CP60,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,26,2,22
+Nevada,CP60,President,,Chase Oliver / Mike ter Maat,Libertarian,10,1,9
+Nevada,CP60,President,,Jill Stein / Rudolph Ware,Green,26,2,21
+Nevada,CP60,President,,Peter Sonski,,0,0,0
+Nevada,CP60,U.S. Senate,,Steve Garvey,Republican,1009,96,768
+Nevada,CP60,U.S. Senate,,Adam B. Schiff,Democratic,613,26,563
+Nevada,CP60,U.S. Senate,Partial Term,Steve Garvey,Republican,999,93,759
+Nevada,CP60,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,613,28,563
+Nevada,CP60,U.S. House,3,Jessica Morse,Democratic,632,32,572
+Nevada,CP60,U.S. House,3,Kevin Kiley,Republican,983,89,753
+Nevada,CP60,State Senate,1,David Fennell,Republican,412,34,321
+Nevada,CP60,State Senate,1,Megan Dahle,Republican,961,81,780
+Nevada,CP60,State Assembly,1,Heather Hadwick,Republican,770,74,606
+Nevada,CP60,State Assembly,1,Tenessa Audette,Republican,506,33,415
+Nevada,CP61,President,,Donald J. Trump / JD Vance,Republican,924,55,757
+Nevada,CP61,President,,Claudia De La Cruz / Karina Garcia,PFP,2,1,1
+Nevada,CP61,President,,Kamala D. Harris / Tim Walz,Democratic,822,27,765
+Nevada,CP61,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,45,4,38
+Nevada,CP61,President,,Chase Oliver / Mike ter Maat,Libertarian,9,1,6
+Nevada,CP61,President,,Jill Stein / Rudolph Ware,Green,10,2,8
+Nevada,CP61,President,,Peter Sonski,,0,0,0
+Nevada,CP61,U.S. Senate,,Steve Garvey,Republican,979,59,811
+Nevada,CP61,U.S. Senate,,Adam B. Schiff,Democratic,811,31,751
+Nevada,CP61,U.S. Senate,Partial Term,Steve Garvey,Republican,966,58,802
+Nevada,CP61,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,805,31,743
+Nevada,CP61,U.S. House,3,Jessica Morse,Democratic,794,32,729
+Nevada,CP61,U.S. House,3,Kevin Kiley,Republican,997,58,833
+Nevada,CP61,State Senate,1,David Fennell,Republican,422,26,339
+Nevada,CP61,State Senate,1,Megan Dahle,Republican,999,53,879
+Nevada,CP61,State Assembly,1,Heather Hadwick,Republican,784,58,668
+Nevada,CP61,State Assembly,1,Tenessa Audette,Republican,554,21,469
+Nevada,CP62,President,,Donald J. Trump / JD Vance,Republican,841,61,698
+Nevada,CP62,President,,Claudia De La Cruz / Karina Garcia,PFP,4,0,4
+Nevada,CP62,President,,Kamala D. Harris / Tim Walz,Democratic,826,30,772
+Nevada,CP62,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,24,0,23
+Nevada,CP62,President,,Chase Oliver / Mike ter Maat,Libertarian,14,0,14
+Nevada,CP62,President,,Jill Stein / Rudolph Ware,Green,6,0,5
+Nevada,CP62,President,,Peter Sonski,,0,0,0
+Nevada,CP62,U.S. Senate,,Steve Garvey,Republican,900,60,756
+Nevada,CP62,U.S. Senate,,Adam B. Schiff,Democratic,798,29,745
+Nevada,CP62,U.S. Senate,Partial Term,Steve Garvey,Republican,894,60,751
+Nevada,CP62,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,783,29,731
+Nevada,CP62,U.S. House,3,Jessica Morse,Democratic,771,28,718
+Nevada,CP62,U.S. House,3,Kevin Kiley,Republican,906,61,764
+Nevada,CP62,State Senate,1,David Fennell,Republican,423,16,372
+Nevada,CP62,State Senate,1,Megan Dahle,Republican,951,62,828
+Nevada,CP62,State Assembly,1,Heather Hadwick,Republican,675,38,586
+Nevada,CP62,State Assembly,1,Tenessa Audette,Republican,581,33,506
+Nevada,CP63,President,,Donald J. Trump / JD Vance,Republican,772,52,616
+Nevada,CP63,President,,Claudia De La Cruz / Karina Garcia,PFP,5,1,4
+Nevada,CP63,President,,Kamala D. Harris / Tim Walz,Democratic,787,15,748
+Nevada,CP63,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,32,1,31
+Nevada,CP63,President,,Chase Oliver / Mike ter Maat,Libertarian,4,0,4
+Nevada,CP63,President,,Jill Stein / Rudolph Ware,Green,6,0,6
+Nevada,CP63,President,,Peter Sonski,,0,0,0
+Nevada,CP63,U.S. Senate,,Steve Garvey,Republican,837,53,684
+Nevada,CP63,U.S. Senate,,Adam B. Schiff,Democratic,758,14,720
+Nevada,CP63,U.S. Senate,Partial Term,Steve Garvey,Republican,830,53,677
+Nevada,CP63,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,755,14,717
+Nevada,CP63,U.S. House,3,Jessica Morse,Democratic,747,15,708
+Nevada,CP63,U.S. House,3,Kevin Kiley,Republican,841,51,689
+Nevada,CP63,State Senate,1,David Fennell,Republican,371,23,311
+Nevada,CP63,State Senate,1,Megan Dahle,Republican,911,36,797
+Nevada,CP63,State Assembly,1,Heather Hadwick,Republican,691,31,589
+Nevada,CP63,State Assembly,1,Tenessa Audette,Republican,505,24,436
+Nevada,CP64,President,,Donald J. Trump / JD Vance,Republican,371,37,296
+Nevada,CP64,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP64,President,,Kamala D. Harris / Tim Walz,Democratic,317,7,291
+Nevada,CP64,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,6,1,5
+Nevada,CP64,President,,Chase Oliver / Mike ter Maat,Libertarian,3,0,3
+Nevada,CP64,President,,Jill Stein / Rudolph Ware,Green,12,2,10
+Nevada,CP64,President,,Peter Sonski,,0,0,0
+Nevada,CP64,U.S. Senate,,Steve Garvey,Republican,368,34,296
+Nevada,CP64,U.S. Senate,,Adam B. Schiff,Democratic,324,8,298
+Nevada,CP64,U.S. Senate,Partial Term,Steve Garvey,Republican,362,31,295
+Nevada,CP64,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,323,9,296
+Nevada,CP64,U.S. House,3,Jessica Morse,Democratic,318,9,290
+Nevada,CP64,U.S. House,3,Kevin Kiley,Republican,373,33,302
+Nevada,CP64,State Senate,1,David Fennell,Republican,189,15,153
+Nevada,CP64,State Senate,1,Megan Dahle,Republican,375,23,328
+Nevada,CP64,State Assembly,1,Heather Hadwick,Republican,309,26,257
+Nevada,CP64,State Assembly,1,Tenessa Audette,Republican,196,8,172
+Nevada,CP65,President,,Donald J. Trump / JD Vance,Republican,39,5,27
+Nevada,CP65,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP65,President,,Kamala D. Harris / Tim Walz,Democratic,59,3,52
+Nevada,CP65,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,1,0,1
+Nevada,CP65,President,,Chase Oliver / Mike ter Maat,Libertarian,1,0,1
+Nevada,CP65,President,,Jill Stein / Rudolph Ware,Green,4,0,4
+Nevada,CP65,President,,Peter Sonski,,0,0,0
+Nevada,CP65,U.S. Senate,,Steve Garvey,Republican,43,5,30
+Nevada,CP65,U.S. Senate,,Adam B. Schiff,Democratic,60,3,54
+Nevada,CP65,U.S. Senate,Partial Term,Steve Garvey,Republican,44,5,31
+Nevada,CP65,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,58,3,52
+Nevada,CP65,U.S. House,3,Jessica Morse,Democratic,65,2,59
+Nevada,CP65,U.S. House,3,Kevin Kiley,Republican,41,6,28
+Nevada,CP65,State Senate,1,David Fennell,Republican,25,0,21
+Nevada,CP65,State Senate,1,Megan Dahle,Republican,65,7,53
+Nevada,CP65,State Assembly,1,Heather Hadwick,Republican,57,7,41
+Nevada,CP65,State Assembly,1,Tenessa Audette,Republican,28,1,27
+Nevada,CP66,President,,Donald J. Trump / JD Vance,Republican,72,8,57
+Nevada,CP66,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP66,President,,Kamala D. Harris / Tim Walz,Democratic,80,7,71
+Nevada,CP66,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,2,0,2
+Nevada,CP66,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP66,President,,Jill Stein / Rudolph Ware,Green,2,0,2
+Nevada,CP66,President,,Peter Sonski,,0,0,0
+Nevada,CP66,U.S. Senate,,Steve Garvey,Republican,76,3,66
+Nevada,CP66,U.S. Senate,,Adam B. Schiff,Democratic,78,10,66
+Nevada,CP66,U.S. Senate,Partial Term,Steve Garvey,Republican,71,3,61
+Nevada,CP66,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,82,10,70
+Nevada,CP66,U.S. House,3,Jessica Morse,Democratic,78,8,68
+Nevada,CP66,U.S. House,3,Kevin Kiley,Republican,80,6,67
+Nevada,CP66,State Senate,1,David Fennell,Republican,49,4,43
+Nevada,CP66,State Senate,1,Megan Dahle,Republican,74,5,63
+Nevada,CP66,State Assembly,1,Heather Hadwick,Republican,73,6,65
+Nevada,CP66,State Assembly,1,Tenessa Audette,Republican,41,3,31
+Nevada,CP67,President,,Donald J. Trump / JD Vance,Republican,532,44,432
+Nevada,CP67,President,,Claudia De La Cruz / Karina Garcia,PFP,2,0,2
+Nevada,CP67,President,,Kamala D. Harris / Tim Walz,Democratic,523,23,478
+Nevada,CP67,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,18,1,15
+Nevada,CP67,President,,Chase Oliver / Mike ter Maat,Libertarian,11,1,10
+Nevada,CP67,President,,Jill Stein / Rudolph Ware,Green,12,0,11
+Nevada,CP67,President,,Peter Sonski,,0,0,0
+Nevada,CP67,U.S. Senate,,Steve Garvey,Republican,578,46,474
+Nevada,CP67,U.S. Senate,,Adam B. Schiff,Democratic,518,23,471
+Nevada,CP67,U.S. Senate,Partial Term,Steve Garvey,Republican,576,46,473
+Nevada,CP67,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,511,23,464
+Nevada,CP67,U.S. House,3,Jessica Morse,Democratic,518,27,464
+Nevada,CP67,U.S. House,3,Kevin Kiley,Republican,577,42,481
+Nevada,CP67,State Senate,1,David Fennell,Republican,250,19,208
+Nevada,CP67,State Senate,1,Megan Dahle,Republican,605,41,514
+Nevada,CP67,State Assembly,1,Heather Hadwick,Republican,417,40,344
+Nevada,CP67,State Assembly,1,Tenessa Audette,Republican,372,16,317
+Nevada,CP68,President,,Donald J. Trump / JD Vance,Republican,160,13,136
+Nevada,CP68,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP68,President,,Kamala D. Harris / Tim Walz,Democratic,201,5,191
+Nevada,CP68,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,5,0,5
+Nevada,CP68,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP68,President,,Jill Stein / Rudolph Ware,Green,7,1,6
+Nevada,CP68,President,,Peter Sonski,,0,0,0
+Nevada,CP68,U.S. Senate,,Steve Garvey,Republican,178,13,154
+Nevada,CP68,U.S. Senate,,Adam B. Schiff,Democratic,200,6,189
+Nevada,CP68,U.S. Senate,Partial Term,Steve Garvey,Republican,177,12,154
+Nevada,CP68,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,196,6,185
+Nevada,CP68,U.S. House,3,Jessica Morse,Democratic,201,7,189
+Nevada,CP68,U.S. House,3,Kevin Kiley,Republican,177,12,154
+Nevada,CP68,State Senate,1,David Fennell,Republican,79,2,71
+Nevada,CP68,State Senate,1,Megan Dahle,Republican,212,15,188
+Nevada,CP68,State Assembly,1,Heather Hadwick,Republican,175,11,155
+Nevada,CP68,State Assembly,1,Tenessa Audette,Republican,95,5,86
+Nevada,CP69,President,,Donald J. Trump / JD Vance,Republican,93,4,82
+Nevada,CP69,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP69,President,,Kamala D. Harris / Tim Walz,Democratic,38,1,35
+Nevada,CP69,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,0,0,0
+Nevada,CP69,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,2
+Nevada,CP69,President,,Jill Stein / Rudolph Ware,Green,2,0,2
+Nevada,CP69,President,,Peter Sonski,,0,0,0
+Nevada,CP69,U.S. Senate,,Steve Garvey,Republican,96,3,87
+Nevada,CP69,U.S. Senate,,Adam B. Schiff,Democratic,39,1,35
+Nevada,CP69,U.S. Senate,Partial Term,Steve Garvey,Republican,95,3,86
+Nevada,CP69,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,39,1,35
+Nevada,CP69,U.S. House,3,Jessica Morse,Democratic,38,1,34
+Nevada,CP69,U.S. House,3,Kevin Kiley,Republican,93,3,84
+Nevada,CP69,State Senate,1,David Fennell,Republican,29,0,26
+Nevada,CP69,State Senate,1,Megan Dahle,Republican,82,4,73
+Nevada,CP69,State Assembly,1,Heather Hadwick,Republican,61,1,54
+Nevada,CP69,State Assembly,1,Tenessa Audette,Republican,47,3,43
+Nevada,CP70,President,,Donald J. Trump / JD Vance,Republican,105,3,89
+Nevada,CP70,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP70,President,,Kamala D. Harris / Tim Walz,Democratic,154,5,140
+Nevada,CP70,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,7,0,7
+Nevada,CP70,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,2
+Nevada,CP70,President,,Jill Stein / Rudolph Ware,Green,6,1,4
+Nevada,CP70,President,,Peter Sonski,,0,0,0
+Nevada,CP70,U.S. Senate,,Steve Garvey,Republican,109,3,93
+Nevada,CP70,U.S. Senate,,Adam B. Schiff,Democratic,156,6,144
+Nevada,CP70,U.S. Senate,Partial Term,Steve Garvey,Republican,109,3,93
+Nevada,CP70,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,155,6,143
+Nevada,CP70,U.S. House,3,Jessica Morse,Democratic,149,5,137
+Nevada,CP70,U.S. House,3,Kevin Kiley,Republican,116,4,99
+Nevada,CP70,State Senate,1,David Fennell,Republican,66,1,58
+Nevada,CP70,State Senate,1,Megan Dahle,Republican,144,6,129
+Nevada,CP70,State Assembly,1,Heather Hadwick,Republican,103,2,92
+Nevada,CP70,State Assembly,1,Tenessa Audette,Republican,81,4,69
+Nevada,CP71,President,,Donald J. Trump / JD Vance,Republican,352,31,273
+Nevada,CP71,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP71,President,,Kamala D. Harris / Tim Walz,Democratic,1216,67,1103
+Nevada,CP71,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,28,0,28
+Nevada,CP71,President,,Chase Oliver / Mike ter Maat,Libertarian,10,2,7
+Nevada,CP71,President,,Jill Stein / Rudolph Ware,Green,12,0,10
+Nevada,CP71,President,,Peter Sonski,,0,0,0
+Nevada,CP71,U.S. Senate,,Steve Garvey,Republican,405,33,322
+Nevada,CP71,U.S. Senate,,Adam B. Schiff,Democratic,1180,63,1073
+Nevada,CP71,U.S. Senate,Partial Term,Steve Garvey,Republican,395,32,314
+Nevada,CP71,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,1165,61,1060
+Nevada,CP71,U.S. House,3,Jessica Morse,Democratic,1183,66,1077
+Nevada,CP71,U.S. House,3,Kevin Kiley,Republican,411,30,326
+Nevada,CP71,State Assembly,1,Heather Hadwick,Republican,600,37,523
+Nevada,CP71,State Assembly,1,Tenessa Audette,Republican,345,18,294
+Nevada,CP72,President,,Donald J. Trump / JD Vance,Republican,321,18,267
+Nevada,CP72,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP72,President,,Kamala D. Harris / Tim Walz,Democratic,355,10,336
+Nevada,CP72,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,11,2,9
+Nevada,CP72,President,,Chase Oliver / Mike ter Maat,Libertarian,4,0,4
+Nevada,CP72,President,,Jill Stein / Rudolph Ware,Green,7,0,7
+Nevada,CP72,President,,Peter Sonski,,0,0,0
+Nevada,CP72,U.S. Senate,,Steve Garvey,Republican,340,19,287
+Nevada,CP72,U.S. Senate,,Adam B. Schiff,Democratic,358,11,336
+Nevada,CP72,U.S. Senate,Partial Term,Steve Garvey,Republican,334,19,281
+Nevada,CP72,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,357,11,335
+Nevada,CP72,U.S. House,3,Jessica Morse,Democratic,364,14,338
+Nevada,CP72,U.S. House,3,Kevin Kiley,Republican,334,16,284
+Nevada,CP72,State Senate,1,David Fennell,Republican,157,8,132
+Nevada,CP72,State Senate,1,Megan Dahle,Republican,379,16,340
+Nevada,CP72,State Assembly,1,Heather Hadwick,Republican,283,11,255
+Nevada,CP72,State Assembly,1,Tenessa Audette,Republican,210,11,178
+Nevada,CP73,President,,Donald J. Trump / JD Vance,Republican,521,35,428
+Nevada,CP73,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP73,President,,Kamala D. Harris / Tim Walz,Democratic,492,16,459
+Nevada,CP73,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,13,1,12
+Nevada,CP73,President,,Chase Oliver / Mike ter Maat,Libertarian,8,0,8
+Nevada,CP73,President,,Jill Stein / Rudolph Ware,Green,10,0,10
+Nevada,CP73,President,,Peter Sonski,,0,0,0
+Nevada,CP73,U.S. Senate,,Steve Garvey,Republican,562,34,472
+Nevada,CP73,U.S. Senate,,Adam B. Schiff,Democratic,466,12,439
+Nevada,CP73,U.S. Senate,Partial Term,Steve Garvey,Republican,557,32,471
+Nevada,CP73,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,456,12,428
+Nevada,CP73,U.S. House,3,Jessica Morse,Democratic,476,17,443
+Nevada,CP73,U.S. House,3,Kevin Kiley,Republican,558,30,472
+Nevada,CP73,State Senate,1,David Fennell,Republican,246,9,208
+Nevada,CP73,State Senate,1,Megan Dahle,Republican,562,36,490
+Nevada,CP73,State Assembly,1,Heather Hadwick,Republican,439,25,380
+Nevada,CP73,State Assembly,1,Tenessa Audette,Republican,312,16,267
+Nevada,CP74,President,,Donald J. Trump / JD Vance,Republican,309,15,264
+Nevada,CP74,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP74,President,,Kamala D. Harris / Tim Walz,Democratic,268,4,260
+Nevada,CP74,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,12,0,12
+Nevada,CP74,President,,Chase Oliver / Mike ter Maat,Libertarian,7,0,7
+Nevada,CP74,President,,Jill Stein / Rudolph Ware,Green,4,0,4
+Nevada,CP74,President,,Peter Sonski,,0,0,0
+Nevada,CP74,U.S. Senate,,Steve Garvey,Republican,330,14,286
+Nevada,CP74,U.S. Senate,,Adam B. Schiff,Democratic,267,4,258
+Nevada,CP74,U.S. Senate,Partial Term,Steve Garvey,Republican,329,14,285
+Nevada,CP74,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,265,4,256
+Nevada,CP74,U.S. House,3,Jessica Morse,Democratic,269,4,260
+Nevada,CP74,U.S. House,3,Kevin Kiley,Republican,327,14,283
+Nevada,CP74,State Senate,1,David Fennell,Republican,152,7,137
+Nevada,CP74,State Senate,1,Megan Dahle,Republican,332,9,297
+Nevada,CP74,State Assembly,1,Heather Hadwick,Republican,258,12,228
+Nevada,CP74,State Assembly,1,Tenessa Audette,Republican,188,4,168
+Nevada,CP75,President,,Donald J. Trump / JD Vance,Republican,252,22,208
+Nevada,CP75,President,,Claudia De La Cruz / Karina Garcia,PFP,4,0,4
+Nevada,CP75,President,,Kamala D. Harris / Tim Walz,Democratic,258,6,241
+Nevada,CP75,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,13,2,11
+Nevada,CP75,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,2
+Nevada,CP75,President,,Jill Stein / Rudolph Ware,Green,5,2,3
+Nevada,CP75,President,,Peter Sonski,,0,0,0
+Nevada,CP75,U.S. Senate,,Steve Garvey,Republican,270,24,224
+Nevada,CP75,U.S. Senate,,Adam B. Schiff,Democratic,261,8,243
+Nevada,CP75,U.S. Senate,Partial Term,Steve Garvey,Republican,268,22,224
+Nevada,CP75,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,260,8,242
+Nevada,CP75,U.S. House,3,Jessica Morse,Democratic,258,11,237
+Nevada,CP75,U.S. House,3,Kevin Kiley,Republican,264,20,224
+Nevada,CP75,State Senate,1,David Fennell,Republican,122,10,101
+Nevada,CP75,State Senate,1,Megan Dahle,Republican,279,19,246
+Nevada,CP75,State Assembly,1,Heather Hadwick,Republican,201,14,169
+Nevada,CP75,State Assembly,1,Tenessa Audette,Republican,165,12,147
+Nevada,CP76,President,,Donald J. Trump / JD Vance,Republican,334,22,277
+Nevada,CP76,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP76,President,,Kamala D. Harris / Tim Walz,Democratic,324,13,302
+Nevada,CP76,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,13,2,11
+Nevada,CP76,President,,Chase Oliver / Mike ter Maat,Libertarian,4,1,3
+Nevada,CP76,President,,Jill Stein / Rudolph Ware,Green,13,1,12
+Nevada,CP76,President,,Peter Sonski,,0,0,0
+Nevada,CP76,U.S. Senate,,Steve Garvey,Republican,346,21,293
+Nevada,CP76,U.S. Senate,,Adam B. Schiff,Democratic,328,13,305
+Nevada,CP76,U.S. Senate,Partial Term,Steve Garvey,Republican,343,20,293
+Nevada,CP76,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,323,13,300
+Nevada,CP76,U.S. House,3,Jessica Morse,Democratic,330,13,308
+Nevada,CP76,U.S. House,3,Kevin Kiley,Republican,349,22,293
+Nevada,CP76,State Senate,1,David Fennell,Republican,155,12,127
+Nevada,CP76,State Senate,1,Megan Dahle,Republican,377,20,332
+Nevada,CP76,State Assembly,1,Heather Hadwick,Republican,277,20,235
+Nevada,CP76,State Assembly,1,Tenessa Audette,Republican,201,10,175
+Nevada,CP77,President,,Donald J. Trump / JD Vance,Republican,148,9,118
+Nevada,CP77,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP77,President,,Kamala D. Harris / Tim Walz,Democratic,131,3,122
+Nevada,CP77,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,4,2,2
+Nevada,CP77,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,2
+Nevada,CP77,President,,Jill Stein / Rudolph Ware,Green,1,1,0
+Nevada,CP77,President,,Peter Sonski,,0,0,0
+Nevada,CP77,U.S. Senate,,Steve Garvey,Republican,152,10,122
+Nevada,CP77,U.S. Senate,,Adam B. Schiff,Democratic,133,5,121
+Nevada,CP77,U.S. Senate,Partial Term,Steve Garvey,Republican,153,10,123
+Nevada,CP77,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,129,5,117
+Nevada,CP77,U.S. House,3,Jessica Morse,Democratic,135,7,122
+Nevada,CP77,U.S. House,3,Kevin Kiley,Republican,150,8,121
+Nevada,CP77,State Senate,1,David Fennell,Republican,74,2,58
+Nevada,CP77,State Senate,1,Megan Dahle,Republican,152,13,128
+Nevada,CP77,State Assembly,1,Heather Hadwick,Republican,115,11,94
+Nevada,CP77,State Assembly,1,Tenessa Audette,Republican,95,2,78
+Nevada,CP78,President,,Donald J. Trump / JD Vance,Republican,281,24,228
+Nevada,CP78,President,,Claudia De La Cruz / Karina Garcia,PFP,9,1,6
+Nevada,CP78,President,,Kamala D. Harris / Tim Walz,Democratic,831,27,773
+Nevada,CP78,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,22,3,17
+Nevada,CP78,President,,Chase Oliver / Mike ter Maat,Libertarian,4,0,4
+Nevada,CP78,President,,Jill Stein / Rudolph Ware,Green,24,0,22
+Nevada,CP78,President,,Peter Sonski,,1,0,1
+Nevada,CP78,U.S. Senate,,Steve Garvey,Republican,305,30,248
+Nevada,CP78,U.S. Senate,,Adam B. Schiff,Democratic,849,28,785
+Nevada,CP78,U.S. Senate,Partial Term,Steve Garvey,Republican,297,28,242
+Nevada,CP78,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,851,30,786
+Nevada,CP78,U.S. House,3,Jessica Morse,Democratic,863,32,794
+Nevada,CP78,U.S. House,3,Kevin Kiley,Republican,292,25,241
+Nevada,CP78,State Senate,1,David Fennell,Republican,202,11,173
+Nevada,CP78,State Senate,1,Megan Dahle,Republican,560,37,492
+Nevada,CP78,State Assembly,1,Heather Hadwick,Republican,431,31,373
+Nevada,CP78,State Assembly,1,Tenessa Audette,Republican,234,11,207
+Nevada,CP79,President,,Donald J. Trump / JD Vance,Republican,180,22,129
+Nevada,CP79,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP79,President,,Kamala D. Harris / Tim Walz,Democratic,664,22,612
+Nevada,CP79,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,15,2,13
+Nevada,CP79,President,,Chase Oliver / Mike ter Maat,Libertarian,7,0,7
+Nevada,CP79,President,,Jill Stein / Rudolph Ware,Green,23,1,21
+Nevada,CP79,President,,Peter Sonski,,0,0,0
+Nevada,CP79,U.S. Senate,,Steve Garvey,Republican,187,20,140
+Nevada,CP79,U.S. Senate,,Adam B. Schiff,Democratic,687,26,631
+Nevada,CP79,U.S. Senate,Partial Term,Steve Garvey,Republican,190,20,143
+Nevada,CP79,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,681,25,627
+Nevada,CP79,U.S. House,3,Jessica Morse,Democratic,690,26,636
+Nevada,CP79,U.S. House,3,Kevin Kiley,Republican,188,20,141
+Nevada,CP79,State Senate,1,David Fennell,Republican,157,8,131
+Nevada,CP79,State Senate,1,Megan Dahle,Republican,425,28,372
+Nevada,CP79,State Assembly,1,Heather Hadwick,Republican,330,21,291
+Nevada,CP79,State Assembly,1,Tenessa Audette,Republican,183,15,146
+Nevada,CP80,President,,Donald J. Trump / JD Vance,Republican,194,42,135
+Nevada,CP80,President,,Claudia De La Cruz / Karina Garcia,PFP,4,0,4
+Nevada,CP80,President,,Kamala D. Harris / Tim Walz,Democratic,391,35,344
+Nevada,CP80,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,6,1,5
+Nevada,CP80,President,,Chase Oliver / Mike ter Maat,Libertarian,1,0,0
+Nevada,CP80,President,,Jill Stein / Rudolph Ware,Green,18,3,13
+Nevada,CP80,President,,Peter Sonski,,0,0,0
+Nevada,CP80,U.S. Senate,,Steve Garvey,Republican,186,36,133
+Nevada,CP80,U.S. Senate,,Adam B. Schiff,Democratic,411,39,358
+Nevada,CP80,U.S. Senate,Partial Term,Steve Garvey,Republican,184,37,132
+Nevada,CP80,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,407,37,355
+Nevada,CP80,U.S. House,3,Jessica Morse,Democratic,418,43,359
+Nevada,CP80,U.S. House,3,Kevin Kiley,Republican,184,33,135
+Nevada,CP80,State Senate,1,David Fennell,Republican,121,21,88
+Nevada,CP80,State Senate,1,Megan Dahle,Republican,321,47,259
+Nevada,CP80,State Assembly,1,Heather Hadwick,Republican,266,46,209
+Nevada,CP80,State Assembly,1,Tenessa Audette,Republican,131,18,98
+Nevada,CP81,President,,Donald J. Trump / JD Vance,Republican,107,16,77
+Nevada,CP81,President,,Claudia De La Cruz / Karina Garcia,PFP,4,0,4
+Nevada,CP81,President,,Kamala D. Harris / Tim Walz,Democratic,449,15,423
+Nevada,CP81,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,11,3,8
+Nevada,CP81,President,,Chase Oliver / Mike ter Maat,Libertarian,6,0,6
+Nevada,CP81,President,,Jill Stein / Rudolph Ware,Green,8,3,4
+Nevada,CP81,President,,Peter Sonski,,0,0,0
+Nevada,CP81,U.S. Senate,,Steve Garvey,Republican,112,16,82
+Nevada,CP81,U.S. Senate,,Adam B. Schiff,Democratic,450,19,420
+Nevada,CP81,U.S. Senate,Partial Term,Steve Garvey,Republican,112,16,81
+Nevada,CP81,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,447,19,418
+Nevada,CP81,U.S. House,3,Jessica Morse,Democratic,456,21,424
+Nevada,CP81,U.S. House,3,Kevin Kiley,Republican,102,14,74
+Nevada,CP81,State Senate,1,David Fennell,Republican,93,8,82
+Nevada,CP81,State Senate,1,Megan Dahle,Republican,287,20,248
+Nevada,CP81,State Assembly,1,Heather Hadwick,Republican,213,18,182
+Nevada,CP81,State Assembly,1,Tenessa Audette,Republican,110,9,97
+Nevada,CP82,President,,Donald J. Trump / JD Vance,Republican,270,18,231
+Nevada,CP82,President,,Claudia De La Cruz / Karina Garcia,PFP,6,0,6
+Nevada,CP82,President,,Kamala D. Harris / Tim Walz,Democratic,437,17,403
+Nevada,CP82,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,21,0,20
+Nevada,CP82,President,,Chase Oliver / Mike ter Maat,Libertarian,1,0,1
+Nevada,CP82,President,,Jill Stein / Rudolph Ware,Green,9,3,6
+Nevada,CP82,President,,Peter Sonski,,0,0,0
+Nevada,CP82,U.S. Senate,,Steve Garvey,Republican,299,17,262
+Nevada,CP82,U.S. Senate,,Adam B. Schiff,Democratic,444,19,408
+Nevada,CP82,U.S. Senate,Partial Term,Steve Garvey,Republican,293,16,257
+Nevada,CP82,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,439,19,403
+Nevada,CP82,U.S. House,3,Jessica Morse,Democratic,453,20,414
+Nevada,CP82,U.S. House,3,Kevin Kiley,Republican,286,16,250
+Nevada,CP82,State Senate,1,David Fennell,Republican,134,10,115
+Nevada,CP82,State Senate,1,Megan Dahle,Republican,416,25,367
+Nevada,CP82,State Assembly,1,Heather Hadwick,Republican,282,23,243
+Nevada,CP82,State Assembly,1,Tenessa Audette,Republican,204,8,185
+Nevada,CP83,President,,Donald J. Trump / JD Vance,Republican,190,13,156
+Nevada,CP83,President,,Claudia De La Cruz / Karina Garcia,PFP,6,0,5
+Nevada,CP83,President,,Kamala D. Harris / Tim Walz,Democratic,377,7,362
+Nevada,CP83,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,18,4,11
+Nevada,CP83,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,2
+Nevada,CP83,President,,Jill Stein / Rudolph Ware,Green,13,1,11
+Nevada,CP83,President,,Peter Sonski,,0,0,0
+Nevada,CP83,U.S. Senate,,Steve Garvey,Republican,205,12,171
+Nevada,CP83,U.S. Senate,,Adam B. Schiff,Democratic,398,11,375
+Nevada,CP83,U.S. Senate,Partial Term,Steve Garvey,Republican,201,11,168
+Nevada,CP83,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,401,12,377
+Nevada,CP83,U.S. House,3,Jessica Morse,Democratic,405,12,380
+Nevada,CP83,U.S. House,3,Kevin Kiley,Republican,195,11,164
+Nevada,CP83,State Senate,1,David Fennell,Republican,106,5,92
+Nevada,CP83,State Senate,1,Megan Dahle,Republican,335,15,298
+Nevada,CP83,State Assembly,1,Heather Hadwick,Republican,262,15,230
+Nevada,CP83,State Assembly,1,Tenessa Audette,Republican,131,3,116
+Nevada,CP84,President,,Donald J. Trump / JD Vance,Republican,321,16,265
+Nevada,CP84,President,,Claudia De La Cruz / Karina Garcia,PFP,5,0,5
+Nevada,CP84,President,,Kamala D. Harris / Tim Walz,Democratic,721,14,691
+Nevada,CP84,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,16,0,16
+Nevada,CP84,President,,Chase Oliver / Mike ter Maat,Libertarian,4,0,4
+Nevada,CP84,President,,Jill Stein / Rudolph Ware,Green,24,3,19
+Nevada,CP84,President,,Peter Sonski,,3,0,3
+Nevada,CP84,U.S. Senate,,Steve Garvey,Republican,363,17,305
+Nevada,CP84,U.S. Senate,,Adam B. Schiff,Democratic,720,15,687
+Nevada,CP84,U.S. Senate,Partial Term,Steve Garvey,Republican,359,16,305
+Nevada,CP84,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,721,16,687
+Nevada,CP84,U.S. House,3,Jessica Morse,Democratic,735,13,705
+Nevada,CP84,U.S. House,3,Kevin Kiley,Republican,351,19,291
+Nevada,CP84,State Senate,1,David Fennell,Republican,213,7,186
+Nevada,CP84,State Senate,1,Megan Dahle,Republican,568,21,517
+Nevada,CP84,State Assembly,1,Heather Hadwick,Republican,409,19,376
+Nevada,CP84,State Assembly,1,Tenessa Audette,Republican,280,8,241
+Nevada,CP85,President,,Donald J. Trump / JD Vance,Republican,522,18,456
+Nevada,CP85,President,,Claudia De La Cruz / Karina Garcia,PFP,6,1,5
+Nevada,CP85,President,,Kamala D. Harris / Tim Walz,Democratic,918,20,865
+Nevada,CP85,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,26,0,26
+Nevada,CP85,President,,Chase Oliver / Mike ter Maat,Libertarian,14,1,13
+Nevada,CP85,President,,Jill Stein / Rudolph Ware,Green,6,0,6
+Nevada,CP85,President,,Peter Sonski,,0,0,0
+Nevada,CP85,U.S. Senate,,Steve Garvey,Republican,573,19,509
+Nevada,CP85,U.S. Senate,,Adam B. Schiff,Democratic,905,17,858
+Nevada,CP85,U.S. Senate,Partial Term,Steve Garvey,Republican,567,18,505
+Nevada,CP85,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,900,17,853
+Nevada,CP85,U.S. House,3,Jessica Morse,Democratic,909,21,858
+Nevada,CP85,U.S. House,3,Kevin Kiley,Republican,576,16,514
+Nevada,CP85,State Senate,1,David Fennell,Republican,339,5,302
+Nevada,CP85,State Senate,1,Megan Dahle,Republican,728,25,668
+Nevada,CP85,State Assembly,1,Heather Hadwick,Republican,544,22,480
+Nevada,CP85,State Assembly,1,Tenessa Audette,Republican,414,9,383
+Nevada,CP86,President,,Donald J. Trump / JD Vance,Republican,394,31,325
+Nevada,CP86,President,,Claudia De La Cruz / Karina Garcia,PFP,1,0,1
+Nevada,CP86,President,,Kamala D. Harris / Tim Walz,Democratic,752,26,696
+Nevada,CP86,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,37,6,30
+Nevada,CP86,President,,Chase Oliver / Mike ter Maat,Libertarian,3,0,3
+Nevada,CP86,President,,Jill Stein / Rudolph Ware,Green,10,0,10
+Nevada,CP86,President,,Peter Sonski,,0,0,0
+Nevada,CP86,U.S. Senate,,Steve Garvey,Republican,436,38,362
+Nevada,CP86,U.S. Senate,,Adam B. Schiff,Democratic,742,25,687
+Nevada,CP86,U.S. Senate,Partial Term,Steve Garvey,Republican,432,37,358
+Nevada,CP86,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,737,25,682
+Nevada,CP86,U.S. House,3,Jessica Morse,Democratic,752,27,692
+Nevada,CP86,U.S. House,3,Kevin Kiley,Republican,435,36,364
+Nevada,CP86,State Senate,1,David Fennell,Republican,240,16,207
+Nevada,CP86,State Senate,1,Megan Dahle,Republican,602,37,525
+Nevada,CP86,State Assembly,1,Heather Hadwick,Republican,506,30,441
+Nevada,CP86,State Assembly,1,Tenessa Audette,Republican,269,19,230
+Nevada,CP87,President,,Donald J. Trump / JD Vance,Republican,483,28,417
+Nevada,CP87,President,,Claudia De La Cruz / Karina Garcia,PFP,4,1,3
+Nevada,CP87,President,,Kamala D. Harris / Tim Walz,Democratic,697,20,659
+Nevada,CP87,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,21,1,20
+Nevada,CP87,President,,Chase Oliver / Mike ter Maat,Libertarian,5,1,3
+Nevada,CP87,President,,Jill Stein / Rudolph Ware,Green,25,1,21
+Nevada,CP87,President,,Peter Sonski,,0,0,0
+Nevada,CP87,U.S. Senate,,Steve Garvey,Republican,527,29,457
+Nevada,CP87,U.S. Senate,,Adam B. Schiff,Democratic,692,24,649
+Nevada,CP87,U.S. Senate,Partial Term,Steve Garvey,Republican,520,27,452
+Nevada,CP87,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,688,25,645
+Nevada,CP87,U.S. House,3,Jessica Morse,Democratic,700,24,656
+Nevada,CP87,U.S. House,3,Kevin Kiley,Republican,524,27,457
+Nevada,CP87,State Senate,1,David Fennell,Republican,267,10,238
+Nevada,CP87,State Senate,1,Megan Dahle,Republican,640,32,579
+Nevada,CP87,State Assembly,1,Heather Hadwick,Republican,503,30,447
+Nevada,CP87,State Assembly,1,Tenessa Audette,Republican,328,11,293
+Nevada,CP88,President,,Donald J. Trump / JD Vance,Republican,117,7,95
+Nevada,CP88,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP88,President,,Kamala D. Harris / Tim Walz,Democratic,138,5,132
+Nevada,CP88,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,3,1,2
+Nevada,CP88,President,,Chase Oliver / Mike ter Maat,Libertarian,1,0,0
+Nevada,CP88,President,,Jill Stein / Rudolph Ware,Green,8,1,6
+Nevada,CP88,President,,Peter Sonski,,1,0,1
+Nevada,CP88,U.S. Senate,,Steve Garvey,Republican,125,7,102
+Nevada,CP88,U.S. Senate,,Adam B. Schiff,Democratic,141,7,133
+Nevada,CP88,U.S. Senate,Partial Term,Steve Garvey,Republican,126,9,102
+Nevada,CP88,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,136,4,131
+Nevada,CP88,U.S. House,3,Jessica Morse,Democratic,139,7,130
+Nevada,CP88,U.S. House,3,Kevin Kiley,Republican,126,7,103
+Nevada,CP88,State Senate,1,David Fennell,Republican,59,3,51
+Nevada,CP88,State Senate,1,Megan Dahle,Republican,151,10,129
+Nevada,CP88,State Assembly,1,Heather Hadwick,Republican,128,9,105
+Nevada,CP88,State Assembly,1,Tenessa Audette,Republican,73,4,66
+Nevada,CP89,President,,Donald J. Trump / JD Vance,Republican,56,4,44
+Nevada,CP89,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP89,President,,Kamala D. Harris / Tim Walz,Democratic,38,2,33
+Nevada,CP89,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,1,0,1
+Nevada,CP89,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP89,President,,Jill Stein / Rudolph Ware,Green,1,0,1
+Nevada,CP89,President,,Peter Sonski,,0,0,0
+Nevada,CP89,U.S. Senate,,Steve Garvey,Republican,53,4,41
+Nevada,CP89,U.S. Senate,,Adam B. Schiff,Democratic,42,2,37
+Nevada,CP89,U.S. Senate,Partial Term,Steve Garvey,Republican,55,4,43
+Nevada,CP89,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,40,2,35
+Nevada,CP89,U.S. House,3,Jessica Morse,Democratic,40,2,34
+Nevada,CP89,U.S. House,3,Kevin Kiley,Republican,53,4,42
+Nevada,CP89,State Senate,1,David Fennell,Republican,32,2,27
+Nevada,CP89,State Senate,1,Megan Dahle,Republican,42,4,32
+Nevada,CP89,State Assembly,1,Heather Hadwick,Republican,31,4,25
+Nevada,CP89,State Assembly,1,Tenessa Audette,Republican,39,1,31
+Nevada,CP90,President,,Donald J. Trump / JD Vance,Republican,35,5,22
+Nevada,CP90,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP90,President,,Kamala D. Harris / Tim Walz,Democratic,36,2,33
+Nevada,CP90,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,1,0,1
+Nevada,CP90,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,2
+Nevada,CP90,President,,Jill Stein / Rudolph Ware,Green,3,1,2
+Nevada,CP90,President,,Peter Sonski,,0,0,0
+Nevada,CP90,U.S. Senate,,Steve Garvey,Republican,35,5,22
+Nevada,CP90,U.S. Senate,,Adam B. Schiff,Democratic,38,3,34
+Nevada,CP90,U.S. Senate,Partial Term,Steve Garvey,Republican,35,5,22
+Nevada,CP90,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,37,3,33
+Nevada,CP90,U.S. House,3,Jessica Morse,Democratic,39,3,34
+Nevada,CP90,U.S. House,3,Kevin Kiley,Republican,34,5,22
+Nevada,CP90,State Senate,1,David Fennell,Republican,16,2,12
+Nevada,CP90,State Senate,1,Megan Dahle,Republican,44,5,32
+Nevada,CP90,State Assembly,1,Heather Hadwick,Republican,40,5,29
+Nevada,CP90,State Assembly,1,Tenessa Audette,Republican,14,3,8
+Nevada,CP91,President,,Donald J. Trump / JD Vance,Republican,4,0,4
+Nevada,CP91,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP91,President,,Kamala D. Harris / Tim Walz,Democratic,15,0,15
+Nevada,CP91,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,0,0,0
+Nevada,CP91,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP91,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP91,President,,Peter Sonski,,0,0,0
+Nevada,CP91,U.S. Senate,,Steve Garvey,Republican,6,0,5
+Nevada,CP91,U.S. Senate,,Adam B. Schiff,Democratic,15,0,15
+Nevada,CP91,U.S. Senate,Partial Term,Steve Garvey,Republican,6,0,5
+Nevada,CP91,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,15,0,15
+Nevada,CP91,U.S. House,3,Jessica Morse,Democratic,14,0,14
+Nevada,CP91,U.S. House,3,Kevin Kiley,Republican,7,0,6
+Nevada,CP91,State Assembly,1,Heather Hadwick,Republican,7,0,7
+Nevada,CP91,State Assembly,1,Tenessa Audette,Republican,4,0,3
+Nevada,CP92,President,,Donald J. Trump / JD Vance,Republican,304,26,236
+Nevada,CP92,President,,Claudia De La Cruz / Karina Garcia,PFP,3,0,3
+Nevada,CP92,President,,Kamala D. Harris / Tim Walz,Democratic,1217,58,1090
+Nevada,CP92,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,15,1,12
+Nevada,CP92,President,,Chase Oliver / Mike ter Maat,Libertarian,14,0,14
+Nevada,CP92,President,,Jill Stein / Rudolph Ware,Green,5,0,5
+Nevada,CP92,President,,Peter Sonski,,0,0,0
+Nevada,CP92,U.S. Senate,,Steve Garvey,Republican,356,28,287
+Nevada,CP92,U.S. Senate,,Adam B. Schiff,Democratic,1199,56,1079
+Nevada,CP92,U.S. Senate,Partial Term,Steve Garvey,Republican,362,30,292
+Nevada,CP92,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,1178,53,1060
+Nevada,CP92,U.S. House,3,Jessica Morse,Democratic,1186,56,1066
+Nevada,CP92,U.S. House,3,Kevin Kiley,Republican,376,29,304
+Nevada,CP92,State Assembly,1,Heather Hadwick,Republican,524,38,433
+Nevada,CP92,State Assembly,1,Tenessa Audette,Republican,349,21,310
+Nevada,CP93,President,,Donald J. Trump / JD Vance,Republican,51,0,47
+Nevada,CP93,President,,Claudia De La Cruz / Karina Garcia,PFP,1,1,0
+Nevada,CP93,President,,Kamala D. Harris / Tim Walz,Democratic,62,2,56
+Nevada,CP93,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,3,1,2
+Nevada,CP93,President,,Chase Oliver / Mike ter Maat,Libertarian,2,0,2
+Nevada,CP93,President,,Jill Stein / Rudolph Ware,Green,4,1,3
+Nevada,CP93,President,,Peter Sonski,,0,0,0
+Nevada,CP93,U.S. Senate,,Steve Garvey,Republican,57,3,51
+Nevada,CP93,U.S. Senate,,Adam B. Schiff,Democratic,61,3,55
+Nevada,CP93,U.S. Senate,Partial Term,Steve Garvey,Republican,57,3,51
+Nevada,CP93,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,62,3,56
+Nevada,CP93,U.S. House,3,Jessica Morse,Democratic,63,4,55
+Nevada,CP93,U.S. House,3,Kevin Kiley,Republican,60,2,55
+Nevada,CP93,State Senate,1,David Fennell,Republican,28,1,25
+Nevada,CP93,State Senate,1,Megan Dahle,Republican,75,5,66
+Nevada,CP93,State Assembly,1,Heather Hadwick,Republican,56,2,51
+Nevada,CP93,State Assembly,1,Tenessa Audette,Republican,34,4,27
+Nevada,CP94,President,,Donald J. Trump / JD Vance,Republican,65,3,56
+Nevada,CP94,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP94,President,,Kamala D. Harris / Tim Walz,Democratic,109,7,97
+Nevada,CP94,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,3,1,2
+Nevada,CP94,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP94,President,,Jill Stein / Rudolph Ware,Green,3,0,3
+Nevada,CP94,President,,Peter Sonski,,0,0,0
+Nevada,CP94,U.S. Senate,,Steve Garvey,Republican,69,4,60
+Nevada,CP94,U.S. Senate,,Adam B. Schiff,Democratic,105,7,93
+Nevada,CP94,U.S. Senate,Partial Term,Steve Garvey,Republican,68,3,60
+Nevada,CP94,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,104,7,92
+Nevada,CP94,U.S. House,3,Jessica Morse,Democratic,100,6,89
+Nevada,CP94,U.S. House,3,Kevin Kiley,Republican,73,4,64
+Nevada,CP94,State Assembly,1,Heather Hadwick,Republican,73,5,62
+Nevada,CP94,State Assembly,1,Tenessa Audette,Republican,48,3,42
+Nevada,CP95,President,,Donald J. Trump / JD Vance,Republican,0,0,0
+Nevada,CP95,President,,Claudia De La Cruz / Karina Garcia,PFP,0,0,0
+Nevada,CP95,President,,Kamala D. Harris / Tim Walz,Democratic,0,0,0
+Nevada,CP95,President,,Robert F. Kennedy Jr. / Nicole Shanahan,American Independent,0,0,0
+Nevada,CP95,President,,Chase Oliver / Mike ter Maat,Libertarian,0,0,0
+Nevada,CP95,President,,Jill Stein / Rudolph Ware,Green,0,0,0
+Nevada,CP95,President,,Peter Sonski,,0,0,0
+Nevada,CP95,U.S. Senate,,Steve Garvey,Republican,0,0,0
+Nevada,CP95,U.S. Senate,,Adam B. Schiff,Democratic,0,0,0
+Nevada,CP95,U.S. Senate,Partial Term,Steve Garvey,Republican,0,0,0
+Nevada,CP95,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,0,0,0
+Nevada,CP95,U.S. House,3,Jessica Morse,Democratic,0,0,0
+Nevada,CP95,U.S. House,3,Kevin Kiley,Republican,0,0,0
+Nevada,CP95,State Assembly,1,Heather Hadwick,Republican,0,0,0
+Nevada,CP95,State Assembly,1,Tenessa Audette,Republican,0,0,0
+Nevada,CP95,State Senate,1,David Fennell,Republican,0,0,0
+Nevada,CP95,State Senate,1,Megan Dahle,Republican,0,0,0

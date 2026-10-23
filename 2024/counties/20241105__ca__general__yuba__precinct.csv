@@ -1,0 +1,596 @@
+county,precinct,office,district,candidate,party,votes,election_day,mail
+Yuba,8101,President,,Donald J. Trump,Republican,459,107,352
+Yuba,8101,President,,Claudia De La Cruz,Peace and Freedom,3,0,3
+Yuba,8101,President,,Kamala D. Harris,Democratic,353,52,301
+Yuba,8101,President,,Robert F. Kennedy Jr.,American Independent,10,4,6
+Yuba,8101,President,,Chase Oliver,Libertarian,1,0,1
+Yuba,8101,President,,Jill Stein,Green,7,2,5
+Yuba,8101,President,,Peter Sonski,,0,0,0
+Yuba,8102,President,,Donald J. Trump,Republican,525,157,368
+Yuba,8102,President,,Claudia De La Cruz,Peace and Freedom,7,2,5
+Yuba,8102,President,,Kamala D. Harris,Democratic,402,75,327
+Yuba,8102,President,,Robert F. Kennedy Jr.,American Independent,18,4,14
+Yuba,8102,President,,Chase Oliver,Libertarian,4,0,4
+Yuba,8102,President,,Jill Stein,Green,5,2,3
+Yuba,8102,President,,Peter Sonski,,0,0,0
+Yuba,8103,President,,Donald J. Trump,Republican,918,184,734
+Yuba,8103,President,,Claudia De La Cruz,Peace and Freedom,6,0,6
+Yuba,8103,President,,Kamala D. Harris,Democratic,675,89,586
+Yuba,8103,President,,Robert F. Kennedy Jr.,American Independent,23,3,20
+Yuba,8103,President,,Chase Oliver,Libertarian,6,2,4
+Yuba,8103,President,,Jill Stein,Green,9,0,9
+Yuba,8103,President,,Peter Sonski,,0,0,0
+Yuba,8104,President,,Donald J. Trump,Republican,405,89,316
+Yuba,8104,President,,Claudia De La Cruz,Peace and Freedom,5,0,5
+Yuba,8104,President,,Kamala D. Harris,Democratic,247,29,218
+Yuba,8104,President,,Robert F. Kennedy Jr.,American Independent,12,1,11
+Yuba,8104,President,,Chase Oliver,Libertarian,5,2,3
+Yuba,8104,President,,Jill Stein,Green,3,1,2
+Yuba,8104,President,,Peter Sonski,,0,0,0
+Yuba,8105,President,,Donald J. Trump,Republican,358,75,283
+Yuba,8105,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Yuba,8105,President,,Kamala D. Harris,Democratic,282,52,230
+Yuba,8105,President,,Robert F. Kennedy Jr.,American Independent,14,3,11
+Yuba,8105,President,,Chase Oliver,Libertarian,0,0,0
+Yuba,8105,President,,Jill Stein,Green,2,1,1
+Yuba,8105,President,,Peter Sonski,,0,0,0
+Yuba,8201,President,,Donald J. Trump,Republican,305,78,227
+Yuba,8201,President,,Claudia De La Cruz,Peace and Freedom,3,1,2
+Yuba,8201,President,,Kamala D. Harris,Democratic,231,36,195
+Yuba,8201,President,,Robert F. Kennedy Jr.,American Independent,7,4,3
+Yuba,8201,President,,Chase Oliver,Libertarian,5,0,5
+Yuba,8201,President,,Jill Stein,Green,2,0,2
+Yuba,8201,President,,Peter Sonski,,0,0,0
+Yuba,8202,President,,Donald J. Trump,Republican,916,188,728
+Yuba,8202,President,,Claudia De La Cruz,Peace and Freedom,6,1,5
+Yuba,8202,President,,Kamala D. Harris,Democratic,515,60,455
+Yuba,8202,President,,Robert F. Kennedy Jr.,American Independent,29,3,26
+Yuba,8202,President,,Chase Oliver,Libertarian,6,0,6
+Yuba,8202,President,,Jill Stein,Green,6,1,5
+Yuba,8202,President,,Peter Sonski,,0,0,0
+Yuba,8203,President,,Donald J. Trump,Republican,827,149,678
+Yuba,8203,President,,Claudia De La Cruz,Peace and Freedom,4,0,4
+Yuba,8203,President,,Kamala D. Harris,Democratic,430,50,380
+Yuba,8203,President,,Robert F. Kennedy Jr.,American Independent,32,2,30
+Yuba,8203,President,,Chase Oliver,Libertarian,3,1,2
+Yuba,8203,President,,Jill Stein,Green,7,1,6
+Yuba,8203,President,,Peter Sonski,,0,0,0
+Yuba,8204,President,,Donald J. Trump,Republican,691,160,531
+Yuba,8204,President,,Claudia De La Cruz,Peace and Freedom,9,2,7
+Yuba,8204,President,,Kamala D. Harris,Democratic,513,87,426
+Yuba,8204,President,,Robert F. Kennedy Jr.,American Independent,21,5,16
+Yuba,8204,President,,Chase Oliver,Libertarian,6,0,6
+Yuba,8204,President,,Jill Stein,Green,8,2,6
+Yuba,8204,President,,Peter Sonski,,0,0,0
+Yuba,8205,President,,Donald J. Trump,Republican,286,56,230
+Yuba,8205,President,,Claudia De La Cruz,Peace and Freedom,4,0,4
+Yuba,8205,President,,Kamala D. Harris,Democratic,128,11,117
+Yuba,8205,President,,Robert F. Kennedy Jr.,American Independent,4,2,2
+Yuba,8205,President,,Chase Oliver,Libertarian,4,1,3
+Yuba,8205,President,,Jill Stein,Green,4,0,4
+Yuba,8205,President,,Peter Sonski,,0,0,0
+Yuba,8301,President,,Donald J. Trump,Republican,457,125,332
+Yuba,8301,President,,Claudia De La Cruz,Peace and Freedom,3,1,2
+Yuba,8301,President,,Kamala D. Harris,Democratic,289,57,232
+Yuba,8301,President,,Robert F. Kennedy Jr.,American Independent,11,2,9
+Yuba,8301,President,,Chase Oliver,Libertarian,3,1,2
+Yuba,8301,President,,Jill Stein,Green,4,1,3
+Yuba,8301,President,,Peter Sonski,,0,0,0
+Yuba,8302,President,,Donald J. Trump,Republican,674,147,527
+Yuba,8302,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Yuba,8302,President,,Kamala D. Harris,Democratic,476,69,407
+Yuba,8302,President,,Robert F. Kennedy Jr.,American Independent,17,5,12
+Yuba,8302,President,,Chase Oliver,Libertarian,4,1,3
+Yuba,8302,President,,Jill Stein,Green,4,0,4
+Yuba,8302,President,,Peter Sonski,,0,0,0
+Yuba,8303,President,,Donald J. Trump,Republican,909,179,730
+Yuba,8303,President,,Claudia De La Cruz,Peace and Freedom,8,2,6
+Yuba,8303,President,,Kamala D. Harris,Democratic,540,72,468
+Yuba,8303,President,,Robert F. Kennedy Jr.,American Independent,19,3,16
+Yuba,8303,President,,Chase Oliver,Libertarian,3,0,3
+Yuba,8303,President,,Jill Stein,Green,7,0,7
+Yuba,8303,President,,Peter Sonski,,0,0,0
+Yuba,8304,President,,Donald J. Trump,Republican,410,102,308
+Yuba,8304,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Yuba,8304,President,,Kamala D. Harris,Democratic,218,31,187
+Yuba,8304,President,,Robert F. Kennedy Jr.,American Independent,11,0,11
+Yuba,8304,President,,Chase Oliver,Libertarian,1,0,1
+Yuba,8304,President,,Jill Stein,Green,1,0,1
+Yuba,8304,President,,Peter Sonski,,0,0,0
+Yuba,8401,President,,Donald J. Trump,Republican,1048,158,890
+Yuba,8401,President,,Claudia De La Cruz,Peace and Freedom,6,1,5
+Yuba,8401,President,,Kamala D. Harris,Democratic,845,93,752
+Yuba,8401,President,,Robert F. Kennedy Jr.,American Independent,37,5,32
+Yuba,8401,President,,Chase Oliver,Libertarian,12,1,11
+Yuba,8401,President,,Jill Stein,Green,13,2,11
+Yuba,8401,President,,Peter Sonski,,0,0,0
+Yuba,8402,President,,Donald J. Trump,Republican,930,135,795
+Yuba,8402,President,,Claudia De La Cruz,Peace and Freedom,7,2,5
+Yuba,8402,President,,Kamala D. Harris,Democratic,820,69,751
+Yuba,8402,President,,Robert F. Kennedy Jr.,American Independent,38,6,32
+Yuba,8402,President,,Chase Oliver,Libertarian,9,0,9
+Yuba,8402,President,,Jill Stein,Green,9,0,9
+Yuba,8402,President,,Peter Sonski,,0,0,0
+Yuba,8403,President,,Donald J. Trump,Republican,941,167,774
+Yuba,8403,President,,Claudia De La Cruz,Peace and Freedom,10,2,8
+Yuba,8403,President,,Kamala D. Harris,Democratic,625,75,550
+Yuba,8403,President,,Robert F. Kennedy Jr.,American Independent,24,1,23
+Yuba,8403,President,,Chase Oliver,Libertarian,10,0,10
+Yuba,8403,President,,Jill Stein,Green,6,0,6
+Yuba,8403,President,,Peter Sonski,,0,0,0
+Yuba,8404,President,,Donald J. Trump,Republican,788,144,644
+Yuba,8404,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Yuba,8404,President,,Kamala D. Harris,Democratic,436,55,381
+Yuba,8404,President,,Robert F. Kennedy Jr.,American Independent,12,2,10
+Yuba,8404,President,,Chase Oliver,Libertarian,9,1,8
+Yuba,8404,President,,Jill Stein,Green,5,0,5
+Yuba,8404,President,,Peter Sonski,,0,0,0
+Yuba,8405,President,,Donald J. Trump,Republican,1135,236,899
+Yuba,8405,President,,Claudia De La Cruz,Peace and Freedom,1,1,0
+Yuba,8405,President,,Kamala D. Harris,Democratic,499,70,429
+Yuba,8405,President,,Robert F. Kennedy Jr.,American Independent,30,6,24
+Yuba,8405,President,,Chase Oliver,Libertarian,15,3,12
+Yuba,8405,President,,Jill Stein,Green,6,3,3
+Yuba,8405,President,,Peter Sonski,,0,0,0
+Yuba,8406,President,,Donald J. Trump,Republican,172,31,141
+Yuba,8406,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Yuba,8406,President,,Kamala D. Harris,Democratic,44,8,36
+Yuba,8406,President,,Robert F. Kennedy Jr.,American Independent,2,0,2
+Yuba,8406,President,,Chase Oliver,Libertarian,1,0,1
+Yuba,8406,President,,Jill Stein,Green,4,0,4
+Yuba,8406,President,,Peter Sonski,,0,0,0
+Yuba,8501,President,,Donald J. Trump,Republican,551,128,423
+Yuba,8501,President,,Claudia De La Cruz,Peace and Freedom,5,0,5
+Yuba,8501,President,,Kamala D. Harris,Democratic,575,61,514
+Yuba,8501,President,,Robert F. Kennedy Jr.,American Independent,18,1,17
+Yuba,8501,President,,Chase Oliver,Libertarian,8,2,6
+Yuba,8501,President,,Jill Stein,Green,9,1,8
+Yuba,8501,President,,Peter Sonski,,0,0,0
+Yuba,8502,President,,Donald J. Trump,Republican,556,114,442
+Yuba,8502,President,,Claudia De La Cruz,Peace and Freedom,4,1,3
+Yuba,8502,President,,Kamala D. Harris,Democratic,243,28,215
+Yuba,8502,President,,Robert F. Kennedy Jr.,American Independent,17,1,16
+Yuba,8502,President,,Chase Oliver,Libertarian,2,0,2
+Yuba,8502,President,,Jill Stein,Green,1,0,1
+Yuba,8502,President,,Peter Sonski,,0,0,0
+Yuba,8503,President,,Donald J. Trump,Republican,440,80,360
+Yuba,8503,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Yuba,8503,President,,Kamala D. Harris,Democratic,126,10,116
+Yuba,8503,President,,Robert F. Kennedy Jr.,American Independent,6,0,6
+Yuba,8503,President,,Chase Oliver,Libertarian,1,0,1
+Yuba,8503,President,,Jill Stein,Green,2,0,2
+Yuba,8503,President,,Peter Sonski,,0,0,0
+Yuba,8504,President,,Donald J. Trump,Republican,1029,181,848
+Yuba,8504,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Yuba,8504,President,,Kamala D. Harris,Democratic,237,21,216
+Yuba,8504,President,,Robert F. Kennedy Jr.,American Independent,13,2,11
+Yuba,8504,President,,Chase Oliver,Libertarian,5,0,5
+Yuba,8504,President,,Jill Stein,Green,5,1,4
+Yuba,8504,President,,Peter Sonski,,0,0,0
+Yuba,8505,President,,Donald J. Trump,Republican,530,115,415
+Yuba,8505,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Yuba,8505,President,,Kamala D. Harris,Democratic,67,9,58
+Yuba,8505,President,,Robert F. Kennedy Jr.,American Independent,3,0,3
+Yuba,8505,President,,Chase Oliver,Libertarian,0,0,0
+Yuba,8505,President,,Jill Stein,Green,0,0,0
+Yuba,8505,President,,Peter Sonski,,0,0,0
+Yuba,8506,President,,Donald J. Trump,Republican,1294,224,1070
+Yuba,8506,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Yuba,8506,President,,Kamala D. Harris,Democratic,442,36,406
+Yuba,8506,President,,Robert F. Kennedy Jr.,American Independent,20,6,14
+Yuba,8506,President,,Chase Oliver,Libertarian,4,0,4
+Yuba,8506,President,,Jill Stein,Green,8,0,8
+Yuba,8506,President,,Peter Sonski,,0,0,0
+Yuba,8507,President,,Donald J. Trump,Republican,163,16,147
+Yuba,8507,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Yuba,8507,President,,Kamala D. Harris,Democratic,157,5,152
+Yuba,8507,President,,Robert F. Kennedy Jr.,American Independent,6,1,5
+Yuba,8507,President,,Chase Oliver,Libertarian,1,0,1
+Yuba,8507,President,,Jill Stein,Green,6,1,5
+Yuba,8507,President,,Peter Sonski,,0,0,0
+Yuba,8508,President,,Donald J. Trump,Republican,121,38,83
+Yuba,8508,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Yuba,8508,President,,Kamala D. Harris,Democratic,39,6,33
+Yuba,8508,President,,Robert F. Kennedy Jr.,American Independent,1,0,1
+Yuba,8508,President,,Chase Oliver,Libertarian,0,0,0
+Yuba,8508,President,,Jill Stein,Green,2,0,2
+Yuba,8508,President,,Peter Sonski,,0,0,0
+Yuba,9206,President,,Donald J. Trump,Republican,102,0,102
+Yuba,9206,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Yuba,9206,President,,Kamala D. Harris,Democratic,26,0,26
+Yuba,9206,President,,Robert F. Kennedy Jr.,American Independent,0,0,0
+Yuba,9206,President,,Chase Oliver,Libertarian,0,0,0
+Yuba,9206,President,,Jill Stein,Green,0,0,0
+Yuba,9206,President,,Peter Sonski,,0,0,0
+Yuba,9509,President,,Donald J. Trump,Republican,78,0,78
+Yuba,9509,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Yuba,9509,President,,Kamala D. Harris,Democratic,41,0,41
+Yuba,9509,President,,Robert F. Kennedy Jr.,American Independent,1,0,1
+Yuba,9509,President,,Chase Oliver,Libertarian,0,0,0
+Yuba,9509,President,,Jill Stein,Green,0,0,0
+Yuba,9509,President,,Peter Sonski,,0,0,0
+Yuba,9510,President,,Donald J. Trump,Republican,107,0,107
+Yuba,9510,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Yuba,9510,President,,Kamala D. Harris,Democratic,61,0,61
+Yuba,9510,President,,Robert F. Kennedy Jr.,American Independent,2,0,2
+Yuba,9510,President,,Chase Oliver,Libertarian,1,0,1
+Yuba,9510,President,,Jill Stein,Green,1,0,1
+Yuba,9510,President,,Peter Sonski,,0,0,0
+Yuba,9511,President,,Donald J. Trump,Republican,115,0,115
+Yuba,9511,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Yuba,9511,President,,Kamala D. Harris,Democratic,34,0,34
+Yuba,9511,President,,Robert F. Kennedy Jr.,American Independent,6,0,6
+Yuba,9511,President,,Chase Oliver,Libertarian,0,0,0
+Yuba,9511,President,,Jill Stein,Green,0,0,0
+Yuba,9511,President,,Peter Sonski,,0,0,0
+Yuba,9512,President,,Donald J. Trump,Republican,49,0,49
+Yuba,9512,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Yuba,9512,President,,Kamala D. Harris,Democratic,12,0,12
+Yuba,9512,President,,Robert F. Kennedy Jr.,American Independent,0,0,0
+Yuba,9512,President,,Chase Oliver,Libertarian,3,0,3
+Yuba,9512,President,,Jill Stein,Green,1,0,1
+Yuba,9512,President,,Peter Sonski,,0,0,0
+Yuba,9513,President,,Donald J. Trump,Republican,143,0,143
+Yuba,9513,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Yuba,9513,President,,Kamala D. Harris,Democratic,35,0,35
+Yuba,9513,President,,Robert F. Kennedy Jr.,American Independent,2,0,2
+Yuba,9513,President,,Chase Oliver,Libertarian,0,0,0
+Yuba,9513,President,,Jill Stein,Green,2,0,2
+Yuba,9513,President,,Peter Sonski,,0,0,0
+Yuba,9514,President,,Donald J. Trump,Republican,59,0,59
+Yuba,9514,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Yuba,9514,President,,Kamala D. Harris,Democratic,62,0,62
+Yuba,9514,President,,Robert F. Kennedy Jr.,American Independent,3,0,3
+Yuba,9514,President,,Chase Oliver,Libertarian,0,0,0
+Yuba,9514,President,,Jill Stein,Green,0,0,0
+Yuba,9514,President,,Peter Sonski,,2,0,2
+Yuba,8101,U.S. Senate,,Steve Garvey,Republican,459,106,353
+Yuba,8101,U.S. Senate,,Adam B. Schiff,Democratic,342,49,293
+Yuba,8101,U.S. Senate,Partial Term,Steve Garvey,Republican,436,97,339
+Yuba,8101,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,333,49,284
+Yuba,8102,U.S. Senate,,Steve Garvey,Republican,524,158,366
+Yuba,8102,U.S. Senate,,Adam B. Schiff,Democratic,391,73,318
+Yuba,8102,U.S. Senate,Partial Term,Steve Garvey,Republican,502,145,357
+Yuba,8102,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,382,75,307
+Yuba,8103,U.S. Senate,,Steve Garvey,Republican,931,182,749
+Yuba,8103,U.S. Senate,,Adam B. Schiff,Democratic,652,87,565
+Yuba,8103,U.S. Senate,Partial Term,Steve Garvey,Republican,912,173,739
+Yuba,8103,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,632,86,546
+Yuba,8104,U.S. Senate,,Steve Garvey,Republican,402,81,321
+Yuba,8104,U.S. Senate,,Adam B. Schiff,Democratic,261,35,226
+Yuba,8104,U.S. Senate,Partial Term,Steve Garvey,Republican,382,79,303
+Yuba,8104,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,261,32,229
+Yuba,8105,U.S. Senate,,Steve Garvey,Republican,358,71,287
+Yuba,8105,U.S. Senate,,Adam B. Schiff,Democratic,276,51,225
+Yuba,8105,U.S. Senate,Partial Term,Steve Garvey,Republican,353,71,282
+Yuba,8105,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,255,45,210
+Yuba,8201,U.S. Senate,,Steve Garvey,Republican,313,78,235
+Yuba,8201,U.S. Senate,,Adam B. Schiff,Democratic,219,32,187
+Yuba,8201,U.S. Senate,Partial Term,Steve Garvey,Republican,298,73,225
+Yuba,8201,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,210,32,178
+Yuba,8202,U.S. Senate,,Steve Garvey,Republican,922,176,746
+Yuba,8202,U.S. Senate,,Adam B. Schiff,Democratic,499,64,435
+Yuba,8202,U.S. Senate,Partial Term,Steve Garvey,Republican,900,171,729
+Yuba,8202,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,491,61,430
+Yuba,8203,U.S. Senate,,Steve Garvey,Republican,825,134,691
+Yuba,8203,U.S. Senate,,Adam B. Schiff,Democratic,430,53,377
+Yuba,8203,U.S. Senate,Partial Term,Steve Garvey,Republican,815,127,688
+Yuba,8203,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,415,50,365
+Yuba,8204,U.S. Senate,,Steve Garvey,Republican,694,159,535
+Yuba,8204,U.S. Senate,,Adam B. Schiff,Democratic,517,86,431
+Yuba,8204,U.S. Senate,Partial Term,Steve Garvey,Republican,651,152,499
+Yuba,8204,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,509,83,426
+Yuba,8205,U.S. Senate,,Steve Garvey,Republican,287,57,230
+Yuba,8205,U.S. Senate,,Adam B. Schiff,Democratic,134,12,122
+Yuba,8205,U.S. Senate,Partial Term,Steve Garvey,Republican,275,55,220
+Yuba,8205,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,133,13,120
+Yuba,8301,U.S. Senate,,Steve Garvey,Republican,443,121,322
+Yuba,8301,U.S. Senate,,Adam B. Schiff,Democratic,294,57,237
+Yuba,8301,U.S. Senate,Partial Term,Steve Garvey,Republican,440,119,321
+Yuba,8301,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,289,57,232
+Yuba,8302,U.S. Senate,,Steve Garvey,Republican,685,148,537
+Yuba,8302,U.S. Senate,,Adam B. Schiff,Democratic,472,64,408
+Yuba,8302,U.S. Senate,Partial Term,Steve Garvey,Republican,649,137,512
+Yuba,8302,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,469,68,401
+Yuba,8303,U.S. Senate,,Steve Garvey,Republican,892,178,714
+Yuba,8303,U.S. Senate,,Adam B. Schiff,Democratic,542,68,474
+Yuba,8303,U.S. Senate,Partial Term,Steve Garvey,Republican,877,166,711
+Yuba,8303,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,525,72,453
+Yuba,8304,U.S. Senate,,Steve Garvey,Republican,398,96,302
+Yuba,8304,U.S. Senate,,Adam B. Schiff,Democratic,217,26,191
+Yuba,8304,U.S. Senate,Partial Term,Steve Garvey,Republican,389,92,297
+Yuba,8304,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,210,27,183
+Yuba,8401,U.S. Senate,,Steve Garvey,Republican,1065,152,913
+Yuba,8401,U.S. Senate,,Adam B. Schiff,Democratic,818,93,725
+Yuba,8401,U.S. Senate,Partial Term,Steve Garvey,Republican,1053,147,906
+Yuba,8401,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,800,91,709
+Yuba,8402,U.S. Senate,,Steve Garvey,Republican,971,126,845
+Yuba,8402,U.S. Senate,,Adam B. Schiff,Democratic,785,65,720
+Yuba,8402,U.S. Senate,Partial Term,Steve Garvey,Republican,952,123,829
+Yuba,8402,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,777,64,713
+Yuba,8403,U.S. Senate,,Steve Garvey,Republican,946,156,790
+Yuba,8403,U.S. Senate,,Adam B. Schiff,Democratic,626,76,550
+Yuba,8403,U.S. Senate,Partial Term,Steve Garvey,Republican,922,149,773
+Yuba,8403,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,610,71,539
+Yuba,8404,U.S. Senate,,Steve Garvey,Republican,809,142,667
+Yuba,8404,U.S. Senate,,Adam B. Schiff,Democratic,411,51,360
+Yuba,8404,U.S. Senate,Partial Term,Steve Garvey,Republican,799,137,662
+Yuba,8404,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,401,48,353
+Yuba,8405,U.S. Senate,,Steve Garvey,Republican,1170,239,931
+Yuba,8405,U.S. Senate,,Adam B. Schiff,Democratic,483,68,415
+Yuba,8405,U.S. Senate,Partial Term,Steve Garvey,Republican,1141,235,906
+Yuba,8405,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,470,67,403
+Yuba,8406,U.S. Senate,,Steve Garvey,Republican,178,31,147
+Yuba,8406,U.S. Senate,,Adam B. Schiff,Democratic,41,7,34
+Yuba,8406,U.S. Senate,Partial Term,Steve Garvey,Republican,174,28,146
+Yuba,8406,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,41,6,35
+Yuba,8501,U.S. Senate,,Steve Garvey,Republican,568,126,442
+Yuba,8501,U.S. Senate,,Adam B. Schiff,Democratic,564,61,503
+Yuba,8501,U.S. Senate,Partial Term,Steve Garvey,Republican,553,119,434
+Yuba,8501,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,561,62,499
+Yuba,8502,U.S. Senate,,Steve Garvey,Republican,568,118,450
+Yuba,8502,U.S. Senate,,Adam B. Schiff,Democratic,242,22,220
+Yuba,8502,U.S. Senate,Partial Term,Steve Garvey,Republican,559,115,444
+Yuba,8502,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,233,22,211
+Yuba,8503,U.S. Senate,,Steve Garvey,Republican,447,78,369
+Yuba,8503,U.S. Senate,,Adam B. Schiff,Democratic,123,12,111
+Yuba,8503,U.S. Senate,Partial Term,Steve Garvey,Republican,439,75,364
+Yuba,8503,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,117,10,107
+Yuba,8504,U.S. Senate,,Steve Garvey,Republican,1042,176,866
+Yuba,8504,U.S. Senate,,Adam B. Schiff,Democratic,229,22,207
+Yuba,8504,U.S. Senate,Partial Term,Steve Garvey,Republican,1021,172,849
+Yuba,8504,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,229,23,206
+Yuba,8505,U.S. Senate,,Steve Garvey,Republican,528,114,414
+Yuba,8505,U.S. Senate,,Adam B. Schiff,Democratic,66,9,57
+Yuba,8505,U.S. Senate,Partial Term,Steve Garvey,Republican,520,113,407
+Yuba,8505,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,68,8,60
+Yuba,8506,U.S. Senate,,Steve Garvey,Republican,1319,219,1100
+Yuba,8506,U.S. Senate,,Adam B. Schiff,Democratic,416,30,386
+Yuba,8506,U.S. Senate,Partial Term,Steve Garvey,Republican,1282,209,1073
+Yuba,8506,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,414,29,385
+Yuba,8507,U.S. Senate,,Steve Garvey,Republican,171,17,154
+Yuba,8507,U.S. Senate,,Adam B. Schiff,Democratic,152,5,147
+Yuba,8507,U.S. Senate,Partial Term,Steve Garvey,Republican,171,17,154
+Yuba,8507,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,144,5,139
+Yuba,8508,U.S. Senate,,Steve Garvey,Republican,122,37,85
+Yuba,8508,U.S. Senate,,Adam B. Schiff,Democratic,33,6,27
+Yuba,8508,U.S. Senate,Partial Term,Steve Garvey,Republican,114,33,81
+Yuba,8508,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,35,6,29
+Yuba,9206,U.S. Senate,,Steve Garvey,Republican,107,0,107
+Yuba,9206,U.S. Senate,,Adam B. Schiff,Democratic,22,0,22
+Yuba,9206,U.S. Senate,Partial Term,Steve Garvey,Republican,100,0,100
+Yuba,9206,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,22,0,22
+Yuba,9509,U.S. Senate,,Steve Garvey,Republican,75,0,75
+Yuba,9509,U.S. Senate,,Adam B. Schiff,Democratic,41,0,41
+Yuba,9509,U.S. Senate,Partial Term,Steve Garvey,Republican,74,0,74
+Yuba,9509,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,39,0,39
+Yuba,9510,U.S. Senate,,Steve Garvey,Republican,111,0,111
+Yuba,9510,U.S. Senate,,Adam B. Schiff,Democratic,62,0,62
+Yuba,9510,U.S. Senate,Partial Term,Steve Garvey,Republican,110,0,110
+Yuba,9510,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,61,0,61
+Yuba,9511,U.S. Senate,,Steve Garvey,Republican,120,0,120
+Yuba,9511,U.S. Senate,,Adam B. Schiff,Democratic,35,0,35
+Yuba,9511,U.S. Senate,Partial Term,Steve Garvey,Republican,119,0,119
+Yuba,9511,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,34,0,34
+Yuba,9512,U.S. Senate,,Steve Garvey,Republican,52,0,52
+Yuba,9512,U.S. Senate,,Adam B. Schiff,Democratic,15,0,15
+Yuba,9512,U.S. Senate,Partial Term,Steve Garvey,Republican,50,0,50
+Yuba,9512,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,17,0,17
+Yuba,9513,U.S. Senate,,Steve Garvey,Republican,143,0,143
+Yuba,9513,U.S. Senate,,Adam B. Schiff,Democratic,36,0,36
+Yuba,9513,U.S. Senate,Partial Term,Steve Garvey,Republican,135,0,135
+Yuba,9513,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,38,0,38
+Yuba,9514,U.S. Senate,,Steve Garvey,Republican,66,0,66
+Yuba,9514,U.S. Senate,,Adam B. Schiff,Democratic,55,0,55
+Yuba,9514,U.S. Senate,Partial Term,Steve Garvey,Republican,60,0,60
+Yuba,9514,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,57,0,57
+Yuba,8101,U.S. House,1,Doug Lamalfa,Republican,464,99,365
+Yuba,8101,U.S. House,1,Rose Penelope Yee,Democratic,339,50,289
+Yuba,8102,U.S. House,1,Doug Lamalfa,Republican,513,141,372
+Yuba,8102,U.S. House,1,Rose Penelope Yee,Democratic,396,80,316
+Yuba,8103,U.S. House,1,Doug Lamalfa,Republican,902,166,736
+Yuba,8103,U.S. House,1,Rose Penelope Yee,Democratic,629,87,542
+Yuba,8104,U.S. House,1,Doug Lamalfa,Republican,403,83,320
+Yuba,8104,U.S. House,1,Rose Penelope Yee,Democratic,252,33,219
+Yuba,8105,U.S. House,1,Doug Lamalfa,Republican,358,68,290
+Yuba,8105,U.S. House,1,Rose Penelope Yee,Democratic,273,52,221
+Yuba,8201,U.S. House,1,Doug Lamalfa,Republican,293,67,226
+Yuba,8201,U.S. House,1,Rose Penelope Yee,Democratic,229,38,191
+Yuba,8202,U.S. House,1,Doug Lamalfa,Republican,902,168,734
+Yuba,8202,U.S. House,1,Rose Penelope Yee,Democratic,487,61,426
+Yuba,8203,U.S. House,1,Doug Lamalfa,Republican,830,129,701
+Yuba,8203,U.S. House,1,Rose Penelope Yee,Democratic,413,50,363
+Yuba,8204,U.S. House,1,Doug Lamalfa,Republican,678,152,526
+Yuba,8204,U.S. House,1,Rose Penelope Yee,Democratic,498,83,415
+Yuba,8205,U.S. House,1,Doug Lamalfa,Republican,295,56,239
+Yuba,8205,U.S. House,1,Rose Penelope Yee,Democratic,119,11,108
+Yuba,8301,U.S. House,1,Doug Lamalfa,Republican,428,117,311
+Yuba,8301,U.S. House,1,Rose Penelope Yee,Democratic,284,53,231
+Yuba,8302,U.S. House,1,Doug Lamalfa,Republican,665,139,526
+Yuba,8302,U.S. House,1,Rose Penelope Yee,Democratic,455,63,392
+Yuba,8303,U.S. House,1,Doug Lamalfa,Republican,884,165,719
+Yuba,8303,U.S. House,1,Rose Penelope Yee,Democratic,521,75,446
+Yuba,8304,U.S. House,1,Doug Lamalfa,Republican,396,92,304
+Yuba,8304,U.S. House,1,Rose Penelope Yee,Democratic,212,32,180
+Yuba,8401,U.S. House,1,Doug Lamalfa,Republican,1064,146,918
+Yuba,8401,U.S. House,1,Rose Penelope Yee,Democratic,786,89,697
+Yuba,8402,U.S. House,1,Doug Lamalfa,Republican,942,124,818
+Yuba,8402,U.S. House,1,Rose Penelope Yee,Democratic,762,64,698
+Yuba,8403,U.S. House,1,Doug Lamalfa,Republican,920,147,773
+Yuba,8403,U.S. House,1,Rose Penelope Yee,Democratic,614,75,539
+Yuba,8404,U.S. House,1,Doug Lamalfa,Republican,788,140,648
+Yuba,8404,U.S. House,1,Rose Penelope Yee,Democratic,398,49,349
+Yuba,8405,U.S. House,1,Doug Lamalfa,Republican,1154,230,924
+Yuba,8405,U.S. House,1,Rose Penelope Yee,Democratic,472,73,399
+Yuba,8406,U.S. House,1,Doug Lamalfa,Republican,174,29,145
+Yuba,8406,U.S. House,1,Rose Penelope Yee,Democratic,42,6,36
+Yuba,8503,U.S. House,1,Doug Lamalfa,Republican,430,75,355
+Yuba,8503,U.S. House,1,Rose Penelope Yee,Democratic,115,9,106
+Yuba,8508,U.S. House,1,Doug Lamalfa,Republican,120,37,83
+Yuba,8508,U.S. House,1,Rose Penelope Yee,Democratic,29,6,23
+Yuba,9514,U.S. House,1,Doug Lamalfa,Republican,60,0,60
+Yuba,9514,U.S. House,1,Rose Penelope Yee,Democratic,59,0,59
+Yuba,8501,U.S. House,3,Jessica Morse,Democratic,561,60,501
+Yuba,8501,U.S. House,3,Kevin Kiley,Republican,564,130,434
+Yuba,8502,U.S. House,3,Jessica Morse,Democratic,242,25,217
+Yuba,8502,U.S. House,3,Kevin Kiley,Republican,552,110,442
+Yuba,8504,U.S. House,3,Jessica Morse,Democratic,222,24,198
+Yuba,8504,U.S. House,3,Kevin Kiley,Republican,1021,166,855
+Yuba,8505,U.S. House,3,Jessica Morse,Democratic,61,9,52
+Yuba,8505,U.S. House,3,Kevin Kiley,Republican,521,113,408
+Yuba,8506,U.S. House,3,Jessica Morse,Democratic,430,34,396
+Yuba,8506,U.S. House,3,Kevin Kiley,Republican,1282,206,1076
+Yuba,8507,U.S. House,3,Jessica Morse,Democratic,149,5,144
+Yuba,8507,U.S. House,3,Kevin Kiley,Republican,166,17,149
+Yuba,9206,U.S. House,3,Jessica Morse,Democratic,21,0,21
+Yuba,9206,U.S. House,3,Kevin Kiley,Republican,101,0,101
+Yuba,9509,U.S. House,3,Jessica Morse,Democratic,38,0,38
+Yuba,9509,U.S. House,3,Kevin Kiley,Republican,77,0,77
+Yuba,9510,U.S. House,3,Jessica Morse,Democratic,60,0,60
+Yuba,9510,U.S. House,3,Kevin Kiley,Republican,111,0,111
+Yuba,9511,U.S. House,3,Jessica Morse,Democratic,31,0,31
+Yuba,9511,U.S. House,3,Kevin Kiley,Republican,123,0,123
+Yuba,9512,U.S. House,3,Jessica Morse,Democratic,13,0,13
+Yuba,9512,U.S. House,3,Kevin Kiley,Republican,50,0,50
+Yuba,9513,U.S. House,3,Jessica Morse,Democratic,36,0,36
+Yuba,9513,U.S. House,3,Kevin Kiley,Republican,137,0,137
+Yuba,8101,State Senate,1,David Fennell,Republican,240,47,193
+Yuba,8101,State Senate,1,Megan Dahle,Republican,480,96,384
+Yuba,8102,State Senate,1,David Fennell,Republican,259,87,172
+Yuba,8102,State Senate,1,Megan Dahle,Republican,529,120,409
+Yuba,8103,State Senate,1,David Fennell,Republican,468,91,377
+Yuba,8103,State Senate,1,Megan Dahle,Republican,870,145,725
+Yuba,8104,State Senate,1,David Fennell,Republican,202,39,163
+Yuba,8104,State Senate,1,Megan Dahle,Republican,392,70,322
+Yuba,8105,State Senate,1,David Fennell,Republican,179,45,134
+Yuba,8105,State Senate,1,Megan Dahle,Republican,387,68,319
+Yuba,8201,State Senate,1,David Fennell,Republican,168,36,132
+Yuba,8201,State Senate,1,Megan Dahle,Republican,300,61,239
+Yuba,8202,State Senate,1,David Fennell,Republican,398,75,323
+Yuba,8202,State Senate,1,Megan Dahle,Republican,873,144,729
+Yuba,8203,State Senate,1,David Fennell,Republican,343,59,284
+Yuba,8203,State Senate,1,Megan Dahle,Republican,757,107,650
+Yuba,8204,State Senate,1,David Fennell,Republican,346,87,259
+Yuba,8204,State Senate,1,Megan Dahle,Republican,663,124,539
+Yuba,8205,State Senate,1,David Fennell,Republican,103,23,80
+Yuba,8205,State Senate,1,Megan Dahle,Republican,267,45,222
+Yuba,8301,State Senate,1,David Fennell,Republican,208,56,152
+Yuba,8301,State Senate,1,Megan Dahle,Republican,430,109,321
+Yuba,8302,State Senate,1,David Fennell,Republican,341,70,271
+Yuba,8302,State Senate,1,Megan Dahle,Republican,649,118,531
+Yuba,8303,State Senate,1,David Fennell,Republican,432,89,343
+Yuba,8303,State Senate,1,Megan Dahle,Republican,825,135,690
+Yuba,8304,State Senate,1,David Fennell,Republican,189,51,138
+Yuba,8304,State Senate,1,Megan Dahle,Republican,357,59,298
+Yuba,8401,State Senate,1,David Fennell,Republican,471,91,380
+Yuba,8401,State Senate,1,Megan Dahle,Republican,1098,131,967
+Yuba,8402,State Senate,1,David Fennell,Republican,437,68,369
+Yuba,8402,State Senate,1,Megan Dahle,Republican,1011,104,907
+Yuba,8403,State Senate,1,David Fennell,Republican,407,72,335
+Yuba,8403,State Senate,1,Megan Dahle,Republican,915,138,777
+Yuba,8404,State Senate,1,David Fennell,Republican,304,55,249
+Yuba,8404,State Senate,1,Megan Dahle,Republican,783,123,660
+Yuba,8405,State Senate,1,David Fennell,Republican,432,91,341
+Yuba,8405,State Senate,1,Megan Dahle,Republican,1045,193,852
+Yuba,8406,State Senate,1,David Fennell,Republican,51,16,35
+Yuba,8406,State Senate,1,Megan Dahle,Republican,150,18,132
+Yuba,8501,State Senate,1,David Fennell,Republican,265,67,198
+Yuba,8501,State Senate,1,Megan Dahle,Republican,614,97,517
+Yuba,8502,State Senate,1,David Fennell,Republican,273,64,209
+Yuba,8502,State Senate,1,Megan Dahle,Republican,422,63,359
+Yuba,8503,State Senate,1,David Fennell,Republican,154,31,123
+Yuba,8503,State Senate,1,Megan Dahle,Republican,330,47,283
+Yuba,8504,State Senate,1,David Fennell,Republican,433,87,346
+Yuba,8504,State Senate,1,Megan Dahle,Republican,718,102,616
+Yuba,8505,State Senate,1,David Fennell,Republican,195,47,148
+Yuba,8505,State Senate,1,Megan Dahle,Republican,352,70,282
+Yuba,8506,State Senate,1,David Fennell,Republican,475,94,381
+Yuba,8506,State Senate,1,Megan Dahle,Republican,1015,138,877
+Yuba,8507,State Senate,1,David Fennell,Republican,74,9,65
+Yuba,8507,State Senate,1,Megan Dahle,Republican,165,13,152
+Yuba,8508,State Senate,1,David Fennell,Republican,49,11,38
+Yuba,8508,State Senate,1,Megan Dahle,Republican,96,30,66
+Yuba,9206,State Senate,1,David Fennell,Republican,37,0,37
+Yuba,9206,State Senate,1,Megan Dahle,Republican,75,0,75
+Yuba,9509,State Senate,1,David Fennell,Republican,34,0,34
+Yuba,9509,State Senate,1,Megan Dahle,Republican,59,0,59
+Yuba,9510,State Senate,1,David Fennell,Republican,60,0,60
+Yuba,9510,State Senate,1,Megan Dahle,Republican,84,0,84
+Yuba,9511,State Senate,1,David Fennell,Republican,53,0,53
+Yuba,9511,State Senate,1,Megan Dahle,Republican,87,0,87
+Yuba,9512,State Senate,1,David Fennell,Republican,19,0,19
+Yuba,9512,State Senate,1,Megan Dahle,Republican,45,0,45
+Yuba,9513,State Senate,1,David Fennell,Republican,46,0,46
+Yuba,9513,State Senate,1,Megan Dahle,Republican,111,0,111
+Yuba,9514,State Senate,1,David Fennell,Republican,27,0,27
+Yuba,9514,State Senate,1,Megan Dahle,Republican,61,0,61
+Yuba,8101,State Assembly,3,Aaron Draper,Democratic,308,46,262
+Yuba,8101,State Assembly,3,"Jamie ""james"" Gallagher",Republican,494,108,386
+Yuba,8102,State Assembly,3,Aaron Draper,Democratic,354,67,287
+Yuba,8102,State Assembly,3,"Jamie ""james"" Gallagher",Republican,544,158,386
+Yuba,8103,State Assembly,3,Aaron Draper,Democratic,566,72,494
+Yuba,8103,State Assembly,3,"Jamie ""james"" Gallagher",Republican,976,188,788
+Yuba,8104,State Assembly,3,Aaron Draper,Democratic,213,29,184
+Yuba,8104,State Assembly,3,"Jamie ""james"" Gallagher",Republican,436,87,349
+Yuba,8105,State Assembly,3,Aaron Draper,Democratic,248,45,203
+Yuba,8105,State Assembly,3,"Jamie ""james"" Gallagher",Republican,379,75,304
+Yuba,8201,State Assembly,3,Aaron Draper,Democratic,195,36,159
+Yuba,8201,State Assembly,3,"Jamie ""james"" Gallagher",Republican,333,74,259
+Yuba,8202,State Assembly,3,Aaron Draper,Democratic,436,55,381
+Yuba,8202,State Assembly,3,"Jamie ""james"" Gallagher",Republican,964,177,787
+Yuba,8203,State Assembly,3,Aaron Draper,Democratic,346,42,304
+Yuba,8203,State Assembly,3,"Jamie ""james"" Gallagher",Republican,894,141,753
+Yuba,8204,State Assembly,3,Aaron Draper,Democratic,451,80,371
+Yuba,8204,State Assembly,3,"Jamie ""james"" Gallagher",Republican,737,163,574
+Yuba,8205,State Assembly,3,Aaron Draper,Democratic,103,9,94
+Yuba,8205,State Assembly,3,"Jamie ""james"" Gallagher",Republican,316,62,254
+Yuba,8301,State Assembly,3,Aaron Draper,Democratic,274,56,218
+Yuba,8301,State Assembly,3,"Jamie ""james"" Gallagher",Republican,459,124,335
+Yuba,8302,State Assembly,3,Aaron Draper,Democratic,409,63,346
+Yuba,8302,State Assembly,3,"Jamie ""james"" Gallagher",Republican,723,142,581
+Yuba,8303,State Assembly,3,Aaron Draper,Democratic,461,66,395
+Yuba,8303,State Assembly,3,"Jamie ""james"" Gallagher",Republican,957,177,780
+Yuba,8304,State Assembly,3,Aaron Draper,Democratic,191,28,163
+Yuba,8304,State Assembly,3,"Jamie ""james"" Gallagher",Republican,406,92,314
+Yuba,8401,State Assembly,3,Aaron Draper,Democratic,717,78,639
+Yuba,8401,State Assembly,3,"Jamie ""james"" Gallagher",Republican,1124,158,966
+Yuba,8402,State Assembly,3,Aaron Draper,Democratic,727,60,667
+Yuba,8402,State Assembly,3,"Jamie ""james"" Gallagher",Republican,989,129,860
+Yuba,8403,State Assembly,3,Aaron Draper,Democratic,544,70,474
+Yuba,8403,State Assembly,3,"Jamie ""james"" Gallagher",Republican,996,157,839
+Yuba,8404,State Assembly,3,Aaron Draper,Democratic,366,41,325
+Yuba,8404,State Assembly,3,"Jamie ""james"" Gallagher",Republican,830,151,679
+Yuba,8405,State Assembly,3,Aaron Draper,Democratic,403,55,348
+Yuba,8405,State Assembly,3,"Jamie ""james"" Gallagher",Republican,1219,249,970
+Yuba,8406,State Assembly,3,Aaron Draper,Democratic,33,5,28
+Yuba,8406,State Assembly,3,"Jamie ""james"" Gallagher",Republican,184,32,152
+Yuba,8501,State Assembly,3,Aaron Draper,Democratic,511,61,450
+Yuba,8501,State Assembly,3,"Jamie ""james"" Gallagher",Republican,593,129,464
+Yuba,8502,State Assembly,3,Aaron Draper,Democratic,202,21,181
+Yuba,8502,State Assembly,3,"Jamie ""james"" Gallagher",Republican,591,116,475
+Yuba,8503,State Assembly,3,Aaron Draper,Democratic,99,8,91
+Yuba,8503,State Assembly,3,"Jamie ""james"" Gallagher",Republican,456,79,377
+Yuba,8504,State Assembly,3,Aaron Draper,Democratic,195,17,178
+Yuba,8504,State Assembly,3,"Jamie ""james"" Gallagher",Republican,1067,184,883
+Yuba,8505,State Assembly,3,Aaron Draper,Democratic,53,6,47
+Yuba,8505,State Assembly,3,"Jamie ""james"" Gallagher",Republican,537,118,419
+Yuba,8506,State Assembly,3,Aaron Draper,Democratic,373,26,347
+Yuba,8506,State Assembly,3,"Jamie ""james"" Gallagher",Republican,1340,225,1115
+Yuba,8507,State Assembly,3,Aaron Draper,Democratic,138,4,134
+Yuba,8507,State Assembly,3,"Jamie ""james"" Gallagher",Republican,170,17,153
+Yuba,8508,State Assembly,3,Aaron Draper,Democratic,30,6,24
+Yuba,8508,State Assembly,3,"Jamie ""james"" Gallagher",Republican,124,37,87
+Yuba,9206,State Assembly,3,Aaron Draper,Democratic,16,0,16
+Yuba,9206,State Assembly,3,"Jamie ""james"" Gallagher",Republican,112,0,112
+Yuba,9509,State Assembly,3,Aaron Draper,Democratic,37,0,37
+Yuba,9509,State Assembly,3,"Jamie ""james"" Gallagher",Republican,77,0,77
+Yuba,9510,State Assembly,3,Aaron Draper,Democratic,55,0,55
+Yuba,9510,State Assembly,3,"Jamie ""james"" Gallagher",Republican,116,0,116
+Yuba,9511,State Assembly,3,Aaron Draper,Democratic,29,0,29
+Yuba,9511,State Assembly,3,"Jamie ""james"" Gallagher",Republican,122,0,122
+Yuba,9512,State Assembly,3,Aaron Draper,Democratic,11,0,11
+Yuba,9512,State Assembly,3,"Jamie ""james"" Gallagher",Republican,55,0,55
+Yuba,9513,State Assembly,3,Aaron Draper,Democratic,35,0,35
+Yuba,9513,State Assembly,3,"Jamie ""james"" Gallagher",Republican,139,0,139
+Yuba,9514,State Assembly,3,Aaron Draper,Democratic,52,0,52
+Yuba,9514,State Assembly,3,"Jamie ""james"" Gallagher",Republican,64,0,64

@@ -1,0 +1,376 @@
+county,precinct,office,district,candidate,party,votes,election_day,mail
+Calaveras,110,President,,Donald J. Trump,Republican,562,150,412
+Calaveras,110,President,,Claudia De La Cruz,Peace and Freedom,5,0,5
+Calaveras,110,President,,Kamala D. Harris,Democratic,276,32,244
+Calaveras,110,President,,Robert F. Kennedy Jr.,American Independent,13,4,9
+Calaveras,110,President,,Chase Oliver,Libertarian,7,0,7
+Calaveras,110,President,,Jill Stein,Green,5,1,4
+Calaveras,110,President,,Peter Sonski,,0,0,0
+Calaveras,110,U.S. Senate,,Steve Garvey,Republican,573,152,421
+Calaveras,110,U.S. Senate,,Adam B. Schiff,Democratic,282,33,249
+Calaveras,110,U.S. Senate,Partial Term,Steve Garvey,Republican,574,152,422
+Calaveras,110,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,269,31,238
+Calaveras,110,U.S. House,5,Tom Mcclintock,Republican,581,153,428
+Calaveras,110,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,270,30,240
+Calaveras,110,State Assembly,8,George Radanovich,Republican,427,116,311
+Calaveras,110,State Assembly,8,David J. Tangipa,Republican,309,57,252
+Calaveras,140,President,,Donald J. Trump,Republican,746,213,533
+Calaveras,140,President,,Claudia De La Cruz,Peace and Freedom,4,0,4
+Calaveras,140,President,,Kamala D. Harris,Democratic,263,29,234
+Calaveras,140,President,,Robert F. Kennedy Jr.,American Independent,11,2,9
+Calaveras,140,President,,Chase Oliver,Libertarian,4,0,4
+Calaveras,140,President,,Jill Stein,Green,3,0,3
+Calaveras,140,President,,Peter Sonski,,0,0,0
+Calaveras,140,U.S. Senate,,Steve Garvey,Republican,740,204,536
+Calaveras,140,U.S. Senate,,Adam B. Schiff,Democratic,264,28,236
+Calaveras,140,U.S. Senate,Partial Term,Steve Garvey,Republican,729,200,529
+Calaveras,140,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,258,31,227
+Calaveras,140,U.S. House,5,Tom Mcclintock,Republican,735,198,537
+Calaveras,140,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,262,32,230
+Calaveras,140,State Assembly,8,George Radanovich,Republican,528,131,397
+Calaveras,140,State Assembly,8,David J. Tangipa,Republican,345,75,270
+Calaveras,150,President,,Donald J. Trump,Republican,591,148,443
+Calaveras,150,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Calaveras,150,President,,Kamala D. Harris,Democratic,283,22,261
+Calaveras,150,President,,Robert F. Kennedy Jr.,American Independent,4,0,4
+Calaveras,150,President,,Chase Oliver,Libertarian,5,1,4
+Calaveras,150,President,,Jill Stein,Green,5,0,5
+Calaveras,150,President,,Peter Sonski,,0,0,0
+Calaveras,150,U.S. Senate,,Steve Garvey,Republican,597,144,453
+Calaveras,150,U.S. Senate,,Adam B. Schiff,Democratic,285,26,259
+Calaveras,150,U.S. Senate,Partial Term,Steve Garvey,Republican,589,139,450
+Calaveras,150,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,271,27,244
+Calaveras,150,U.S. House,5,Tom Mcclintock,Republican,607,148,459
+Calaveras,150,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,253,21,232
+Calaveras,150,State Assembly,8,George Radanovich,Republican,436,93,343
+Calaveras,150,State Assembly,8,David J. Tangipa,Republican,307,63,244
+Calaveras,160,President,,Donald J. Trump,Republican,424,111,313
+Calaveras,160,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Calaveras,160,President,,Kamala D. Harris,Democratic,128,6,121
+Calaveras,160,President,,Robert F. Kennedy Jr.,American Independent,7,0,7
+Calaveras,160,President,,Chase Oliver,Libertarian,1,0,1
+Calaveras,160,President,,Jill Stein,Green,2,0,2
+Calaveras,160,President,,Peter Sonski,,0,0,0
+Calaveras,160,U.S. Senate,,Steve Garvey,Republican,410,99,311
+Calaveras,160,U.S. Senate,,Adam B. Schiff,Democratic,136,10,125
+Calaveras,160,U.S. Senate,Partial Term,Steve Garvey,Republican,406,97,309
+Calaveras,160,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,131,10,120
+Calaveras,160,U.S. House,5,Tom Mcclintock,Republican,411,103,308
+Calaveras,160,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,132,7,124
+Calaveras,160,State Assembly,9,Tami Nobriga,American Independent,113,14,98
+Calaveras,160,State Assembly,9,Heath Flora,Republican,400,89,311
+Calaveras,170,President,,Donald J. Trump,Republican,1093,252,841
+Calaveras,170,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Calaveras,170,President,,Kamala D. Harris,Democratic,381,37,344
+Calaveras,170,President,,Robert F. Kennedy Jr.,American Independent,15,0,15
+Calaveras,170,President,,Chase Oliver,Libertarian,5,0,5
+Calaveras,170,President,,Jill Stein,Green,3,0,3
+Calaveras,170,President,,Peter Sonski,,0,0,0
+Calaveras,170,U.S. Senate,,Steve Garvey,Republican,1123,244,879
+Calaveras,170,U.S. Senate,,Adam B. Schiff,Democratic,360,32,328
+Calaveras,170,U.S. Senate,Partial Term,Steve Garvey,Republican,1097,243,854
+Calaveras,170,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,361,32,329
+Calaveras,170,U.S. House,5,Tom Mcclintock,Republican,1082,229,853
+Calaveras,170,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,370,39,331
+Calaveras,170,State Assembly,9,Tami Nobriga,American Independent,307,38,269
+Calaveras,170,State Assembly,9,Heath Flora,Republican,1093,227,866
+Calaveras,210,President,,Donald J. Trump,Republican,795,159,636
+Calaveras,210,President,,Claudia De La Cruz,Peace and Freedom,4,1,3
+Calaveras,210,President,,Kamala D. Harris,Democratic,465,42,423
+Calaveras,210,President,,Robert F. Kennedy Jr.,American Independent,28,4,24
+Calaveras,210,President,,Chase Oliver,Libertarian,7,1,6
+Calaveras,210,President,,Jill Stein,Green,12,2,10
+Calaveras,210,President,,Peter Sonski,,0,0,0
+Calaveras,210,U.S. Senate,,Steve Garvey,Republican,845,156,689
+Calaveras,210,U.S. Senate,,Adam B. Schiff,Democratic,452,41,411
+Calaveras,210,U.S. Senate,Partial Term,Steve Garvey,Republican,828,152,676
+Calaveras,210,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,450,44,406
+Calaveras,210,U.S. House,5,Tom Mcclintock,Republican,839,155,684
+Calaveras,210,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,458,45,413
+Calaveras,210,State Assembly,8,George Radanovich,Republican,597,100,497
+Calaveras,210,State Assembly,8,David J. Tangipa,Republican,452,65,387
+Calaveras,220,President,,Donald J. Trump,Republican,704,173,531
+Calaveras,220,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Calaveras,220,President,,Kamala D. Harris,Democratic,483,52,431
+Calaveras,220,President,,Robert F. Kennedy Jr.,American Independent,25,1,24
+Calaveras,220,President,,Chase Oliver,Libertarian,8,0,8
+Calaveras,220,President,,Jill Stein,Green,8,0,8
+Calaveras,220,President,,Peter Sonski,,0,0,0
+Calaveras,220,U.S. Senate,,Steve Garvey,Republican,722,164,558
+Calaveras,220,U.S. Senate,,Adam B. Schiff,Democratic,485,53,432
+Calaveras,220,U.S. Senate,Partial Term,Steve Garvey,Republican,717,164,553
+Calaveras,220,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,466,52,414
+Calaveras,220,U.S. House,5,Tom Mcclintock,Republican,734,164,570
+Calaveras,220,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,460,52,408
+Calaveras,220,State Assembly,8,George Radanovich,Republican,491,102,389
+Calaveras,220,State Assembly,8,David J. Tangipa,Republican,469,77,392
+Calaveras,240,President,,Donald J. Trump,Republican,771,103,668
+Calaveras,240,President,,Claudia De La Cruz,Peace and Freedom,4,1,3
+Calaveras,240,President,,Kamala D. Harris,Democratic,432,28,404
+Calaveras,240,President,,Robert F. Kennedy Jr.,American Independent,39,1,38
+Calaveras,240,President,,Chase Oliver,Libertarian,4,0,4
+Calaveras,240,President,,Jill Stein,Green,7,0,7
+Calaveras,240,President,,Peter Sonski,,0,0,0
+Calaveras,240,U.S. Senate,,Steve Garvey,Republican,799,101,698
+Calaveras,240,U.S. Senate,,Adam B. Schiff,Democratic,427,28,399
+Calaveras,240,U.S. Senate,Partial Term,Steve Garvey,Republican,777,97,680
+Calaveras,240,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,420,29,391
+Calaveras,240,U.S. House,5,Tom Mcclintock,Republican,803,100,703
+Calaveras,240,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,409,24,385
+Calaveras,240,State Assembly,8,George Radanovich,Republican,551,72,479
+Calaveras,240,State Assembly,8,David J. Tangipa,Republican,464,39,425
+Calaveras,260,President,,Donald J. Trump,Republican,853,323,530
+Calaveras,260,President,,Claudia De La Cruz,Peace and Freedom,5,2,3
+Calaveras,260,President,,Kamala D. Harris,Democratic,479,121,358
+Calaveras,260,President,,Robert F. Kennedy Jr.,American Independent,16,7,9
+Calaveras,260,President,,Chase Oliver,Libertarian,5,4,1
+Calaveras,260,President,,Jill Stein,Green,7,3,4
+Calaveras,260,President,,Peter Sonski,,0,0,0
+Calaveras,260,U.S. Senate,,Steve Garvey,Republican,869,314,555
+Calaveras,260,U.S. Senate,,Adam B. Schiff,Democratic,471,127,344
+Calaveras,260,U.S. Senate,Partial Term,Steve Garvey,Republican,857,313,544
+Calaveras,260,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,450,118,332
+Calaveras,260,U.S. House,5,Tom Mcclintock,Republican,861,315,546
+Calaveras,260,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,469,125,344
+Calaveras,260,State Assembly,8,George Radanovich,Republican,622,222,400
+Calaveras,260,State Assembly,8,David J. Tangipa,Republican,454,141,313
+Calaveras,310,President,,Donald J. Trump,Republican,644,68,576
+Calaveras,310,President,,Claudia De La Cruz,Peace and Freedom,3,0,3
+Calaveras,310,President,,Kamala D. Harris,Democratic,654,20,634
+Calaveras,310,President,,Robert F. Kennedy Jr.,American Independent,15,2,13
+Calaveras,310,President,,Chase Oliver,Libertarian,4,0,4
+Calaveras,310,President,,Jill Stein,Green,7,1,6
+Calaveras,310,President,,Peter Sonski,,0,0,0
+Calaveras,310,U.S. Senate,,Steve Garvey,Republican,672,68,604
+Calaveras,310,U.S. Senate,,Adam B. Schiff,Democratic,632,20,612
+Calaveras,310,U.S. Senate,Partial Term,Steve Garvey,Republican,671,70,601
+Calaveras,310,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,616,18,598
+Calaveras,310,U.S. House,5,Tom Mcclintock,Republican,696,68,628
+Calaveras,310,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,597,20,577
+Calaveras,310,State Assembly,8,George Radanovich,Republican,512,37,475
+Calaveras,310,State Assembly,8,David J. Tangipa,Republican,486,36,450
+Calaveras,320,President,,Donald J. Trump,Republican,401,33,368
+Calaveras,320,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Calaveras,320,President,,Kamala D. Harris,Democratic,494,10,484
+Calaveras,320,President,,Robert F. Kennedy Jr.,American Independent,16,1,15
+Calaveras,320,President,,Chase Oliver,Libertarian,6,0,6
+Calaveras,320,President,,Jill Stein,Green,7,0,7
+Calaveras,320,President,,Peter Sonski,,0,0,0
+Calaveras,320,U.S. Senate,,Steve Garvey,Republican,438,32,406
+Calaveras,320,U.S. Senate,,Adam B. Schiff,Democratic,475,10,465
+Calaveras,320,U.S. Senate,Partial Term,Steve Garvey,Republican,429,32,397
+Calaveras,320,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,475,10,465
+Calaveras,320,U.S. House,5,Tom Mcclintock,Republican,445,31,414
+Calaveras,320,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,462,10,452
+Calaveras,320,State Assembly,8,George Radanovich,Republican,346,23,323
+Calaveras,320,State Assembly,8,David J. Tangipa,Republican,325,12,313
+Calaveras,350,President,,Donald J. Trump,Republican,481,75,405
+Calaveras,350,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Calaveras,350,President,,Kamala D. Harris,Democratic,562,24,538
+Calaveras,350,President,,Robert F. Kennedy Jr.,American Independent,23,0,23
+Calaveras,350,President,,Chase Oliver,Libertarian,9,1,8
+Calaveras,350,President,,Jill Stein,Green,7,1,6
+Calaveras,350,President,,Peter Sonski,,0,0,0
+Calaveras,350,U.S. Senate,,Steve Garvey,Republican,551,77,473
+Calaveras,350,U.S. Senate,,Adam B. Schiff,Democratic,528,26,502
+Calaveras,350,U.S. Senate,Partial Term,Steve Garvey,Republican,546,76,469
+Calaveras,350,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,512,23,489
+Calaveras,350,U.S. House,5,Tom Mcclintock,Republican,540,77,462
+Calaveras,350,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,531,26,505
+Calaveras,350,State Assembly,8,George Radanovich,Republican,430,51,378
+Calaveras,350,State Assembly,8,David J. Tangipa,Republican,382,35,347
+Calaveras,360,President,,Donald J. Trump,Republican,622,109,513
+Calaveras,360,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Calaveras,360,President,,Kamala D. Harris,Democratic,732,53,679
+Calaveras,360,President,,Robert F. Kennedy Jr.,American Independent,19,3,16
+Calaveras,360,President,,Chase Oliver,Libertarian,5,0,5
+Calaveras,360,President,,Jill Stein,Green,9,0,9
+Calaveras,360,President,,Peter Sonski,,0,0,0
+Calaveras,360,U.S. Senate,,Steve Garvey,Republican,679,113,566
+Calaveras,360,U.S. Senate,,Adam B. Schiff,Democratic,701,49,652
+Calaveras,360,U.S. Senate,Partial Term,Steve Garvey,Republican,675,111,564
+Calaveras,360,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,689,48,641
+Calaveras,360,U.S. House,5,Tom Mcclintock,Republican,688,111,577
+Calaveras,360,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,676,51,625
+Calaveras,360,State Assembly,8,George Radanovich,Republican,530,90,440
+Calaveras,360,State Assembly,8,David J. Tangipa,Republican,501,52,449
+Calaveras,370,President,,Donald J. Trump,Republican,421,87,334
+Calaveras,370,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Calaveras,370,President,,Kamala D. Harris,Democratic,420,37,383
+Calaveras,370,President,,Robert F. Kennedy Jr.,American Independent,13,3,10
+Calaveras,370,President,,Chase Oliver,Libertarian,4,0,4
+Calaveras,370,President,,Jill Stein,Green,8,1,7
+Calaveras,370,President,,Peter Sonski,,0,0,0
+Calaveras,370,U.S. Senate,,Steve Garvey,Republican,454,91,363
+Calaveras,370,U.S. Senate,,Adam B. Schiff,Democratic,399,37,362
+Calaveras,370,U.S. Senate,Partial Term,Steve Garvey,Republican,449,90,359
+Calaveras,370,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,388,37,351
+Calaveras,370,U.S. House,5,Tom Mcclintock,Republican,455,89,366
+Calaveras,370,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,393,39,354
+Calaveras,370,State Assembly,8,George Radanovich,Republican,320,58,262
+Calaveras,370,State Assembly,8,David J. Tangipa,Republican,310,47,263
+Calaveras,410,President,,Donald J. Trump,Republican,595,136,459
+Calaveras,410,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Calaveras,410,President,,Kamala D. Harris,Democratic,237,14,223
+Calaveras,410,President,,Robert F. Kennedy Jr.,American Independent,11,0,11
+Calaveras,410,President,,Chase Oliver,Libertarian,1,0,1
+Calaveras,410,President,,Jill Stein,Green,3,0,3
+Calaveras,410,President,,Peter Sonski,,0,0,0
+Calaveras,410,U.S. Senate,,Steve Garvey,Republican,612,133,479
+Calaveras,410,U.S. Senate,,Adam B. Schiff,Democratic,231,14,217
+Calaveras,410,U.S. Senate,Partial Term,Steve Garvey,Republican,607,134,473
+Calaveras,410,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,221,14,207
+Calaveras,410,U.S. House,5,Tom Mcclintock,Republican,599,128,471
+Calaveras,410,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,234,18,216
+Calaveras,410,State Assembly,8,George Radanovich,Republican,457,95,362
+Calaveras,410,State Assembly,8,David J. Tangipa,Republican,279,38,241
+Calaveras,420,President,,Donald J. Trump,Republican,540,156,384
+Calaveras,420,President,,Claudia De La Cruz,Peace and Freedom,4,0,4
+Calaveras,420,President,,Kamala D. Harris,Democratic,307,34,273
+Calaveras,420,President,,Robert F. Kennedy Jr.,American Independent,13,1,12
+Calaveras,420,President,,Chase Oliver,Libertarian,6,3,3
+Calaveras,420,President,,Jill Stein,Green,0,0,0
+Calaveras,420,President,,Peter Sonski,,0,0,0
+Calaveras,420,U.S. Senate,,Steve Garvey,Republican,561,156,405
+Calaveras,420,U.S. Senate,,Adam B. Schiff,Democratic,294,35,259
+Calaveras,420,U.S. Senate,Partial Term,Steve Garvey,Republican,546,151,395
+Calaveras,420,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,292,39,253
+Calaveras,420,U.S. House,5,Tom Mcclintock,Republican,556,152,404
+Calaveras,420,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,295,36,259
+Calaveras,420,State Assembly,8,George Radanovich,Republican,419,97,322
+Calaveras,420,State Assembly,8,David J. Tangipa,Republican,307,70,237
+Calaveras,430,President,,Donald J. Trump,Republican,690,129,561
+Calaveras,430,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Calaveras,430,President,,Kamala D. Harris,Democratic,478,38,440
+Calaveras,430,President,,Robert F. Kennedy Jr.,American Independent,19,0,19
+Calaveras,430,President,,Chase Oliver,Libertarian,10,1,9
+Calaveras,430,President,,Jill Stein,Green,3,2,1
+Calaveras,430,President,,Peter Sonski,,0,0,0
+Calaveras,430,U.S. Senate,,Steve Garvey,Republican,731,131,600
+Calaveras,430,U.S. Senate,,Adam B. Schiff,Democratic,457,37,420
+Calaveras,430,U.S. Senate,Partial Term,Steve Garvey,Republican,717,132,585
+Calaveras,430,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,446,34,412
+Calaveras,430,U.S. House,5,Tom Mcclintock,Republican,740,125,615
+Calaveras,430,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,447,41,406
+Calaveras,430,State Assembly,8,George Radanovich,Republican,544,80,464
+Calaveras,430,State Assembly,8,David J. Tangipa,Republican,434,71,363
+Calaveras,440,President,,Donald J. Trump,Republican,431,75,356
+Calaveras,440,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Calaveras,440,President,,Kamala D. Harris,Democratic,161,8,153
+Calaveras,440,President,,Robert F. Kennedy Jr.,American Independent,4,0,4
+Calaveras,440,President,,Chase Oliver,Libertarian,2,0,2
+Calaveras,440,President,,Jill Stein,Green,2,0,2
+Calaveras,440,President,,Peter Sonski,,0,0,0
+Calaveras,440,U.S. Senate,,Steve Garvey,Republican,433,72,361
+Calaveras,440,U.S. Senate,,Adam B. Schiff,Democratic,161,8,153
+Calaveras,440,U.S. Senate,Partial Term,Steve Garvey,Republican,420,71,349
+Calaveras,440,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,154,8,146
+Calaveras,440,U.S. House,5,Tom Mcclintock,Republican,436,73,363
+Calaveras,440,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,155,8,147
+Calaveras,440,State Assembly,8,George Radanovich,Republican,325,50,275
+Calaveras,440,State Assembly,8,David J. Tangipa,Republican,185,24,161
+Calaveras,450,President,,Donald J. Trump,Republican,1511,356,1155
+Calaveras,450,President,,Claudia De La Cruz,Peace and Freedom,2,0,2
+Calaveras,450,President,,Kamala D. Harris,Democratic,701,50,651
+Calaveras,450,President,,Robert F. Kennedy Jr.,American Independent,22,2,20
+Calaveras,450,President,,Chase Oliver,Libertarian,10,0,10
+Calaveras,450,President,,Jill Stein,Green,2,1,1
+Calaveras,450,President,,Peter Sonski,,0,0,0
+Calaveras,450,U.S. Senate,,Steve Garvey,Republican,1546,346,1200
+Calaveras,450,U.S. Senate,,Adam B. Schiff,Democratic,665,50,615
+Calaveras,450,U.S. Senate,Partial Term,Steve Garvey,Republican,1521,341,1180
+Calaveras,450,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,662,49,613
+Calaveras,450,U.S. House,5,Tom Mcclintock,Republican,1517,340,1177
+Calaveras,450,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,668,52,616
+Calaveras,450,State Assembly,9,Tami Nobriga,American Independent,544,49,495
+Calaveras,450,State Assembly,9,Heath Flora,Republican,1515,328,1187
+Calaveras,510,President,,Donald J. Trump,Republican,160,40,119
+Calaveras,510,President,,Claudia De La Cruz,Peace and Freedom,1,0,1
+Calaveras,510,President,,Kamala D. Harris,Democratic,47,3,44
+Calaveras,510,President,,Robert F. Kennedy Jr.,American Independent,1,0,1
+Calaveras,510,President,,Chase Oliver,Libertarian,0,0,0
+Calaveras,510,President,,Jill Stein,Green,0,0,0
+Calaveras,510,President,,Peter Sonski,,1,0,1
+Calaveras,510,U.S. Senate,,Steve Garvey,Republican,155,38,117
+Calaveras,510,U.S. Senate,,Adam B. Schiff,Democratic,50,3,47
+Calaveras,510,U.S. Senate,Partial Term,Steve Garvey,Republican,157,38,119
+Calaveras,510,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,47,3,44
+Calaveras,510,U.S. House,5,Tom Mcclintock,Republican,151,35,116
+Calaveras,510,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,51,4,47
+Calaveras,510,State Assembly,8,George Radanovich,Republican,104,20,84
+Calaveras,510,State Assembly,8,David J. Tangipa,Republican,79,14,65
+Calaveras,515,President,,Donald J. Trump,Republican,230,62,167
+Calaveras,515,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Calaveras,515,President,,Kamala D. Harris,Democratic,81,12,69
+Calaveras,515,President,,Robert F. Kennedy Jr.,American Independent,6,0,6
+Calaveras,515,President,,Chase Oliver,Libertarian,2,0,2
+Calaveras,515,President,,Jill Stein,Green,0,0,0
+Calaveras,515,President,,Peter Sonski,,0,0,0
+Calaveras,515,U.S. Senate,,Steve Garvey,Republican,229,63,165
+Calaveras,515,U.S. Senate,,Adam B. Schiff,Democratic,85,10,75
+Calaveras,515,U.S. Senate,Partial Term,Steve Garvey,Republican,223,62,160
+Calaveras,515,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,87,11,76
+Calaveras,515,U.S. House,5,Tom Mcclintock,Republican,227,61,165
+Calaveras,515,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,86,11,75
+Calaveras,515,State Assembly,8,George Radanovich,Republican,161,47,114
+Calaveras,515,State Assembly,8,David J. Tangipa,Republican,125,21,103
+Calaveras,520,President,,Donald J. Trump,Republican,199,43,156
+Calaveras,520,President,,Claudia De La Cruz,Peace and Freedom,3,0,3
+Calaveras,520,President,,Kamala D. Harris,Democratic,56,4,52
+Calaveras,520,President,,Robert F. Kennedy Jr.,American Independent,4,0,4
+Calaveras,520,President,,Chase Oliver,Libertarian,2,1,1
+Calaveras,520,President,,Jill Stein,Green,2,0,2
+Calaveras,520,President,,Peter Sonski,,0,0,0
+Calaveras,520,U.S. Senate,,Steve Garvey,Republican,207,41,166
+Calaveras,520,U.S. Senate,,Adam B. Schiff,Democratic,63,6,57
+Calaveras,520,U.S. Senate,Partial Term,Steve Garvey,Republican,202,39,163
+Calaveras,520,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,59,5,54
+Calaveras,520,U.S. House,5,Tom Mcclintock,Republican,204,40,164
+Calaveras,520,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,63,6,57
+Calaveras,520,State Assembly,8,George Radanovich,Republican,146,27,119
+Calaveras,520,State Assembly,8,David J. Tangipa,Republican,88,16,72
+Calaveras,530,President,,Donald J. Trump,Republican,544,118,426
+Calaveras,530,President,,Claudia De La Cruz,Peace and Freedom,0,0,0
+Calaveras,530,President,,Kamala D. Harris,Democratic,120,5,115
+Calaveras,530,President,,Robert F. Kennedy Jr.,American Independent,9,1,8
+Calaveras,530,President,,Chase Oliver,Libertarian,1,0,1
+Calaveras,530,President,,Jill Stein,Green,1,0,1
+Calaveras,530,President,,Peter Sonski,,0,0,0
+Calaveras,530,U.S. Senate,,Steve Garvey,Republican,549,115,434
+Calaveras,530,U.S. Senate,,Adam B. Schiff,Democratic,114,7,107
+Calaveras,530,U.S. Senate,Partial Term,Steve Garvey,Republican,532,110,422
+Calaveras,530,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,116,8,108
+Calaveras,530,U.S. House,5,Tom Mcclintock,Republican,536,112,424
+Calaveras,530,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,113,8,105
+Calaveras,530,State Assembly,9,Tami Nobriga,American Independent,104,11,93
+Calaveras,530,State Assembly,9,Heath Flora,Republican,530,103,427
+Calaveras,550,President,,Donald J. Trump,Republican,1175,292,882
+Calaveras,550,President,,Claudia De La Cruz,Peace and Freedom,5,0,5
+Calaveras,550,President,,Kamala D. Harris,Democratic,408,38,369
+Calaveras,550,President,,Robert F. Kennedy Jr.,American Independent,22,3,19
+Calaveras,550,President,,Chase Oliver,Libertarian,7,0,7
+Calaveras,550,President,,Jill Stein,Green,1,0,1
+Calaveras,550,President,,Peter Sonski,,0,0,0
+Calaveras,550,U.S. Senate,,Steve Garvey,Republican,1161,282,878
+Calaveras,550,U.S. Senate,,Adam B. Schiff,Democratic,410,38,371
+Calaveras,550,U.S. Senate,Partial Term,Steve Garvey,Republican,1139,277,861
+Calaveras,550,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,408,43,364
+Calaveras,550,U.S. House,5,Tom Mcclintock,Republican,1173,284,888
+Calaveras,550,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,389,34,354
+Calaveras,550,State Assembly,9,Tami Nobriga,American Independent,362,44,317
+Calaveras,550,State Assembly,9,Heath Flora,Republican,1141,266,874
+Calaveras,560,President,,Donald J. Trump,Republican,1442,283,1159
+Calaveras,560,President,,Claudia De La Cruz,Peace and Freedom,5,2,3
+Calaveras,560,President,,Kamala D. Harris,Democratic,533,43,490
+Calaveras,560,President,,Robert F. Kennedy Jr.,American Independent,34,1,33
+Calaveras,560,President,,Chase Oliver,Libertarian,6,1,5
+Calaveras,560,President,,Jill Stein,Green,4,0,4
+Calaveras,560,President,,Peter Sonski,,0,0,0
+Calaveras,560,U.S. Senate,,Steve Garvey,Republican,1453,276,1177
+Calaveras,560,U.S. Senate,,Adam B. Schiff,Democratic,529,44,485
+Calaveras,560,U.S. Senate,Partial Term,Steve Garvey,Republican,1433,272,1161
+Calaveras,560,U.S. Senate,Partial Term,Adam B. Schiff,Democratic,518,42,476
+Calaveras,560,U.S. House,5,Tom Mcclintock,Republican,1435,273,1162
+Calaveras,560,U.S. House,5,"Michael J. ""mike"" Barkley",Democratic,518,40,478
+Calaveras,560,State Assembly,9,Tami Nobriga,American Independent,456,41,415
+Calaveras,560,State Assembly,9,Heath Flora,Republican,1420,275,1145

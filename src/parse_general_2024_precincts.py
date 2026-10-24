@@ -2028,7 +2028,7 @@ _PF_ID_RE = re.compile(r"^\d{1,7}(?:MB)?(-\d+)?\s*$|^\d{1,7}\s?-\s?\S.*$")
 DEBUG_PF = False
 _PF_CHANNELS = {"mail ballot", "designated mail ballot", "polling place",
                 "provisional", "total", "vote centers", "vote center",
-                "vote by mail", "election day", "mail", "polling"}
+                "vote by mail", "election day", "mail", "polling", "poll"}
 def _channel_prefix(low):
     """True when a line's leading words name a channel row (everything before
     the first number, e.g. "designated mail ballot 0 0 0")."""
@@ -2051,14 +2051,50 @@ _PF_IDLINE_RE = re.compile(r"^\s*(?:(?:[a-z%]{1,3}|\d{1,3})\s+)?-\s*([0-9]{2,7})
 # uppercase head that includes a digit early, then a long tail. (A plain
 # minimum-length pattern would also match long titles like REPRESENTATIVE.)
 _PF_CODE_RE = re.compile(r"^[A-Z]{1,4}[0-9][0-9A-Z\-]{9,}$")
+# Glenn/SLO sub-row block id lines: bare reporting-precinct ids ("10040",
+# "114", "MB01"), optionally printed twice per page ("10040 10040" = the
+# left stat band's copy and the right candidate band's copy).
+_PF_PCT_ID_RE = re.compile(r"^(?:[A-Z]{2})?\d{1,7}$")
+# Glenn/SLO county-total rollup rows ("Electionwide - Total ...", SLO's
+# "County - Total ..."): per-candidate county totals for verification.
+_PF_COUNTY_RE = re.compile(r"^(?:electionwide|county|county of \w+|"
+                           r"\S+ county)\s*-\s*total\b", re.I)
+
+# 2024 running-mate pairs: the printed president labels mix the pair into one
+# string with or without slashes and line wraps ("DONALD J. TRUMP/JD VANCE"),
+# so the split runs on the known pairs.
+_PRES_PAIRS = [
+    (r"DONALD\s+J\.?\s*TRUMP", r"JD\s+VANCE"),
+    (r"KAMALA\s+D\.?\s*HARRIS", r"TIM\s+WALZ"),
+    (r"ROBERT\s+F\.?\s*KENNEDY\s+JR\.?", r"NICOLE\s+SHANAHAN"),
+    (r"CHASE\s+OLIVER", r"MIKE\s+TER\s+MAAT"),
+    (r"JILL\s+STEIN", r"RUDOLPH\s+WARE"),
+    (r"CLAUDIA\s+DE\s+LA\s+CRUZ", r"KARINA\s+GARCIA"),
+    (r"PETER\s+SONSKI", r"LAUREN\s+ONAK"),
+]
 
 
-def parse_pageformat_pdf(county, path, dedup=False):
-    """``dedup`` (Butte): the SOVC reprints each contest's full precinct
-    table back-to-back several times (Electionwide copies followed by
-    supervisor-district groups), with identical values per row — the
-    single-row branch must dedup equal reprints instead of summing them,
-    or every value is stored ~4x."""
+def _split_mate(text, office):
+    """(name, mate) for a rotated president label; the 2024 pairs are the
+    only multi-name candidates in the 2024 general's statewide contests."""
+    if (office or "") != "President":
+        return (text, "")
+    for pn, pm in _PRES_PAIRS:
+        m = re.search(rf"({pn})\s*/?\s*({pm})", text)
+        if m:
+            name = text[:m.start(1)].strip() or m.group(1)
+            return (name.strip(), m.group(2))
+    return (text, "")
+
+
+def parse_pageformat_pdf(county, path, dedup=False, subrow=False,
+                         rollups=False):
+    """``subrow`` (Glenn/SLO): each contest's table runs as sub-row blocks —
+    a bare reporting-precinct id line followed by Election Day / Vote by Mail
+    / Total rows per candidate column, bands printed two-up (left band =
+    Times Cast / Registered Voters stats, right band = one candidate slice).
+    ``rollups``: capture "Electionwide - Total" / "County - Total" rows as
+    per-candidate county totals and verify the precinct sums against them."""
     votes = {}    # (precinct, od, nn) -> votes (Total row or inline cell)
     channels = {}  # -> [election-day-ish, mail-ish] channel votes
     ctotals = {}  # (od, nn) -> county rollup total (Butte dedup mode)
@@ -2108,8 +2144,10 @@ def parse_pageformat_pdf(county, path, dedup=False):
                         continue
                 # a title line begins with alpha text and carries several
                 # alpha words (precinct rows start with ids; ballot-style
-                # code rows -- often printed twice per line -- are not titles)
-                if len([w for w in txt.split() if re.search(r"[A-Za-z]{2}", w)]) < 2 \
+                # code rows -- often printed twice per line -- are not titles;
+                # MB-id lines ("MB01 MB01") are blocks' id lines, not titles)
+                if _PF_PCT_ID_RE.match(txt.split()[0]) or \
+                        len([w for w in txt.split() if re.search(r"[A-Za-z]{2}", w)]) < 2 \
                         or not re.match(r"^[A-Za-z]", txt) \
                         or any(_PF_CODE_RE.match(w) for w in txt.split()):
                     continue
@@ -2212,6 +2250,9 @@ def parse_pageformat_pdf(county, path, dedup=False):
                 m_wi = re.match(r"^(.*?)\s+\(W\)\s*$", name, re.I)
                 if m_wi:
                     name = m_wi.group(1).strip()
+                pn, pm = _split_mate(name, od[0])
+                if pm:
+                    name = f"{pn} / {pm}"
                 nm = norm_name(name)
                 key = (wname, od, nm)
                 names[od + (nm,)] = (name, party)
@@ -2255,6 +2296,15 @@ def parse_pageformat_pdf(county, path, dedup=False):
                         tok = w["text"]
                         if tok.endswith("%") or not re.match(r"^[\d,]+$", tok):
                             continue
+                        if subrow and total_x is not None and \
+                                abs((w["x0"] + w["x1"]) / 2 - (total_x + 4)) \
+                                <= 20:
+                            # the band's Total Votes cell is captured by its
+                            # own column below; without this it is the
+                            # unassigned value nearest the next label block
+                            # (Glenn/SLO: the write-in pair) and pollutes
+                            # that candidate's channel rows
+                            continue
                         lab = assign(w)
                         if lab is None:
                             continue
@@ -2294,6 +2344,35 @@ def parse_pageformat_pdf(county, path, dedup=False):
                 if _PF_CODE_RE.match(row_id):
                     pending_code = row_id
                     continue
+                if rollups and _PF_COUNTY_RE.match(line_l) and od is not None:
+                    # per-candidate county-total rollup row; candidate values
+                    # assign to their columns, the stat/"Total Votes" cells
+                    # assign elsewhere or to none
+                    for w in line:
+                        tok = w["text"]
+                        if tok.endswith("%") or "." in tok or \
+                                not re.match(r"^[\d,]+$", tok):
+                            continue
+                        lab = assign(w)
+                        if lab is None:
+                            continue
+                        cname = lab[0]
+                        if re.fullmatch(r"unresolved write.?in", cname,
+                                        re.I) or \
+                                "total votes" in cname.lower():
+                            continue
+                        cname = re.sub(r"\s*qualified write in\s*$", "",
+                                       cname, flags=re.I)
+                        pn2, pm2 = _split_mate(cname, od[0])
+                        nm = norm_name(f"{pn2} / {pm2}" if pm2 else pn2)
+                        v = _num(tok)
+                        old = totals.get(od + ("__cty__", nm))
+                        if old is not None and old != v:
+                            failures.append(f"{od[0]} {cname[:28]}: county "
+                                            f"rollup copies {old} vs {v}")
+                        totals[od + ("__cty__", nm)] = v
+                    current = None
+                    continue
                 if dedup and (line_l.startswith("electionwide") or
                               line_l.startswith("county supervisor "
                                                "district")):
@@ -2327,6 +2406,14 @@ def parse_pageformat_pdf(county, path, dedup=False):
                         elif old != v:
                             failures.append(f"{od[0]} {cname[:28]}: county "
                                             f"rollup copies {old} vs {v}")
+                    continue
+                if subrow and len(line) <= 4 and \
+                        all(_PF_PCT_ID_RE.match(x["text"].strip())
+                            for x in line):
+                    # bare id line starting a sub-row block (single or
+                    # left/right doubled copy)
+                    current = line[0]["text"].strip()
+                    pending = defaultdict(lambda: [0, 0, 0, 0])
                     continue
                 if not _PF_ID_RE.match(row_id):
                     continue
@@ -2375,6 +2462,25 @@ def parse_pageformat_pdf(county, path, dedup=False):
         if key in totals and totals[key] and s != totals[key]:
             failures.append(f"{office} {pct}: candidates {s} vs "
                             f"Total Votes {totals[key]}")
+    if rollups:
+        # county-total rollups: diffs are what the doc redacts ('****' value
+        # cells under the Insufficient-Turnout privacy rule) or write-in
+        # aggregates — reported as soft, the file still writes
+        psums = defaultdict(int)
+        for (pct, (o, d), nm), v in votes.items():
+            psums[(o, d, nm)] += v
+        cty = {k[:2] + (k[3],): v for k, v in totals.items()
+               if k[2] == "__cty__"}
+        for (office, district, nm), t in sorted(
+                cty.items(), key=lambda kv: (kv[0][0], kv[0][2])):
+            disp = names.get((office, district, nm), (nm, ""))[0]
+            s = psums.get((office, district, nm))
+            if s is None:
+                failures.append(f"{office} {disp[:36]}: precinct rows "
+                                f"missing vs county total {t}")
+            elif s != t:
+                failures.append(f"{office} {disp[:36]}: precincts {s} vs "
+                                f"county total {t} (redacted/write-in)")
     if dedup and ctotals:
         # county rollup rows: soft diffs only — a candidate's precinct
         # sum minus its county total is exactly what the doc hides in
@@ -2433,6 +2539,392 @@ def parse_san_bernardino(county, src_dir):
             failures.append(f"{f.name}: {msg}")
         print(f"[san_bernardino] {f.name}: {len(f_rows)} rows "
               f"{'clean' if not f_fails else f'{len(f_fails)} diffs'}", flush=True)
+    return rows, failures
+
+
+# ---------------------------------------------------------------------------
+# Yolo — the "District Results Report" PDF: county-level "Cumulative Report"
+# pages (landscape), then one block per contest of "District Results Report"
+# pages, each page carrying the contest title + a section label:
+#   * "Cumulative Totals" pages — the per-precinct rows (id, Registration,
+#     Ballots Cast, Turnout %, one total-votes column per candidate) plus
+#     trailing channel/Grand-Totals rollup rows (district level, not
+#     per-precinct).
+#   * "Vote Center Totals" / "Vote by Mail Totals" / "Conditional Totals" /
+#     "Election Day Totals" / "Grand Totals" pages — district-group rollups
+#     only, ending in the contest's county Grand-Totals row.
+# Candidate/stat column headers are rotated; the label columns sit ~49pt
+# apart and each candidate's value column is right-aligned ~21pt right of
+# its label line. Per-precinct rows carry totals only (no channel split),
+# so rows are votes-only; the county Grand-Totals row verifies the sums,
+# and the county-level Cumulative Report pages supply party codes.
+# ---------------------------------------------------------------------------
+
+_YOLO_TOTALS_RE = re.compile(r"^(?:cumulative|vote center|vote by mail|conditional|"
+                             r"election day|grand)\s+totals?$", re.I)
+_YOLO_PRECINCT_RE = re.compile(r"^\d{2,7}$")
+
+
+def _yolo_label_lines(page):
+    """Rotated vertical label lines -> [(x0, text)] (words read bottom-up,
+    each word's characters reversed)."""
+    cols = defaultdict(list)
+    for w in page.extract_words(extra_attrs=["upright"]):
+        if not w.get("upright", True):
+            cols[round(w["x0"])].append(w)
+    out = []
+    for x in sorted(cols):
+        ws = sorted(cols[x], key=lambda w: -w["top"])
+        out.append((x, " ".join(w["text"][::-1] for w in ws)))
+    return out
+
+
+def _yolo_uptight_lines(page):
+    """Upright lines -> {top: [words sorted by x0]}."""
+    lines = defaultdict(list)
+    for w in page.extract_words():
+        if w.get("upright", True):
+            lines[round(w["top"])].append(w)
+    for y in lines:
+        lines[y].sort(key=lambda w: w["x0"])
+    return lines
+
+
+def _yolo_assign(labels, words):
+    """Map candidate value columns onto a row's numeric words: a value
+    belongs to the label line right of which it is right-aligned (the
+    value column ends ~21pt right of its label line; label columns are
+    ~49pt apart)."""
+    out = []
+    for x, text in labels:
+        for w in words:
+            tok = w["text"].strip()
+            if "%" in tok or "." in tok or not re.fullmatch(r"[\d,]+", tok):
+                continue
+            vc = (w["x0"] + w["x1"]) / 2
+            if x - 20 <= vc <= x + 36:
+                out.append((x, text, _num(tok)))
+    return out
+
+
+def parse_yolo_pdf(county, path):
+    """District Results Report: per-precinct totals from the "Cumulative
+    Totals" pages; verified against each contest's county "Grand Totals" row
+    and the county-level Cumulative Report pages (which also carry the
+    candidate party codes). Rows are votes-only (no per-precinct channels)."""
+    votes = {}      # (precinct, od, nn) -> votes
+    names = {}      # (od, nn) -> display
+    ref_party = {}  # (od, nn) -> party token (county-level pages)
+    ref_totals = {} # (od, nn) -> county-level page total
+    gt_totals = {}  # (od, nn) -> county Grand-Totals row value
+    failures = []
+    with pdfplumber.open(str(path)) as pdf:
+        for page in pdf.pages:
+            header = page.extract_text() or ""
+            lines = _yolo_uptight_lines(page)
+            if "Cumulative Report" in header and \
+                    "District Results Report" not in header:
+                # county-level pages: "CANDIDATE - PARTY v p ... v p" rows
+                od = None
+                for y in sorted(lines):
+                    txt = " ".join(w["text"] for w in lines[y]).strip()
+                    low = txt.lower()
+                    if "vote for" in low or re.match(r"^president\b", low):
+                        od = parse_office2024(txt, county)
+                        continue
+                    if od is None or not re.search(r"[A-Za-z]", txt):
+                        continue
+                    toks = [w["text"].strip() for w in lines[y]]
+                    m = re.match(r"^(.+?)\s*-\s*([A-Z]{2,4})\s+(.+)$",
+                                 " ".join(toks))
+                    if not m or not re.search(r"[A-Za-z]{2}", m.group(1)):
+                        continue
+                    nums = [t for t in toks if re.fullmatch(r"[\d,]+", t)]
+                    if len(nums) < 3 or is_summary_name(m.group(1)):
+                        continue
+                    nn = norm_name(title_case(m.group(1)))
+                    ref_party[od + (nn,)] = m.group(2)
+                    ref_totals[od + (nn,)] = _num(nums[-1])
+                continue
+            if "District Results Report" not in header:
+                continue
+            # title + section lines under the run header
+            titles = []
+            for y in sorted(lines)[:8]:
+                txt = " ".join(w["text"] for w in lines[y]).strip()
+                low = txt.lower()
+                if "district results report" in low or \
+                        re.match(r"^\d{2}/\d{2}/\d{4}\b", low) or \
+                        low.startswith(("run ", "page")) or \
+                        re.fullmatch(r"\d+", txt) or not txt:
+                    continue
+                titles.append((y, txt))
+                if len(titles) == 2:
+                    break
+            if len(titles) < 2 or not _YOLO_TOTALS_RE.match(titles[1][1]):
+                continue
+            od = parse_office2024(titles[0][1], county)
+            if od is None:
+                continue
+            office, district = od
+            is_cumulative = titles[1][1].lower().startswith("cumulative")
+            labels = [(x, text) for x, text in _yolo_label_lines(page)
+                      if not re.search(r"registration|cast|ballots?|turnout|%|"
+                                       r"total|write|under|over|precinct",
+                                       text.lower())]
+            for y in sorted(lines):
+                if y <= titles[1][0]:
+                    continue
+                ws = lines[y]
+                head = ws[0]["text"].strip()
+                if _YOLO_PRECINCT_RE.match(head.replace(",", "")) and \
+                        len(head) >= 2 and is_cumulative:
+                    # per-precinct row: id, Registration, Ballots Cast,
+                    # Turnout %, then one total column per candidate
+                    nums = [w for w in ws[1:] if
+                            re.fullmatch(r"[\d,]+", w["text"].strip())]
+                    if len(nums) < 2:
+                        continue
+                    cast = _num(nums[1]["text"])
+                    csum = 0
+                    for _x, text, v in _yolo_assign(labels, ws):
+                        nn = norm_name(title_case(text))
+                        votes[(head, od, nn)] = v
+                        names[od + (nn,)] = text
+                        csum += v
+                    if cast and csum > cast:
+                        failures.append(f"{office} {head}: candidates {csum}"
+                                        f" > ballots cast {cast}")
+                    continue
+                if not is_cumulative:
+                    continue
+                txt = " ".join(w["text"] for w in ws).strip()
+                if re.match(r"^grand\s+totals\b", txt.lower()):
+                    for _x, text, v in _yolo_assign(labels, ws):
+                        nn = norm_name(title_case(text))
+                        gt_totals[od + (nn,)] = v
+    # verification: precinct sums vs the in-doc county totals
+    psums = defaultdict(int)
+    for (pct, (o, d), nn), v in votes.items():
+        psums[(o, d, nn)] += v
+    for (o, d, nn), t in sorted(gt_totals.items()):
+        s = psums.get((o, d, nn))
+        disp = names.get((o, d, nn), nn)
+        if s is None:
+            failures.append(f"{o} {disp[:36]}: precinct rows missing vs "
+                            f"Grand Totals {t}")
+        elif s != t:
+            failures.append(f"{o} {disp[:36]}: precincts {s} vs Grand "
+                            f"Totals {t}")
+        rt = ref_totals.get((o, d, nn))
+        if rt is not None and rt != t:
+            failures.append(f"{o} {disp[:36]}: {county} page {rt} vs "
+                            f"Grand Totals {t}")
+    rows_out = []
+    for (precinct, (office, district), nn), v in votes.items():
+        rows_out.append({
+            "county": county, "precinct": precinct, "office": office,
+            "district": district, "candidate": title_case(names[(office, district, nn)]),
+            "party": party_of(ref_party.get((office, district, nn), "")),
+            "votes": v,
+        })
+    return rows_out, failures
+
+
+# ---------------------------------------------------------------------------
+# Napa — one "Statement of Votes Cast" PDF per contest inside a directory;
+# each file: the contest title line, rotated single-line column headers
+# (Registered Voters / Ballots Cast Total / Turnout / Total Votes / one
+# "NAME / RUNNING MATE (PARTY)" column pair per candidate, each candidate's
+# label block = a name line 15pt left of a "(PARTY)" or continuation line),
+# then ONE row per precinct (right-aligned values; the Turnout cell and the
+# Total Votes value sometimes wrap onto a second line under the row), and a
+# trailing rollup section (district-group rows, all equal to the county
+# totals) which verifies the per-candidate sums.
+# ---------------------------------------------------------------------------
+
+_NAPA_ID_RE = re.compile(r"^\d{4,7}$")
+
+
+def _napa_labels(page):
+    """Candidate + Total Votes column anchors from the rotated header band:
+    vertical lines grouped into blocks closed by a '(PARTY)' line; the
+    anchor = the block's last (rightmost) line. Stat columns are skipped."""
+    cols = defaultdict(list)
+    for w in page.extract_words(extra_attrs=["upright"]):
+        if not w.get("upright", True):
+            cols[round(w["x0"])].append(w)
+    blocks, cur = [], []
+    for x in sorted(cols):
+        ws = sorted(cols[x], key=lambda w: -w["top"])
+        text = " ".join(w["text"][::-1] for w in ws)
+        low = text.lower()
+        party_line = any(re.fullmatch(r"\(([A-Z]{2,4})\)", t)
+                         for t in text.split())
+        tv_line = re.search(r"total votes", low) is not None
+        stat_line = "qualified write in" not in low and re.search(
+            r"registration|registered|ballots|turnout|voters?|cast", low) \
+            is not None
+        if cur and (x - cur[-1][0] > 16 or tv_line or stat_line):
+            blocks.append(cur)
+            cur = []
+        if tv_line:
+            blocks.append([(x, "Total Votes")])
+            continue
+        if stat_line:
+            continue
+        cur.append((x, text))
+        if party_line:
+            blocks.append(cur)
+            cur = []
+    if cur:
+        blocks.append(cur)
+    out = []
+    for b in blocks:
+        anchor = b[-1][0] + 4
+        toks = []
+        for _x, text in b:
+            toks.extend(text.split())
+        toks = [t.strip("/") for t in toks if t and t != "/"]
+        disp = " ".join(toks)
+        if re.fullmatch(r"total votes", disp, re.I):
+            out.append((anchor, "Total Votes"))
+            continue
+        m = re.search(r"\(([A-Z]{2,4})\)", disp)
+        party = m.group(1) if m else ""
+        disp = re.sub(r"\s*\([A-Z]{2,4}\)\s*", " ", disp)
+        disp = _strip_qual(disp)
+        out.append((anchor, disp, party))
+    return out
+
+
+def _strip_qual(text):
+    """Drop a trailing '(Qualified Write In)' qualifier."""
+    return re.sub(r"\s*qualified write in\s*$", "", text, flags=re.I)
+
+
+def parse_napa_pdf(county, src_dir):
+    """One contest per PDF; returns (rows, verify_failures). Rows are
+    votes-only (the source's Registered / Ballots Cast columns are stats,
+    not channels). Verified per precinct against the Total Votes cell and
+    per candidate against the trailing "Countywide Total" row."""
+    rows = []
+    failures = []
+    for f in sorted(src_dir.glob("*.pdf")):
+        with pdfplumber.open(str(f)) as pdf:
+            txt0 = pdf.pages[0].extract_text() or ""
+            title = next((" ".join(ln.split()) for ln in txt0.splitlines()
+                          if re.search(r"\(vote for[^)]*\)", ln, re.I)),
+                         None)
+            if title is None:
+                continue
+            od = parse_office2024(title, county)
+            if od is None:
+                continue    # local contests / state propositions
+            office, district = od
+            labels = None
+            tvs = {}    # precinct -> Total Votes cell value
+            votes = {}  # (precinct, nn) -> votes
+            disp = {}   # nn -> display name
+            parti = {}  # nn -> party token
+            counties = {}  # (od, nn) -> "Countywide Total" row value
+            for page in pdf.pages:
+                if labels is None:
+                    labels = _napa_labels(page)
+                lines = defaultdict(list)
+                for w in page.extract_words():
+                    lines[round(w["top"])].append(w)
+                pending = None
+                for y in sorted(lines):
+                    ws = sorted(lines[y], key=lambda w: w["x0"])
+                    is_id = ws[0]["x0"] < 60 and _NAPA_ID_RE.match(
+                        ws[0]["text"].strip())
+                    if is_id:
+                        pending = [ws[0]["text"].strip(), ws[1:]]
+                    elif pending is not None and len(ws) <= 6 and \
+                            ws[0]["x0"] > 200 and \
+                            not any("%" in w["text"]
+                                    for w in pending[1]):
+                        # wrapped continuation row (Turnout cell and the
+                        # Total Votes + candidate cells often print on a
+                        # second line under the id line)
+                        pending[1].extend(ws)
+                    else:
+                        if ws[0]["text"].strip().lower() == \
+                                "countywide total":
+                            nums = [w for w in ws[1:]
+                                    if re.fullmatch(r"[\d,]+",
+                                                    w["text"].strip())]
+                            for w in nums:
+                                tok = w["text"].strip()
+                                vc = (w["x0"] + w["x1"]) / 2
+                                best, bd = None, 12.0
+                                for lab in labels:
+                                    d = abs(vc - lab[0])
+                                    if d < bd:
+                                        best, bd = lab, d
+                                if best is None or best[1] == "Total Votes":
+                                    continue
+                                nm = norm_name(_strip_qual(best[1]))
+                                if (od, nm) in counties and \
+                                        counties[(od, nm)] != _num(tok):
+                                    failures.append(
+                                        f"countywide copies {od[0]} "
+                                        f"{disp.get(nm, nm)[:26]}: "
+                                        f"{counties[(od, nm)]} vs "
+                                        f"{_num(tok)}")
+                                counties[(od, nm)] = _num(tok)
+                        pending = None
+                        continue
+                    for w in pending[1]:
+                        tok = w["text"].strip()
+                        if "%" in tok or not re.fullmatch(r"[\d,]+", tok):
+                            continue
+                        vc = (w["x0"] + w["x1"]) / 2
+                        best, bd = None, 12.0
+                        for lab in labels:
+                            d = abs(vc - lab[0])
+                            if d < bd:
+                                best, bd = lab, d
+                        if best is None:
+                            continue
+                        if best[1] == "Total Votes":
+                            tvs[pending[0]] = _num(tok)
+                            continue
+                        name = _strip_qual(best[1])
+                        nm = norm_name(name)
+                        votes[(pending[0], nm)] = _num(tok)
+                        disp[nm] = name
+                        parti[nm] = best[2]
+        # per-precinct verification: candidate sum vs Total Votes cell
+        rowsum = defaultdict(int)
+        for (pct, nm), v in votes.items():
+            rowsum[pct] += v
+        for pct, s in rowsum.items():
+            if pct in tvs and s != tvs[pct]:
+                failures.append(f"{f.name}: {pct}: candidates {s} vs "
+                                f"Total Votes {tvs[pct]}")
+        # county verification: precinct sums vs "Countywide Total" row
+        if counties:
+            cand_sums = defaultdict(int)
+            for (pct, nm), v in votes.items():
+                cand_sums[nm] += v
+            for (od, nm), t in sorted(counties.items()):
+                s = cand_sums.get(nm)
+                if s is None:
+                    failures.append(f"{f.name}: {disp.get(nm, nm)[:36]}: "
+                                    f"precinct rows missing vs rollup {t}")
+                elif s != t:
+                    failures.append(f"{f.name}: {disp.get(nm, nm)[:36]}: "
+                                    f"precincts {s} vs rollup {t}")
+        for (pct, nm), v in votes.items():
+            pn, pm = _split_mate(" ".join(disp[nm].split()).upper(), office)
+            cand = f"{pn} / {pm}" if pm else disp[nm]
+            rows.append({
+                "county": county, "precinct": pct, "office": office,
+                "district": district, "candidate": title_case(cand),
+                "party": party_of(parti[nm]), "votes": v,
+            })
     return rows, failures
 
 
@@ -2621,6 +3113,24 @@ def parse_modoc24(county, path):
     return rows_out, failures
 
 
+# ---- Glenn / San Luis Obispo wrappers for the sub-row pageformat mode ----
+
+def parse_glenn_sovc(county, path):
+    return parse_pageformat_pdf(county, path, subrow=True, rollups=True)
+
+
+def parse_slo_sovc(county, path):
+    return parse_pageformat_pdf(county, path, subrow=True, rollups=True)
+
+
+def parse_yolo_drr(county, path):
+    return parse_yolo_pdf(county, path)
+
+
+def parse_napa_svc(county, src_dir):
+    return parse_napa_pdf(county, src_dir)
+
+
 SOURCE_FILES = {
     "colusa": ("Colusa", "pageformat",
                "2024 Colusa County, CA precinct-level results/Colusa-2024-General-SOVC.xlsx"),
@@ -2709,6 +3219,17 @@ SOURCE_FILES = {
               "Butte County - Statement of Vote - General Election.pdf"),
     "stanislaus": ("Stanislaus", "rotated_sov",
                    "2024 Stanislaus County, CA precinct-level results.pdf"),
+    # Glenn/SLO: the "Page: N of M" SOVC PDF family with sub-row channel
+    # blocks (Election Day / Vote by Mail / Total per candidate column
+    # band) — parse_pageformat_pdf's subrow/rollups mode
+    "glenn": ("Glenn", "glenn_sovc",
+              "Glenn County - Statement of the Vote - General 2024.pdf"),
+    "san_luis_obispo": ("San Luis Obispo", "slo_sovc",
+                        "2024 San Luis Obispo County, CA precinct-level results.pdf"),
+    "yolo": ("Yolo", "yolo_drr",
+             "2024 Yolo County, CA precinct-level results.pdf"),
+    "napa": ("Napa", "napa_svc",
+             "2024 Napa County, CA precinct-level results"),
     # NOTE: the "2024 Orange County, CA precinct-level results.pdf" is a
     # district-level rollup report only — every page of its 1,915-page
     # "District Results Report" partitions the county by city / council /

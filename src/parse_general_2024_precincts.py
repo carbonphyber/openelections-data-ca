@@ -78,6 +78,14 @@ def title_case(name):
     for tok in s.split(" "):
         seg = tok.strip(",")
         seg = seg if (seg.endswith(".") and len(seg) <= 3) else seg.rstrip(".")
+        # a quoted nickname ("MIKE") keeps its quotes and is titled inside
+        m_q = re.fullmatch(r'"([^"]+)"', seg)
+        if m_q:
+            core = m_q.group(1)
+            core = core.upper() if core.upper() in keep_upper or len(core) == 1 \
+                else core.capitalize()
+            parts.append('"' + core + '"')
+            continue
         if not seg:
             parts.append(tok)
             continue
@@ -1447,6 +1455,22 @@ def parse_rotated180_pdf(county, path, start_page=0):
 _ROT_CONFIG = {
     "Lake": {"family": "district"},
     "San Joaquin": {"family": "district"},
+    # Stanislaus prints the same "District Results Report" blocks (title on
+    # line 48, section on line 69, per-precinct rows at y>=194). Its opening
+    # "Cumulative Results Report" countywide section (pages 7-53) renders
+    # the statewide contests' text in a double-printed, part-invisible
+    # layer (garbled extract), so unlike San Joaquin's it yields no
+    # countywide totals; verification rests on the district reports' own
+    # Grand-Totals "STANISLAUS COUNTY," rows.
+    "Stanislaus": {
+        "family": "stanislaus",
+        # The rotated bands print "NAME MATE(, PARTY)" wrapped across one
+        # or two vertical lines — the name/mate split is only recoverable
+        # from the known 2024 statewide running-mate names.
+        "mate_names": ("JD VANCE", "KARINA GARCIA", "TIM WALZ",
+                       "NICOLE SHANAHAN", "MIKE TER MAAT", "RUDOLPH WARE",
+                       "LAUREN ONAK"),
+    },
     "Merced": {
         "family": "custom",
         # Merced's canvass strips the office word out of the contest
@@ -1487,10 +1511,38 @@ def _rot_line_text(chars, reverse):
     return re.sub(r"\s+", " ", s).strip()
 
 
-def _rot_label(block, reverse, mate_lines):
+def _rot_label(block, reverse, mate_lines, label_mode="district",
+               mate_names=()):
     """Assemble one rotated label block into (name, mate, party) — either
-    the [name, running-mate] pair lines (Lake/San Joaquin) or the wrapped
-    name chunks with the party code leading the right-most line (Merced)."""
+    the [name, running-mate] pair lines (Lake/San Joaquin), the wrapped
+    name chunks with the party code leading the right-most line (Merced),
+    or Stanislaus's "[name mate(, party)]" wrapped lines (the trailing
+    comma only marks the printed line break; the party code trails the
+    mate, on that same line or the next)."""
+    if label_mode == "stanislaus":
+        words, party = [], ""
+        for _x, cs in block:   # lines read left to right
+            words.extend(_rot_line_text(cs, reverse).split())
+        # a trailing comma only marks the printed line break ("...VANCE," /
+        # "GARCIA, PARTY"); name tokens keep their periods (" J. ", "JR.")
+        clean = [t.rstrip(",") for t in words]
+        clean = [t for t in clean if t]
+        if clean and _ROT_PARTY_TOKEN_RE.match(clean[-1].rstrip(".,")):
+            party = clean[-1].rstrip(".,")
+            clean = clean[:-1]
+        if clean and clean[-1].endswith("."):
+            # stray terminal period after the name (not "J."/"JR." of a
+            # longer token)
+            clean[-1] = clean[-1].rstrip(".")
+        name = " ".join(clean)
+        mate = ""
+        low = name.lower()
+        for mn in mate_names:
+            if low.endswith(" " + mn.lower()):
+                cut = len(name) - len(mn)
+                name, mate = name[:cut].strip(), name[cut:].strip()
+                break
+        return name, mate, party
     texts = [_rot_line_text(cs, reverse) for _x, cs in block]
     if mate_lines:
         return (texts[0] if texts else "",
@@ -1619,6 +1671,13 @@ def parse_rotated_sov(county, path):
     if cfg is None:
         raise ValueError(f"no rotated_sov config for {county}")
     family = cfg["family"]
+    label_mode = family
+    mate_names = cfg.get("mate_names", ())
+    if family == "stanislaus":
+        # Stanislaus's page geometry is the district family's (title on
+        # line 48, section on line 69, per-precinct rows from y=195);
+        # only the label assembly differs.
+        family = "district"
     reverse = mate_lines = family == "district"
     num_re = re.compile(r"^[\d,]+$")
     votes = {}     # (precinct, od, nn) -> votes
@@ -1746,7 +1805,8 @@ def parse_rotated_sov(county, path):
                 blocks.append(cur)
             if not blocks:
                 continue
-            labels = [_rot_label(b, reverse, mate_lines) for b in blocks]
+            labels = [_rot_label(b, reverse, mate_lines, label_mode,
+                                 mate_names) for b in blocks]
             kinds = [_rot_column_kind(n + " " + m + " " + p)
                      for n, m, p in labels]
 
@@ -1854,7 +1914,8 @@ def parse_rotated_sov(county, path):
                                 _num(w["text"])
                         elif k == "cand":
                             name, mate, party = labels[i]
-                            if family == "district" and not mate and \
+                            if family == "district" and label_mode \
+                                    != "stanislaus" and not mate and \
                                     len(name.split()) == 4:
                                 # the presidential write-in pair prints on
                                 # one compressed line
@@ -1863,7 +1924,8 @@ def parse_rotated_sov(county, path):
                                   _num(w["text"]))
                     elif k == "cand":   # county / Grand Totals / Totals row
                         name, mate, party = labels[i]
-                        if family == "district" and not mate and \
+                        if family == "district" and label_mode \
+                                != "stanislaus" and not mate and \
                                 len(name.split()) == 4:
                             # the write-in pair's county-total row carries
                             # both names on one line, like the band
@@ -1991,9 +2053,15 @@ _PF_IDLINE_RE = re.compile(r"^\s*(?:(?:[a-z%]{1,3}|\d{1,3})\s+)?-\s*([0-9]{2,7})
 _PF_CODE_RE = re.compile(r"^[A-Z]{1,4}[0-9][0-9A-Z\-]{9,}$")
 
 
-def parse_pageformat_pdf(county, path):
+def parse_pageformat_pdf(county, path, dedup=False):
+    """``dedup`` (Butte): the SOVC reprints each contest's full precinct
+    table back-to-back several times (Electionwide copies followed by
+    supervisor-district groups), with identical values per row — the
+    single-row branch must dedup equal reprints instead of summing them,
+    or every value is stored ~4x."""
     votes = {}    # (precinct, od, nn) -> votes (Total row or inline cell)
     channels = {}  # -> [election-day-ish, mail-ish] channel votes
+    ctotals = {}  # (od, nn) -> county rollup total (Butte dedup mode)
     names = {}
     totals = {}
     failures = []
@@ -2044,6 +2112,14 @@ def parse_pageformat_pdf(county, path):
                 if len([w for w in txt.split() if re.search(r"[A-Za-z]{2}", w)]) < 2 \
                         or not re.match(r"^[A-Za-z]", txt) \
                         or any(_PF_CODE_RE.match(w) for w in txt.split()):
+                    continue
+                if dedup and ("%" in txt or \
+                        re.search(r"\b\d{1,3}(?:,\d{3})+\b", txt)) \
+                        and "(vote for" not in low:
+                    # Butte: the doc's district-group rollup value rows
+                    # ("State Board of Equalization ... 5,006 69.36% ...")
+                    # open a page and would otherwise read as contest
+                    # titles
                     continue
                 titled = True
                 title_txt = txt
@@ -2218,6 +2294,40 @@ def parse_pageformat_pdf(county, path):
                 if _PF_CODE_RE.match(row_id):
                     pending_code = row_id
                     continue
+                if dedup and (line_l.startswith("electionwide") or
+                              line_l.startswith("county supervisor "
+                                               "district")):
+                    # rollup value row ("Electionwide - Total" / "County
+                    # Supervisor District - <counts>"): the contest's
+                    # county totals; the diff against the precinct sums
+                    # is exactly the '****'-redacted precincts' votes
+                    for w in line:
+                        tok = w["text"]
+                        if tok.endswith("%") or "." in tok or \
+                                not re.match(r"^[\d,]+$", tok):
+                            continue
+                        vc = (w["x0"] + w["x1"]) / 2
+                        if total_x is not None and \
+                                abs(vc - (total_x + 4)) <= 20:
+                            continue    # county "Total Votes" cell
+                        lab = assign(w)
+                        if lab is None:
+                            continue
+                        cname = lab[0]
+                        if re.fullmatch(r"unresolved write.?in", cname,
+                                        re.I):
+                            continue
+                        cname = re.sub(r"\s*qualified write in\s*$", "",
+                                       cname, flags=re.I)
+                        nm = norm_name(cname)
+                        v = _num(tok)
+                        old = ctotals.get((od, nm))
+                        if old is None:
+                            ctotals[(od, nm)] = v
+                        elif old != v:
+                            failures.append(f"{od[0]} {cname[:28]}: county "
+                                            f"rollup copies {old} vs {v}")
+                    continue
                 if not _PF_ID_RE.match(row_id):
                     continue
                 for w in line[1:]:
@@ -2232,7 +2342,22 @@ def parse_pageformat_pdf(county, path):
                     key = take(lab, tok, row_id)
                     if not key:
                         continue
-                    votes[key] = votes.get(key, 0) + _num(tok)
+                    v = _num(tok)
+                    if dedup:
+                        # identical reprint (Butte repeats each contest's
+                        # whole precinct table back-to-back): dedup equal
+                        # values, flag unequal ones and keep the first
+                        old = votes.get(key)
+                        if old is not None:
+                            if old != v:
+                                name = names[od + (key[2],)][0]
+                                failures.append(
+                                    f"{office} {row_id} {name[:28]}: "
+                                    f"reprint {old} vs {v}")
+                            continue
+                        votes[key] = v
+                    else:
+                        votes[key] = votes.get(key, 0) + v
                 # verification: "Total Votes" cell equals the candidate sum
                 if total_x is not None:
                     for w in line[1:]:
@@ -2250,6 +2375,24 @@ def parse_pageformat_pdf(county, path):
         if key in totals and totals[key] and s != totals[key]:
             failures.append(f"{office} {pct}: candidates {s} vs "
                             f"Total Votes {totals[key]}")
+    if dedup and ctotals:
+        # county rollup rows: soft diffs only — a candidate's precinct
+        # sum minus its county total is exactly what the doc hides in
+        # '****' redactions (<10-voter precincts)
+        psums = defaultdict(int)
+        for (pct, (office, district), nm), v in votes.items():
+            psums[(office, district, nm)] += v
+        for (od, nm), t in sorted(ctotals.items()):
+            s = psums.get(od + (nm,))
+            disp = names.get(od + (nm,), (nm, ""))[0]
+            if s is None:
+                failures.append(f"{od[0]} {disp[:36]}: precinct rows "
+                                f"missing (all redacted) vs county "
+                                f"total {t}")
+            elif s != t:
+                failures.append(f"{od[0]} {disp[:36]}: precincts {s} "
+                                f"vs county total {t} (redacted "
+                                f"precincts)")
     rows_out = []
     for (precinct, (office, district), nn), v in votes.items():
         name, party = names[(office, district, nn)]
@@ -2266,6 +2409,12 @@ def parse_pageformat_pdf(county, path):
             row["mail"] = mailv
         rows_out.append(row)
     return rows_out, failures
+
+
+def parse_pageformat_pdf_dedup(county, path):
+    """Butte's "Page: N of M" SOVC: parse_pageformat_pdf over reprinted
+    precinct tables (dedup, don't sum)."""
+    return parse_pageformat_pdf(county, path, dedup=True)
 
 
 def parse_san_bernardino(county, src_dir):
@@ -2556,6 +2705,17 @@ SOURCE_FILES = {
                "2024 Shasta County, CA precinct-level results.pdf"),
     "san_bernardino": ("San Bernardino", "san_bernardino",
                        "2024 San Bernardino County, CA precinct-level results"),
+    "butte": ("Butte", "pageformat_pdf_dedup",
+              "Butte County - Statement of Vote - General Election.pdf"),
+    "stanislaus": ("Stanislaus", "rotated_sov",
+                   "2024 Stanislaus County, CA precinct-level results.pdf"),
+    # NOTE: the "2024 Orange County, CA precinct-level results.pdf" is a
+    # district-level rollup report only — every page of its 1,915-page
+    # "District Results Report" partitions the county by city / council /
+    # school / water district, and the document's only four occurrences of
+    # the word "precinct" are in the city-code list and the page footer.
+    # There are no per-precinct rows to parse; no Orange parser until a
+    # precinct-level source is found.
 }
 
 PARSERS = {}

@@ -18,6 +18,8 @@ Source families, one parser each:
 * ``parse_pageformat`` — "Page: N of M" SOVC workbooks: Colusa, Contra Costa,
   Fresno, Inyo, Marin, San Benito, San Francisco, Siskiyou, Santa Barbara,
   Sutter.
+* ``parse_rotated_sov`` — the rotated-header canvass PDFs: Lake, San
+  Joaquin, Merced.
 * more families below (canvass, flat sheets, SpreadsheetML, CSVs, LA zip)…
 
 Run:
@@ -1400,6 +1402,548 @@ def parse_rotated180_pdf(county, path, start_page=0):
 
 
 # ---------------------------------------------------------------------------
+# Lake / San Joaquin / Merced — the three 2024 rotated-header canvass PDFs
+# ("District Results Report" for Lake/San Joaquin, "Custom Table Report" for
+# Merced). Candidate and stat labels print sideways at ~90 degrees with
+# their glyphs mirrored in the character stream; a vertical label line is a
+# run of characters sharing one x0, drawn bottom-up for Lake/San Joaquin
+# (chars ascend in top, line text = the char stream reversed) and top-down
+# for Merced (chars ascend in top, no reversal). Label lines ~9.4-10.6pt
+# apart merge into one label block. Lake/San Joaquin blocks hold a [name
+# line, running-mate line] pair (the bands carry no party codes, so pairs
+# are stored as "Name / Mate" with a blank party); Merced blocks hold the
+# wrapped name chunks, the party code leading the right-most chunk line.
+#
+# Value cells are right-aligned: every cell in a column shares one exact
+# right edge, so each page's label blocks map 1:1 (same count, same order)
+# onto its sorted value columns and no guessed column offset is involved.
+# Column typing is by label words: the registration / ballots-cast /
+# turnout stat columns, "Write-in Totals" aggregate columns and overvotes /
+# undervotes / contest-total columns are skipped as candidates, and a
+# "Total Votes" column (Merced only — Lake/San Joaquin print none) is
+# captured for a per-precinct cross-check.
+#
+# Lake/San Joaquin print each contest as a page group: Cumulative Totals
+# (the per-precinct rows; the group's first page omits the section line),
+# Vote by Mail / Election Day / Grand Totals rollup pages (district and
+# county rows only — no per-precinct channel detail, so rows are votes
+# only), and, for contests with named write-ins, a Write-in Tally group at
+# the end of the document whose rows ARE precinct-attributable. The county
+# row on each contest's Grand Totals page ("COUNTY OF LAKE" / "SAN JOAQUIN
+# COUNTY") verifies the precinct sums. San Joaquin's write-in pair has no
+# county row there, so it cross-checks against the "(W)" row of the
+# countywide report (Lake's Write-in Tally page carries its own bottom
+# "Grand Totals" row).
+#
+# Merced prints one block of one or two contests per page-set side by side
+# ("DISTRICT 13 DISTRICT 27"; a precinct outside the second contest's
+# district simply omits its six columns), each block ending in a county
+# Totals row that verifies it; the two sub-contests split after each
+# "Contest Total" column. Merced's titles shorten to the district number
+# alone (the office word is never printed), resolved via the county's 2024
+# district table below.
+# ---------------------------------------------------------------------------
+
+_ROT_CONFIG = {
+    "Lake": {"family": "district"},
+    "San Joaquin": {"family": "district"},
+    "Merced": {
+        "family": "custom",
+        # Merced's canvass strips the office word out of the contest
+        # titles: district contests print "DISTRICT N" and the two U.S.
+        # Senate seats print "FULL TERM" / "PARTIAL / UNEXPIRED TERM".
+        # Offices for the county's 2024 contests, checked against the
+        # candidates the bands carry (Gray/Duarte for CD 13, Alanis/Self
+        # for AD 22, Garcia Rose/Soria for AD 27 — the same race as in the
+        # Madera precinct file in this repo; Garvey/Schiff for both
+        # Senate seats).
+        "district_offices": {
+            "13": ("U.S. House", "13"),
+            "22": ("State Assembly", "22"),
+            "27": ("State Assembly", "27"),
+        },
+        "title_offices": {
+            "FULL TERM": ("U.S. Senate", ""),
+            "PARTIAL / UNEXPIRED TERM": ("U.S. Senate", "Partial Term"),
+        },
+    },
+}
+
+_ROT_STATS_RE = re.compile(r"registration|ballots?\s*cast|turnout", re.I)
+_ROT_TOTAL_RE = re.compile(r"total votes", re.I)
+_ROT_SKIP_RE = re.compile(
+    r"registration|ballots?\s*cast|turnout", re.I)
+_ROT_PARTY_TOKEN_RE = re.compile(
+    r"^(?:DEM|REP|LIB|GRN|PAF|AIP|AI|NPP|NP|PF|PSL|PEF|PFP)$", re.I)
+_ROT_GRAND_RE = re.compile(r"grand totals", re.I)
+
+
+def _rot_line_text(chars, reverse):
+    """Text of one vertical rotated label line (chars share one x0)."""
+    cs = sorted(chars, key=lambda c: c["top"])
+    s = "".join(c["text"] for c in cs).strip()
+    if reverse:
+        s = s[::-1]
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def _rot_label(block, reverse, mate_lines):
+    """Assemble one rotated label block into (name, mate, party) — either
+    the [name, running-mate] pair lines (Lake/San Joaquin) or the wrapped
+    name chunks with the party code leading the right-most line (Merced)."""
+    texts = [_rot_line_text(cs, reverse) for _x, cs in block]
+    if mate_lines:
+        return (texts[0] if texts else "",
+                texts[1] if len(texts) > 1 else "", "")
+    ordered = sorted(block, key=lambda b: -b[0])
+    words, party = [], ""
+    toks0 = _rot_line_text(ordered[0][1], reverse).split()
+    for i, tok in enumerate(toks0):
+        if i == 0 and _ROT_PARTY_TOKEN_RE.match(tok):
+            party = tok
+        else:
+            words.append(tok)
+    for _x, cs in ordered[1:]:
+        words.extend(_rot_line_text(cs, reverse).split())
+    return " ".join(words), "", party
+
+
+def _rot_column_kind(label):
+    """total (per-precinct Total Votes column) / writein (aggregate, dropped)
+    / under / over / cast (contest-total column) / stat -> not candidates."""
+    lo = label.lower()
+    if _ROT_TOTAL_RE.search(lo):
+        return "total"
+    if re.search(r"write.?in", lo):
+        return "writein"
+    if re.search(r"undervot", lo):
+        return "under"
+    if re.search(r"overvot", lo):
+        return "over"
+    if re.search(r"contest\s*total|votes?\s*cast", lo):
+        return "cast"
+    if _ROT_SKIP_RE.search(lo):
+        return "skip"
+    return "cand"
+
+
+def _rot_pair_split(name):
+    """The presidential write-in pair prints on one compressed line
+    ("PETER SONSKI LAUREN ONAK", the only 4-word label line); split it."""
+    toks = name.split()
+    return " ".join(toks[:len(toks) // 2]), " ".join(toks[len(toks) // 2:])
+
+
+def _rot_countywide_totals(county, path):
+    """San Joaquin's opening "Cumulative Results Report" (one block per
+    contest; each candidate row carries VBM/Early/Election-Day/Total value
+    percent pairs — the last number pair is the county total) — returns
+    {(od, nn): county total}; an empty dict for documents that have no
+    countywide report (Lake). The "(W)" write-in rows it carries are the
+    only county-level figure for the write-in pair the per-contest Grand
+    Totals pages have no column for."""
+    totals = {}
+    num_re = re.compile(r"^[\d,]+$")
+    with pdfplumber.open(str(path)) as pdf:
+        # the countywide report precedes the District Results Report; the
+        # first 60 pages over it amply (SJ's spans pages 10-41)
+        for page in pdf.pages[:60]:
+            if "Cumulative Results Report" not in (page.extract_text() or ""):
+                continue
+            byline = defaultdict(list)
+            for w in page.extract_words(extra_attrs=["upright"]):
+                if w.get("upright", True):
+                    byline[round(w["top"])].append(w)
+            od = None
+            state = None
+            last_key = None
+            for y in sorted(byline):
+                ws = sorted(byline[y], key=lambda w: w["x0"])
+                toks = [w["text"].strip() for w in ws]
+                txt = " ".join(toks)
+                low = txt.lower()
+                nums = [t for t in toks if num_re.fullmatch(t)]
+                alpha_n = len([t for t in toks if re.search(r"[A-Za-z]", t)])
+                if re.match(r"^choice party", low):
+                    state = "cands"
+                    continue
+                if state == "cands" and re.match(
+                        r"^(?:cast votes|undervotes|overvotes|rejected "
+                        r"write.?in|unresolved write.?in)", low):
+                    state = None
+                    last_key = None
+                    continue
+                txt_low = re.sub(r"\s*[-–]\s*vote\s+for\s+.*$", "", txt,
+                                 flags=re.I)
+                w_flag = bool(re.search(r"\(W\)", txt))
+                if nums and len(nums) > 2 and state == "cands" and od:
+                    # candidate row: name words + value/percent pairs
+                    name_toks = [t for t in toks
+                                 if not num_re.fullmatch(t)
+                                 and not t.endswith("%")]
+                    name = " ".join(name_toks)
+                    name = re.sub(r"\s*\(W\)\s*$", "", name, flags=re.I)
+                    mate = ""
+                    if w_flag and len(name.split()) == 4:
+                        # the write-in pair row prints both names together
+                        name, mate = _rot_pair_split(name)
+                    nm = norm_name(name + (" / " + mate if mate else ""))
+                    key = od + (nm,)
+                    last_key = key
+                    totals[key] = _num(nums[-1])
+                    continue
+                if state == "cands" and od and last_key is not None and \
+                        not nums and alpha_n <= 4:
+                    # running mate on its own line (e.g. "JD VANCE")
+                    old = totals.get(last_key)
+                    if old is None:
+                        last_key = None
+                        continue
+                    display = last_key[2].split(" / ")[0]
+                    nm = norm_name(f"{display} / {' '.join(toks)}")
+                    totals.pop(last_key)
+                    last_key = od + (nm,)
+                    totals[last_key] = old
+                    continue
+                if alpha_n >= 2 and not nums:
+                    cand = parse_office2024(txt_low, county)
+                    if cand:
+                        od, state, last_key = cand, None, None
+    return totals
+
+
+def parse_rotated_sov(county, path):
+    """Rotated-label canvass PDFs; returns (rows, verify_failures). See the
+    family notes above for the two layouts."""
+    cfg = _ROT_CONFIG.get(county)
+    if cfg is None:
+        raise ValueError(f"no rotated_sov config for {county}")
+    family = cfg["family"]
+    reverse = mate_lines = family == "district"
+    num_re = re.compile(r"^[\d,]+$")
+    votes = {}     # (precinct, od, nn) -> votes
+    ptotal = {}    # (precinct, od) -> Total Votes cell value (Merced)
+    rowaudit = {}  # (precinct, od) -> {under/over/cast/writein: value}
+    totals = {}    # (od, nn) -> county total from the rollup rows
+    names = {}     # (od, nn) -> (display, party raw)
+    failures = []
+
+    def county_label(label):
+        u = label.upper().replace(",", "").strip()
+        return u in (f"COUNTY OF {county.upper()}",
+                     f"{county.upper()} COUNTY")
+
+    def title_od(text):
+        key = " ".join(str(text or "").split()).upper()
+        od = parse_office2024(key, county)
+        if od is not None:
+            return od
+        if family == "custom":
+            m = re.fullmatch(r"DISTRICT\s+(\d+)", key)
+            if m:
+                od = cfg.get("district_offices", {}).get(m.group(1))
+                if od:
+                    return od
+            title_offices = cfg.get("title_offices", {})
+            if key in title_offices:
+                return title_offices[key]
+        return None
+
+    def store(precinct, od, name, mate, party, value):
+        if not name or _ROT_PARTY_TOKEN_RE.match(name):
+            return
+        if mate:
+            name = f"{name} / {mate}"
+        nm = norm_name(name)
+        key = (precinct, od, nm)
+        old = votes.get(key)
+        if old is not None and old != value:
+            failures.append(f"{od[0]} {precinct} {name[:26]}: block "
+                            f"repeated, {old} vs {value}")
+        votes[key] = value
+        names[od + (nm,)] = (name, party)
+
+    def assign(x1, cols):
+        best, bd = None, 3.0
+        for i, cx in enumerate(cols):
+            d = abs(cx - x1)
+            if d < bd:
+                best, bd = i, d
+        return best
+
+    with pdfplumber.open(str(path)) as pdf:
+        for page in pdf.pages:
+            words = page.extract_words(extra_attrs=["upright"])
+            byline = defaultdict(list)
+            for w in words:
+                if w.get("upright", True):
+                    byline[round(w["top"])].append(w)
+
+            def line(y):
+                ws = byline.get(y)
+                return " ".join(w["text"] for w in
+                                sorted(ws, key=lambda x: x["x0"])) \
+                    if ws else ""
+
+            # ---- contest title(s) for the page --------------------------
+            if family == "district":
+                title = line(48).strip()
+                if not title:
+                    continue        # countywide report / certification forms
+                od0 = title_od(title)
+                if od0 is None:
+                    continue        # local contest / state measure
+                ods = [od0]
+                sec = (line(69) + " " + line(83)).strip().lower()
+                want = "rollup" if _ROT_GRAND_RE.search(sec) else \
+                    "precinct" if (re.search(r"write.?in", sec)
+                                   or "cumulative" in sec or not sec) \
+                    else None
+                if want is None:
+                    continue        # Vote by Mail / Election Day rollups
+            else:
+                # data rows begin with a bare digit id line (or a "Totals"
+                # county-row id line); the title zone = the upright text
+                # lines between the page header and the first data row
+                data_ys = [y for y in sorted(byline) if y > 130 and
+                           len(byline[y]) == 1 and byline[y][0]["x0"] < 30
+                           and (byline[y][0]["text"].isdigit() or
+                                byline[y][0]["text"].lower() == "totals")]
+                zone_end = data_ys[0] if data_ys else 790
+                zone = [y for y in sorted(byline)
+                        if 50 < y < zone_end - 6 and
+                        any(re.search(r"[A-Za-z]", w["text"])
+                            for w in byline[y])]
+                if not zone:
+                    continue        # title-less local continuation page
+                ts = sorted(byline[zone[0]], key=lambda w: w["x0"])
+                subs, cur = [], [ts[0]]     # side-by-side contests split
+                for w in ts[1:]:            # on the title-line word gap
+                    if w["x0"] - cur[-1]["x1"] > 40:
+                        subs.append(cur)
+                        cur = [w]
+                    else:
+                        cur.append(w)
+                subs.append(cur)
+                ods = [title_od(" ".join(w["text"] for w in s).strip())
+                       for s in subs]
+                want = "precinct"
+                if not any(ods):
+                    continue        # measures / local contest pairs
+
+            # ---- rotated label blocks (chars grouped by shared x0) ------
+            xcols = defaultdict(list)
+            for c in page.chars:
+                if not c.get("upright", True):
+                    xcols[round(c["x0"], 1)].append(c)
+            blocks, cur = [], []
+            for x0 in sorted(xcols):
+                if cur and x0 - cur[-1][0] > 13.0:
+                    blocks.append(cur)
+                    cur = []
+                cur.append((x0, xcols[x0]))
+            if cur:
+                blocks.append(cur)
+            if not blocks:
+                continue
+            labels = [_rot_label(b, reverse, mate_lines) for b in blocks]
+            kinds = [_rot_column_kind(n + " " + m + " " + p)
+                     for n, m, p in labels]
+
+            # ---- one od per value column: side-by-side contests end at
+            #      their contest-total column (custom family) -------------
+            col_od = []
+            if family == "custom":
+                gi = 0
+                for lab, k in zip(labels, kinds):
+                    col_od.append(ods[gi] if gi < len(ods) else None)
+                    if k == "cast":
+                        gi += 1
+                if sum(1 for k in kinds if k == "cast") != len(ods):
+                    failures.append(f"{county} p{page.page_number}: "
+                                    f"{sum(1 for k in kinds if k == 'cast')} "
+                                    f"contest-total columns for "
+                                    f"{len(ods)} titles")
+                    continue
+            else:
+                col_od = [ods[0]] * len(blocks)
+
+            # ---- rows ----------------------------------------------------
+            recs = []   # ("precinct", pct, cells) / ("rollup", label, cells)
+            if family == "district":
+                for y in sorted(byline):
+                    if y < 185:
+                        continue
+                    ws = sorted(byline[y], key=lambda w: w["x0"])
+                    head = ws[0]
+                    tok0 = head["text"].strip()
+                    cellws = [w for w in ws[1:]
+                              if num_re.match(w["text"].strip()) or
+                              re.fullmatch(r"[\d,]+\.\d+",
+                                           w["text"].strip())]
+                    if head["x0"] < 26 and re.fullmatch(r"[0-9]{1,7}", tok0):
+                        if cellws:
+                            recs.append(("precinct", tok0, cellws))
+                        continue
+                    if cellws:
+                        label = " ".join(w["text"] for w in ws
+                                         if w not in cellws).strip()
+                        if _ROT_GRAND_RE.search(label) or county_label(label):
+                            recs.append(("rollup", label, cellws))
+            else:
+                # one id-token line, then the row's value cells on their
+                # own line; the last id line of each block is "Totals"
+                pct, pending_totals = None, False
+                for y in sorted(byline):
+                    if y < 130:
+                        continue
+                    ws = sorted(byline[y], key=lambda w: w["x0"])
+                    tok0 = ws[0]["text"].strip()
+                    if len(ws) == 1 and ws[0]["x0"] < 30 and \
+                            (tok0.isdigit() or tok0.lower() == "totals"):
+                        if tok0.isdigit():
+                            pct, pending_totals = tok0, False
+                        else:
+                            pct, pending_totals = None, True
+                        continue
+                    cellws = [w for w in ws if num_re.match(w["text"].strip())]
+                    if cellws and len(cellws) == len(ws):
+                        if len(cellws) >= 6 and (pct is not None or
+                                                 pending_totals):
+                            if pct is not None:
+                                recs.append(("precinct", pct, cellws))
+                            else:
+                                recs.append(("rollup", "Totals", cellws))
+                        pct, pending_totals = None, False
+                    else:
+                        pct, pending_totals = None, False
+
+            if want != "precinct" and not any(r[0] == "rollup" for r in recs):
+                continue    # rollup page without the county row: nothing
+
+            # ---- value columns: cluster every row cell's right edge ------
+            edges = sorted(w["x1"] for r in recs for w in r[2])
+            buckets = []
+            for x in edges:
+                if not buckets or x - buckets[-1][-1] > 3.0:
+                    buckets.append([x])
+                else:
+                    buckets[-1].append(x)
+            cols = [sum(b) / len(b) for b in buckets]
+            if len(cols) != len(blocks):
+                failures.append(f"{county} p{page.page_number}: "
+                                f"{len(cols)} value columns vs "
+                                f"{len(blocks)} label blocks "
+                                f"({[l[0][:16] for l in labels]})")
+                continue
+
+            # ---- store ----------------------------------------------------
+            for kind, key0, cellws in recs:
+                for w in cellws:
+                    i = assign(w["x1"], cols)
+                    if i is None:
+                        continue
+                    k = kinds[i]
+                    if k == "cand" and col_od[i] is None:
+                        continue
+                    if kind == "precinct":
+                        if k == "total":
+                            ptotal[(key0, col_od[i])] = _num(w["text"])
+                        elif k in ("under", "over", "cast", "writein"):
+                            rowaudit.setdefault((key0, col_od[i]), {})[k] = \
+                                _num(w["text"])
+                        elif k == "cand":
+                            name, mate, party = labels[i]
+                            if family == "district" and not mate and \
+                                    len(name.split()) == 4:
+                                # the presidential write-in pair prints on
+                                # one compressed line
+                                name, mate = _rot_pair_split(name)
+                            store(key0, col_od[i], name, mate, party,
+                                  _num(w["text"]))
+                    elif k == "cand":   # county / Grand Totals / Totals row
+                        name, mate, party = labels[i]
+                        if family == "district" and not mate and \
+                                len(name.split()) == 4:
+                            # the write-in pair's county-total row carries
+                            # both names on one line, like the band
+                            name, mate = _rot_pair_split(name)
+                        nm = norm_name(name + (" / " + mate if mate else ""))
+                        totals[col_od[i] + (nm,)] = _num(w["text"])
+
+    # ---- verification ------------------------------------------------------
+    # 1. county totals rollup rows vs the precinct sums
+    sums = defaultdict(int)
+    for (pct, od, nn), v in votes.items():
+        sums[od + (nn,)] += v
+    for key, s in sums.items():
+        if key in totals and s != totals[key]:
+            failures.append(f"{key[0]} {key[2]}: precincts {s} vs "
+                            f"{totals[key]} in source total")
+    # candidates present in the rollups but missing from any precinct page
+    no_rows = [f"{k[0]} {names.get(k, ('?', ''))[0][:40]}"
+               for k in totals if k not in sums]
+    for msg in no_rows[:4]:
+        failures.append(f"{msg}: in source totals, absent from precincts")
+    # 2. Merced per-precinct Total Votes column: candidate cells (with the
+    #    write-in aggregate) must total it, and cast = total + over + under
+    per = defaultdict(int)
+    for (pct, od, nm), v in votes.items():
+        per[(pct, od)] += v
+    tdiffs = [(p, o, per[(p, o)] + rowaudit[(p, o)].get("writein", 0),
+               ptotal[(p, o)])
+              for (p, o) in ptotal
+              if per.get((p, o), 0) + rowaudit.get(
+                  (p, o), {}).get("writein", 0) != ptotal[(p, o)]]
+    cdiffs = [(p, o)
+              for (p, o), d in rowaudit.items()
+              if d.get("cast") is not None and
+              d.get("cast") != ptotal.get((p, o), 0) + d.get("over", 0)
+              + d.get("under", 0)]
+    if tdiffs:
+        failures.append(f"{county}: Total Votes column mismatches on "
+                        f"{len(tdiffs)} of {len(ptotal)} rows; first: "
+                        f"{tdiffs[0][0]} {tdiffs[0][1][0]} "
+                        f"{tdiffs[0][2]} vs {tdiffs[0][3]}")
+    if cdiffs:
+        failures.append(f"{county}: Contest Total != Total Votes + "
+                        f"over + under on {len(cdiffs)} of "
+                        f"{len(rowaudit)} rows")
+    # 3. San Joaquin countywide report: a second county-total source;
+    #    the write-in pair's totals only exist there
+    cw = _rot_countywide_totals(county, path)
+    if cw:
+        for key, t in cw.items():
+            s = sums.get(key)
+            if s is None:
+                continue    # candidate not in the precinct pages (skipped)
+            if key not in totals and s != t:
+                failures.append(f"{key[0]} {names[key][0][:40]}: precincts "
+                                f"{s} vs countywide {t} (no Grand Totals "
+                                f"row)")
+    rows_out = []
+    for (precinct, (office, district), nn), v in sorted(
+            votes.items(), key=lambda k: (k[0][1][0], k[0][1][1], k[0][2],
+                                          k[0][0])):
+        name, party = names[(office, district, nn)]
+        rows_out.append({
+            "county": county, "precinct": precinct, "office": office,
+            "district": district,
+            "candidate": _mc_fix(title_case(name)),
+            "party": party_of(party), "votes": v,
+        })
+    return rows_out, failures
+
+
+def _mc_fix(name):
+    """title_case renders McNerney as "Mcnerney"; re-capitalize the Mc stem."""
+    return " ".join(
+        f"Mc{t[2:].capitalize()}"
+        if len(t) > 3 and t[:2].lower() == "mc" and t[2].islower() else t
+        for t in name.split())
+
+
+# ---------------------------------------------------------------------------
 # Imperial — printed "Page: N of M" SOVC PDF (single-row precinct pages).
 # Each contest prints its precinct list over pairs of pages: page A carries
 # the Times-Cast/Registered stats block plus the first candidates, page B the
@@ -2002,13 +2546,11 @@ SOURCE_FILES = {
               "2024 Modoc County, CA precinct-level results/UNOFFICIAL election-night precinct summary 2024-11-05.pdf"),
     "plumas": ("Plumas", "pageformat_pdf",
                "2024 Plumas County, CA precinct-level results.pdf"),
-    # NOTE on the rotated-pageformat PDF family beyond Plumas: Lake's doc
-    # prints each contest on two page-pairs and leaks "Registration"/
-    # "Turnout (%)" stat labels as candidates; totals come out ~half. Needs
-    # its own pass (as do San Joaquin / Merced, same rotated-header style).
-    "san_joaquin": ("San Joaquin", "pageformat_pdf",
+    "lake": ("Lake", "rotated_sov",
+             "2024 Lake County, CA precinct-level results.pdf"),
+    "san_joaquin": ("San Joaquin", "rotated_sov",
                     "2024 San Joaquin County, CA precinct-level results.pdf"),
-    "merced": ("Merced", "pageformat_pdf",
+    "merced": ("Merced", "rotated_sov",
                "2024 Merced County, CA precinct-level results.pdf"),
     "shasta": ("Shasta", "dominion_canvass",
                "2024 Shasta County, CA precinct-level results.pdf"),

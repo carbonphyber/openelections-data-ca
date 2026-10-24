@@ -125,8 +125,12 @@ def parse_office2024(title, county=None):
             and "PRESIDING" not in t:
         return ("President", "")
     if re.search(r"U\.?\s?S\.?\s+SENAT|UNITED\s+STATES\s+SENAT", t):
+        # "United States Senator (Short Term)" = Feinstein's unexpired seat;
+        # 2024 CA ran two senate races with identical candidates, so a Short
+        # Term file needs its own contest key or the county aggregate
+        # double-counts both races into one
         return ("U.S. Senate",
-                "Partial Term" if re.search(r"UNEXPIRED|PARTIAL",
+                "Partial Term" if re.search(r"UNEXPIRED|PARTIAL|SHORTTERM",
                                             t.replace(" ", "")) else "")
     if re.search(r"REPRESENTATIVE\s+(\d+)(?:ST|ND|RD|TH)\b", t):
         return ("U.S. House", re.search(r"REPRESENTATIVE\s+(\d+)",
@@ -1431,7 +1435,12 @@ def _channel_prefix(low):
     return " ".join(pre) in _PF_CHANNELS if pre else False
 
 
-_PF_IDLINE_RE = re.compile(r"^\s*-\s*([0-9]{2,7})\s*(?:-.*)?$")
+# San Bernardino prints some ids with a stray short token in front of the
+# block id ("6 - 0206 6 - 0206"; the digit belongs to the ballot-style code
+# line above) -- without accepting it the id line doesn't match and `current`
+# goes stale, so every following block on the page stores under the previous
+# precinct's id and total-row overwrites clobber its results.
+_PF_IDLINE_RE = re.compile(r"^\s*(?:(?:[a-z%]{1,3}|\d{1,3})\s+)?-\s*([0-9]{2,7})\s*.*$")
 # San Bernardino ballot-style codes ("C23S19A34E1B1AVUAP10001"): a short
 # uppercase head that includes a digit early, then a long tail. (A plain
 # minimum-length pattern would also match long titles like REPRESENTATIVE.)
@@ -1474,9 +1483,17 @@ def parse_pageformat_pdf(county, path):
                         "electionwide" in low or "cumulative" in low or \
                         "insufficient turnout" in low or \
                         _channel_prefix(low) or \
-                        _PF_STATS_RE.match(low) or \
-                        low.startswith("state of california"):
+                        _PF_STATS_RE.match(low):
                     continue
+                # a standalone "State of California" banner line is a header;
+                # a contest title may embed the same words ("State of
+                # California State Senator District 19") -- strip the prefix
+                # and evaluate the rest as the title
+                if low.startswith("state of california"):
+                    txt = txt[len("State of California"):].strip()
+                    low = txt.lower()
+                    if not re.search(r"[A-Za-z]{2}", low):
+                        continue
                 # a title line begins with alpha text and carries several
                 # alpha words (precinct rows start with ids; ballot-style
                 # code rows -- often printed twice per line -- are not titles)
@@ -1643,6 +1660,16 @@ def parse_pageformat_pdf(county, path):
                                 pen[3] += v
                     if is_total:
                         pending = defaultdict(lambda: [0, 0, 0, 0])
+                    if total_x is not None:
+                        # the spread's "Total Votes" column (all candidates,
+                        # all column-passes) prints on the candidate pages;
+                        # capture it on every channel row
+                        for w in line[1:]:
+                            vc = (w["x0"] + w["x1"]) / 2
+                            if abs(vc - (total_x + 4)) <= 20 and \
+                                    re.match(r"^[\d,]+$", w["text"]):
+                                totals[od + ("__total__", current)] = \
+                                    _num(w["text"])
                     continue
                 if _PF_CODE_RE.match(row_id):
                     pending_code = row_id
@@ -1695,6 +1722,25 @@ def parse_pageformat_pdf(county, path):
             row["mail"] = mailv
         rows_out.append(row)
     return rows_out, failures
+
+
+def parse_san_bernardino(county, src_dir):
+    """San Bernardino — one "Page: N of M" SOVC PDF per contest (187 files,
+    ~33k printed pages). Each contest's statewide files parse via
+    parse_pageformat_pdf; measures/judges/local offices yield nothing there
+    (parse_office2024 returns None) and are skipped. Per-file verify failures
+    come back prefixed with the file name."""
+    rows = []
+    failures = []
+    files = sorted(src_dir.glob("*.pdf"))
+    for f in files:
+        f_rows, f_fails = parse_pageformat_pdf(county, f)
+        rows.extend(f_rows)
+        for msg in f_fails:
+            failures.append(f"{f.name}: {msg}")
+        print(f"[san_bernardino] {f.name}: {len(f_rows)} rows "
+              f"{'clean' if not f_fails else f'{len(f_fails)} diffs'}", flush=True)
+    return rows, failures
 
 
 # ---------------------------------------------------------------------------
@@ -1966,6 +2012,8 @@ SOURCE_FILES = {
                "2024 Merced County, CA precinct-level results.pdf"),
     "shasta": ("Shasta", "dominion_canvass",
                "2024 Shasta County, CA precinct-level results.pdf"),
+    "san_bernardino": ("San Bernardino", "san_bernardino",
+                       "2024 San Bernardino County, CA precinct-level results"),
 }
 
 PARSERS = {}

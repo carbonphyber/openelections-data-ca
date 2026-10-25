@@ -28,6 +28,7 @@ Run:
 
 import csv
 import re
+import subprocess
 import xml.etree.ElementTree as ET
 import zipfile
 import sys
@@ -127,6 +128,12 @@ def parse_office2024(title, county=None):
     """(office, district) for a statewide contest; President and U.S. Senator
     added for the 2024 general; None for local/measure/judicial contests."""
     ti0 = str(title or "").upper()
+    # no statewide contest title names a municipality/township, but local
+    # office titles without the county word do ("Corona City Treasurer"
+    # matches the TREASURER rule); reject before the office rules run
+    if re.search(r"\bCITY\b|\bTOWNSHIP\b|\bVILLAGE\b|\bTOWN\b|\bBOROUGH\b",
+                 ti0):
+        return None
     # word ordinals ("UNITED STATES REPRESENTATIVE DISTRICT ONE")
     for w, d in _WORD_ORDINALS.items():
         ti0 = re.sub(rf"\b{w}\b", d, ti0)
@@ -159,6 +166,16 @@ def parse_office2024(title, county=None):
         return ("State Assembly", ad.group(1).lstrip("0"))
     od = parse_office(ti0)
     if od:
+        # district-less offices: the bare office word (or a 'STATE'/'MEMBER'
+        # prefix) must LEAD the title. "San Jacinto Treasurer" /
+        # "Treasurer - Alameda" / "City of X Controller" are local
+        # sub-offices; state titles never lead with a place name
+        if od[1] == "":
+            head = ti0.split(" - ", 1)[0].strip()
+            word = re.sub(r"^\d+\s*", "", head).split()
+            if word and word[0] not in ("STATE", "MEMBER", "MEMBERS") \
+                    and not word[0].startswith(("STATE",)):
+                return None
         return od
     # district-less titles ("STATE SENATOR (Vote for 1)") match an office
     # rule only with the county's known single district
@@ -188,6 +205,10 @@ def write_county(display_name, rows, headers=HEADERS):
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     slug = re.sub(r"\s+", "_", display_name.strip().lower())
     path = OUT_DIR / f"{DATE}__ca__general__{slug}__precinct.csv"
+    if any("early_voting" in r for r in rows):
+        # the source distinguishes an early/youth channel on top of
+        # election_day / mail (Alameda's Youth Voting rows)
+        headers = headers[:7] + ["early_voting"] + headers[7:]
     with open(path, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(headers)
@@ -3115,6 +3136,909 @@ def parse_modoc24(county, path):
 
 # ---- Glenn / San Luis Obispo wrappers for the sub-row pageformat mode ----
 
+# ---------------------------------------------------------------------------
+# 2024 Riverside / Alameda — Dominion-style "grid" SOV canvass PDFs. Each
+# spread (a run of pages, one-to-two contests side by side) repeats the same
+# header: the contest title line(s), a tag row of contest indexes (Riverside
+# only), then a band of 90-degree-rotated candidate labels. Each label block
+# is a run of ~7.8pt vertical char columns whose chars read bottom-up; the
+# block's right edge is exactly the right edge of its value column, so a
+# value is assigned to the candidate whose block ends at that x. Zero cells
+# are simply not printed. Rows are "<precinct id> Total <registered> <cast>
+# <turnout%> <values...>"; '***' marks privacy-redacted values (skipped).
+# Riverside reprints every contest's whole precinct list once per jurisdiction
+# group (Congressional / Senatorial / Assembly / BOE / county / schools /
+# supervisorial / city...) with identical values — dedup, never sum, and each
+# spread's "Riverside County Total" rollup row verifies the sums. Alameda
+# prints channel rows (Election Day / Vote by Mail / Youth Voting / Total) in
+# a single pass per contest and verifies against each spread's trailing
+# "Contest Total" row. Neither document carries the Board of Equalization or
+# State Superintendent spreads (no such contest pages — a source gap, the
+# precinct data does not exist in these files).
+# ---------------------------------------------------------------------------
+
+_GRID_PARTY_RE = re.compile(
+    r"^(?:DEM|REP|GRN|LIB|PF|AIP|AI|NPP|PSL|PFP|PAF|WF|PEF)$")
+_GRID_STAT_LO = re.compile(r"registered|voters cast|turnout|\(%\)")
+_GRID_META_LO = re.compile(r"over votes|under votes|write-?\s*in")
+_GRID_VALUE_RE = re.compile(r"^[\d,]+$")
+_GRID_JUNK_LO = ("riverside sov", "riverside 2024 general election",
+                 "alameda county statement of votes",
+                 "alameda november 5 2024 general election", "printed:",
+                 "indicates vote data", "november 5, 2024")
+_GRID_META_OD = {}
+
+
+def _grid_label_blocks(page):
+    """Rotated label blocks of a grid page: [(kind, anchor, text, party)], kind
+    in ('cand', 'meta', 'stat') — 'meta' covers Over/Under Votes and write-in
+    aggregate columns, 'stat' the Registered/Cast/Turnout columns. anchor is
+    the block's right edge, shared with its value cells' right edges."""
+    cols = defaultdict(list)
+    for c in page.chars:
+        if c.get("upright", True) or not (100 <= c["top"] <= 200):
+            continue
+        cols[round(c["x0"], 1)].append(c)
+    if not cols:
+        return []
+    columns = []  # (x0, text, x1)
+    for x in sorted(cols):
+        chs = sorted(cols[x], key=lambda c: c["top"])
+        text = "".join(c["text"] for c in chs).strip()
+        x1 = max(c["x1"] for c in chs)
+        if columns and x - columns[-1][0] <= 2.5:
+            # same rotated line: the column's chars were split across x keys
+            px, pt, p1 = columns[-1]
+            columns[-1] = (px, (pt + " " + text).strip(), max(p1, x1))
+        else:
+            columns.append([x, text, x1])
+    blocks = []
+    for col in columns:
+        if blocks and col[0] - blocks[-1][-1][0] <= 10.5:
+            blocks[-1].append(col)
+        else:
+            blocks.append([col])
+    out = []
+    for b in blocks:
+        toks = []
+        for _x, text, _x1 in sorted(b, key=lambda c: -c[0]):
+            toks.extend(text.split())
+        lo = " ".join(toks).lower()
+        if _GRID_STAT_LO.search(lo):
+            out.append(("stat", b[-1][2], " ".join(toks), ""))
+        elif _GRID_META_LO.search(lo):
+            out.append(("meta", b[-1][2], " ".join(toks), ""))
+        else:
+            party = ""
+            name = []
+            for t in toks:
+                if _GRID_PARTY_RE.fullmatch(t):
+                    party = t
+                elif t != "-":
+                    name.append(t)
+            out.append(("cand", b[-1][2], " ".join(name), party))
+    return out
+
+
+def _grid_upright_lines(page, y_min=55):
+    """Upright words merged into lines (3pt top buckets) below y_min."""
+    lines = defaultdict(list)
+    for w in page.extract_words():
+        if w.get("upright", True) and w["top"] >= y_min:
+            lines[int(w["top"] // 3)].append(w)
+    out = []
+    for k in sorted(lines):
+        ws = sorted(lines[k], key=lambda w: w["x0"])
+        out.append((min(w["top"] for w in ws), ws))
+    return out
+
+
+def _grid_line_text(ws):
+    return " ".join(w["text"] for w in ws).strip()
+
+
+class _GridScan:
+    """Per-page accumulator for the two grid SOV counties (page-scan is
+    shared; only title/tag handling and row channels differ)."""
+
+    def __init__(self, county):
+        self.county = county
+        self.riverside = county == "Riverside"
+        self.votes = {}       # (precinct, (office, district), nn) -> votes
+        self.channels = {}    # -> [election_day, mail, youth]
+        self.names = {}       # (office, district, nn) -> (display, party)
+        self.totals = {}      # (office, district, nn) -> county rollup value
+        self.conflicts = []   # group-reprint value mismatches
+        self.redacted_rows = 0
+        self.spreads = 0
+
+    # ---- page ---------------------------------------------------------
+    def page(self, page):
+        cands = [b for b in _grid_label_blocks(page) if b[0] == "cand"]
+        if not cands:
+            return
+        lines = _grid_upright_lines(page)
+        if self.riverside:
+            od_by_col = self._riverside_columns(lines, cands)
+        else:
+            od_by_col = self._alameda_columns(lines, cands)
+        if not od_by_col:
+            return
+        self.spreads += 1
+        cutoff = min(a for _od, a, _d, _p in od_by_col) - 20.0
+        self._rows(lines, od_by_col, cutoff)
+
+    def _riverside_columns(self, lines, cands):
+        """Contest per candidate column from the title line(s) + tag row."""
+        title_toks, tags = [], []
+        for y, ws in lines:
+            lo = _grid_line_text(ws).lower()
+            if any(lo.startswith(j) or j in lo for j in _GRID_JUNK_LO):
+                continue
+            if y < 105:
+                title_toks.extend(w["text"] for w in ws)
+            elif y < 130 and all(re.fullmatch(r"\d", w["text"]) for w in ws):
+                tags.append(ws)
+        subs = {}
+        seg = []
+        # split the title on standalone single-digit tokens (contest indexes)
+        idxs = [i for i, t in enumerate(title_toks) if re.fullmatch(r"\d", t)]
+        starts = [i for i in idxs
+                  if i + 1 < len(title_toks)
+                  and re.match(r"[A-Z]", title_toks[i + 1])]
+        if not starts:
+            return {}
+        for j, i in enumerate(starts):
+            seg = (title_toks[i + 1:starts[j + 1]] if j + 1 < len(starts)
+                   else title_toks[i + 1:])
+            od = parse_office2024(" ".join(seg), self.county)
+            if od:
+                subs[title_toks[i]] = od
+        if not subs:
+            return {}
+        od_by_col = []
+        for _k, anchor, disp, party in cands:
+            idx = ""
+            best, bd = None, 10.0
+            for ws in tags:
+                for w in ws:
+                    c = (w["x0"] + w["x1"]) / 2
+                    d = abs(c - anchor)
+                    if d < bd:
+                        best, bd = w["text"], d
+            if best is not None and best in subs:
+                od_by_col.append((subs[best], anchor, disp, party))
+        return od_by_col
+
+    def _alameda_columns(self, lines, cands):
+        """Alameda prints one contest per spread (title line, no tag row)."""
+        for y, ws in lines:
+            if y >= 110:
+                break
+            lo = _grid_line_text(ws).lower()
+            if any(j in lo for j in _GRID_JUNK_LO):
+                continue
+            od = parse_office2024(_grid_line_text(ws), self.county)
+            if od:
+                return [(od, a, d, p) for _k, a, d, p in cands]
+        return []
+
+    # ---- rows ----------------------------------------------------------
+    def _assign(self, ws, od_by_col, cutoff):
+        """[(od, (display, party), value)] for a row's value words."""
+        out = []
+        for w in ws:
+            tok = w["text"]
+            if not _GRID_VALUE_RE.match(tok) or w["x1"] < cutoff:
+                continue
+            best, bd = None, 8.0
+            for od, anchor, disp, party in od_by_col:
+                d = abs(w["x1"] - anchor)
+                if d < bd:
+                    best, bd = (od, disp, party), d
+            if best is not None:
+                out.append((best[0], (best[1], best[2]), _num(tok)))
+        return out
+
+    def _rows(self, lines, od_by_col, cutoff):
+        for y, ws in lines:
+            if y < 130:
+                continue
+            toks = [w for w in ws if w["text"].strip()]
+            if not toks:
+                continue
+            lo = _grid_line_text(toks).lower()
+            if any(j in lo for j in _GRID_JUNK_LO):
+                continue
+            t0 = toks[0]
+            if re.fullmatch(r"\d{2,7}", t0["text"]) and t0["x0"] < 60:
+                self._precinct_row(toks, od_by_col, cutoff)
+            elif len([w for w in toks if _GRID_VALUE_RE.match(w["text"])]) >= 3:
+                self._rollup_row(toks, od_by_col, cutoff)
+
+    def _precinct_row(self, toks, od_by_col, cutoff):
+        """"<id> [<channel words>] <reg> <cast> <pct>% <values...>": Riverside
+        rows are Total-only; Alameda distinguishes Election Day / Vote by
+        Mail / Youth Voting / Total."""
+        ch_parts = []
+        for w in toks[1:]:
+            if re.search(r"[A-Za-z]", w["text"]):
+                ch_parts.append(w["text"])
+            else:
+                break
+        channel = " ".join(ch_parts).lower()
+        self.redacted_note(toks)
+        cells = self._assign(toks, od_by_col, cutoff)
+        precinct = toks[0]["text"]
+        if self.county == "Riverside":
+            if channel != "total":
+                return            # unexpected channel label; Total rows only
+            for od, (disp, party), v in cells:
+                self._store(od, precinct, disp, party, v)
+        else:
+            for od, (disp, party), v in cells:
+                nn = norm_name(disp)
+                ch = self.channels.setdefault((precinct, od, nn), [0, 0, 0])
+                if channel == "total":
+                    self._store(od, precinct, disp, party, v)
+                elif channel.startswith("election day"):
+                    ch[0] = v
+                elif channel.startswith(("vote by", "mail")):
+                    ch[1] = v
+                elif channel.startswith("youth"):
+                    ch[2] = v
+
+    def _store(self, od, precinct, disp, party, v):
+        nn = norm_name(disp)
+        key = (precinct, od, nn)
+        old = self.votes.get(key)
+        if old is not None and old != v:
+            self.conflicts.append(
+                f"{od[0]} {disp[:26]} {precinct}: reprint {old} vs {v}")
+            return
+        self.votes[key] = v
+        self.names[od + (nn,)] = (disp, party)
+
+    def _rollup_row(self, toks, od_by_col, cutoff):
+        """Riverside: "<group label> Total <stats> <values>" group rows; the
+        "Riverside County" one verifies the sums. Alameda: "Contest Total"
+        per spread verifies; "Total - Election Day" et al. are county channel
+        rollups and are ignored."""
+        alpha = [w["text"] for w in toks if re.search(r"[A-Za-z]", w["text"])]
+        al = " ".join(alpha)
+        if self.county != "Riverside":
+            if al.strip().lower().startswith("contest total"):
+                for od, (disp, _party), v in self._assign(toks, od_by_col,
+                                                          cutoff):
+                    self.totals[od + (norm_name(disp),)] = v
+            return
+        at = [t for t in alpha if t.lower() != "total"]
+        if len(at) >= 2 and at[0] == "Riverside" and at[1] == "County":
+            for od, (disp, _party), v in self._assign(toks, od_by_col, cutoff):
+                self.totals[od + (norm_name(disp),)] = v
+
+    def redacted_note(self, toks):
+        if any(w["text"].strip("*") == "" and "*" in w["text"] for w in toks):
+            self.redacted_rows += 1
+            return True
+        return False
+
+    def dump(self):
+        return (self.votes, self.channels, self.names, self.totals,
+                self.conflicts,
+                {"redacted_rows": self.redacted_rows,
+                 "statewide_spread_pages": self.spreads})
+
+
+def _grid_2024_scan(args):
+    """Worker for the sharded page scan ("Riverside" style or Alameda)."""
+    path, county, start, end = args
+    scan = _GridScan(county)
+    with pdfplumber.open(path) as pdf:
+        for page in pdf.pages[start:end]:
+            scan.page(page)
+    return scan.dump()
+
+
+def _grid_merge(county, results):
+    """Merge sharded scans in page order; returns (rows, failures, stats)."""
+    votes, channels, names, totals = {}, {}, {}, {}
+    conflicts = []
+    stats = {"redacted_rows": 0, "statewide_spread_pages": 0}
+    for (sc_votes, sc_ch, sc_names, sc_totals, sc_conf, sc_stats) in results:
+        stats["redacted_rows"] += sc_stats["redacted_rows"]
+        stats["statewide_spread_pages"] += sc_stats["statewide_spread_pages"]
+        conflicts.extend(sc_conf)
+        for k, v in sc_votes.items():
+            old = votes.get(k)
+            if old is not None and old != v:
+                conflicts.append(f"{k[1][0]} {k[2][:20]} {k[0]}: shard "
+                                 f"copy {old} vs {v}")
+                continue
+            votes[k] = v
+        for k, ns in sc_names.items():
+            names.setdefault(k, ns)
+        for k, v in sc_totals.items():
+            old = totals.get(k)
+            if old is not None and old != v:
+                conflicts.append(f"{k[0]} {k[2][:20]}: county rollup copies "
+                                 f"{old} vs {v}")
+            totals[k] = v
+        if county == "Alameda":
+            channels.update(sc_ch)
+    # verification: per contest-candidate precinct sums vs the county rollup
+    sums = defaultdict(int)
+    contests_seen = set()
+    for (_p, od, nn), v in votes.items():
+        sums[od + (nn,)] += v
+        contests_seen.add(od)
+    failures = list(conflicts)
+    covered = {k[:2] for k in totals}
+    for od in sorted(contests_seen):
+        if od not in covered:
+            failures.append(f"{od[0]} {od[1]}: no county rollup row captured "
+                            f"({sum(1 for _p, o, _n in votes if o == od)} rows")
+    n_red = stats["redacted_rows"]
+    for (office, district, nn), t in sorted(totals.items()):
+        s = sums.get((office, district, nn))
+        disp = names.get((office, district, nn), (nn, ""))[0]
+        if s is None:
+            failures.append(f"{office} {disp[:36]}: precinct rows missing "
+                            f"vs county total {t}")
+        elif s != t:
+            failures.append(f"{office} {disp[:36]}: precincts {s} vs county "
+                            f"total {t} ('***'-redacted rows: {n_red})")
+    rows_out = []
+    for (precinct, (office, district), nn), v in sorted(
+            votes.items(), key=lambda k: (k[0][1][0], k[0][1][1],
+                                          k[0][2], k[0][0])):
+        disp, party = names[(office, district, nn)]
+        row = {"county": county, "precinct": precinct, "office": office,
+               "district": district, "candidate": title_case(disp),
+               "party": party_of(party), "votes": v}
+        if county == "Alameda":
+            ed, mail, youth = channels.get((precinct, (office, district), nn),
+                                           [0, 0, 0])
+            row["election_day"] = ed
+            row["mail"] = mail
+            row["early_voting"] = youth
+        rows_out.append(row)
+    return rows_out, failures, stats
+
+
+def _riverside_spreads(path):
+    """The page ranges of the statewide contest spreads, from a cheap
+    poppler layout pre-pass (each spread repeats its contest title line on
+    every page; the statewide spreads are the runs of pages whose header
+    titles parse to a statewide office). Returns [(start0, end0), ...] in
+    0-based half-open pdf-plumber page-index terms."""
+    import subprocess
+    import tempfile
+    txt = Path(tempfile.gettempdir()) / "riverside2024_layout.txt"
+    if not txt.exists():
+        subprocess.run(["pdftotext", "-layout", str(path), str(txt)],
+                       check=True)
+    # the footer line ("Page 138 of 10925") ENDS page 138, so every header
+    # line between footers belongs to the NEXT page number; page 1's header
+    # arrives before any footer and the counter starts there
+    page_titles = {}      # page number (1-based) -> frozenset of ods
+    page_no = 1
+    for line in open(txt, encoding="utf-8", errors="replace"):
+        m = re.search(r"\bPage (\d+) of \d+\b", line)
+        if m:
+            page_no = int(m.group(1)) + 1
+            continue
+        if not re.match(r"^ +\d+ +[A-Za-z]", line):
+            continue
+        toks = line.split()
+        idxs = [i for i, t in enumerate(toks) if re.fullmatch(r"\d", t)]
+        starts = [i for i in idxs if i + 1 < len(toks)
+                  and re.match(r"[A-Z]", toks[i + 1])]
+        if not starts:
+            continue
+        ods = set()
+        for j, i in enumerate(starts):
+            seg = (toks[i + 1:starts[j + 1]] if j + 1 < len(starts)
+                   else toks[i + 1:])
+            od = parse_office2024(" ".join(seg), "Riverside")
+            if od:
+                ods.add(od)
+        if ods:
+            page_titles.setdefault(page_no, []).extend(sorted(ods))
+    spreads = []
+    cur = None
+    for pg in sorted(page_titles):
+        ods = frozenset(page_titles[pg])
+        if cur and cur[2] == ods and cur[1] == pg - 1:
+            cur[1] = pg
+        else:
+            if cur:
+                spreads.append((cur[0] - 1, cur[1]))
+            cur = [pg, pg, ods]
+    if cur:
+        spreads.append((cur[0] - 1, cur[1]))
+    return spreads
+
+
+def parse_riverside_2024(county, path, shards=8):
+    """10,925-page grid SOV; only the ~3,900 pages of the statewide contest
+    spreads are scanned, one task per spread (each spread's county rollup
+    row is self-contained, so the per-spread dedup/verification is
+    independent and the shard boundaries cannot split a group pass)."""
+    with pdfplumber.open(str(path)) as pdf:
+        n = len(pdf.pages)
+    try:
+        spreads = [(s, min(e + 1, n)) for s, e in _riverside_spreads(path)]
+    except (OSError, subprocess.SubprocessError):
+        spreads = [(0, n)]      # no poppler: scan everything, one shard
+    args = [(str(path), county, s, e) for s, e in spreads]
+    from concurrent.futures import ProcessPoolExecutor
+    with ProcessPoolExecutor(max_workers=shards) as ex:
+        results = list(ex.map(_grid_2024_scan, args))
+    rows, failures, _stats = _grid_merge(county, results)
+    return rows, failures
+
+
+def _grid_2024_scan_full(args):  # pragma: no cover - fallback helper
+    return _grid_2024_scan(args)
+
+
+def parse_alameda_2024(county, path):
+    rows, failures, _stats = _grid_merge(county, [_grid_2024_scan(
+        (str(path), county, 0, None))])
+    return rows, failures
+
+
+# ---------------------------------------------------------------------------
+# Tehama — image-only (Canon-scan, no text layer) "Statement of Vote Cast by
+# Precinct" SOV. PaddleOCR (the project's designated OCR library per
+# CLAUDE.md) reads the page renders: PDF pages 8-18 are the county "Election
+# Summary Report" (horizontal print: per contest the candidate / party /
+# votes rows that supply the reference display names and the county totals),
+# PDF pages 19-24 are the six per-precinct tables of the statewide contests
+# (one contest per page; internal footer counts them among "N of 40", the
+# rest of the section is local offices and measures): a horizontal title parsed with
+# parse_office2024 (measures / local offices skipped), a band of
+# 90-degree-rotated candidate headers (PaddleOCR v3 with the textline
+# orientation model transcribes those boxes in reading order), rows
+# "<precinct id> Total <registered> <cast> <turnout%> <values...>" with zero
+# cells simply not printed (value items assigned to the nearest header
+# column), and trailing county rows "Total - ELECTION DAY / - VOTE BY MAIL /
+# - EARLY VOTING" (ignored) and "Contest Total" (which verifies the sums,
+# together with the Summary Report totals). Per-precinct channel splits do
+# not exist in this report, so rows are votes-only. The document carries no
+# Board of Equalization or State Superintendent contest pages (source gap).
+# Every page's OCR results are cached as JSON under a temp dir keyed by DPI
+# so re-parses skip re-recognition.
+# ---------------------------------------------------------------------------
+
+_TH_OCR_ID_RE = re.compile(r"^\d{5,7}$")
+_TH_OCR_NUM_RE = re.compile(r"^[\d,]+$")
+_TH_PARTY_RE = re.compile(r"^(DEM|REP|GRN|LIB|PF|AIP|AI|AL|NPP|PSL|PFP|WRITE-IN)$")
+_TH_PARTY_NORM = {"AL": "AI"}   # the OCR reads 'AI' as 'Al' on a busy scan
+
+
+def _ocr_items(result):
+    """Flat dicts (x0, y0, x1, y1, cx, cy, text, score) from an ocr.ocr()
+    result (PaddleOCR v3 returns one paddlex OCRResult dict per page; older
+    versions return [ [box, (text, score)], ...])."""
+    items = []
+    if result is None:
+        return items
+    if isinstance(result, dict):
+        result = [result]
+    for page in result:
+        if isinstance(page, dict):
+            texts = page.get("rec_texts") or []
+            polys = (page.get("rec_polys") or page.get("dt_polys") or [])
+            scores = page.get("rec_scores") or [1.0] * len(texts)
+            for i, tx in enumerate(texts):
+                try:
+                    xs = [p[0] for p in polys[i]]
+                    ys = [p[1] for p in polys[i]]
+                except (TypeError, IndexError, KeyError):
+                    continue
+                items.append({"x0": min(xs), "y0": min(ys), "x1": max(xs),
+                              "y1": max(ys), "cx": (min(xs) + max(xs)) / 2,
+                              "cy": (min(ys) + max(ys)) / 2,
+                              "text": str(tx).strip(),
+                              "score": float(scores[i])})
+        else:
+            for det in page or []:
+                pts = det[0]
+                xs = [p[0] for p in pts]
+                ys = [p[1] for p in pts]
+                items.append({"x0": min(xs), "y0": min(ys), "x1": max(xs),
+                              "y1": max(ys), "cx": (min(xs) + max(xs)) / 2,
+                              "cy": (min(ys) + max(ys)) / 2,
+                              "text": str(det[1][0]).strip(),
+                              "score": float(det[1][1])})
+    return items
+
+
+def parse_tehama_ocr(county, path, precinct_pages=(19, 24),
+                     summary_pages=(8, 18), dpi=250):
+    """Returns (rows, verify_failures). See the family notes above."""
+    import json
+    import subprocess
+    import tempfile
+
+    from paddleocr import PaddleOCR
+
+    # repo-local cache (stable across runs; the CLAUDE.md .paddleocr_cache
+    # convention) — a task-runner TMPDIR changes per invocation
+    work = REPO_ROOT / ".paddleocr_cache" / "tehama2024"
+    cache = work / "cache" / str(dpi)
+    cache.mkdir(parents=True, exist_ok=True)
+    stem = str(Path(str(path)).stem)
+
+    def png(n):
+        return work / f"{stem}-{n:02d}.png"
+
+    all_pages = sorted(set(list(precinct_pages) + list(summary_pages)))
+    if not all(png(n).exists() for n in all_pages):
+        for f in work.glob(f"{stem}-*.png"):
+            f.unlink()
+        subprocess.run(["pdftoppm", "-f", str(all_pages[0]),
+                        "-l", str(all_pages[-1]), "-r", str(dpi), "-png",
+                        str(path), str(work / stem)], check=True)
+
+    ocr = PaddleOCR(lang="en", use_doc_orientation_classify=False,
+                    use_doc_unwarping=False, use_textline_orientation=True)
+
+    def run(n, suffix=""):
+        """[(x0, y0, x1, y1, text, score)] for one page image, cached."""
+        key = cache / f"{stem}-{n:02d}{suffix}.json"
+        if key.exists():
+            return json.loads(key.read_text())
+        items = _ocr_items(ocr.ocr(str(png(n))))
+        payload = [[round(i["x0"]), round(i["y0"]), round(i["x1"]),
+                    round(i["y1"]), i["text"], round(i["score"], 3)]
+                   for i in items]
+        key.write_text(json.dumps(payload))
+        return payload
+
+    def run_plain(n):
+        """Orientation-off second pass of a page (value text without the
+        short-cell flips), cached separately."""
+        nonlocal ocr_plain
+        key = cache / f"{stem}-{n:02d}-plain.json"
+        if key.exists():
+            return json.loads(key.read_text())
+        if ocr_plain is None:
+            ocr_plain = PaddleOCR(
+                lang="en", use_doc_orientation_classify=False,
+                use_doc_unwarping=False, use_textline_orientation=False)
+        items = _ocr_items(ocr_plain.ocr(str(png(n))))
+        payload = [[round(i["x0"]), round(i["y0"]), round(i["x1"]),
+                    round(i["y1"]), i["text"], round(i["score"], 3)]
+                   for i in items]
+        key.write_text(json.dumps(payload))
+        return payload
+
+    def to_items(payload):
+        return [{"x0": x0, "y0": y0, "x1": x1, "y1": y1, "cx": (x0 + x1) / 2,
+                 "cy": (y0 + y1) / 2, "text": t, "score": s}
+                for x0, y0, x1, y1, t, s in payload]
+
+    # ---- reference: the horizontal-print Summary Report section ---------
+    ref = {}      # (office, district) -> [(display, party, total)]
+    for n in range(summary_pages[0], summary_pages[1] + 1):
+        items = to_items(run(n))
+        rows = _ocr_rows_t(items, 10)
+        cur_od = None
+        pitch = None
+        row_tops = [r[0]["cy"] for r in rows]
+        pitch = min((b - a for a, b in zip(row_tops, row_tops[1:])),
+                    default=30)
+        for i, row in enumerate(rows):
+            text = " ".join(k["text"] for k in row)
+            party_is = [k for k in row if _TH_PARTY_RE.fullmatch(
+                k["text"].upper())]
+            od = parse_office2024(re.sub(r"\(+\s*vote for[^)]*\)?\s*$", "",
+                                         text, flags=re.I), county) \
+                if re.search(r"[A-Za-z]{4}", text) else None
+            if od and not party_is:
+                cur_od = od
+                continue
+            if not (party_is and cur_od):
+                continue
+            nums = [k for k in row if re.match(r"^[\d,]+$", k["text"])
+                    and _num(k["text"]) >= 0]
+            if not nums:
+                continue
+            party = _TH_PARTY_NORM.get(party_is[0]["text"].upper(),
+                                       party_is[0]["text"].upper())
+            name_parts = [k["text"] for k in row
+                          if k["cx"] < party_is[0]["cx"] - 6]
+            # a wrapped name's FIRST line sits in the digitless row directly
+            # above the party/total row; read it into the label
+            if i and row_tops[i] - row_tops[i - 1] <= pitch * 1.4 \
+                    and not any(re.match(r"^[\d,%.]+$", k["text"])
+                                for k in rows[i - 1]) \
+                    and all(k["cx"] < party_is[0]["cx"] - 6
+                            for k in rows[i - 1]):
+                name_parts = [k["text"] for k in rows[i - 1]] + name_parts
+            # wrapped name continuation lines sit directly below, digitless
+            row_pitch = row_tops[i + 1] - row_tops[i] if i + 1 < len(row_tops) \
+                else pitch
+            j = i
+            while j + 1 < len(rows) and row_tops[j + 1] - row_tops[j] <= \
+                    pitch * 1.4:
+                if rows[j + 1][0]["cx"] < party_is[0]["cx"] - 6 and \
+                        not any(re.match(r"^[\d,%.]+$", k["text"])
+                                for k in rows[j + 1]):
+                    name_parts.extend(k["text"] for k in rows[j + 1])
+                    j += 1
+                else:
+                    break
+            name = " ".join(name_parts).strip()
+            if not name or name.lower().startswith("total"):
+                continue
+            if party == "WRITE-IN":
+                party = ""
+            ref.setdefault(cur_od, []).append(
+                (name, party, _num(nums[-1]["text"])))
+
+    def ref_for(od):
+        return ref.get(od, [])
+
+    def resolve(col_text, r_entries):
+        """Pick the reference display for a header-band column's text."""
+        toks = set(re.findall(r"[A-Za-z]+", col_text.upper()))
+        best, bs = None, 0
+        for disp, _party, _t in r_entries:
+            rt = set(re.findall(r"[A-Za-z]+", disp.upper()))
+            s = len(toks & rt)
+            if s > bs:
+                best, bs = (disp, _party), s
+        return best
+
+    # ---- per-precinct pages --------------------------------------------
+    votes = {}      # (precinct, (office, district), nn) -> votes
+    names = {}      # (office, district, nn) -> (display, party)
+    totals = {}     # (office, district, nn) -> Contest Total row value
+    ref_totals = {}  # (office, district, nn) -> Summary Report total
+    failures = []
+    pages_parsed = 0
+    unmatched = []
+    ocr_plain = None
+    png_w = None
+    from PIL import Image as __PILImage
+    for n in range(precinct_pages[0], precinct_pages[1] + 1):
+        if png_w is None:
+            png_w = __PILImage.open(png(precinct_pages[0])).width - 40
+        items = to_items(run(n))
+        if not items:
+            continue
+        ids = sorted([i for i in items
+                      if _TH_OCR_ID_RE.match(i["text"]) and i["cx"] < 250],
+                     key=lambda i: i["y0"])
+        if not ids:
+            continue    # not a precinct table page
+        table_top = ids[0]["y0"]
+        # ---- contest title ---------------------------------------------
+        # horizontal, high items on the page top (title + page header); the
+        # rotated candidate band is tall-narrow items (heights scale with
+        # the render DPI; the constants were calibrated at 100dpi)
+        h_max = 22.0 * dpi / 100
+        horizontal = [i for i in items
+                      if (i["y1"] - i["y0"]) <= h_max and i["y0"] < table_top]
+        tall = [i for i in items
+                if (i["y1"] - i["y0"]) > (i["x1"] - i["x0"]) / 1.4
+                and i["y1"] <= table_top - 2 and i["y0"] > 90]
+        od = None
+        title_txt = ""
+        title_bottom = 0
+        # the title lives between the page header and the rotated band; data
+        # items can reach into the region right below table_top, so cap the
+        # rows at the band's top edge before searching for the title
+        band_top = min((i["y0"] for i in tall), default=table_top - 60)
+        band_bottom = max((i["y1"] for i in tall), default=table_top)
+        # the unrotated write-in label prints inside the band; items of the
+        # first data row reach one pixel above table_top and would pollute
+        # the label clusters, so the band's horizontal items stop at
+        # band_bottom as well
+        for y_tol in (10, 16):
+            trs = _ocr_rows_t([i for i in horizontal
+                               if i["y0"] < band_top - 6], y_tol)
+            if not trs:
+                break
+            texts = [" ".join(i["text"] for i in r) for r in trs[-3:]]
+            for i in range(len(texts)):
+                joined = " ".join(texts[i:i + 2])
+                if re.search(r"[a-z]{2}", joined):
+                    continue    # the page header carries lower-case words
+                od = parse_office2024(
+                    re.sub(r"^\d+\s*", "", joined), county)
+                if od:
+                    title_txt = joined
+                    title_bottom = trs[min(len(trs) - 1,
+                                           len(trs) - 3 + i + 1)] \
+                        [-1]["y1"]
+                    break
+                od = None
+            if od:
+                break
+        if od is None:
+            continue    # measure / local contest
+        office, district = od
+        pages_parsed += 1
+        # ---- candidate columns from the rotated band --------------------
+        columns = []    # (cx, display, party) for the band's text clusters
+        # the write-in column prints horizontally inside the band (its name
+        # reads upright); the contest title and the page header sit above,
+        # and the first data row's items reach one pixel above table_top and
+        # would pollute the clusters, so band-horizontal items are bounded
+        in_band_horiz = [i for i in horizontal
+                         if i["y0"] > title_bottom
+                         and i["y0"] < band_bottom - 4]
+        band_items = [i for r in _ocr_rows_t(
+            tall + in_band_horiz, 12) for i in r]
+        clusters = []
+        for it in sorted(band_items, key=lambda i: i["x0"]):
+            if clusters and it["x0"] - clusters[-1]["x1"] <= 12:
+                c = clusters[-1]
+                c["parts"].append(it)
+                c["x0"] = min(c["x0"], it["x0"])
+                c["x1"] = max(c["x1"], it["x1"])
+            else:
+                clusters.append({"x0": it["x0"], "x1": it["x1"],
+                                 "parts": [it]})
+        for c in clusters:
+            text = " ".join(i["text"] for i in
+                            sorted(c["parts"], key=lambda i: (i["y0"],
+                                                              i["x0"])))
+            lo = text.lower()
+            if re.search(r"registered|voters cast|turnout|over votes|"
+                         r"under votes|contest total|write-?\s*in totals|"
+                         r"^total\b", lo):
+                continue
+            party = ""
+            m = re.search(r"\b(DEM|REP|GRN|LIB|PF|AIP|AI|AL|NPP|PSL|PFP)\b",
+                          text)
+            raw = text
+            if m:
+                party = _TH_PARTY_NORM.get(m.group(1), m.group(1))
+                raw = re.sub(rf"\s*\b{party}\b\s*-?\s*|\s*-\s*{party}\b",
+                             " ", text)
+            disp = raw.strip(" -").strip()
+            # wrapped names split the surname/mate across the cluster's
+            # parts in reading order
+            if not disp or not re.search(r"[A-Za-z]", disp):
+                continue
+            # resolve the display against the Summary Report reference
+            r_entries = ref_for(od)
+            rm = resolve(disp, r_entries) if r_entries else None
+            if rm:
+                disp, party0 = rm
+                columns.append(((c["x0"] + c["x1"]) / 2, disp, party0))
+            else:
+                columns.append(((c["x0"] + c["x1"]) / 2, disp, party))
+                unmatched.append(f"p{n} {od[0]}: column '{disp[:30]}' "
+                                 f"unmatched to the summary reference")
+        cand_cols = [(px, d) for px, d, _p in columns]
+        n_num_cols = len([c for c in clusters])
+        if not cand_cols:
+            failures.append(f"p{n} {od[0]}: no candidate columns")
+            continue
+        # ---- rows --------------------------------------------------------
+        # the full-page OCR's textline-orientation model reads short isolated
+        # value cells 180-degrees-flipped ("60" -> "09", "77" -> "7L"), so
+        # the table's values are re-read by a second, orientation-off pass of
+        # the same page (the rotated header band garbles there and is
+        # irrelevant: the labels come from the first pass)
+        band_bottom = max((i["y1"] for i in band_items), default=table_top)
+        body = [i for i in to_items(run_plain(n))
+                if i["cy"] > max(band_bottom, table_top)
+                and i["text"].strip()]
+        for row in _ocr_rows_t(body, max(10, pitch * 0.42)):
+            id_it = next((i for i in row if _TH_OCR_ID_RE.match(i["text"])
+                          and i["cx"] < 260), None)
+            label = " ".join(i["text"] for i in row
+                             if not _TH_OCR_NUM_RE.match(i["text"])
+                             and i["cx"] < 520).lower()
+            cutoff = min(c[0] for c in columns) - 16
+            nums = [i for i in row
+                    if _TH_OCR_NUM_RE.match(i["text"])
+                    and (i["x1"] - i["x0"]) < 260]
+            if id_it is None:
+                # the Contest Total row (county totals, per candidate) is the
+                # only rollup read; the "Total - <channel>" rows are county
+                # channel rollups with no per-precinct meaning
+                if not label.startswith("contest total"):
+                    continue
+                for i in nums:
+                    if i["cx"] < cutoff:
+                        continue
+                    best, bd = min(((c, abs(c[0] - i["cx"])) for c in columns),
+                                   key=lambda x: x[1])
+                    if bd > 34:
+                        continue
+                    nn = norm_name(best[1])
+                    totals[(office, district, nn)] = _num(i["text"])
+                    names[(office, district, nn)] = (best[1], best[2])
+                continue
+            precinct = id_it["text"]
+            for i in nums:
+                if i["cx"] < cutoff:
+                    continue    # Registered / Voters Cast / Turnout cells
+                best, bd = min(((c, abs(c[0] - i["cx"])) for c in columns),
+                               key=lambda x: x[1])
+                if bd > 34:
+                    continue
+                nn = norm_name(best[1])
+                votes[(precinct, (office, district), nn)] = _num(i["text"])
+                names[(office, district, nn)] = (best[1], best[2])
+    # ---- verification ----------------------------------------------------
+    failures.extend(unmatched[:8])
+    if len(unmatched) > 8:
+        failures.append(f"... and {len(unmatched) - 8} more unmatched "
+                        f"header columns")
+    sums = defaultdict(int)
+    for (_p, od, nn), v in votes.items():
+        sums[od + (nn,)] += v
+    for (office, district, nn), t in sorted(totals.items()):
+        s = sums.get((office, district, nn))
+        disp = names.get((office, district, nn), (nn, ""))[0]
+        if s is None:
+            failures.append(f"{office} {disp[:36]}: precinct rows missing "
+                            f"vs Contest Total {t}")
+        elif s != t:
+            failures.append(f"{office} {disp[:36]}: precincts {s} vs "
+                            f"Contest Total {t}")
+        rt = ref_totals.get((office, district, nn))
+        if rt is not None and rt != t:
+            failures.append(f"{office} {disp[:36]}: Contest Total {t} vs "
+                            f"Summary {rt}")
+    for (office, district) in ref:
+        for disp, _party, t in ref[(office, district)]:
+            nn = norm_name(disp)
+            ref_totals[(office, district, nn)] = t
+            s = sums.get((office, district, nn))
+            if s is None or (office, district, nn) in totals:
+                continue
+            failures.append(f"{office} {disp[:36]}: no precinct rows vs "
+                            f"Summary {t}")
+    # ---- output ----------------------------------------------------------
+    def _pair(disp):
+        """2024 president labels print as 'NAME/MATE' pairs; the repo emits
+        them 'Name / Mate' (single names pass through)."""
+        up = " ".join(str(disp).upper().split())
+        for pn, pm in _PRES_PAIRS:
+            m = re.search(rf"({pn})\s*/?\s*({pm})", up)
+            if m:
+                return (title_case(m.group(1).strip()) + " / "
+                        + title_case(m.group(2).strip()))
+        return title_case(disp)
+
+    rows_out = []
+    for (precinct, (office, district), nn), v in votes.items():
+        disp, party = names[(office, district, nn)]
+        rows_out.append({
+            "county": county, "precinct": precinct, "office": office,
+            "district": district, "candidate": _pair(disp),
+            "party": party_of(party) if party else "", "votes": v,
+        })
+    rows_out.sort(key=lambda r: (r["office"], r["district"], r["candidate"],
+                                 r["precinct"]))
+    return rows_out, failures
+
+
+def _ocr_rows_t(items, y_tol):
+    """Row clustering with an explicit y tolerance (the summary-report rows
+    and the rotated band clusters need different tolerances)."""
+    rows = []
+    for it in sorted(items, key=lambda i: (i["cy"], i["cx"])):
+        if rows and it["cy"] - rows[-1][0] <= y_tol:
+            ws = rows[-1][1]
+            ws.append(it)
+            rows[-1][0] = sum(x["cy"] for x in ws) / len(ws)
+        else:
+            rows.append([it["cy"], [it]])
+    return [sorted(ws, key=lambda i: i["cx"]) for _y, ws in rows]
+
+
 def parse_glenn_sovc(county, path):
     return parse_pageformat_pdf(county, path, subrow=True, rollups=True)
 
@@ -3230,6 +4154,13 @@ SOURCE_FILES = {
              "2024 Yolo County, CA precinct-level results.pdf"),
     "napa": ("Napa", "napa_svc",
              "2024 Napa County, CA precinct-level results"),
+    "alameda": ("Alameda", "alameda_2024",
+                "Alameda County - Statement of Vote - General Election.pdf"),
+    "riverside": ("Riverside", "riverside_2024",
+                  "2024 Riverside County, CA precinct-level results.pdf"),
+    "tehama": ("Tehama", "tehama_ocr",
+               "2024 Tehama County, CA precinct-level results/"
+               "TehamaCountySOV120324.pdf"),
     # NOTE: the "2024 Orange County, CA precinct-level results.pdf" is a
     # district-level rollup report only — every page of its 1,915-page
     # "District Results Report" partitions the county by city / council /
@@ -3237,6 +4168,20 @@ SOURCE_FILES = {
     # the word "precinct" are in the city-code list and the page footer.
     # There are no per-precinct rows to parse; no Orange parser until a
     # precinct-level source is found.
+    # NOTE: "2024 Amador County, CA district-level results.pdf" is likewise a
+    # rollup report only: all 24 pages of the "Official Canvass Supplemental
+    # Statement of Vote" print "N of N Precincts Reporting" contest blocks
+    # whose rows are Electionwide / BOE / Congressional / Senatorial /
+    # Assembly / Supervisorial / City districts (a block per group header,
+    # countywide values) — no per-precinct rows anywhere, so it is parked
+    # like Orange.
+    # NOTE: "2024 Mono County, CA precinct-level results.pdf" has no
+    # per-precinct rows either: pages 7-8 are the VoteCal "County Vote
+    # Reporting Form" (candidate county totals only), and the 20-page
+    # "Supplement to the Statement of Vote" prints per-candidate
+    # Supervisorial / Congressional / State Senate / Assembly / BOE / city
+    # rollup sections with the vote-value cells blank. The county is parked
+    # pending a precinct-level source.
 }
 
 PARSERS = {}

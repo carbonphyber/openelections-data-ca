@@ -2,8 +2,8 @@ import os
 import glob
 import csv
 
-year = '2018'
-election = '20181106'
+year = '2020'
+election = '20201103'
 path = election+'*precinct.csv'
 output_file = election+'__ca__general__precinct.csv'
 
@@ -48,8 +48,12 @@ def generate_consolidated_file(year, path, output_file):
             for row in reader:
                 print(row)
                 if row['office'].strip().title() in ['Straight Party', 'President', 'Governor', 'Secretary Of State', 'State Mine Inspector', 'Corporation Commissioner', 'State Auditor', 'State Treasurer', 'Commissioner of Agriculture & Commerce', 'Commissioner of Insurance', 'Attorney General', 'U.S. House', 'State Senate', 'U.S. Senate', 'State Assembly', 'Registered Voters', 'Ballots Cast']:
-                    if all(k in set(row) for k in ['early_voting', 'election_day', 'provisional']):
-                        results.append([row['county'], row['precinct'], row['office'], row['district'], row['candidate'], row['party'], row['votes'], row['early_voting'], row['election_day'], row['provisional']])
+                    if all(k in set(row) for k in ['mail', 'election_day', 'provisional']):
+                        results.append([row['county'], row['precinct'], row['office'], row['district'], row['candidate'], row['party'], row['votes'], row['mail'], row['election_day'], row['provisional']])
+                    elif all(k in set(row) for k in ['mail', 'provisional']):
+                        results.append([row['county'], row['precinct'], row['office'], row['district'], row['candidate'], row['party'], row['votes'], row['mail'], None, row['provisional']])
+                    elif all(k in set(row) for k in ['mail', 'election_day']):
+                        results.append([row['county'], row['precinct'], row['office'], row['district'], row['candidate'], row['party'], row['votes'], row['mail'], row['election_day'], None])
                     else:
                         results.append([row['county'], row['precinct'], row['office'], row['district'], row['candidate'], row['party'], row['votes'], None, None, None])
     os.chdir('..')
